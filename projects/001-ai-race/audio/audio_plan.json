@@ -1,130 +1,21 @@
 {
-  "ducking": {
-    "attack_ms": 30,
-    "enabled": true,
-    "ratio": 6,
-    "release_ms": 480,
-    "threshold_db": -24
-  },
-  "loudness": {
-    "target_lufs": -16,
-    "true_peak_dbfs": -1.5
-  },
-  "music_assets": [
-    "assets/music/signal-to-noise.mp3"
-  ],
+  "ducking": {"attack_ms": 45,"enabled": true,"ratio": 2.5,"release_ms": 620,"threshold_db": -18},
+  "music_floor": {"narration_floor_db": -24,"pause_floor_db": -16,"pause_boost_db": 6},
+  "loudness": {"target_lufs": -16,"true_peak_dbfs": -1.5},
+  "music_assets": ["assets/music/signal-to-noise.mp3"],
   "music_cues": [
-    {
-      "cue_id": "CUE_01",
-      "end_seconds": 84.2,
-      "energy_end": 0.58,
-      "energy_start": 0.28,
-      "function": "Support the race with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -23,
-      "source_offset_seconds": 0,
-      "start_seconds": 0,
-      "state": "controlled_tension",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_02",
-      "end_seconds": 168.43333333333334,
-      "energy_end": 0.62,
-      "energy_start": 0.32,
-      "function": "Support controlled evidence with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -22,
-      "source_offset_seconds": 41,
-      "start_seconds": 84.2,
-      "state": "analytical_unease",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_03",
-      "end_seconds": 252.63333333333333,
-      "energy_end": 0.76,
-      "energy_start": 0.48,
-      "function": "Support incentives with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -20,
-      "source_offset_seconds": 82,
-      "start_seconds": 168.43333333333334,
-      "state": "accelerating_pressure",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_04",
-      "end_seconds": 336.8666666666667,
-      "energy_end": 0.72,
-      "energy_start": 0.44,
-      "function": "Support misuse with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -20,
-      "source_offset_seconds": 123,
-      "start_seconds": 252.63333333333333,
-      "state": "procedural_threat",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_05",
-      "end_seconds": 421.06666666666666,
-      "energy_end": 0.5,
-      "energy_start": 0.3,
-      "function": "Support power with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -23,
-      "source_offset_seconds": 164,
-      "start_seconds": 336.8666666666667,
-      "state": "uncertain_transition",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_06",
-      "end_seconds": 505.3,
-      "energy_end": 0.56,
-      "energy_start": 0.4,
-      "function": "Support regulation with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -22,
-      "source_offset_seconds": 25,
-      "start_seconds": 421.06666666666666,
-      "state": "institutional_gravity",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_07",
-      "end_seconds": 589.5,
-      "energy_end": 0.58,
-      "energy_start": 0.46,
-      "function": "Support open and closed with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -21,
-      "source_offset_seconds": 66,
-      "start_seconds": 505.3,
-      "state": "balanced_tension",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_08",
-      "end_seconds": 673.7333333333333,
-      "energy_end": 0.68,
-      "energy_start": 0.42,
-      "function": "Support safety architecture with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -19,
-      "source_offset_seconds": 107,
-      "start_seconds": 589.5,
-      "state": "constructive_momentum",
-      "transition_out": "Change texture and energy at the next canonical section boundary."
-    },
-    {
-      "cue_id": "CUE_09",
-      "end_seconds": 757.9333333333333,
-      "energy_end": 0.08,
-      "energy_start": 0.46,
-      "function": "Support human choice with restrained cinematic movement while preserving narration clarity.",
-      "gain_db": -24,
-      "source_offset_seconds": 148,
-      "start_seconds": 673.7333333333333,
-      "state": "reflective_resolution",
-      "transition_out": "Long natural decay into the final branded release."
-    }
+    {"cue_id":"CUE_01","end_seconds":84.2,"energy_end":0.58,"energy_start":0.28,"function":"Support the race with restrained cinematic movement while preserving narration clarity.","gain_db":-19,"source_offset_seconds":0,"start_seconds":0,"state":"controlled_tension","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_02","end_seconds":168.43333333333334,"energy_end":0.62,"energy_start":0.32,"function":"Support controlled evidence with restrained cinematic movement while preserving narration clarity.","gain_db":-18,"source_offset_seconds":41,"start_seconds":84.2,"state":"analytical_unease","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_03","end_seconds":252.63333333333333,"energy_end":0.76,"energy_start":0.48,"function":"Support incentives with restrained cinematic movement while preserving narration clarity.","gain_db":-17,"source_offset_seconds":82,"start_seconds":168.43333333333334,"state":"accelerating_pressure","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_04","end_seconds":336.8666666666667,"energy_end":0.72,"energy_start":0.44,"function":"Support misuse with restrained cinematic movement while preserving narration clarity.","gain_db":-17,"source_offset_seconds":123,"start_seconds":252.63333333333333,"state":"procedural_threat","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_05","end_seconds":421.06666666666666,"energy_end":0.5,"energy_start":0.3,"function":"Support power with restrained cinematic movement while preserving narration clarity.","gain_db":-19,"source_offset_seconds":164,"start_seconds":336.8666666666667,"state":"uncertain_transition","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_06","end_seconds":505.3,"energy_end":0.56,"energy_start":0.4,"function":"Support regulation with restrained cinematic movement while preserving narration clarity.","gain_db":-18,"source_offset_seconds":25,"start_seconds":421.06666666666666,"state":"institutional_gravity","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_07","end_seconds":589.5,"energy_end":0.58,"energy_start":0.46,"function":"Support open and closed with restrained cinematic movement while preserving narration clarity.","gain_db":-17,"source_offset_seconds":66,"start_seconds":505.3,"state":"balanced_tension","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_08","end_seconds":673.7333333333333,"energy_end":0.68,"energy_start":0.42,"function":"Support safety architecture with restrained cinematic movement while preserving narration clarity.","gain_db":-16,"source_offset_seconds":107,"start_seconds":589.5,"state":"constructive_momentum","transition_out":"Change texture and energy at the next canonical section boundary."},
+    {"cue_id":"CUE_09","end_seconds":757.9333333333333,"energy_end":0.08,"energy_start":0.46,"function":"Support human choice with restrained cinematic movement while preserving narration clarity.","gain_db":-19,"source_offset_seconds":148,"start_seconds":673.7333333333333,"state":"reflective_resolution","transition_out":"Long natural decay into the final branded release."}
   ],
-  "narration_asset": "assets/narration/narration_final.mp3",
-  "output_asset": "assets/audio/final_mix.mp3",
-  "project_id": "001-ai-race",
-  "schema_version": "1.0"
+  "narration_asset":"assets/narration/narration_final.mp3",
+  "output_asset":"assets/audio/final_mix.mp3",
+  "project_id":"001-ai-race",
+  "schema_version":"1.0"
 }
