@@ -22,7 +22,7 @@ export function normalizeEvidenceClaimBindings(productionPlan, evidenceRegistry)
       return item;
     });
     const expectedClaimIds = uniqueSorted(items.flatMap((item) => item.claim_ids));
-    const currentClaimIds = uniqueSorted(shot.claim_ids ?? []);
+    const currentClaimIds = Array.isArray(shot.claim_ids) ? [...shot.claim_ids] : [];
     if (sameArray(currentClaimIds, expectedClaimIds)) return shot;
 
     changes.push({
