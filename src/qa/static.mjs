@@ -3,6 +3,7 @@ import {summarizeRange} from '../contracts/production-plan.mjs';
 
 const PRIMARY_TYPES = new Set(['primary_document', 'split_documents', 'official_figure', 'official_screen', 'official_article', 'image_sequence']);
 const CONTEXT_TYPES = new Set(['cinematic_hook', 'contextual_footage']);
+const NONSEMANTIC_PURPOSE_WORDS = /\b(?:generic|filler|ratio|relief)\b/i;
 
 export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistry}) {
   const claims = new Map(claimRegistry.claims.map((claim) => [claim.claim_id, claim]));
@@ -20,7 +21,7 @@ export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistr
       }
     }
     if (CONTEXT_TYPES.has(shot.shot_type)) invariant(shot.evidence_claim !== true, 'CONTEXTUAL_AS_LITERAL_EVIDENCE', `${shot.shot_id} presents contextual footage as literal evidence`);
-    invariant(!/generic|filler|ratio|relief/i.test(shot.editorial_purpose), 'EDITORIAL_PURPOSE_NONSEMANTIC', `${shot.shot_id} editorial purpose describes a metric/filler rather than meaning`);
+    invariant(!NONSEMANTIC_PURPOSE_WORDS.test(shot.editorial_purpose), 'EDITORIAL_PURPOSE_NONSEMANTIC', `${shot.shot_id} editorial purpose describes a metric/filler rather than meaning`);
     reports.push({shot_id: shot.shot_id, status: 'TAMAMLANDI', claim_count: shotClaims.length, evidence_count: shot.evidence_ids?.length ?? 0});
   }
   return {schema_version: '1.0', status: 'TAMAMLANDI', shots: reports};
