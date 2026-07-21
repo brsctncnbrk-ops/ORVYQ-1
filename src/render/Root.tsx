@@ -18,6 +18,6 @@ export const RemotionRoot: React.FC = () => (
     width={fallback.plan.width}
     height={fallback.plan.height}
     defaultProps={fallback}
-    calculateMetadata={({props}) => ({durationInFrames: props.plan.full_frame_count, fps: props.plan.fps, width: props.plan.width, height: props.plan.height})}
+    calculateMetadata={({props}: {props: RenderInput}) => ({durationInFrames: props.plan.full_frame_count, fps: props.plan.fps, width: props.plan.width, height: props.plan.height})}
   />
 );
