@@ -42,7 +42,7 @@ const renderInput = {
 await writeJsonAtomic(path.join(project, 'render_input.json'), renderInput);
 const output = path.join(root, 'artifacts', 'smoke.mp4');
 run('npx', ['remotion', 'render', 'src/render/index.ts', 'ORVYQVideo', output, `--props=${path.join(project, 'render_input.json')}`, '--public-dir=.', '--concurrency=1', '--codec=h264', '--audio-codec=aac', '--crf=20', '--pixel-format=yuv420p']);
-const qa = renderedMediaQa(output, {expectedDuration: 12});
+const qa = renderedMediaQa(output, {expectedDuration: 12, shotBoundarySeconds: [4, 8]});
 await writeJsonAtomic(path.join(root, 'artifacts', 'smoke-qa.json'), qa);
 await writeFile(path.join(root, 'artifacts', 'smoke-status.txt'), 'TAMAMLANDI\n', 'utf8');
 process.stdout.write(`${JSON.stringify(qa, null, 2)}\n`);
