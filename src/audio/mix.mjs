@@ -75,10 +75,11 @@ export async function buildAudioMix({projectId, audioPlan, timeline}) {
     inputs.push('-stream_loop', '-1', '-i', musicPaths[index]);
     inputIndexByPath.set(relative, index + 1);
   }
+  const threshold = dbToLinear(audioPlan.ducking.threshold_db);
   const filterParts = [
     ...buildNarrationFilter(timeline),
     ...buildMusicFilters(audioPlan, inputIndexByPath),
-    `[music_raw][paused_narration]sidechaincompress=threshold=${audioPlan.ducking.threshold_db}dB:ratio=${audioPlan.ducking.ratio}:attack=${audioPlan.ducking.attack_ms}:release=${audioPlan.ducking.release_ms}[music_ducked]`,
+    `[music_raw][paused_narration]sidechaincompress=threshold=${threshold}:ratio=${audioPlan.ducking.ratio}:attack=${audioPlan.ducking.attack_ms}:release=${audioPlan.ducking.release_ms}[music_ducked]`,
     `[paused_narration][music_ducked]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=${audioPlan.loudness.target_lufs}:TP=${audioPlan.loudness.true_peak_dbfs}:LRA=11,atrim=duration=${timeline.transformed_duration_seconds}[final]`
   ];
   const codec = path.extname(output).toLowerCase() === '.wav' ? ['-c:a', 'pcm_s24le'] : ['-c:a', 'libmp3lame', '-b:a', '256k'];
