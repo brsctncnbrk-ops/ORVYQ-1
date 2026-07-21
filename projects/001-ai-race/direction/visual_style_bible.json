@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "reference": "Aperture-style premium cinematic essay",
+  "palette": [
+    "#071019",
+    "#edf1f2",
+    "#d94d54"
+  ],
+  "rules": [
+    "Footage is contextual, not literal evidence",
+    "Evidence receives source footer",
+    "No evidence wall longer than 15 seconds"
+  ]
+}

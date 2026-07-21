@@ -1,0 +1,8 @@
+{
+  "status": "TAMAMLANDI",
+  "project_id": "001-ai-race",
+  "plan_sha256": "4d32bab03c8e178a143808ab17e945960a01710a87691a287ebc82c5a79fcc74",
+  "timeline_sha256": "473076c55ce7a6d9d620873942a8a60e2c7fb45bdf45135b61f45dfd527b748a",
+  "asset_digest": "168b211c800509f8c71dac1e92c7c3a8fce6e4a43b2bb1859c8c9436a5e1c654",
+  "render_input_sha256": "e17326f8bff4e223b7c67d336dda2974f27de85788651b48d22a16b1c62dfd9c"
+}

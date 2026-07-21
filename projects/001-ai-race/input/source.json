@@ -1,0 +1,6 @@
+{
+  "reference_youtube_url": "https://www.youtube.com/",
+  "usage": "topic-and-claim-discovery-only",
+  "minimum_duration_seconds": 600,
+  "migration_note": "Reconstructed once from the user-approved first-video inputs; no runtime dependency remains."
+}

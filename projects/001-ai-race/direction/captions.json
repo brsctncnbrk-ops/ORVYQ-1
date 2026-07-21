@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0",
+  "duration_frames": 21598,
+  "captions": [
+    {
+      "id": "caption-q1",
+      "start_frame": 0,
+      "end_frame": 397,
+      "text": "Labs know the risk."
+    },
+    {
+      "id": "caption-q2",
+      "start_frame": 397,
+      "end_frame": 877,
+      "text": "A rival may move first."
+    },
+    {
+      "id": "caption-q3",
+      "start_frame": 877,
+      "end_frame": 1357,
+      "text": "Fear drives the race."
+    },
+    {
+      "id": "caption-q4",
+      "start_frame": 1357,
+      "end_frame": 1754,
+      "text": "The evidence is visible."
+    },
+    {
+      "id": "caption-q5",
+      "start_frame": 1754,
+      "end_frame": 2234,
+      "text": "Tests reveal pressure."
+    },
+    {
+      "id": "caption-q6",
+      "start_frame": 2234,
+      "end_frame": 2714,
+      "text": "A drill is not an incident."
+    },
+    {
+      "id": "caption-q7",
+      "start_frame": 2714,
+      "end_frame": 3110,
+      "text": "The distinction matters."
+    },
+    {
+      "id": "caption-q8",
+      "start_frame": 3110,
+      "end_frame": 3590,
+      "text": "Markets reward capability."
+    },
+    {
+      "id": "caption-q9",
+      "start_frame": 3590,
+      "end_frame": 4070,
+      "text": "Governments seek advantage."
+    },
+    {
+      "id": "caption-q10",
+      "start_frame": 4070,
+      "end_frame": 4466,
+      "text": "Leadership can shift quickly."
+    },
+    {
+      "id": "caption-q11",
+      "start_frame": 4466,
+      "end_frame": 4946,
+      "text": "Caution carries a cost."
+    },
+    {
+      "id": "caption-q12",
+      "start_frame": 4946,
+      "end_frame": 5426,
+      "text": "Competition resists restraint."
+    },
+    {
+      "id": "caption-q13",
+      "start_frame": 5426,
+      "end_frame": 5822,
+      "text": "Slowing alone is unstable."
+    },
+    {
+      "id": "caption-q14",
+      "start_frame": 5822,
+      "end_frame": 6302,
+      "text": "Slowing down alone doesn't remove the risk. It just hands the frontier to whoever doesn't."
+    },
+    {
+      "id": "caption-q15",
+      "start_frame": 6302,
+      "end_frame": 6782,
+      "text": "Institutions lag behind."
+    },
+    {
+      "id": "caption-q16",
+      "start_frame": 6782,
+      "end_frame": 7244,
+      "text": "Cyber misuse lowers barriers."
+    },
+    {
+      "id": "caption-q17",
+      "start_frame": 7244,
+      "end_frame": 7724,
+      "text": "Disclosures need scrutiny."
+    },
+    {
+      "id": "caption-q18",
+      "start_frame": 7724,
+      "end_frame": 8204,
+      "text": "Automation aids defenders."
+    },
+    {
+      "id": "caption-q19",
+      "start_frame": 8204,
+      "end_frame": 8666,
+      "text": "Bio thresholds trigger safeguards."
+    },
+    {
+      "id": "caption-q20",
+      "start_frame": 8666,
+      "end_frame": 9146,
+      "text": "Standards remain fragmented."
+    },
+    {
+      "id": "caption-q21",
+      "start_frame": 9146,
+      "end_frame": 9626,
+      "text": "Synthetic media strains facts."
+    },
+    {
+      "id": "caption-q22",
+      "start_frame": 9626,
+      "end_frame": 10088,
+      "text": "Job forecasts diverge."
+    },
+    {
+      "id": "caption-q23",
+      "start_frame": 10088,
+      "end_frame": 10568,
+      "text": "Power concentrates in compute."
+    },
+    {
+      "id": "caption-q24",
+      "start_frame": 10568,
+      "end_frame": 11048,
+      "text": "Cloud control creates leverage."
+    },
+    {
+      "id": "caption-q25",
+      "start_frame": 11048,
+      "end_frame": 11510,
+      "text": "Regulation grants authority."
+    },
+    {
+      "id": "caption-q26",
+      "start_frame": 11510,
+      "end_frame": 11990,
+      "text": "Safety thresholds can help."
+    },
+    {
+      "id": "caption-q27",
+      "start_frame": 11990,
+      "end_frame": 12470,
+      "text": "Compliance can favor incumbents."
+    },
+    {
+      "id": "caption-q28",
+      "start_frame": 12470,
+      "end_frame": 12932,
+      "text": "Rules can lock in leaders."
+    },
+    {
+      "id": "caption-q29",
+      "start_frame": 12932,
+      "end_frame": 13412,
+      "text": "Open weights enable scrutiny."
+    },
+    {
+      "id": "caption-q30",
+      "start_frame": 13412,
+      "end_frame": 13892,
+      "text": "Openness spreads capability."
+    },
+    {
+      "id": "caption-q31",
+      "start_frame": 13892,
+      "end_frame": 14354,
+      "text": "Closed systems enable monitoring."
+    },
+    {
+      "id": "caption-q32",
+      "start_frame": 14354,
+      "end_frame": 14834,
+      "text": "Centralization does not end abuse."
+    },
+    {
+      "id": "caption-q33",
+      "start_frame": 14834,
+      "end_frame": 15314,
+      "text": "Different systems fail differently."
+    },
+    {
+      "id": "caption-q34",
+      "start_frame": 15314,
+      "end_frame": 15775,
+      "text": "Technical safety comes first."
+    },
+    {
+      "id": "caption-q35",
+      "start_frame": 15775,
+      "end_frame": 16255,
+      "text": "Evaluation must precede release."
+    },
+    {
+      "id": "caption-q36",
+      "start_frame": 16255,
+      "end_frame": 16735,
+      "text": "Reporting should be mandatory."
+    },
+    {
+      "id": "caption-q37",
+      "start_frame": 16735,
+      "end_frame": 17196,
+      "text": "Liability must follow deployment."
+    },
+    {
+      "id": "caption-q38",
+      "start_frame": 17196,
+      "end_frame": 17676,
+      "text": "Whistleblowers need protection."
+    },
+    {
+      "id": "caption-q39",
+      "start_frame": 17676,
+      "end_frame": 18156,
+      "text": "Compute governance acts upstream."
+    },
+    {
+      "id": "caption-q40",
+      "start_frame": 18156,
+      "end_frame": 18617,
+      "text": "Researchers need access."
+    },
+    {
+      "id": "caption-q41",
+      "start_frame": 18617,
+      "end_frame": 19097,
+      "text": "Verification cannot be voluntary."
+    },
+    {
+      "id": "caption-q42",
+      "start_frame": 19097,
+      "end_frame": 19577,
+      "text": "Competition limits authority."
+    },
+    {
+      "id": "caption-q43",
+      "start_frame": 19577,
+      "end_frame": 20038,
+      "text": "Sunset clauses preserve revision."
+    },
+    {
+      "id": "caption-q44",
+      "start_frame": 20038,
+      "end_frame": 20518,
+      "text": "Failure can accumulate quietly."
+    },
+    {
+      "id": "caption-q45",
+      "start_frame": 20518,
+      "end_frame": 20998,
+      "text": "Concentrated control is dangerous."
+    },
+    {
+      "id": "caption-q46",
+      "start_frame": 20998,
+      "end_frame": 21478,
+      "text": "The choice is still being made."
+    }
+  ]
+}

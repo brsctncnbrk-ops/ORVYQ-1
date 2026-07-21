@@ -1,0 +1,1309 @@
+{
+  "schema_version": "1.0",
+  "scenes": [
+    {
+      "id": "q1-1",
+      "start_frame": 0,
+      "end_frame": 199,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Labs know the risk.",
+      "asset_ids": [
+        "footage-f1"
+      ]
+    },
+    {
+      "id": "q1-2",
+      "start_frame": 199,
+      "end_frame": 397,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Labs know the risk.",
+      "asset_ids": [
+        "footage-f1"
+      ]
+    },
+    {
+      "id": "q2-1",
+      "start_frame": 397,
+      "end_frame": 622,
+      "visual_class": "official_document",
+      "semantic_purpose": "A rival may move first.",
+      "asset_ids": [
+        "capture-c1"
+      ]
+    },
+    {
+      "id": "q2-2",
+      "start_frame": 622,
+      "end_frame": 637,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "A rival may move first.",
+      "asset_ids": []
+    },
+    {
+      "id": "q2-3",
+      "start_frame": 637,
+      "end_frame": 877,
+      "visual_class": "official_document",
+      "semantic_purpose": "A rival may move first.",
+      "asset_ids": [
+        "capture-c1"
+      ]
+    },
+    {
+      "id": "q3-1",
+      "start_frame": 877,
+      "end_frame": 892,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Fear drives the race.",
+      "asset_ids": []
+    },
+    {
+      "id": "q3-2",
+      "start_frame": 892,
+      "end_frame": 1117,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Fear drives the race.",
+      "asset_ids": [
+        "graphic-g1"
+      ]
+    },
+    {
+      "id": "q3-3",
+      "start_frame": 1117,
+      "end_frame": 1132,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Fear drives the race.",
+      "asset_ids": []
+    },
+    {
+      "id": "q3-4",
+      "start_frame": 1132,
+      "end_frame": 1357,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Fear drives the race.",
+      "asset_ids": [
+        "graphic-g1"
+      ]
+    },
+    {
+      "id": "q4-1",
+      "start_frame": 1357,
+      "end_frame": 1556,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "The evidence is visible.",
+      "asset_ids": [
+        "footage-f2"
+      ]
+    },
+    {
+      "id": "q4-2",
+      "start_frame": 1556,
+      "end_frame": 1754,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "The evidence is visible.",
+      "asset_ids": [
+        "footage-f2"
+      ]
+    },
+    {
+      "id": "q5-1",
+      "start_frame": 1754,
+      "end_frame": 1979,
+      "visual_class": "official_document",
+      "semantic_purpose": "Tests reveal pressure.",
+      "asset_ids": [
+        "capture-c2"
+      ]
+    },
+    {
+      "id": "q5-2",
+      "start_frame": 1979,
+      "end_frame": 1994,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Tests reveal pressure.",
+      "asset_ids": []
+    },
+    {
+      "id": "q5-3",
+      "start_frame": 1994,
+      "end_frame": 2234,
+      "visual_class": "official_document",
+      "semantic_purpose": "Tests reveal pressure.",
+      "asset_ids": [
+        "capture-c2"
+      ]
+    },
+    {
+      "id": "q6-1",
+      "start_frame": 2234,
+      "end_frame": 2249,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "A drill is not an incident.",
+      "asset_ids": []
+    },
+    {
+      "id": "q6-2",
+      "start_frame": 2249,
+      "end_frame": 2474,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "A drill is not an incident.",
+      "asset_ids": [
+        "graphic-g2"
+      ]
+    },
+    {
+      "id": "q6-3",
+      "start_frame": 2474,
+      "end_frame": 2489,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "A drill is not an incident.",
+      "asset_ids": []
+    },
+    {
+      "id": "q6-4",
+      "start_frame": 2489,
+      "end_frame": 2714,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "A drill is not an incident.",
+      "asset_ids": [
+        "graphic-g2"
+      ]
+    },
+    {
+      "id": "q7-1",
+      "start_frame": 2714,
+      "end_frame": 2912,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "The distinction matters.",
+      "asset_ids": [
+        "footage-f3"
+      ]
+    },
+    {
+      "id": "q7-2",
+      "start_frame": 2912,
+      "end_frame": 3110,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "The distinction matters.",
+      "asset_ids": [
+        "footage-f3"
+      ]
+    },
+    {
+      "id": "q8-1",
+      "start_frame": 3110,
+      "end_frame": 3335,
+      "visual_class": "official_document",
+      "semantic_purpose": "Markets reward capability.",
+      "asset_ids": [
+        "capture-c3"
+      ]
+    },
+    {
+      "id": "q8-2",
+      "start_frame": 3335,
+      "end_frame": 3350,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Markets reward capability.",
+      "asset_ids": []
+    },
+    {
+      "id": "q8-3",
+      "start_frame": 3350,
+      "end_frame": 3590,
+      "visual_class": "official_document",
+      "semantic_purpose": "Markets reward capability.",
+      "asset_ids": [
+        "capture-c3"
+      ]
+    },
+    {
+      "id": "q9-1",
+      "start_frame": 3590,
+      "end_frame": 3605,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Governments seek advantage.",
+      "asset_ids": []
+    },
+    {
+      "id": "q9-2",
+      "start_frame": 3605,
+      "end_frame": 3830,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Governments seek advantage.",
+      "asset_ids": [
+        "graphic-g3"
+      ]
+    },
+    {
+      "id": "q9-3",
+      "start_frame": 3830,
+      "end_frame": 3845,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Governments seek advantage.",
+      "asset_ids": []
+    },
+    {
+      "id": "q9-4",
+      "start_frame": 3845,
+      "end_frame": 4070,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Governments seek advantage.",
+      "asset_ids": [
+        "graphic-g3"
+      ]
+    },
+    {
+      "id": "q10-1",
+      "start_frame": 4070,
+      "end_frame": 4268,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Leadership can shift quickly.",
+      "asset_ids": [
+        "footage-f4"
+      ]
+    },
+    {
+      "id": "q10-2",
+      "start_frame": 4268,
+      "end_frame": 4466,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Leadership can shift quickly.",
+      "asset_ids": [
+        "footage-f4"
+      ]
+    },
+    {
+      "id": "q11-1",
+      "start_frame": 4466,
+      "end_frame": 4691,
+      "visual_class": "official_document",
+      "semantic_purpose": "Caution carries a cost.",
+      "asset_ids": [
+        "capture-c4"
+      ]
+    },
+    {
+      "id": "q11-2",
+      "start_frame": 4691,
+      "end_frame": 4706,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Caution carries a cost.",
+      "asset_ids": []
+    },
+    {
+      "id": "q11-3",
+      "start_frame": 4706,
+      "end_frame": 4946,
+      "visual_class": "official_document",
+      "semantic_purpose": "Caution carries a cost.",
+      "asset_ids": [
+        "capture-c4"
+      ]
+    },
+    {
+      "id": "q12-1",
+      "start_frame": 4946,
+      "end_frame": 4961,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Competition resists restraint.",
+      "asset_ids": []
+    },
+    {
+      "id": "q12-2",
+      "start_frame": 4961,
+      "end_frame": 5186,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Competition resists restraint.",
+      "asset_ids": [
+        "graphic-g4"
+      ]
+    },
+    {
+      "id": "q12-3",
+      "start_frame": 5186,
+      "end_frame": 5201,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Competition resists restraint.",
+      "asset_ids": []
+    },
+    {
+      "id": "q12-4",
+      "start_frame": 5201,
+      "end_frame": 5426,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Competition resists restraint.",
+      "asset_ids": [
+        "graphic-g4"
+      ]
+    },
+    {
+      "id": "q13-1",
+      "start_frame": 5426,
+      "end_frame": 5624,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Slowing alone is unstable.",
+      "asset_ids": [
+        "footage-f5"
+      ]
+    },
+    {
+      "id": "q13-2",
+      "start_frame": 5624,
+      "end_frame": 5822,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Slowing alone is unstable.",
+      "asset_ids": [
+        "footage-f5"
+      ]
+    },
+    {
+      "id": "q14-1",
+      "start_frame": 5822,
+      "end_frame": 6047,
+      "visual_class": "official_document",
+      "semantic_purpose": "Slowing down alone doesn't remove the risk. It just hands the frontier to whoever doesn't.",
+      "asset_ids": [
+        "capture-c5"
+      ]
+    },
+    {
+      "id": "q14-2",
+      "start_frame": 6047,
+      "end_frame": 6062,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Slowing down alone doesn't remove the risk. It just hands the frontier to whoever doesn't.",
+      "asset_ids": []
+    },
+    {
+      "id": "q14-3",
+      "start_frame": 6062,
+      "end_frame": 6302,
+      "visual_class": "official_document",
+      "semantic_purpose": "Slowing down alone doesn't remove the risk. It just hands the frontier to whoever doesn't.",
+      "asset_ids": [
+        "capture-c5"
+      ]
+    },
+    {
+      "id": "q15-1",
+      "start_frame": 6302,
+      "end_frame": 6317,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Institutions lag behind.",
+      "asset_ids": []
+    },
+    {
+      "id": "q15-2",
+      "start_frame": 6317,
+      "end_frame": 6542,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Institutions lag behind.",
+      "asset_ids": [
+        "graphic-g5"
+      ]
+    },
+    {
+      "id": "q15-3",
+      "start_frame": 6542,
+      "end_frame": 6557,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Institutions lag behind.",
+      "asset_ids": []
+    },
+    {
+      "id": "q15-4",
+      "start_frame": 6557,
+      "end_frame": 6782,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Institutions lag behind.",
+      "asset_ids": [
+        "graphic-g5"
+      ]
+    },
+    {
+      "id": "q16-1",
+      "start_frame": 6782,
+      "end_frame": 7013,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Cyber misuse lowers barriers.",
+      "asset_ids": [
+        "footage-f6"
+      ]
+    },
+    {
+      "id": "q16-2",
+      "start_frame": 7013,
+      "end_frame": 7244,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Cyber misuse lowers barriers.",
+      "asset_ids": [
+        "footage-f6"
+      ]
+    },
+    {
+      "id": "q17-1",
+      "start_frame": 7244,
+      "end_frame": 7469,
+      "visual_class": "official_document",
+      "semantic_purpose": "Disclosures need scrutiny.",
+      "asset_ids": [
+        "capture-c6"
+      ]
+    },
+    {
+      "id": "q17-2",
+      "start_frame": 7469,
+      "end_frame": 7484,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Disclosures need scrutiny.",
+      "asset_ids": []
+    },
+    {
+      "id": "q17-3",
+      "start_frame": 7484,
+      "end_frame": 7724,
+      "visual_class": "official_document",
+      "semantic_purpose": "Disclosures need scrutiny.",
+      "asset_ids": [
+        "capture-c6"
+      ]
+    },
+    {
+      "id": "q18-1",
+      "start_frame": 7724,
+      "end_frame": 7739,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Automation aids defenders.",
+      "asset_ids": []
+    },
+    {
+      "id": "q18-2",
+      "start_frame": 7739,
+      "end_frame": 7964,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Automation aids defenders.",
+      "asset_ids": [
+        "graphic-g6"
+      ]
+    },
+    {
+      "id": "q18-3",
+      "start_frame": 7964,
+      "end_frame": 7979,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Automation aids defenders.",
+      "asset_ids": []
+    },
+    {
+      "id": "q18-4",
+      "start_frame": 7979,
+      "end_frame": 8204,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Automation aids defenders.",
+      "asset_ids": [
+        "graphic-g6"
+      ]
+    },
+    {
+      "id": "q19-1",
+      "start_frame": 8204,
+      "end_frame": 8435,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Bio thresholds trigger safeguards.",
+      "asset_ids": [
+        "footage-f7"
+      ]
+    },
+    {
+      "id": "q19-2",
+      "start_frame": 8435,
+      "end_frame": 8666,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Bio thresholds trigger safeguards.",
+      "asset_ids": [
+        "footage-f7"
+      ]
+    },
+    {
+      "id": "q20-1",
+      "start_frame": 8666,
+      "end_frame": 8891,
+      "visual_class": "official_document",
+      "semantic_purpose": "Standards remain fragmented.",
+      "asset_ids": [
+        "capture-c7"
+      ]
+    },
+    {
+      "id": "q20-2",
+      "start_frame": 8891,
+      "end_frame": 8906,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Standards remain fragmented.",
+      "asset_ids": []
+    },
+    {
+      "id": "q20-3",
+      "start_frame": 8906,
+      "end_frame": 9146,
+      "visual_class": "official_document",
+      "semantic_purpose": "Standards remain fragmented.",
+      "asset_ids": [
+        "capture-c7"
+      ]
+    },
+    {
+      "id": "q21-1",
+      "start_frame": 9146,
+      "end_frame": 9161,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Synthetic media strains facts.",
+      "asset_ids": []
+    },
+    {
+      "id": "q21-2",
+      "start_frame": 9161,
+      "end_frame": 9386,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Synthetic media strains facts.",
+      "asset_ids": [
+        "graphic-g7"
+      ]
+    },
+    {
+      "id": "q21-3",
+      "start_frame": 9386,
+      "end_frame": 9401,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Synthetic media strains facts.",
+      "asset_ids": []
+    },
+    {
+      "id": "q21-4",
+      "start_frame": 9401,
+      "end_frame": 9626,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Synthetic media strains facts.",
+      "asset_ids": [
+        "graphic-g7"
+      ]
+    },
+    {
+      "id": "q22-1",
+      "start_frame": 9626,
+      "end_frame": 9857,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Job forecasts diverge.",
+      "asset_ids": [
+        "footage-f8"
+      ]
+    },
+    {
+      "id": "q22-2",
+      "start_frame": 9857,
+      "end_frame": 10088,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Job forecasts diverge.",
+      "asset_ids": [
+        "footage-f8"
+      ]
+    },
+    {
+      "id": "q23-1",
+      "start_frame": 10088,
+      "end_frame": 10313,
+      "visual_class": "official_document",
+      "semantic_purpose": "Power concentrates in compute.",
+      "asset_ids": [
+        "capture-c8"
+      ]
+    },
+    {
+      "id": "q23-2",
+      "start_frame": 10313,
+      "end_frame": 10328,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Power concentrates in compute.",
+      "asset_ids": []
+    },
+    {
+      "id": "q23-3",
+      "start_frame": 10328,
+      "end_frame": 10568,
+      "visual_class": "official_document",
+      "semantic_purpose": "Power concentrates in compute.",
+      "asset_ids": [
+        "capture-c8"
+      ]
+    },
+    {
+      "id": "q24-1",
+      "start_frame": 10568,
+      "end_frame": 10583,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Cloud control creates leverage.",
+      "asset_ids": []
+    },
+    {
+      "id": "q24-2",
+      "start_frame": 10583,
+      "end_frame": 10808,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Cloud control creates leverage.",
+      "asset_ids": [
+        "graphic-g8"
+      ]
+    },
+    {
+      "id": "q24-3",
+      "start_frame": 10808,
+      "end_frame": 10823,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Cloud control creates leverage.",
+      "asset_ids": []
+    },
+    {
+      "id": "q24-4",
+      "start_frame": 10823,
+      "end_frame": 11048,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Cloud control creates leverage.",
+      "asset_ids": [
+        "graphic-g8"
+      ]
+    },
+    {
+      "id": "q25-1",
+      "start_frame": 11048,
+      "end_frame": 11279,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Regulation grants authority.",
+      "asset_ids": [
+        "footage-f9"
+      ]
+    },
+    {
+      "id": "q25-2",
+      "start_frame": 11279,
+      "end_frame": 11510,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Regulation grants authority.",
+      "asset_ids": [
+        "footage-f9"
+      ]
+    },
+    {
+      "id": "q26-1",
+      "start_frame": 11510,
+      "end_frame": 11735,
+      "visual_class": "official_document",
+      "semantic_purpose": "Safety thresholds can help.",
+      "asset_ids": [
+        "capture-c9"
+      ]
+    },
+    {
+      "id": "q26-2",
+      "start_frame": 11735,
+      "end_frame": 11750,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Safety thresholds can help.",
+      "asset_ids": []
+    },
+    {
+      "id": "q26-3",
+      "start_frame": 11750,
+      "end_frame": 11990,
+      "visual_class": "official_document",
+      "semantic_purpose": "Safety thresholds can help.",
+      "asset_ids": [
+        "capture-c9"
+      ]
+    },
+    {
+      "id": "q27-1",
+      "start_frame": 11990,
+      "end_frame": 12005,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Compliance can favor incumbents.",
+      "asset_ids": []
+    },
+    {
+      "id": "q27-2",
+      "start_frame": 12005,
+      "end_frame": 12230,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Compliance can favor incumbents.",
+      "asset_ids": [
+        "graphic-g9"
+      ]
+    },
+    {
+      "id": "q27-3",
+      "start_frame": 12230,
+      "end_frame": 12245,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Compliance can favor incumbents.",
+      "asset_ids": []
+    },
+    {
+      "id": "q27-4",
+      "start_frame": 12245,
+      "end_frame": 12470,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Compliance can favor incumbents.",
+      "asset_ids": [
+        "graphic-g9"
+      ]
+    },
+    {
+      "id": "q28-1",
+      "start_frame": 12470,
+      "end_frame": 12701,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Rules can lock in leaders.",
+      "asset_ids": [
+        "footage-f10"
+      ]
+    },
+    {
+      "id": "q28-2",
+      "start_frame": 12701,
+      "end_frame": 12932,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Rules can lock in leaders.",
+      "asset_ids": [
+        "footage-f10"
+      ]
+    },
+    {
+      "id": "q29-1",
+      "start_frame": 12932,
+      "end_frame": 13157,
+      "visual_class": "official_document",
+      "semantic_purpose": "Open weights enable scrutiny.",
+      "asset_ids": [
+        "capture-c10"
+      ]
+    },
+    {
+      "id": "q29-2",
+      "start_frame": 13157,
+      "end_frame": 13172,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Open weights enable scrutiny.",
+      "asset_ids": []
+    },
+    {
+      "id": "q29-3",
+      "start_frame": 13172,
+      "end_frame": 13412,
+      "visual_class": "official_document",
+      "semantic_purpose": "Open weights enable scrutiny.",
+      "asset_ids": [
+        "capture-c10"
+      ]
+    },
+    {
+      "id": "q30-1",
+      "start_frame": 13412,
+      "end_frame": 13427,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Openness spreads capability.",
+      "asset_ids": []
+    },
+    {
+      "id": "q30-2",
+      "start_frame": 13427,
+      "end_frame": 13652,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Openness spreads capability.",
+      "asset_ids": [
+        "graphic-g10"
+      ]
+    },
+    {
+      "id": "q30-3",
+      "start_frame": 13652,
+      "end_frame": 13667,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Openness spreads capability.",
+      "asset_ids": []
+    },
+    {
+      "id": "q30-4",
+      "start_frame": 13667,
+      "end_frame": 13892,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Openness spreads capability.",
+      "asset_ids": [
+        "graphic-g10"
+      ]
+    },
+    {
+      "id": "q31-1",
+      "start_frame": 13892,
+      "end_frame": 14123,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Closed systems enable monitoring.",
+      "asset_ids": [
+        "footage-f11"
+      ]
+    },
+    {
+      "id": "q31-2",
+      "start_frame": 14123,
+      "end_frame": 14354,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Closed systems enable monitoring.",
+      "asset_ids": [
+        "footage-f11"
+      ]
+    },
+    {
+      "id": "q32-1",
+      "start_frame": 14354,
+      "end_frame": 14579,
+      "visual_class": "official_document",
+      "semantic_purpose": "Centralization does not end abuse.",
+      "asset_ids": [
+        "capture-c11"
+      ]
+    },
+    {
+      "id": "q32-2",
+      "start_frame": 14579,
+      "end_frame": 14594,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Centralization does not end abuse.",
+      "asset_ids": []
+    },
+    {
+      "id": "q32-3",
+      "start_frame": 14594,
+      "end_frame": 14834,
+      "visual_class": "official_document",
+      "semantic_purpose": "Centralization does not end abuse.",
+      "asset_ids": [
+        "capture-c11"
+      ]
+    },
+    {
+      "id": "q33-1",
+      "start_frame": 14834,
+      "end_frame": 14849,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Different systems fail differently.",
+      "asset_ids": []
+    },
+    {
+      "id": "q33-2",
+      "start_frame": 14849,
+      "end_frame": 15074,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Different systems fail differently.",
+      "asset_ids": [
+        "graphic-g11"
+      ]
+    },
+    {
+      "id": "q33-3",
+      "start_frame": 15074,
+      "end_frame": 15089,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Different systems fail differently.",
+      "asset_ids": []
+    },
+    {
+      "id": "q33-4",
+      "start_frame": 15089,
+      "end_frame": 15314,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Different systems fail differently.",
+      "asset_ids": [
+        "graphic-g11"
+      ]
+    },
+    {
+      "id": "q34-1",
+      "start_frame": 15314,
+      "end_frame": 15545,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Technical safety comes first.",
+      "asset_ids": [
+        "footage-f12"
+      ]
+    },
+    {
+      "id": "q34-2",
+      "start_frame": 15545,
+      "end_frame": 15775,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Technical safety comes first.",
+      "asset_ids": [
+        "footage-f12"
+      ]
+    },
+    {
+      "id": "q35-1",
+      "start_frame": 15775,
+      "end_frame": 16000,
+      "visual_class": "official_document",
+      "semantic_purpose": "Evaluation must precede release.",
+      "asset_ids": [
+        "capture-c12"
+      ]
+    },
+    {
+      "id": "q35-2",
+      "start_frame": 16000,
+      "end_frame": 16015,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Evaluation must precede release.",
+      "asset_ids": []
+    },
+    {
+      "id": "q35-3",
+      "start_frame": 16015,
+      "end_frame": 16255,
+      "visual_class": "official_document",
+      "semantic_purpose": "Evaluation must precede release.",
+      "asset_ids": [
+        "capture-c12"
+      ]
+    },
+    {
+      "id": "q36-1",
+      "start_frame": 16255,
+      "end_frame": 16270,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Reporting should be mandatory.",
+      "asset_ids": []
+    },
+    {
+      "id": "q36-2",
+      "start_frame": 16270,
+      "end_frame": 16495,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Reporting should be mandatory.",
+      "asset_ids": [
+        "graphic-g12"
+      ]
+    },
+    {
+      "id": "q36-3",
+      "start_frame": 16495,
+      "end_frame": 16510,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Reporting should be mandatory.",
+      "asset_ids": []
+    },
+    {
+      "id": "q36-4",
+      "start_frame": 16510,
+      "end_frame": 16735,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Reporting should be mandatory.",
+      "asset_ids": [
+        "graphic-g12"
+      ]
+    },
+    {
+      "id": "q37-1",
+      "start_frame": 16735,
+      "end_frame": 16966,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Liability must follow deployment.",
+      "asset_ids": [
+        "footage-f13"
+      ]
+    },
+    {
+      "id": "q37-2",
+      "start_frame": 16966,
+      "end_frame": 17196,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Liability must follow deployment.",
+      "asset_ids": [
+        "footage-f13"
+      ]
+    },
+    {
+      "id": "q38-1",
+      "start_frame": 17196,
+      "end_frame": 17421,
+      "visual_class": "official_document",
+      "semantic_purpose": "Whistleblowers need protection.",
+      "asset_ids": [
+        "capture-c13"
+      ]
+    },
+    {
+      "id": "q38-2",
+      "start_frame": 17421,
+      "end_frame": 17436,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Whistleblowers need protection.",
+      "asset_ids": []
+    },
+    {
+      "id": "q38-3",
+      "start_frame": 17436,
+      "end_frame": 17676,
+      "visual_class": "official_document",
+      "semantic_purpose": "Whistleblowers need protection.",
+      "asset_ids": [
+        "capture-c13"
+      ]
+    },
+    {
+      "id": "q39-1",
+      "start_frame": 17676,
+      "end_frame": 17691,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Compute governance acts upstream.",
+      "asset_ids": []
+    },
+    {
+      "id": "q39-2",
+      "start_frame": 17691,
+      "end_frame": 17916,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Compute governance acts upstream.",
+      "asset_ids": [
+        "graphic-g13"
+      ]
+    },
+    {
+      "id": "q39-3",
+      "start_frame": 17916,
+      "end_frame": 17931,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Compute governance acts upstream.",
+      "asset_ids": []
+    },
+    {
+      "id": "q39-4",
+      "start_frame": 17931,
+      "end_frame": 18156,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Compute governance acts upstream.",
+      "asset_ids": [
+        "graphic-g13"
+      ]
+    },
+    {
+      "id": "q40-1",
+      "start_frame": 18156,
+      "end_frame": 18387,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Researchers need access.",
+      "asset_ids": [
+        "footage-f14"
+      ]
+    },
+    {
+      "id": "q40-2",
+      "start_frame": 18387,
+      "end_frame": 18617,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Researchers need access.",
+      "asset_ids": [
+        "footage-f14"
+      ]
+    },
+    {
+      "id": "q41-1",
+      "start_frame": 18617,
+      "end_frame": 18842,
+      "visual_class": "official_document",
+      "semantic_purpose": "Verification cannot be voluntary.",
+      "asset_ids": [
+        "capture-c14"
+      ]
+    },
+    {
+      "id": "q41-2",
+      "start_frame": 18842,
+      "end_frame": 18857,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Verification cannot be voluntary.",
+      "asset_ids": []
+    },
+    {
+      "id": "q41-3",
+      "start_frame": 18857,
+      "end_frame": 19097,
+      "visual_class": "official_document",
+      "semantic_purpose": "Verification cannot be voluntary.",
+      "asset_ids": [
+        "capture-c14"
+      ]
+    },
+    {
+      "id": "q42-1",
+      "start_frame": 19097,
+      "end_frame": 19112,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Competition limits authority.",
+      "asset_ids": []
+    },
+    {
+      "id": "q42-2",
+      "start_frame": 19112,
+      "end_frame": 19337,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Competition limits authority.",
+      "asset_ids": [
+        "graphic-g14"
+      ]
+    },
+    {
+      "id": "q42-3",
+      "start_frame": 19337,
+      "end_frame": 19352,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Competition limits authority.",
+      "asset_ids": []
+    },
+    {
+      "id": "q42-4",
+      "start_frame": 19352,
+      "end_frame": 19577,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Competition limits authority.",
+      "asset_ids": [
+        "graphic-g14"
+      ]
+    },
+    {
+      "id": "q43-1",
+      "start_frame": 19577,
+      "end_frame": 19808,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Sunset clauses preserve revision.",
+      "asset_ids": [
+        "footage-f15"
+      ]
+    },
+    {
+      "id": "q43-2",
+      "start_frame": 19808,
+      "end_frame": 20038,
+      "visual_class": "cinematic_footage",
+      "semantic_purpose": "Sunset clauses preserve revision.",
+      "asset_ids": [
+        "footage-f15"
+      ]
+    },
+    {
+      "id": "q44-1",
+      "start_frame": 20038,
+      "end_frame": 20263,
+      "visual_class": "official_document",
+      "semantic_purpose": "Failure can accumulate quietly.",
+      "asset_ids": [
+        "capture-c15"
+      ]
+    },
+    {
+      "id": "q44-2",
+      "start_frame": 20263,
+      "end_frame": 20278,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Failure can accumulate quietly.",
+      "asset_ids": []
+    },
+    {
+      "id": "q44-3",
+      "start_frame": 20278,
+      "end_frame": 20518,
+      "visual_class": "official_document",
+      "semantic_purpose": "Failure can accumulate quietly.",
+      "asset_ids": [
+        "capture-c15"
+      ]
+    },
+    {
+      "id": "q45-1",
+      "start_frame": 20518,
+      "end_frame": 20533,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Concentrated control is dangerous.",
+      "asset_ids": []
+    },
+    {
+      "id": "q45-2",
+      "start_frame": 20533,
+      "end_frame": 20758,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Concentrated control is dangerous.",
+      "asset_ids": [
+        "graphic-g15"
+      ]
+    },
+    {
+      "id": "q45-3",
+      "start_frame": 20758,
+      "end_frame": 20773,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "Concentrated control is dangerous.",
+      "asset_ids": []
+    },
+    {
+      "id": "q45-4",
+      "start_frame": 20773,
+      "end_frame": 20998,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "Concentrated control is dangerous.",
+      "asset_ids": [
+        "graphic-g15"
+      ]
+    },
+    {
+      "id": "q46-1",
+      "start_frame": 20998,
+      "end_frame": 21013,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "The choice is still being made.",
+      "asset_ids": []
+    },
+    {
+      "id": "q46-2",
+      "start_frame": 21013,
+      "end_frame": 21238,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "The choice is still being made.",
+      "asset_ids": [
+        "graphic-g16"
+      ]
+    },
+    {
+      "id": "q46-3",
+      "start_frame": 21238,
+      "end_frame": 21253,
+      "visual_class": "emphasis_beat",
+      "semantic_purpose": "The choice is still being made.",
+      "asset_ids": []
+    },
+    {
+      "id": "q46-4",
+      "start_frame": 21253,
+      "end_frame": 21478,
+      "visual_class": "document_overlay",
+      "semantic_purpose": "The choice is still being made.",
+      "asset_ids": [
+        "graphic-g16"
+      ]
+    },
+    {
+      "id": "end-1",
+      "start_frame": 21478,
+      "end_frame": 21598,
+      "visual_class": "orvyq_end_card",
+      "semantic_purpose": "It is still being decided by people, right now.",
+      "asset_ids": []
+    }
+  ]
+}

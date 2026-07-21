@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "status": "TAMAMLANDI",
+  "pass": true,
+  "migration_basis": "User-approved first-video materials imported once and frozen in ORVYQ-1",
+  "gate": "script_qa"
+}

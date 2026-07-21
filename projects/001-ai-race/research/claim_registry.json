@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "A rival may move first.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "g1",
+      "text": "Fear drives the race.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "Tests reveal pressure.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "g2",
+      "text": "A drill is not an incident.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "Markets reward capability.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "g3",
+      "text": "Governments seek advantage.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "Caution carries a cost.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "g4",
+      "text": "Competition resists restraint.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "Slowing down alone doesn't remove the risk. It just hands the frontier to whoever doesn't.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "g5",
+      "text": "Institutions lag behind.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "Disclosures need scrutiny.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "g6",
+      "text": "Automation aids defenders.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "c7",
+      "text": "Standards remain fragmented.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "g7",
+      "text": "Synthetic media strains facts.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "c8",
+      "text": "Power concentrates in compute.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "g8",
+      "text": "Cloud control creates leverage.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "c9",
+      "text": "Safety thresholds can help.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "g9",
+      "text": "Compliance can favor incumbents.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "c10",
+      "text": "Open weights enable scrutiny.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "g10",
+      "text": "Openness spreads capability.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "c11",
+      "text": "Centralization does not end abuse.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "g11",
+      "text": "Different systems fail differently.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "c12",
+      "text": "Evaluation must precede release.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "g12",
+      "text": "Reporting should be mandatory.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "c13",
+      "text": "Whistleblowers need protection.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "g13",
+      "text": "Compute governance acts upstream.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    },
+    {
+      "id": "c14",
+      "text": "Verification cannot be voluntary.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "g14",
+      "text": "Competition limits authority.",
+      "status": "verified",
+      "source_ids": [
+        "src-eu"
+      ]
+    },
+    {
+      "id": "c15",
+      "text": "Failure can accumulate quietly.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "g15",
+      "text": "Concentrated control is dangerous.",
+      "status": "verified",
+      "source_ids": [
+        "src-unesco"
+      ]
+    },
+    {
+      "id": "g16",
+      "text": "The choice is still being made.",
+      "status": "verified",
+      "source_ids": [
+        "src-nist"
+      ]
+    }
+  ]
+}

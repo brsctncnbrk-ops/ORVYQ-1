@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "status": "TAMAMLANDI",
+  "pass": true,
+  "migration_basis": "User-approved first-video materials imported once and frozen in ORVYQ-1",
+  "section_c_used_for_research": false,
+  "section_c_used_for_script": false,
+  "source_structure_similarity": 0.24,
+  "maximum_similarity": 0.35,
+  "note": "Section C retained only for final similarity review; research input contains A-B-D-E."
+}
