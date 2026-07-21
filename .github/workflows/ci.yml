@@ -6,101 +6,10 @@ on:
   pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  migrate-first-video:
-    if: github.event_name == 'push' && hashFiles('migration_request.json') != ''
-    runs-on: ubuntu-latest
-    timeout-minutes: 180
-    steps:
-      - name: Checkout ORVYQ-1 migration branch
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          lfs: false
-
-      - name: Install Git LFS and migration tools
-        run: |
-          set -euo pipefail
-          sudo apt-get update
-          sudo apt-get install -y git-lfs jq rsync
-          git lfs install --local
-
-      - name: Checkout immutable legacy sources
-        run: |
-          set -euo pipefail
-          git clone --filter=blob:none --no-checkout https://github.com/brsctncnbrk-ops/ORVYQ.git /tmp/legacy-orvyq
-          git -C /tmp/legacy-orvyq checkout ee9ee51d4944cc6708ee70e37fbcc657d3468fb6
-          git clone --filter=blob:none --no-checkout https://github.com/brsctncnbrk-ops/YouTube_pepline.git /tmp/legacy-youtube
-          git -C /tmp/legacy-youtube checkout 6ae8ccc7142eac61ae270b7a68f11e73c8d08e68
-          git -C /tmp/legacy-youtube lfs install --local
-
-      - name: Fetch only approved legacy LFS objects
-        shell: bash
-        run: |
-          set -euo pipefail
-          MAP=/tmp/legacy-orvyq/projects/001-ai-race/migration/external_assets.json
-          jq -r '.imports[].source_path' "$MAP" | while IFS= read -r source_path; do
-            git -C /tmp/legacy-youtube lfs pull --include="$source_path" --exclude=""
-          done
-
-      - name: Copy first-video inputs into this repository
-        shell: bash
-        run: |
-          set -euo pipefail
-          TARGET=projects/001-ai-race
-          mkdir -p "$TARGET/legacy-import/orvyq-candidate" "$TARGET/legacy-import/youtube-source" "$TARGET/assets"
-          rsync -a --exclude output --exclude build --exclude qa /tmp/legacy-orvyq/projects/001-ai-race/ "$TARGET/legacy-import/orvyq-candidate/"
-          MAP=/tmp/legacy-orvyq/projects/001-ai-race/migration/external_assets.json
-          jq -c '.imports[]' "$MAP" | while IFS= read -r item; do
-            source_path="$(jq -r '.source_path' <<<"$item")"
-            target_path="$(jq -r '.target_path' <<<"$item")"
-            mkdir -p "$TARGET/$(dirname "$target_path")"
-            cp "/tmp/legacy-youtube/$source_path" "$TARGET/$target_path"
-          done
-          SRC=/tmp/legacy-youtube/projects/001-the-ai-race-no-one-can-afford-to-win
-          if [ -d "$SRC" ]; then
-            find "$SRC" -type f \( -name '*.md' -o -name '*.txt' -o -name '*.json' \) \
-              ! -path '*/output/*' ! -path '*/build/*' ! -path '*/render_ready_project/node_modules/*' -print0 | \
-              while IFS= read -r -d '' file; do
-                rel="${file#$SRC/}"
-                mkdir -p "$TARGET/legacy-import/youtube-source/$(dirname "$rel")"
-                cp "$file" "$TARGET/legacy-import/youtube-source/$rel"
-              done
-          fi
-          cp "$MAP" "$TARGET/legacy-import/external_assets.json"
-          cat > "$TARGET/legacy-import/import_record.json" <<'JSON'
-          {
-            "status": "TAMAMLANDI",
-            "purpose": "One-time import for the first ORVYQ video only",
-            "legacy_orvyq_commit": "ee9ee51d4944cc6708ee70e37fbcc657d3468fb6",
-            "legacy_youtube_commit": "6ae8ccc7142eac61ae270b7a68f11e73c8d08e68",
-            "runtime_dependency": false
-          }
-          JSON
-
-      - name: Remove one-time migration machinery
-        shell: bash
-        run: |
-          set -euo pipefail
-          ORIGINAL_CI_COMMIT="$(git log --format=%H -- .github/workflows/ci.yml | sed -n '2p')"
-          test -n "$ORIGINAL_CI_COMMIT"
-          git show "$ORIGINAL_CI_COMMIT:.github/workflows/ci.yml" > .github/workflows/ci.yml
-          rm -f migration_request.json
-
-      - name: Commit imported assets to the migration branch
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .github/workflows/ci.yml migration_request.json projects/001-ai-race
-          git commit -m "Import first-video inputs from immutable legacy commits"
-          git push origin HEAD:${GITHUB_REF_NAME}
-
   validate:
-    if: hashFiles('migration_request.json') == ''
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
