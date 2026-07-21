@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: orvyq-first-film-bootstrap
+  cancel-in-progress: true
+
 jobs:
   bootstrap:
     if: github.actor != 'github-actions[bot]'
@@ -108,7 +112,10 @@ jobs:
         run: node scripts/bootstrap-first-film.mjs --phase=prepare --legacy-root="$GITHUB_WORKSPACE/legacy-orvyq/projects/001-ai-race"
 
       - name: Build deterministic final audio mix
-        run: npm run orvyq -- audio:mix --project-id 001-ai-race
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run orvyq -- audio:mix --project-id 001-ai-race 2>&1 | tee bootstrap-audio.log
 
       - name: Register mix and validate complete project
         run: |
@@ -130,12 +137,14 @@ jobs:
           git push origin HEAD:agent/orvyq-canonical-rebuild
 
       - name: Upload bootstrap audit package
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: orvyq-first-film-bootstrap-${{ github.run_id }}
           retention-days: 14
-          if-no-files-found: error
+          if-no-files-found: warn
           path: |
+            bootstrap-audio.log
             projects/001-ai-race/qa/candidate_preflight.json
             projects/001-ai-race/build/candidate_inputs.json
             projects/001-ai-race/audio/final_mix.metadata.json
