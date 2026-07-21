@@ -2,12 +2,13 @@
 import {access, readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {asOrvyqError, OrvyqError} from '../core/errors.mjs';
-import {readJson} from '../core/json.mjs';
+import {readJson, writeJsonAtomic} from '../core/json.mjs';
 import {repoRoot, safeProjectPath} from '../core/paths.mjs';
 import {initializeProject} from '../contracts/manifest.mjs';
 import {prepareCandidate, validateProject} from '../contracts/project.mjs';
 import {buildAudioMix} from '../audio/mix.mjs';
 import {renderFull, renderProof} from '../runtime/render.mjs';
+import {normalizeEvidenceClaimBindings} from '../direction/evidence-bindings.mjs';
 
 function parseArgs(argv) {
   const [command, ...rest] = argv;
@@ -53,6 +54,7 @@ async function systemCheck() {
     'src/contracts/audio-plan.mjs',
     'src/contracts/production-plan.mjs',
     'src/contracts/candidate.mjs',
+    'src/direction/evidence-bindings.mjs',
     'src/render/index.ts',
     'src/qa/rendered-media.mjs',
     'package.json',
@@ -76,6 +78,15 @@ async function run(command, options) {
       const projectId = requiredOption(options, 'project-id');
       const result = await validateProject(projectId, {auditFiles: options['skip-file-audit'] !== 'true'});
       return {ok: true, command, report: result.report};
+    }
+    case 'plan:normalize-evidence': {
+      const projectId = requiredOption(options, 'project-id');
+      const productionPlan = await readJson(safeProjectPath(projectId, 'direction/production_plan.json'));
+      const evidenceRegistry = await readJson(safeProjectPath(projectId, 'evidence/evidence_registry.json'));
+      const normalized = normalizeEvidenceClaimBindings(productionPlan, evidenceRegistry);
+      await writeJsonAtomic(safeProjectPath(projectId, 'direction/production_plan.json'), normalized.productionPlan);
+      await writeJsonAtomic(safeProjectPath(projectId, 'qa/evidence_claim_bindings.json'), normalized.report);
+      return {ok: true, command, report: normalized.report};
     }
     case 'audio:mix': {
       const projectId = requiredOption(options, 'project-id');
