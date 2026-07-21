@@ -3,7 +3,7 @@ import {AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useC
 import type {Asset, Evidence, GraphicItem, Shot} from './types';
 
 const palette = {
-  ground: '#05070C',
+  ground: '#101722',
   panel: '#101A27',
   ink: '#F5F0E7',
   muted: '#B9C0C9',
@@ -29,14 +29,6 @@ const Header: React.FC<{shot: Shot}> = ({shot}) => (
   </div>
 );
 
-const fadeFor = (shot: Shot, frame: number, duration: number) => {
-  const fade = Math.min(12, Math.max(1, Math.floor(duration / 5)));
-  let opacity = 1;
-  if (['short_dissolve', 'motivated_fade'].includes(shot.transition_in ?? 'cut')) opacity *= interpolate(frame, [0, fade], [0, 1], clamp);
-  if (['short_dissolve', 'motivated_fade'].includes(shot.transition_out ?? 'cut')) opacity *= interpolate(frame, [Math.max(0, duration - fade), duration], [1, 0], clamp);
-  return opacity;
-};
-
 function footageTransform(motion: Shot['motion'], progress: number) {
   switch (motion) {
     case 'push': return `scale(${interpolate(progress, [0, 1], [1.025, 1.085], clamp)})`;
@@ -54,19 +46,19 @@ export const FootageScene: React.FC<{projectId: string; shot: Shot; assets: Asse
   const {fps} = useVideoConfig();
   const duration = shot.end_frame - shot.start_frame;
   const progress = interpolate(frame, [0, Math.max(1, duration - 1)], [0, 1], clamp);
-  const opacity = fadeFor(shot, frame, duration);
   const asset = assets.find((item) => shot.asset_ids?.includes(item.asset_id));
   if (!asset) return <AbsoluteFill style={{backgroundColor: palette.ground}}><Header shot={shot}/><SourceBar shot={shot}/></AbsoluteFill>;
   return (
-    <AbsoluteFill style={{backgroundColor: palette.ground, overflow: 'hidden', opacity}}>
+    <AbsoluteFill style={{backgroundColor: palette.ground, overflow: 'hidden'}}>
       <OffthreadVideo
         src={projectPath(projectId, asset.relative_path)}
         muted
         startFrom={Math.round((shot.trim_in_seconds ?? 0) * fps)}
         endAt={shot.trim_out_seconds != null ? Math.round(shot.trim_out_seconds * fps) : undefined}
-        style={{width: '100%', height: '100%', objectFit: 'cover', transform: footageTransform(shot.motion ?? 'hold', progress), filter: 'contrast(1.055) saturate(.90) brightness(.94)'}}
+        style={{width: '100%', height: '100%', objectFit: 'cover', transform: footageTransform(shot.motion ?? 'hold', progress), filter: 'contrast(1.035) saturate(.92) brightness(1.14)'}}
       />
-      <AbsoluteFill style={{pointerEvents: 'none', background: 'linear-gradient(90deg,rgba(3,7,12,.36) 0%,rgba(3,7,12,.04) 58%,rgba(3,7,12,.18) 100%)'}}/>
+      <AbsoluteFill style={{pointerEvents: 'none', background: 'rgba(38,50,66,.18)', mixBlendMode: 'screen'}}/>
+      <AbsoluteFill style={{pointerEvents: 'none', background: 'linear-gradient(90deg,rgba(3,7,12,.18) 0%,rgba(3,7,12,.02) 58%,rgba(3,7,12,.08) 100%)'}}/>
       {(shot.title || shot.subtitle || shot.eyebrow) ? <Header shot={shot}/> : null}
       <SourceBar shot={shot}/>
     </AbsoluteFill>
@@ -92,7 +84,7 @@ export const PrimaryEvidenceScene: React.FC<{projectId: string; shot: Shot; evid
   const selected = (shot.evidence_ids ?? []).map((id) => evidence.find((item) => item.evidence_id === id)).filter(Boolean) as Evidence[];
   const split = shot.shot_type === 'split_documents' || shot.shot_type === 'image_sequence';
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(circle at 25% 10%,#18283A 0%,#08101A 56%,#05070C 100%)', color: palette.ink, opacity: fadeFor(shot, frame, duration)}}>
+    <AbsoluteFill style={{background: 'radial-gradient(circle at 25% 10%,#18283A 0%,#0D1724 56%,#101722 100%)', color: palette.ink}}>
       <Header shot={shot}/>
       <div style={{position: 'absolute', left: 70, right: 70, top: 190, bottom: shot.limitation ? 190 : 115, display: 'grid', gridTemplateColumns: split ? `repeat(${Math.min(2, Math.max(1, selected.length))},1fr)` : shot.callout ? '1.55fr .7fr' : '1fr', gap: 24, opacity: reveal, transform: `translateY(${(1 - reveal) * 18}px)`}}>
         {selected.slice(0, split ? 4 : 1).map((item) => <EvidenceFrame key={item.evidence_id} projectId={projectId} evidence={item} progress={progress} contain={shot.shot_type !== 'official_screen'}/>) }
@@ -120,7 +112,7 @@ export const GraphicScene: React.FC<{shot: Shot}> = ({shot}) => {
   const comparison = ['comparison_graphic', 'limitation_treatment'].includes(shot.shot_type);
   const cards: GraphicItem[] = items.length ? items : steps.map((step, index) => ({label: String(index + 1).padStart(2, '0'), value: step, detail: ''}));
   return (
-    <AbsoluteFill style={{background: 'linear-gradient(135deg,#101A27 0%,#0C1320 48%,#151C23 100%)', color: palette.ink, opacity: fadeFor(shot, frame, duration)}}>
+    <AbsoluteFill style={{background: 'linear-gradient(135deg,#101A27 0%,#0C1320 48%,#151C23 100%)', color: palette.ink}}>
       <Header shot={shot}/>
       <div style={{position: 'absolute', left: 85, right: 85, top: 235, bottom: 115, display: 'grid', gridTemplateColumns: comparison ? '1fr 1fr' : `repeat(${Math.max(1, Math.min(4, cards.length || 1))},1fr)`, gap: 18, alignItems: 'stretch', opacity: reveal, transform: `translateY(${(1 - reveal) * 18}px)`}}>
         {comparison ? [
@@ -140,8 +132,8 @@ export const EditorialPauseScene: React.FC<{shot: Shot}> = ({shot}) => {
   const duration = shot.end_frame - shot.start_frame;
   const reveal = spring({frame, fps, config: {damping: 20, stiffness: 105, mass: .9}, durationInFrames: Math.min(30, duration)});
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%,#23384D 0%,#0B121D 48%,#05070C 100%)', color: palette.ink, justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '7%', opacity: fadeFor(shot, frame, duration)}}>
-      <div style={{opacity: reveal, transform: `translateY(${(1 - reveal) * 24}px)`}}>
+    <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%,#36536E 0%,#182A40 48%,#101722 100%)', color: palette.ink, justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '7%'}}>
+      <div style={{opacity: Math.max(.28, reveal), transform: `translateY(${(1 - reveal) * 24}px)`}}>
         <div style={{color: palette.blue, letterSpacing: '.28em', fontFamily: 'Arial', fontSize: 20, fontWeight: 780}}>{shot.eyebrow ?? 'THE TURN'}</div>
         <div style={{fontFamily: 'Arial', fontSize: 82, lineHeight: 1.02, fontWeight: 820, letterSpacing: '-.04em', marginTop: 24}}>{shot.title}</div>
         {shot.subtitle ? <div style={{color: palette.muted, fontFamily: 'Arial', fontSize: 28, lineHeight: 1.35, marginTop: 24}}>{shot.subtitle}</div> : null}
@@ -151,7 +143,7 @@ export const EditorialPauseScene: React.FC<{shot: Shot}> = ({shot}) => {
 };
 
 export const BrandScene: React.FC<{shot: Shot}> = ({shot}) => (
-  <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 42%,#263C53 0%,#0B121D 44%,#05070C 100%)', color: palette.ink, justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '7%'}}>
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 42%,#36536E 0%,#182A40 44%,#101722 100%)', color: palette.ink, justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '7%'}}>
     <div style={{color: palette.blue, letterSpacing: '.3em', fontFamily: 'Arial', fontSize: 20, marginBottom: 28}}>{shot.eyebrow ?? 'ORVYQ'}</div>
     <div style={{fontFamily: 'Arial', fontSize: 88, lineHeight: 1, fontWeight: 790, letterSpacing: '-.04em'}}>{shot.title ?? 'BEYOND THE KNOWN'}</div>
     {shot.subtitle ? <div style={{color: palette.muted, fontFamily: 'Arial', fontSize: 29, lineHeight: 1.35, marginTop: 28, maxWidth: 1100}}>{shot.subtitle}</div> : null}
