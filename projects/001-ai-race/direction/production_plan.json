@@ -229,7 +229,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_REPLACEMENT_SCENARIO"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
       "end_frame": 824,
@@ -260,7 +260,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_GOVERNANCE_LAG"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
       "end_frame": 1010,
@@ -485,7 +485,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_FRAMEWORKS"
+        "CLM_SAFETY_THRESHOLDS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
       "end_frame": 2258,
@@ -548,7 +548,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_ALIGNMENT_RISK"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
       "end_frame": 2642,
@@ -579,7 +579,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_CONTROLLED_TEST"
+        "CLM_SAFETY_THRESHOLDS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
       "end_frame": 2834,
@@ -804,7 +804,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_HUMAN_AGENCY"
+        "CLM_ALIGNMENT_RISK"
       ],
       "editorial_purpose": "Show genuine source pixels supporting the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
       "end_frame": 4088,
@@ -867,7 +867,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_FRAMEWORKS"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
       "end_frame": 4466,
@@ -898,7 +898,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_THRESHOLDS"
+        "CLM_REPLACEMENT_SCENARIO"
       ],
       "editorial_purpose": "Show genuine source pixels supporting frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
       "end_frame": 4655,
@@ -1095,7 +1095,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_POWER"
+        "CLM_REPLACEMENT_SCENARIO"
       ],
       "editorial_purpose": "Show genuine source pixels supporting control over frontier systems can concentrate consequential decisions in a small number of institutions.",
       "end_frame": 5789,
@@ -1158,7 +1158,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_ARCHITECTURE"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
       "end_frame": 6166,
@@ -1189,7 +1189,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_HUMAN_AGENCY"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
       "end_frame": 6354,
@@ -1414,7 +1414,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_GOVERNANCE_LAG"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
       "end_frame": 7652,
@@ -1477,7 +1477,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_POWER"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting control over frontier systems can concentrate consequential decisions in a small number of institutions.",
       "end_frame": 8036,
@@ -1508,7 +1508,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_OPEN_CLOSED"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting open and closed development strategies create different security, accountability and concentration trade-offs.",
       "end_frame": 8228,
@@ -1705,7 +1705,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_ALIGNMENT_RISK"
+        "CLM_SAFETY_THRESHOLDS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
       "end_frame": 9376,
@@ -1796,7 +1796,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_GOVERNANCE_LAG"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
       "end_frame": 9874,
@@ -1827,7 +1827,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_MISUSE"
+        "CLM_SAFETY_THRESHOLDS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
       "end_frame": 10063,
@@ -2024,7 +2024,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_FRAMEWORKS"
+        "CLM_ALIGNMENT_RISK"
       ],
       "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
       "end_frame": 11192,
@@ -2087,7 +2087,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_ALIGNMENT_RISK"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
       "end_frame": 11568,
@@ -2118,7 +2118,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_CONTROLLED_TEST"
+        "CLM_REPLACEMENT_SCENARIO"
       ],
       "editorial_purpose": "Show genuine source pixels supporting anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
       "end_frame": 11756,
@@ -2315,7 +2315,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_ARCHITECTURE"
+        "CLM_REPLACEMENT_SCENARIO"
       ],
       "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
       "end_frame": 12884,
@@ -2406,7 +2406,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_FRAMEWORKS"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
       "end_frame": 13417,
@@ -2437,7 +2437,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_THRESHOLDS"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
       "end_frame": 13612,
@@ -2634,7 +2634,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_POWER"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting control over frontier systems can concentrate consequential decisions in a small number of institutions.",
       "end_frame": 14781,
@@ -2697,7 +2697,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_ARCHITECTURE"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
       "end_frame": 15169,
@@ -2728,7 +2728,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_HUMAN_AGENCY"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
       "end_frame": 15363,
@@ -2925,7 +2925,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_REPLACEMENT_SCENARIO"
+        "CLM_SAFETY_THRESHOLDS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
       "end_frame": 16527,
@@ -2988,7 +2988,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_MISUSE"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
       "end_frame": 16915,
@@ -3047,7 +3047,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_OPEN_CLOSED"
+        "CLM_SAFETY_THRESHOLDS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting open and closed development strategies create different security, accountability and concentration trade-offs.",
       "end_frame": 17250,
@@ -3307,7 +3307,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_REPLACEMENT_SCENARIO"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
       "end_frame": 18730,
@@ -3338,7 +3338,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_GOVERNANCE_LAG"
+        "CLM_REPLACEMENT_SCENARIO"
       ],
       "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
       "end_frame": 18915,
@@ -3535,7 +3535,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_RACE_INCENTIVE"
+        "CLM_REPLACEMENT_SCENARIO"
       ],
       "editorial_purpose": "Show genuine source pixels supporting competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
       "end_frame": 20019,
@@ -3598,7 +3598,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_THRESHOLDS"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
       "end_frame": 20387,
@@ -3854,7 +3854,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_SAFETY_ARCHITECTURE"
+        "CLM_CONTROLLED_TEST"
       ],
       "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
       "end_frame": 21868,
@@ -3917,7 +3917,7 @@
     {
       "callout": "This is a genuine primary-source capture linked to the current claim.",
       "claim_ids": [
-        "CLM_RACE_INCENTIVE"
+        "CLM_SAFETY_FRAMEWORKS"
       ],
       "editorial_purpose": "Show genuine source pixels supporting competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
       "end_frame": 22248,

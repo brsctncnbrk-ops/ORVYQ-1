@@ -1,0 +1,2327 @@
+{
+  "average_shot_seconds": 6.11236559139785,
+  "schema_version": "1.0",
+  "shot_count": 124,
+  "shots": [
+    {
+      "seconds": 3.5,
+      "shot_id": "SHOT_001",
+      "shot_type": "cinematic_hook"
+    },
+    {
+      "seconds": 3.5,
+      "shot_id": "SHOT_002",
+      "shot_type": "cinematic_hook"
+    },
+    {
+      "seconds": 4,
+      "shot_id": "SHOT_003",
+      "shot_type": "cinematic_hook"
+    },
+    {
+      "seconds": 4,
+      "shot_id": "SHOT_004",
+      "shot_type": "cinematic_hook"
+    },
+    {
+      "seconds": 6.233333333333333,
+      "shot_id": "SHOT_005",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.233333333333333,
+      "shot_id": "SHOT_006",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.2,
+      "shot_id": "SHOT_007",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.2,
+      "shot_id": "SHOT_008",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.2,
+      "shot_id": "SHOT_009",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.2,
+      "shot_id": "SHOT_010",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.2,
+      "shot_id": "SHOT_011",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 4,
+      "shot_id": "SHOT_012",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_013",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_014",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_015",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_016",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_017",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 4,
+      "shot_id": "SHOT_018",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_019",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_020",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_021",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_022",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_023",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_024",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_025",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_026",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_027",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_028",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_029",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_030",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_031",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_032",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_033",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_034",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_035",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_036",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_037",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 5,
+      "shot_id": "SHOT_038",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_039",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_040",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_041",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_042",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_043",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_044",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_045",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_046",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_047",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.4,
+      "shot_id": "SHOT_048",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.366666666666666,
+      "shot_id": "SHOT_049",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.366666666666666,
+      "shot_id": "SHOT_050",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.366666666666666,
+      "shot_id": "SHOT_051",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.366666666666666,
+      "shot_id": "SHOT_052",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 4,
+      "shot_id": "SHOT_053",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_054",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_055",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_056",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.3,
+      "shot_id": "SHOT_057",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_058",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_059",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_060",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_061",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_062",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_063",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_064",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_065",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_066",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_067",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_068",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_069",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_070",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_071",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.266666666666667,
+      "shot_id": "SHOT_072",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 5,
+      "shot_id": "SHOT_073",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_074",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_075",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_076",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_077",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_078",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_079",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.5,
+      "shot_id": "SHOT_080",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_081",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_082",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_083",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_084",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_085",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_086",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_087",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_088",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_089",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_090",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_091",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.466666666666667,
+      "shot_id": "SHOT_092",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 5,
+      "shot_id": "SHOT_093",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_094",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_095",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_096",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_097",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_098",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_099",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_100",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_101",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_102",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.166666666666667,
+      "shot_id": "SHOT_103",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_104",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_105",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_106",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_107",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_108",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_109",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_110",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.133333333333334,
+      "shot_id": "SHOT_111",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 5,
+      "shot_id": "SHOT_112",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 6.366666666666666,
+      "shot_id": "SHOT_113",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_114",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_115",
+      "shot_type": "source_derived_graphic"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_116",
+      "shot_type": "limitation_treatment"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_117",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_118",
+      "shot_type": "process_graphic"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_119",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_120",
+      "shot_type": "contextual_footage"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_121",
+      "shot_type": "primary_document"
+    },
+    {
+      "seconds": 6.333333333333333,
+      "shot_id": "SHOT_122",
+      "shot_type": "official_figure"
+    },
+    {
+      "seconds": 6,
+      "shot_id": "SHOT_123",
+      "shot_type": "editorial_pause"
+    },
+    {
+      "seconds": 4,
+      "shot_id": "SHOT_124",
+      "shot_type": "brand_close"
+    }
+  ],
+  "status": "TAMAMLANDI",
+  "windows": [
+    {
+      "duration_seconds": 30,
+      "shot_count": 7,
+      "shot_type_seconds": {
+        "cinematic_hook": 15,
+        "contextual_footage": 6.233333333333333,
+        "official_figure": 2.533333333333333,
+        "primary_document": 6.233333333333333
+      },
+      "start_seconds": 0
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 7,
+      "shot_type_seconds": {
+        "cinematic_hook": 10,
+        "contextual_footage": 7.566666666666666,
+        "official_figure": 6.2,
+        "primary_document": 6.233333333333333
+      },
+      "start_seconds": 5
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 7,
+      "shot_type_seconds": {
+        "cinematic_hook": 5,
+        "contextual_footage": 12.433333333333334,
+        "official_figure": 6.2,
+        "primary_document": 6.233333333333333,
+        "source_derived_graphic": 0.13333333333333333
+      },
+      "start_seconds": 10
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.433333333333334,
+        "official_figure": 6.2,
+        "primary_document": 6.233333333333333,
+        "source_derived_graphic": 5.133333333333334
+      },
+      "start_seconds": 15
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.433333333333334,
+        "limitation_treatment": 3.933333333333333,
+        "official_figure": 6.2,
+        "primary_document": 6.233333333333333,
+        "source_derived_graphic": 6.2
+      },
+      "start_seconds": 20
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.933333333333334,
+        "limitation_treatment": 6.2,
+        "official_figure": 6.2,
+        "primary_document": 2.466666666666667,
+        "source_derived_graphic": 6.2
+      },
+      "start_seconds": 25
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.4,
+        "editorial_pause": 1.5333333333333334,
+        "limitation_treatment": 6.2,
+        "official_figure": 3.6666666666666665,
+        "source_derived_graphic": 6.2
+      },
+      "start_seconds": 30
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 11.066666666666666,
+        "editorial_pause": 4,
+        "limitation_treatment": 6.2,
+        "process_graphic": 2.533333333333333,
+        "source_derived_graphic": 6.2
+      },
+      "start_seconds": 35
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.2,
+        "editorial_pause": 4,
+        "limitation_treatment": 6.2,
+        "primary_document": 1.1333333333333333,
+        "process_graphic": 6.4,
+        "source_derived_graphic": 6.066666666666666
+      },
+      "start_seconds": 40
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.2,
+        "editorial_pause": 4,
+        "limitation_treatment": 6.2,
+        "primary_document": 6.133333333333334,
+        "process_graphic": 6.4,
+        "source_derived_graphic": 1.0666666666666667
+      },
+      "start_seconds": 45
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.933333333333334,
+        "editorial_pause": 4,
+        "limitation_treatment": 2.2666666666666666,
+        "primary_document": 6.4,
+        "process_graphic": 6.4
+      },
+      "start_seconds": 50
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.866666666666667,
+        "editorial_pause": 4,
+        "primary_document": 9.733333333333334,
+        "process_graphic": 6.4
+      },
+      "start_seconds": 55
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.4,
+        "editorial_pause": 2.466666666666667,
+        "official_figure": 1.9333333333333333,
+        "primary_document": 12.8,
+        "process_graphic": 6.4
+      },
+      "start_seconds": 60
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.4,
+        "editorial_pause": 0.5333333333333333,
+        "official_figure": 6.4,
+        "primary_document": 12.8,
+        "process_graphic": 3.8666666666666667
+      },
+      "start_seconds": 65
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.933333333333334,
+        "editorial_pause": 4,
+        "official_figure": 6.4,
+        "primary_document": 11.666666666666668
+      },
+      "start_seconds": 70
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 7,
+      "shot_type_seconds": {
+        "contextual_footage": 12.7,
+        "editorial_pause": 4,
+        "official_figure": 6.4,
+        "primary_document": 6.666666666666667,
+        "source_derived_graphic": 0.23333333333333334
+      },
+      "start_seconds": 75
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.966666666666667,
+        "editorial_pause": 4,
+        "official_figure": 6.4,
+        "primary_document": 6.4,
+        "source_derived_graphic": 5.233333333333333
+      },
+      "start_seconds": 80
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.3,
+        "editorial_pause": 4,
+        "limitation_treatment": 3.933333333333333,
+        "official_figure": 6.4,
+        "primary_document": 3.066666666666667,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 85
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.933333333333334,
+        "editorial_pause": 4,
+        "limitation_treatment": 6.3,
+        "official_figure": 4.466666666666667,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 90
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "editorial_pause": 3.466666666666667,
+        "limitation_treatment": 6.3,
+        "process_graphic": 1.3333333333333333,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 95
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 11.066666666666666,
+        "limitation_treatment": 6.3,
+        "primary_document": 0.03333333333333333,
+        "process_graphic": 6.3,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 100
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.3,
+        "limitation_treatment": 6.3,
+        "primary_document": 5.033333333333333,
+        "process_graphic": 6.3,
+        "source_derived_graphic": 6.066666666666666
+      },
+      "start_seconds": 105
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.033333333333333,
+        "limitation_treatment": 6.3,
+        "primary_document": 6.3,
+        "process_graphic": 6.3,
+        "source_derived_graphic": 1.0666666666666667
+      },
+      "start_seconds": 110
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "limitation_treatment": 2.3666666666666667,
+        "official_figure": 2.433333333333333,
+        "primary_document": 6.3,
+        "process_graphic": 6.3
+      },
+      "start_seconds": 115
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.966666666666667,
+        "official_figure": 7.433333333333334,
+        "primary_document": 6.3,
+        "process_graphic": 6.3
+      },
+      "start_seconds": 120
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.3,
+        "official_figure": 12.433333333333334,
+        "primary_document": 6.3,
+        "process_graphic": 4.966666666666667
+      },
+      "start_seconds": 125
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.133333333333333,
+        "official_figure": 12.6,
+        "primary_document": 6.266666666666667
+      },
+      "start_seconds": 130
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "official_figure": 12.6,
+        "primary_document": 1.2666666666666666,
+        "source_derived_graphic": 3.533333333333333
+      },
+      "start_seconds": 135
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.866666666666667,
+        "limitation_treatment": 2.2333333333333334,
+        "official_figure": 12.6,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 140
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.233333333333333,
+        "limitation_treatment": 6.3,
+        "official_figure": 10.166666666666666,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 145
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.233333333333334,
+        "limitation_treatment": 6.3,
+        "official_figure": 5.166666666666667,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 150
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "limitation_treatment": 6.3,
+        "official_figure": 0.16666666666666666,
+        "process_graphic": 4.633333333333334,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 155
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.766666666666667,
+        "limitation_treatment": 6.3,
+        "primary_document": 3.3333333333333335,
+        "process_graphic": 6.3,
+        "source_derived_graphic": 6.3
+      },
+      "start_seconds": 160
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.333333333333332,
+        "limitation_treatment": 6.3,
+        "primary_document": 6.3,
+        "process_graphic": 6.3,
+        "source_derived_graphic": 2.7666666666666666
+      },
+      "start_seconds": 165
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "limitation_treatment": 4.066666666666666,
+        "primary_document": 7.033333333333333,
+        "process_graphic": 6.3
+      },
+      "start_seconds": 170
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.666666666666666,
+        "primary_document": 12.033333333333333,
+        "process_graphic": 6.3
+      },
+      "start_seconds": 175
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.666666666666666,
+        "official_figure": 4.466666666666667,
+        "primary_document": 12.566666666666666,
+        "process_graphic": 6.3
+      },
+      "start_seconds": 180
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.5,
+        "official_figure": 6.266666666666667,
+        "primary_document": 12.566666666666666,
+        "process_graphic": 1.6666666666666667
+      },
+      "start_seconds": 185
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.566666666666666,
+        "editorial_pause": 1.9333333333333333,
+        "official_figure": 6.266666666666667,
+        "primary_document": 9.233333333333334
+      },
+      "start_seconds": 190
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.533333333333333,
+        "editorial_pause": 5,
+        "official_figure": 6.266666666666667,
+        "primary_document": 6.266666666666667,
+        "source_derived_graphic": 1.9333333333333333
+      },
+      "start_seconds": 195
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.266666666666667,
+        "editorial_pause": 5,
+        "limitation_treatment": 0.5333333333333333,
+        "official_figure": 6.266666666666667,
+        "primary_document": 5.533333333333333,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 200
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.266666666666667,
+        "editorial_pause": 5,
+        "limitation_treatment": 5.533333333333333,
+        "official_figure": 6.266666666666667,
+        "primary_document": 0.5333333333333333,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 205
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.4,
+        "editorial_pause": 5,
+        "limitation_treatment": 6.4,
+        "official_figure": 1.8,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 210
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.466666666666667,
+        "editorial_pause": 5,
+        "limitation_treatment": 6.4,
+        "process_graphic": 2.7333333333333334,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 215
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.4,
+        "editorial_pause": 3.066666666666667,
+        "limitation_treatment": 6.4,
+        "official_figure": 1.3333333333333333,
+        "process_graphic": 6.4,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 220
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.4,
+        "limitation_treatment": 6.4,
+        "official_figure": 6.333333333333333,
+        "process_graphic": 6.4,
+        "source_derived_graphic": 4.466666666666667
+      },
+      "start_seconds": 225
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.333333333333334,
+        "limitation_treatment": 5.866666666666666,
+        "official_figure": 6.4,
+        "process_graphic": 6.4
+      },
+      "start_seconds": 230
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.8,
+        "limitation_treatment": 0.8666666666666667,
+        "official_figure": 6.4,
+        "primary_document": 3.533333333333333,
+        "process_graphic": 6.4
+      },
+      "start_seconds": 235
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.666666666666668,
+        "official_figure": 8.533333333333333,
+        "primary_document": 6.4,
+        "process_graphic": 6.4
+      },
+      "start_seconds": 240
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.133333333333334,
+        "official_figure": 12.8,
+        "primary_document": 6.4,
+        "process_graphic": 3.6666666666666665
+      },
+      "start_seconds": 245
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.133333333333333,
+        "official_figure": 11.466666666666667,
+        "primary_document": 6.4
+      },
+      "start_seconds": 250
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.8,
+        "official_figure": 6.466666666666667,
+        "primary_document": 6.4,
+        "source_derived_graphic": 4.333333333333333
+      },
+      "start_seconds": 255
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.866666666666667,
+        "limitation_treatment": 2.933333333333333,
+        "official_figure": 6.4,
+        "primary_document": 6.4,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 260
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.966666666666667,
+        "limitation_treatment": 6.366666666666666,
+        "official_figure": 6.4,
+        "primary_document": 2.8666666666666667,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 265
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.766666666666666,
+        "limitation_treatment": 6.366666666666666,
+        "official_figure": 4.266666666666667,
+        "process_graphic": 0.2,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 270
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.033333333333333,
+        "limitation_treatment": 6.366666666666666,
+        "process_graphic": 5.2,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 275
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.033333333333333,
+        "limitation_treatment": 6.366666666666666,
+        "primary_document": 3.8333333333333335,
+        "process_graphic": 6.366666666666666,
+        "source_derived_graphic": 6.4
+      },
+      "start_seconds": 280
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.366666666666666,
+        "editorial_pause": 2.466666666666667,
+        "limitation_treatment": 6.366666666666666,
+        "primary_document": 6.366666666666666,
+        "process_graphic": 6.366666666666666,
+        "source_derived_graphic": 2.066666666666667
+      },
+      "start_seconds": 285
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.833333333333332,
+        "editorial_pause": 4,
+        "limitation_treatment": 3.433333333333333,
+        "primary_document": 6.366666666666666,
+        "process_graphic": 6.366666666666666
+      },
+      "start_seconds": 290
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 11.1,
+        "editorial_pause": 4,
+        "primary_document": 8.533333333333333,
+        "process_graphic": 6.366666666666666
+      },
+      "start_seconds": 295
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.3,
+        "editorial_pause": 4,
+        "official_figure": 0.8666666666666667,
+        "primary_document": 12.666666666666666,
+        "process_graphic": 6.166666666666667
+      },
+      "start_seconds": 300
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.3,
+        "editorial_pause": 4,
+        "official_figure": 5.866666666666666,
+        "primary_document": 12.666666666666666,
+        "process_graphic": 1.1666666666666667
+      },
+      "start_seconds": 305
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.866666666666667,
+        "editorial_pause": 4,
+        "official_figure": 6.3,
+        "primary_document": 8.833333333333332
+      },
+      "start_seconds": 310
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "editorial_pause": 1.5333333333333334,
+        "official_figure": 6.3,
+        "primary_document": 6.3,
+        "source_derived_graphic": 3.2666666666666666
+      },
+      "start_seconds": 315
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.133333333333333,
+        "limitation_treatment": 2,
+        "official_figure": 6.3,
+        "primary_document": 6.3,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 320
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.033333333333333,
+        "limitation_treatment": 6.266666666666667,
+        "official_figure": 6.3,
+        "primary_document": 4.133333333333334,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 325
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.033333333333333,
+        "limitation_treatment": 6.266666666666667,
+        "official_figure": 5.433333333333334,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 330
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.566666666666666,
+        "limitation_treatment": 6.266666666666667,
+        "official_figure": 0.43333333333333335,
+        "process_graphic": 4.466666666666667,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 335
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8,
+        "limitation_treatment": 6.266666666666667,
+        "primary_document": 3.2,
+        "process_graphic": 6.266666666666667,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 340
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.2,
+        "limitation_treatment": 6.266666666666667,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667,
+        "source_derived_graphic": 3
+      },
+      "start_seconds": 345
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.533333333333333,
+        "limitation_treatment": 4.266666666666667,
+        "official_figure": 0.6666666666666666,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667
+      },
+      "start_seconds": 350
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.8,
+        "official_figure": 5.666666666666667,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667
+      },
+      "start_seconds": 355
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.8,
+        "official_figure": 10.666666666666668,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667
+      },
+      "start_seconds": 360
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.4,
+        "official_figure": 12.533333333333333,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 1.8
+      },
+      "start_seconds": 365
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.533333333333333,
+        "official_figure": 12.533333333333333,
+        "primary_document": 3.066666666666667,
+        "source_derived_graphic": 1.8666666666666667
+      },
+      "start_seconds": 370
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.6,
+        "limitation_treatment": 0.6,
+        "official_figure": 12.533333333333333,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 375
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.266666666666667,
+        "limitation_treatment": 5.6,
+        "official_figure": 11.866666666666667,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 380
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.6,
+        "limitation_treatment": 6.266666666666667,
+        "official_figure": 6.866666666666666,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 385
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.533333333333333,
+        "limitation_treatment": 6.266666666666667,
+        "official_figure": 1.8666666666666667,
+        "process_graphic": 3.066666666666667,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 390
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.4,
+        "limitation_treatment": 6.266666666666667,
+        "primary_document": 1.8,
+        "process_graphic": 6.266666666666667,
+        "source_derived_graphic": 6.266666666666667
+      },
+      "start_seconds": 395
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.8,
+        "limitation_treatment": 6.266666666666667,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667,
+        "source_derived_graphic": 4.4
+      },
+      "start_seconds": 400
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.8,
+        "limitation_treatment": 5.666666666666667,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667
+      },
+      "start_seconds": 405
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.533333333333333,
+        "editorial_pause": 4.266666666666667,
+        "limitation_treatment": 0.6666666666666666,
+        "primary_document": 6.266666666666667,
+        "process_graphic": 6.266666666666667
+      },
+      "start_seconds": 410
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.2,
+        "editorial_pause": 5,
+        "primary_document": 10.533333333333333,
+        "process_graphic": 6.266666666666667
+      },
+      "start_seconds": 415
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.266666666666667,
+        "editorial_pause": 5,
+        "official_figure": 2.7666666666666666,
+        "primary_document": 12.766666666666666,
+        "process_graphic": 3.2
+      },
+      "start_seconds": 420
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.533333333333333,
+        "editorial_pause": 5,
+        "official_figure": 6.5,
+        "primary_document": 10.966666666666667
+      },
+      "start_seconds": 425
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12,
+        "editorial_pause": 5,
+        "official_figure": 6.5,
+        "primary_document": 6.5
+      },
+      "start_seconds": 430
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.233333333333333,
+        "editorial_pause": 5,
+        "official_figure": 6.5,
+        "primary_document": 6.5,
+        "source_derived_graphic": 4.766666666666667
+      },
+      "start_seconds": 435
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.5,
+        "editorial_pause": 0.7333333333333333,
+        "limitation_treatment": 3.2666666666666666,
+        "official_figure": 6.5,
+        "primary_document": 6.5,
+        "source_derived_graphic": 6.5
+      },
+      "start_seconds": 440
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.266666666666666,
+        "limitation_treatment": 6.5,
+        "official_figure": 6.5,
+        "primary_document": 2.2333333333333334,
+        "source_derived_graphic": 6.5
+      },
+      "start_seconds": 445
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 13,
+        "limitation_treatment": 6.5,
+        "official_figure": 3.7333333333333334,
+        "process_graphic": 0.26666666666666666,
+        "source_derived_graphic": 6.5
+      },
+      "start_seconds": 450
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.733333333333334,
+        "limitation_treatment": 6.5,
+        "process_graphic": 5.266666666666667,
+        "source_derived_graphic": 6.5
+      },
+      "start_seconds": 455
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.733333333333333,
+        "limitation_treatment": 6.5,
+        "official_figure": 3.7666666666666666,
+        "process_graphic": 6.5,
+        "source_derived_graphic": 6.5
+      },
+      "start_seconds": 460
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.8,
+        "limitation_treatment": 6.5,
+        "official_figure": 6.466666666666667,
+        "process_graphic": 6.5,
+        "source_derived_graphic": 1.7333333333333334
+      },
+      "start_seconds": 465
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.966666666666667,
+        "limitation_treatment": 3.2333333333333334,
+        "official_figure": 6.466666666666667,
+        "primary_document": 0.8333333333333334,
+        "process_graphic": 6.5
+      },
+      "start_seconds": 470
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.2,
+        "official_figure": 6.466666666666667,
+        "primary_document": 5.833333333333333,
+        "process_graphic": 6.5
+      },
+      "start_seconds": 475
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.466666666666667,
+        "official_figure": 10.833333333333332,
+        "primary_document": 6.466666666666667,
+        "process_graphic": 6.233333333333333
+      },
+      "start_seconds": 480
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.366666666666667,
+        "official_figure": 12.933333333333334,
+        "primary_document": 6.466666666666667,
+        "process_graphic": 1.2333333333333334
+      },
+      "start_seconds": 485
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.933333333333334,
+        "official_figure": 9.166666666666668,
+        "primary_document": 6.466666666666667,
+        "source_derived_graphic": 1.4333333333333333
+      },
+      "start_seconds": 490
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 10.633333333333333,
+        "official_figure": 6.466666666666667,
+        "primary_document": 6.466666666666667,
+        "source_derived_graphic": 6.433333333333334
+      },
+      "start_seconds": 495
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.466666666666667,
+        "limitation_treatment": 4.966666666666667,
+        "official_figure": 6.466666666666667,
+        "primary_document": 5.633333333333334,
+        "source_derived_graphic": 6.466666666666667
+      },
+      "start_seconds": 500
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.966666666666667,
+        "limitation_treatment": 6.466666666666667,
+        "official_figure": 6.466666666666667,
+        "primary_document": 0.6333333333333333,
+        "source_derived_graphic": 6.466666666666667
+      },
+      "start_seconds": 505
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.933333333333334,
+        "limitation_treatment": 6.466666666666667,
+        "official_figure": 2.1,
+        "process_graphic": 2.033333333333333,
+        "source_derived_graphic": 6.466666666666667
+      },
+      "start_seconds": 510
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.033333333333333,
+        "limitation_treatment": 6.466666666666667,
+        "primary_document": 0.5666666666666667,
+        "process_graphic": 6.466666666666667,
+        "source_derived_graphic": 6.466666666666667
+      },
+      "start_seconds": 515
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.466666666666667,
+        "limitation_treatment": 6.466666666666667,
+        "primary_document": 5.566666666666666,
+        "process_graphic": 6.466666666666667,
+        "source_derived_graphic": 5.033333333333333
+      },
+      "start_seconds": 520
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.566666666666666,
+        "limitation_treatment": 6.466666666666667,
+        "primary_document": 6.466666666666667,
+        "process_graphic": 6.466666666666667,
+        "source_derived_graphic": 0.03333333333333333
+      },
+      "start_seconds": 525
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.933333333333334,
+        "limitation_treatment": 1.5,
+        "primary_document": 9.1,
+        "process_graphic": 6.466666666666667
+      },
+      "start_seconds": 530
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.433333333333334,
+        "editorial_pause": 1.1666666666666667,
+        "primary_document": 12.933333333333334,
+        "process_graphic": 6.466666666666667
+      },
+      "start_seconds": 535
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.466666666666667,
+        "editorial_pause": 5,
+        "official_figure": 1.1666666666666667,
+        "primary_document": 12.933333333333334,
+        "process_graphic": 4.433333333333334
+      },
+      "start_seconds": 540
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.466666666666667,
+        "editorial_pause": 5,
+        "official_figure": 6.166666666666667,
+        "primary_document": 12.366666666666667
+      },
+      "start_seconds": 545
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 11.466666666666667,
+        "editorial_pause": 5,
+        "official_figure": 6.166666666666667,
+        "primary_document": 7.366666666666667
+      },
+      "start_seconds": 550
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.533333333333333,
+        "editorial_pause": 5,
+        "official_figure": 6.166666666666667,
+        "primary_document": 6.466666666666667,
+        "source_derived_graphic": 3.8333333333333335
+      },
+      "start_seconds": 555
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.166666666666667,
+        "editorial_pause": 5,
+        "limitation_treatment": 2.6666666666666665,
+        "official_figure": 6.166666666666667,
+        "primary_document": 3.8333333333333335,
+        "source_derived_graphic": 6.166666666666667
+      },
+      "start_seconds": 560
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.666666666666667,
+        "editorial_pause": 3.8333333333333335,
+        "limitation_treatment": 6.166666666666667,
+        "official_figure": 6.166666666666667,
+        "source_derived_graphic": 6.166666666666667
+      },
+      "start_seconds": 565
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.333333333333334,
+        "limitation_treatment": 6.166666666666667,
+        "official_figure": 5,
+        "process_graphic": 0.3333333333333333,
+        "source_derived_graphic": 6.166666666666667
+      },
+      "start_seconds": 570
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.333333333333334,
+        "limitation_treatment": 6.166666666666667,
+        "process_graphic": 5.333333333333333,
+        "source_derived_graphic": 6.166666666666667
+      },
+      "start_seconds": 575
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.333333333333334,
+        "limitation_treatment": 6.166666666666667,
+        "primary_document": 4.166666666666667,
+        "process_graphic": 6.166666666666667,
+        "source_derived_graphic": 6.166666666666667
+      },
+      "start_seconds": 580
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.166666666666668,
+        "limitation_treatment": 6.166666666666667,
+        "primary_document": 6.166666666666667,
+        "process_graphic": 6.166666666666667,
+        "source_derived_graphic": 2.3333333333333335
+      },
+      "start_seconds": 585
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.333333333333334,
+        "limitation_treatment": 3.5,
+        "official_figure": 1.8333333333333333,
+        "primary_document": 6.166666666666667,
+        "process_graphic": 6.166666666666667
+      },
+      "start_seconds": 590
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.833333333333334,
+        "official_figure": 6.833333333333334,
+        "primary_document": 6.166666666666667,
+        "process_graphic": 6.166666666666667
+      },
+      "start_seconds": 595
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 6.166666666666667,
+        "official_figure": 11.833333333333334,
+        "primary_document": 6.166666666666667,
+        "process_graphic": 5.833333333333333
+      },
+      "start_seconds": 600
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.666666666666668,
+        "official_figure": 12.333333333333334,
+        "primary_document": 6.166666666666667,
+        "process_graphic": 0.8333333333333334
+      },
+      "start_seconds": 605
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.3,
+        "official_figure": 12.333333333333334,
+        "primary_document": 2,
+        "source_derived_graphic": 3.3666666666666667
+      },
+      "start_seconds": 610
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.3,
+        "limitation_treatment": 2.2333333333333334,
+        "official_figure": 12.333333333333334,
+        "source_derived_graphic": 6.133333333333334
+      },
+      "start_seconds": 615
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.233333333333334,
+        "limitation_treatment": 6.133333333333334,
+        "official_figure": 10.5,
+        "source_derived_graphic": 6.133333333333334
+      },
+      "start_seconds": 620
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.233333333333334,
+        "limitation_treatment": 6.133333333333334,
+        "official_figure": 5.5,
+        "source_derived_graphic": 6.133333333333334
+      },
+      "start_seconds": 625
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.266666666666667,
+        "limitation_treatment": 6.133333333333334,
+        "official_figure": 0.5,
+        "process_graphic": 4.966666666666667,
+        "source_derived_graphic": 6.133333333333334
+      },
+      "start_seconds": 630
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.7666666666666675,
+        "limitation_treatment": 6.133333333333334,
+        "primary_document": 3.8333333333333335,
+        "process_graphic": 6.133333333333334,
+        "source_derived_graphic": 6.133333333333334
+      },
+      "start_seconds": 635
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.833333333333334,
+        "limitation_treatment": 6.133333333333334,
+        "primary_document": 6.133333333333334,
+        "process_graphic": 6.133333333333334,
+        "source_derived_graphic": 2.7666666666666666
+      },
+      "start_seconds": 640
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.266666666666667,
+        "limitation_treatment": 3.9,
+        "primary_document": 7.7,
+        "process_graphic": 6.133333333333334
+      },
+      "start_seconds": 645
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 11.166666666666668,
+        "editorial_pause": 0.43333333333333335,
+        "primary_document": 12.266666666666667,
+        "process_graphic": 6.133333333333334
+      },
+      "start_seconds": 650
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 7,
+      "shot_type_seconds": {
+        "contextual_footage": 6.166666666666667,
+        "editorial_pause": 5,
+        "official_figure": 0.43333333333333335,
+        "primary_document": 12.266666666666667,
+        "process_graphic": 6.133333333333334
+      },
+      "start_seconds": 655
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.133333333333334,
+        "editorial_pause": 5,
+        "official_figure": 5.433333333333334,
+        "primary_document": 12.266666666666667,
+        "process_graphic": 1.1666666666666667
+      },
+      "start_seconds": 660
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 10.2,
+        "editorial_pause": 5,
+        "official_figure": 6.366666666666666,
+        "primary_document": 8.433333333333334
+      },
+      "start_seconds": 665
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 9.766666666666666,
+        "editorial_pause": 5,
+        "official_figure": 6.366666666666666,
+        "primary_document": 6.133333333333334,
+        "source_derived_graphic": 2.7333333333333334
+      },
+      "start_seconds": 670
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.333333333333333,
+        "editorial_pause": 5,
+        "limitation_treatment": 1.4,
+        "official_figure": 6.366666666666666,
+        "primary_document": 4.566666666666666,
+        "source_derived_graphic": 6.333333333333333
+      },
+      "start_seconds": 675
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.3999999999999995,
+        "editorial_pause": 4.566666666666666,
+        "limitation_treatment": 6.333333333333333,
+        "official_figure": 6.366666666666666,
+        "source_derived_graphic": 6.333333333333333
+      },
+      "start_seconds": 680
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 11.399999999999999,
+        "limitation_treatment": 6.333333333333333,
+        "official_figure": 5.933333333333334,
+        "source_derived_graphic": 6.333333333333333
+      },
+      "start_seconds": 685
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 12.666666666666666,
+        "limitation_treatment": 6.333333333333333,
+        "official_figure": 0.9333333333333333,
+        "process_graphic": 3.7333333333333334,
+        "source_derived_graphic": 6.333333333333333
+      },
+      "start_seconds": 690
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 8.6,
+        "limitation_treatment": 6.333333333333333,
+        "official_figure": 2.4,
+        "process_graphic": 6.333333333333333,
+        "source_derived_graphic": 6.333333333333333
+      },
+      "start_seconds": 695
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.3999999999999995,
+        "limitation_treatment": 6.333333333333333,
+        "official_figure": 6.333333333333333,
+        "process_graphic": 6.333333333333333,
+        "source_derived_graphic": 3.6
+      },
+      "start_seconds": 700
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.399999999999999,
+        "limitation_treatment": 4.933333333333334,
+        "official_figure": 6.333333333333333,
+        "process_graphic": 6.333333333333333
+      },
+      "start_seconds": 705
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 5,
+      "shot_type_seconds": {
+        "contextual_footage": 12.6,
+        "official_figure": 6.333333333333333,
+        "primary_document": 4.733333333333333,
+        "process_graphic": 6.333333333333333
+      },
+      "start_seconds": 710
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 7.6,
+        "official_figure": 9.733333333333333,
+        "primary_document": 6.333333333333333,
+        "process_graphic": 6.333333333333333
+      },
+      "start_seconds": 715
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "contextual_footage": 6.333333333333333,
+        "editorial_pause": 2.066666666666667,
+        "official_figure": 12.666666666666666,
+        "primary_document": 6.333333333333333,
+        "process_graphic": 2.6
+      },
+      "start_seconds": 720
+    },
+    {
+      "duration_seconds": 30,
+      "shot_count": 6,
+      "shot_type_seconds": {
+        "brand_close": 1.0666666666666667,
+        "contextual_footage": 6.333333333333333,
+        "editorial_pause": 6,
+        "official_figure": 10.266666666666666,
+        "primary_document": 6.333333333333333
+      },
+      "start_seconds": 725
+    }
+  ]
+}

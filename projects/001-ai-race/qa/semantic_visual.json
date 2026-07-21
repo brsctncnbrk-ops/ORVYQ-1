@@ -1,0 +1,750 @@
+{
+  "schema_version": "1.0",
+  "shots": [
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_001",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_002",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_003",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_004",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_005",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_006",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_007",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_008",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_009",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_010",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_011",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_012",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_013",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_014",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_015",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_016",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_017",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_018",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_019",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_020",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_021",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_022",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_023",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_024",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_025",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_026",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_027",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_028",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_029",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_030",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_031",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_032",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_033",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_034",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_035",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_036",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_037",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_038",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_039",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_040",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_041",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_042",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_043",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_044",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_045",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_046",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_047",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_048",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_049",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_050",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_051",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_052",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_053",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_054",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_055",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_056",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_057",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_058",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_059",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_060",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_061",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_062",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_063",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_064",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_065",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_066",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_067",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_068",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_069",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_070",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_071",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_072",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_073",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_074",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_075",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_076",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_077",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_078",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_079",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_080",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_081",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_082",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_083",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_084",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_085",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_086",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_087",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_088",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_089",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_090",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_091",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_092",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_093",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_094",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_095",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_096",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_097",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_098",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_099",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_100",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_101",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_102",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_103",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_104",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_105",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_106",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_107",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_108",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_109",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_110",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_111",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_112",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_113",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_114",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_115",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_116",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_117",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_118",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_119",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_120",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_121",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 1,
+      "shot_id": "SHOT_122",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_123",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "claim_count": 1,
+      "evidence_count": 0,
+      "shot_id": "SHOT_124",
+      "status": "TAMAMLANDI"
+    }
+  ],
+  "status": "TAMAMLANDI"
+}

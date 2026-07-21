@@ -1,0 +1,502 @@
+{
+  "schema_version": "1.0",
+  "shots": [
+    {
+      "shot_id": "SHOT_001",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_002",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_003",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_004",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_005",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_006",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_007",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_008",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_009",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_010",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_011",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_012",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_013",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_014",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_015",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_016",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_017",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_018",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_019",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_020",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_021",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_022",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_023",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_024",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_025",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_026",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_027",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_028",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_029",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_030",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_031",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_032",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_033",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_034",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_035",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_036",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_037",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_038",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_039",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_040",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_041",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_042",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_043",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_044",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_045",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_046",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_047",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_048",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_049",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_050",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_051",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_052",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_053",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_054",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_055",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_056",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_057",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_058",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_059",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_060",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_061",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_062",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_063",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_064",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_065",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_066",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_067",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_068",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_069",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_070",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_071",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_072",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_073",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_074",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_075",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_076",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_077",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_078",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_079",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_080",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_081",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_082",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_083",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_084",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_085",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_086",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_087",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_088",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_089",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_090",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_091",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_092",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_093",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_094",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_095",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_096",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_097",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_098",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_099",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_100",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_101",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_102",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_103",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_104",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_105",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_106",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_107",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_108",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_109",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_110",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_111",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_112",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_113",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_114",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_115",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_116",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_117",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_118",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_119",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_120",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_121",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_122",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_123",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "shot_id": "SHOT_124",
+      "status": "TAMAMLANDI"
+    }
+  ],
+  "status": "TAMAMLANDI"
+}
