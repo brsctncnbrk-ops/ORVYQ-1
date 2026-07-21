@@ -12,7 +12,7 @@ import {validateNarrationTimeline} from './narration-timeline.mjs';
 import {validateAudioPlan} from './audio-plan.mjs';
 import {validateProductionPlan} from './production-plan.mjs';
 import {CANDIDATE_DIGEST_KEYS, validateCandidate} from './candidate.mjs';
-import {mobileLegibilityQa, musicCueQa, pacingQa, semanticVisualQa} from '../qa/static.mjs';
+import {editorialPauseQa, mobileLegibilityQa, musicCueQa, pacingQa, semanticVisualQa} from '../qa/static.mjs';
 
 async function requiredJson(projectId, relative, code) {
   try { return await readJson(safeProjectPath(projectId, relative)); }
@@ -21,7 +21,6 @@ async function requiredJson(projectId, relative, code) {
     throw error;
   }
 }
-
 async function requiredFile(projectId, relative, code) {
   const file = safeProjectPath(projectId, relative);
   try { await access(file, constants.R_OK); return file; }
@@ -36,13 +35,7 @@ export async function loadCanonicalContracts(projectId) {
   const assetRegistry = validateAssetRegistry(await requiredJson(projectId, 'assets/asset_registry.json', 'ASSET_REGISTRY_MISSING'));
   const narrationTimeline = validateNarrationTimeline(await requiredJson(projectId, 'direction/narration_timeline.json', 'NARRATION_TIMELINE_MISSING'));
   const audioPlan = validateAudioPlan(await requiredJson(projectId, 'audio/audio_plan.json', 'AUDIO_PLAN_MISSING'), {durationSeconds: narrationTimeline.transformed_duration_seconds});
-  const productionPlan = validateProductionPlan(await requiredJson(projectId, 'direction/production_plan.json', 'PRODUCTION_PLAN_MISSING'), {
-    claimRegistry,
-    evidenceRegistry,
-    assetRegistry,
-    audioPlan,
-    minimumDurationSeconds: manifest.minimum_duration_seconds
-  });
+  const productionPlan = validateProductionPlan(await requiredJson(projectId, 'direction/production_plan.json', 'PRODUCTION_PLAN_MISSING'), {claimRegistry,evidenceRegistry,assetRegistry,audioPlan,minimumDurationSeconds: manifest.minimum_duration_seconds});
   invariant(productionPlan.project_id === projectId && sourceCatalog.project_id === projectId && claimRegistry.project_id === projectId && evidenceRegistry.project_id === projectId && assetRegistry.project_id === projectId && narrationTimeline.project_id === projectId && audioPlan.project_id === projectId, 'PROJECT_ID_MISMATCH', 'All canonical contracts must use the same project_id');
   invariant(Math.abs(productionPlan.full_duration_seconds - narrationTimeline.transformed_duration_seconds) <= 0.05, 'PLAN_TIMELINE_DURATION_MISMATCH', 'Production plan and narration timeline duration disagree');
   invariant(productionPlan.proof_boundary_frame === narrationTimeline.proof_boundary.frame, 'PROOF_BOUNDARY_MISMATCH', 'Production plan and narration timeline proof boundary disagree');
@@ -62,7 +55,8 @@ function runCandidateStaticQa(contracts) {
     semantic: semanticVisualQa(contracts),
     pacing: pacingQa(contracts.productionPlan),
     mobile: mobileLegibilityQa(contracts.productionPlan),
-    music: musicCueQa(contracts.audioPlan, contracts.narrationTimeline)
+    music: musicCueQa(contracts.audioPlan, contracts.narrationTimeline),
+    pauses: editorialPauseQa(contracts.narrationTimeline, contracts.productionPlan)
   };
 }
 
@@ -80,11 +74,9 @@ export async function validateProject(projectId, {auditFiles = true, writeReport
   const renderInput = await buildRenderInput(projectId, contracts);
   const report = {
     schema_version: '1.0', status: 'TAMAMLANDI', project_id: projectId, validated_at: new Date().toISOString(),
-    digests: {
-      source_catalog_sha256: sha256Json(contracts.sourceCatalog), claim_registry_sha256: sha256Json(contracts.claimRegistry), evidence_registry_sha256: sha256Json(contracts.evidenceRegistry), asset_registry_sha256: sha256Json(contracts.assetRegistry), narration_timeline_sha256: sha256Json(contracts.narrationTimeline), audio_plan_sha256: sha256Json(contracts.audioPlan), audio_mix_sha256: mixSha, production_plan_sha256: sha256Json(contracts.productionPlan), render_input_sha256: sha256Json(renderInput)
-    },
+    digests: {source_catalog_sha256: sha256Json(contracts.sourceCatalog), claim_registry_sha256: sha256Json(contracts.claimRegistry), evidence_registry_sha256: sha256Json(contracts.evidenceRegistry), asset_registry_sha256: sha256Json(contracts.assetRegistry), narration_timeline_sha256: sha256Json(contracts.narrationTimeline), audio_plan_sha256: sha256Json(contracts.audioPlan), audio_mix_sha256: mixSha, production_plan_sha256: sha256Json(contracts.productionPlan), render_input_sha256: sha256Json(renderInput)},
     evidence_audit: evidenceAudit, asset_audit: assetAudit,
-    static_qa: {semantic: staticQa.semantic.status, pacing: staticQa.pacing.status, mobile: staticQa.mobile.status, music: staticQa.music.status}
+    static_qa: {semantic: staticQa.semantic.status, pacing: staticQa.pacing.status, mobile: staticQa.mobile.status, music: staticQa.music.status, pauses: staticQa.pauses.status}
   };
   if (writeReports) {
     await Promise.all([
@@ -92,7 +84,8 @@ export async function validateProject(projectId, {auditFiles = true, writeReport
       writeJsonAtomic(safeProjectPath(projectId, 'qa/semantic_visual.json'), staticQa.semantic),
       writeJsonAtomic(safeProjectPath(projectId, 'qa/pacing.json'), staticQa.pacing),
       writeJsonAtomic(safeProjectPath(projectId, 'qa/mobile_legibility.json'), staticQa.mobile),
-      writeJsonAtomic(safeProjectPath(projectId, 'qa/music_cues.json'), staticQa.music)
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/music_cues.json'), staticQa.music),
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/editorial_pauses.json'), staticQa.pauses)
     ]);
   }
   return {contracts, renderInput, report, staticQa};
@@ -100,19 +93,9 @@ export async function validateProject(projectId, {auditFiles = true, writeReport
 
 function proofPrefix(renderInput) {
   const boundary = renderInput.plan.proof_boundary_frame;
-  return {
-    shots: renderInput.plan.shots.filter((shot) => shot.start_frame < boundary).map((shot) => ({...shot, end_frame: Math.min(shot.end_frame, boundary)})),
-    captions: renderInput.captions.filter((caption) => caption.start_frame < boundary).map((caption) => ({...caption, end_frame: Math.min(caption.end_frame, boundary)})),
-    evidence_ids: [...new Set(renderInput.plan.shots.filter((shot) => shot.start_frame < boundary).flatMap((shot) => shot.evidence_ids ?? []))].sort(),
-    asset_ids: [...new Set(renderInput.plan.shots.filter((shot) => shot.start_frame < boundary).flatMap((shot) => shot.asset_ids ?? []))].sort(),
-    proof_boundary_frame: boundary
-  };
+  return {shots: renderInput.plan.shots.filter((shot) => shot.start_frame < boundary).map((shot) => ({...shot, end_frame: Math.min(shot.end_frame, boundary)})), captions: renderInput.captions.filter((caption) => caption.start_frame < boundary).map((caption) => ({...caption, end_frame: Math.min(caption.end_frame, boundary)})), evidence_ids: [...new Set(renderInput.plan.shots.filter((shot) => shot.start_frame < boundary).flatMap((shot) => shot.evidence_ids ?? []))].sort(), asset_ids: [...new Set(renderInput.plan.shots.filter((shot) => shot.start_frame < boundary).flatMap((shot) => shot.asset_ids ?? []))].sort(), proof_boundary_frame: boundary};
 }
-
-function currentDigests(renderInput, report) {
-  return {...report.digests, proof_prefix_sha256: sha256Json(proofPrefix(renderInput))};
-}
-
+function currentDigests(renderInput, report) { return {...report.digests, proof_prefix_sha256: sha256Json(proofPrefix(renderInput))}; }
 export async function prepareCandidate(projectId) {
   const {renderInput, report} = await validateProject(projectId);
   const digests = currentDigests(renderInput, report);
@@ -121,7 +104,6 @@ export async function prepareCandidate(projectId) {
   await writeJsonAtomic(safeProjectPath(projectId, 'build/candidate_inputs.json'), prepared);
   return prepared;
 }
-
 export async function assertFrozenCandidate(projectId, candidateSha) {
   invariant(/^[0-9a-f]{40}$/.test(candidateSha), 'CANDIDATE_SHA_INVALID', 'candidate SHA must be a 40-character lowercase SHA');
   const prepared = await requiredJson(projectId, 'build/candidate_inputs.json', 'CANDIDATE_INPUTS_MISSING');
