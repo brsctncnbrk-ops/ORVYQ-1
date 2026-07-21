@@ -19,74 +19,53 @@ jobs:
         with:
           fetch-depth: 0
           lfs: false
-
       - name: Install media tools
         run: |
           set -euo pipefail
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-
       - name: Use Node.js 24
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
-
       - name: Install locked runtime and matching Remotion CLI
         run: |
           set -euo pipefail
           npm ci --ignore-scripts --no-audit --no-fund
           npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund @remotion/cli@4.0.489
           npx remotion browser ensure
-
       - name: Verify canonical system baseline
         run: npm run check
-
       - name: Type-check evidence-led renderer
         shell: bash
         run: |
           set -o pipefail
           mkdir -p artifacts
           npm run typecheck:render 2>&1 | tee artifacts/typecheck.log
-
       - name: Run contract and negative tests
         shell: bash
         run: |
           set -o pipefail
           npm test 2>&1 | tee artifacts/tests.log
-
       - name: Reject patch-era production mechanisms
         shell: bash
         run: |
           set -euo pipefail
-          forbidden=$(find . -type f \( \
-            -name 'proof_repair_request.json' -o \
-            -name 'repair-first-proof.mjs' -o \
-            -name '*debug-trigger*' -o \
-            -name '*one-time-proof*' \
-          \) -not -path './.git/*' -print)
-          if [[ -n "$forbidden" ]]; then
-            printf 'Forbidden patch-era files:\n%s\n' "$forbidden" >&2
-            exit 1
-          fi
-
+          forbidden=$(find . -type f \( -name 'proof_repair_request.json' -o -name 'repair-first-proof.mjs' -o -name '*debug-trigger*' -o -name '*one-time-proof*' \) -not -path './.git/*' -print)
+          if [[ -n "$forbidden" ]]; then printf 'Forbidden patch-era files:\n%s\n' "$forbidden" >&2; exit 1; fi
       - name: Reject runtime legacy repository links
         shell: bash
         run: |
           set -euo pipefail
           runtime_paths=(src package.json)
           [[ -d projects ]] && runtime_paths+=(projects)
-          if grep -RInE 'YouTube_pepline|youtube_pipeline|raw\.githubusercontent\.com/.*/(YouTube_pepline|ORVYQ)' "${runtime_paths[@]}"; then
-            echo 'Runtime legacy repository dependency detected' >&2
-            exit 1
-          fi
-
+          if grep -RInE 'YouTube_pepline|youtube_pipeline|raw\.githubusercontent\.com/.*/(YouTube_pepline|ORVYQ)' "${runtime_paths[@]}"; then echo 'Runtime legacy repository dependency detected' >&2; exit 1; fi
       - name: Render real audio-video smoke fixture
         shell: bash
         run: |
           set -o pipefail
           npm run smoke 2>&1 | tee artifacts/smoke.log
-
       - name: Verify smoke evidence
         run: |
           set -euo pipefail
@@ -96,7 +75,6 @@ jobs:
           jq -e '.status == "TAMAMLANDI" and .minimum_yavg >= 18 and (.transient_brightness_drops | length) == 0 and (.black_segments | length) == 0' artifacts/smoke-qa.json
           ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of csv=p=0 artifacts/smoke.mp4
           ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 artifacts/smoke.mp4
-
       - name: Upload CI media evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -138,14 +116,12 @@ jobs:
           PROJECT_ID="$(printf '%s' "$COMMAND" | sed -E 's/^<!-- orvyq-prepare project=([^ ]+) -->$/\1/')"
           [[ "$PROJECT_ID" =~ ^[a-z0-9][a-z0-9-]{2,63}$ ]]
           echo "project_id=$PROJECT_ID" >> "$GITHUB_OUTPUT"
-
       - name: Checkout exact PR branch
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
           lfs: false
-
       - name: Install project preparation tools
         run: |
           set -euo pipefail
@@ -154,17 +130,14 @@ jobs:
           git lfs install --local
           git lfs pull
           git lfs fsck
-
       - name: Use Node.js 24
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
-
       - name: Install locked runtime
         run: npm ci --ignore-scripts --no-audit --no-fund
-
-      - name: Normalize evidence bindings and prepare candidate
+      - name: Normalize direction and prepare candidate
         shell: bash
         env:
           PROJECT_ID: ${{ steps.resolve.outputs.project_id }}
@@ -174,12 +147,15 @@ jobs:
           {
             set -euo pipefail
             npm run orvyq -- plan:normalize-evidence --project-id "$PROJECT_ID"
+            npm run orvyq -- plan:select-footage --project-id "$PROJECT_ID"
+            npm run orvyq -- timeline:normalize-pauses --project-id "$PROJECT_ID"
             npm run orvyq -- candidate:prepare --project-id "$PROJECT_ID"
             npm run orvyq -- project:validate --project-id "$PROJECT_ID"
             jq -e '.status == "TAMAMLANDI" and .changed_shot_count >= 0' "projects/$PROJECT_ID/qa/evidence_claim_bindings.json"
-            jq -e '.status == "TAMAMLANDI" and .static_qa.semantic == "TAMAMLANDI" and .static_qa.pacing == "TAMAMLANDI" and .static_qa.mobile == "TAMAMLANDI" and .static_qa.music == "TAMAMLANDI"' "projects/$PROJECT_ID/qa/candidate_preflight.json"
+            jq -e '.status == "TAMAMLANDI" and (.selections | length) > 0' "projects/$PROJECT_ID/qa/semantic_selection.json"
+            jq -e '.status == "TAMAMLANDI" and (.pauses | length) >= 2' "projects/$PROJECT_ID/qa/editorial_pause_normalization.json"
+            jq -e '.status == "TAMAMLANDI" and .static_qa.semantic == "TAMAMLANDI" and .static_qa.pacing == "TAMAMLANDI" and .static_qa.mobile == "TAMAMLANDI" and .static_qa.music == "TAMAMLANDI" and .static_qa.pauses == "TAMAMLANDI"' "projects/$PROJECT_ID/qa/candidate_preflight.json"
           } 2>&1 | tee artifacts/prepare-project.log
-
       - name: Upload project preparation diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -190,13 +166,16 @@ jobs:
           path: |
             artifacts/prepare-project.log
             projects/${{ steps.resolve.outputs.project_id }}/qa/evidence_claim_bindings.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/semantic_selection.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/editorial_pause_normalization.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/editorial_pauses.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/candidate_preflight.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/semantic_visual.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/pacing.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/mobile_legibility.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/music_cues.json
             projects/${{ steps.resolve.outputs.project_id }}/direction/production_plan.json
-
+            projects/${{ steps.resolve.outputs.project_id }}/direction/narration_timeline.json
       - name: Commit canonical prepared project
         shell: bash
         env:
@@ -208,18 +187,19 @@ jobs:
           git restore --worktree --staged tests/fixtures/pixel.png || true
           git add \
             "projects/$PROJECT_ID/direction/production_plan.json" \
+            "projects/$PROJECT_ID/direction/narration_timeline.json" \
             "projects/$PROJECT_ID/build/render_input.json" \
             "projects/$PROJECT_ID/build/candidate_inputs.json" \
             "projects/$PROJECT_ID/qa/candidate_preflight.json" \
             "projects/$PROJECT_ID/qa/evidence_claim_bindings.json" \
+            "projects/$PROJECT_ID/qa/semantic_selection.json" \
+            "projects/$PROJECT_ID/qa/editorial_pause_normalization.json" \
+            "projects/$PROJECT_ID/qa/editorial_pauses.json" \
             "projects/$PROJECT_ID/qa/semantic_visual.json" \
             "projects/$PROJECT_ID/qa/pacing.json" \
             "projects/$PROJECT_ID/qa/mobile_legibility.json" \
             "projects/$PROJECT_ID/qa/music_cues.json"
-          if git diff --cached --quiet; then
-            echo 'Canonical project already prepared; no commit required.'
-            exit 0
-          fi
+          if git diff --cached --quiet; then echo 'Canonical project already prepared; no commit required.'; exit 0; fi
           git commit -m "Prepare canonical candidate for $PROJECT_ID"
           git lfs push --all origin HEAD
           git push origin "HEAD:$PR_HEAD_REF"
