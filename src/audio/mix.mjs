@@ -79,8 +79,9 @@ export async function buildAudioMix({projectId, audioPlan, timeline}) {
   const filterParts = [
     ...buildNarrationFilter(timeline),
     ...buildMusicFilters(audioPlan, inputIndexByPath),
-    `[music_raw][paused_narration]sidechaincompress=threshold=${threshold}:ratio=${audioPlan.ducking.ratio}:attack=${audioPlan.ducking.attack_ms}:release=${audioPlan.ducking.release_ms}[music_ducked]`,
-    `[paused_narration][music_ducked]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=${audioPlan.loudness.target_lufs}:TP=${audioPlan.loudness.true_peak_dbfs}:LRA=11,atrim=duration=${timeline.transformed_duration_seconds}[final]`
+    '[paused_narration]asplit=2[narration_sidechain][narration_mix]',
+    `[music_raw][narration_sidechain]sidechaincompress=threshold=${threshold}:ratio=${audioPlan.ducking.ratio}:attack=${audioPlan.ducking.attack_ms}:release=${audioPlan.ducking.release_ms}[music_ducked]`,
+    `[narration_mix][music_ducked]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=${audioPlan.loudness.target_lufs}:TP=${audioPlan.loudness.true_peak_dbfs}:LRA=11,atrim=duration=${timeline.transformed_duration_seconds}[final]`
   ];
   const codec = path.extname(output).toLowerCase() === '.wav' ? ['-c:a', 'pcm_s24le'] : ['-c:a', 'libmp3lame', '-b:a', '256k'];
   run('ffmpeg', [...inputs, '-filter_complex', filterParts.join(';'), '-map', '[final]', '-ar', '48000', '-ac', '2', ...codec, output], 'AUDIO_MIX_FAILED');
