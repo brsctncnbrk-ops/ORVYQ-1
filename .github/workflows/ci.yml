@@ -42,10 +42,17 @@ jobs:
         run: npm run check
 
       - name: Type-check evidence-led renderer
-        run: npm run typecheck:render
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          npm run typecheck:render 2>&1 | tee artifacts/typecheck.log
 
       - name: Run contract and negative tests
-        run: npm test
+        shell: bash
+        run: |
+          set -o pipefail
+          npm test 2>&1 | tee artifacts/tests.log
 
       - name: Reject patch-era production mechanisms
         shell: bash
@@ -74,7 +81,10 @@ jobs:
           fi
 
       - name: Render real audio-video smoke fixture
-        run: npm run smoke
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run smoke 2>&1 | tee artifacts/smoke.log
 
       - name: Verify smoke evidence
         run: |
@@ -94,6 +104,9 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
           path: |
+            artifacts/typecheck.log
+            artifacts/tests.log
+            artifacts/smoke.log
             artifacts/smoke.mp4
             artifacts/smoke-qa.json
             artifacts/smoke-status.txt
