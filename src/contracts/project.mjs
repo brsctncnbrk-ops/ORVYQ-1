@@ -51,16 +51,7 @@ export async function loadCanonicalContracts(projectId) {
 export async function buildRenderInput(projectId, contracts) {
   const captions = await requiredJson(projectId, 'direction/captions.json', 'CAPTIONS_MISSING');
   invariant(captions.schema_version === '1.0' && Array.isArray(captions.captions), 'CAPTIONS_INVALID', 'Captions contract is invalid');
-  const renderInput = {
-    schema_version: '1.0',
-    project_id: projectId,
-    plan: contracts.productionPlan,
-    timeline: contracts.narrationTimeline,
-    evidence: contracts.evidenceRegistry.evidence,
-    assets: contracts.assetRegistry.assets,
-    captions: captions.captions,
-    audio_mix_asset: contracts.audioPlan.output_asset
-  };
+  const renderInput = {schema_version: '1.0', project_id: projectId, plan: contracts.productionPlan, timeline: contracts.narrationTimeline, evidence: contracts.evidenceRegistry.evidence, assets: contracts.assetRegistry.assets, captions: captions.captions, audio_mix_asset: contracts.audioPlan.output_asset};
   await writeJsonAtomic(safeProjectPath(projectId, 'build/render_input.json'), renderInput);
   return renderInput;
 }
@@ -77,23 +68,11 @@ export async function validateProject(projectId, {auditFiles = true, writeReport
   invariant(mixAsset.relative_path === contracts.audioPlan.output_asset && mixAsset.sha256 === mixSha, 'FINAL_AUDIO_MIX_DRIFT', 'Final audio mix does not match audio plan and asset registry');
   const renderInput = await buildRenderInput(projectId, contracts);
   const report = {
-    schema_version: '1.0',
-    status: 'TAMAMLANDI',
-    project_id: projectId,
-    validated_at: new Date().toISOString(),
+    schema_version: '1.0', status: 'TAMAMLANDI', project_id: projectId, validated_at: new Date().toISOString(),
     digests: {
-      source_catalog_sha256: sha256Json(contracts.sourceCatalog),
-      claim_registry_sha256: sha256Json(contracts.claimRegistry),
-      evidence_registry_sha256: sha256Json(contracts.evidenceRegistry),
-      asset_registry_sha256: sha256Json(contracts.assetRegistry),
-      narration_timeline_sha256: sha256Json(contracts.narrationTimeline),
-      audio_plan_sha256: sha256Json(contracts.audioPlan),
-      audio_mix_sha256: mixSha,
-      production_plan_sha256: sha256Json(contracts.productionPlan),
-      render_input_sha256: sha256Json(renderInput)
+      source_catalog_sha256: sha256Json(contracts.sourceCatalog), claim_registry_sha256: sha256Json(contracts.claimRegistry), evidence_registry_sha256: sha256Json(contracts.evidenceRegistry), asset_registry_sha256: sha256Json(contracts.assetRegistry), narration_timeline_sha256: sha256Json(contracts.narrationTimeline), audio_plan_sha256: sha256Json(contracts.audioPlan), audio_mix_sha256: mixSha, production_plan_sha256: sha256Json(contracts.productionPlan), render_input_sha256: sha256Json(renderInput)
     },
-    evidence_audit: evidenceAudit,
-    asset_audit: assetAudit
+    evidence_audit: evidenceAudit, asset_audit: assetAudit
   };
   if (writeReports) await writeJsonAtomic(safeProjectPath(projectId, 'qa/candidate_preflight.json'), report);
   return {contracts, renderInput, report};
@@ -110,21 +89,26 @@ function proofPrefix(renderInput) {
   };
 }
 
-export async function freezeCandidate(projectId, candidateSha) {
-  invariant(/^[0-9a-f]{40}$/.test(candidateSha), 'CANDIDATE_SHA_INVALID', 'candidate SHA must be a 40-character lowercase SHA');
+function currentDigests(renderInput, report) {
+  return {...report.digests, proof_prefix_sha256: sha256Json(proofPrefix(renderInput))};
+}
+
+export async function prepareCandidate(projectId) {
   const {renderInput, report} = await validateProject(projectId);
-  const digests = {...report.digests, proof_prefix_sha256: sha256Json(proofPrefix(renderInput))};
+  const digests = currentDigests(renderInput, report);
   for (const key of CANDIDATE_DIGEST_KEYS) invariant(digests[key], 'CANDIDATE_DIGEST_MISSING', `Candidate digest missing: ${key}`);
-  const candidate = validateCandidate({schema_version: '1.0', project_id: projectId, candidate_sha: candidateSha, frozen_at: new Date().toISOString(), digests});
-  await writeJsonAtomic(safeProjectPath(projectId, 'build/candidate.json'), candidate);
-  return candidate;
+  const prepared = {schema_version: '1.0', project_id: projectId, prepared_at: new Date().toISOString(), digests};
+  await writeJsonAtomic(safeProjectPath(projectId, 'build/candidate_inputs.json'), prepared);
+  return prepared;
 }
 
 export async function assertFrozenCandidate(projectId, candidateSha) {
-  const frozen = validateCandidate(await requiredJson(projectId, 'build/candidate.json', 'CANDIDATE_MISSING'));
-  invariant(frozen.candidate_sha === candidateSha, 'CANDIDATE_SHA_MISMATCH', `Frozen candidate is ${frozen.candidate_sha}, requested ${candidateSha}`);
+  invariant(/^[0-9a-f]{40}$/.test(candidateSha), 'CANDIDATE_SHA_INVALID', 'candidate SHA must be a 40-character lowercase SHA');
+  const prepared = await requiredJson(projectId, 'build/candidate_inputs.json', 'CANDIDATE_INPUTS_MISSING');
+  invariant(prepared.schema_version === '1.0' && prepared.project_id === projectId && prepared.digests, 'CANDIDATE_INPUTS_INVALID', 'Prepared candidate inputs are invalid');
   const {renderInput, report} = await validateProject(projectId, {writeReports: false});
-  const current = {...report.digests, proof_prefix_sha256: sha256Json(proofPrefix(renderInput))};
-  for (const key of CANDIDATE_DIGEST_KEYS) invariant(frozen.digests[key] === current[key], 'CANDIDATE_CHANGED_AFTER_FREEZE', `${key} changed after candidate freeze`);
-  return {candidate: frozen, renderInput};
+  const current = currentDigests(renderInput, report);
+  for (const key of CANDIDATE_DIGEST_KEYS) invariant(prepared.digests[key] === current[key], 'CANDIDATE_CHANGED_AFTER_PREPARATION', `${key} changed after candidate preparation`);
+  const candidate = validateCandidate({schema_version: '1.0', project_id: projectId, candidate_sha: candidateSha, frozen_at: prepared.prepared_at, digests: current});
+  return {candidate, renderInput};
 }
