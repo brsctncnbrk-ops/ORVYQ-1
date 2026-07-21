@@ -6,10 +6,120 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
+  repair-first-proof:
+    if: github.event_name == 'pull_request' && hashFiles('proof_repair_request.json') != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - name: Checkout repair branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          lfs: false
+
+      - name: Install media tools and repository LFS assets
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg curl git-lfs
+          git lfs install --local
+          git lfs pull
+          git lfs fsck
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install exact dependencies and Remotion browser
+        run: |
+          set -euo pipefail
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund @remotion/cli@4.0.489
+          npx remotion browser ensure
+
+      - name: Download and verify approved licensed music
+        run: |
+          set -euo pipefail
+          mkdir -p projects/001-ai-race/assets/music
+          curl --fail --location --retry 5 --retry-all-errors \
+            --user-agent 'ORVYQ documentary renderer/1.0' \
+            --referer 'https://www.scottbuckley.com.au/library/signal-to-noise/' \
+            'https://www.scottbuckley.com.au/library/wp-content/uploads/2020/04/sb_signaltonoise.mp3' \
+            --output projects/001-ai-race/assets/music/approved_bed.mp3
+          echo '47a2f15ecd65f1d7ef0418ee17ae31f4e724bdf73b2c2838aaa39ac1703d094e  projects/001-ai-race/assets/music/approved_bed.mp3' | sha256sum --check
+          test "$(stat -c %s projects/001-ai-race/assets/music/approved_bed.mp3)" = '14143939'
+
+      - name: Apply music and brightness repair
+        run: node scripts/repair-first-proof.mjs
+
+      - name: Validate repaired canonical candidate
+        run: |
+          set -euo pipefail
+          npm run typecheck
+          npm run typecheck:render
+          npm test
+          npm run orvyq -- validate --project-id 001-ai-race
+
+      - name: Freeze clean repaired candidate
+        id: candidate
+        run: |
+          set -euo pipefail
+          git show 55e0d3307093f52785982911667cdf4de9744b46:.github/workflows/ci.yml > .github/workflows/ci.yml
+          rm -f proof_repair_request.json scripts/repair-first-proof.mjs
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .github/workflows/ci.yml proof_repair_request.json scripts/repair-first-proof.mjs src projects/001-ai-race
+          git commit -m 'Add licensed music and eliminate proof darkening'
+          CANDIDATE_SHA="$(git rev-parse HEAD)"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          echo "candidate_sha=$CANDIDATE_SHA" >> "$GITHUB_OUTPUT"
+          echo "CANDIDATE_SHA=$CANDIDATE_SHA" >> "$GITHUB_ENV"
+
+      - name: Verify frozen candidate and render corrected proof
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$CANDIDATE_SHA"
+          npm run orvyq -- validate --project-id 001-ai-race --frozen
+          npm run orvyq -- proof --project-id 001-ai-race --candidate-sha "$CANDIDATE_SHA" --proof-run-id "$GITHUB_RUN_ID"
+
+      - name: Verify music, brightness and proof artifact
+        run: |
+          set -euo pipefail
+          PROOF=projects/001-ai-race/output/proof.mp4
+          QA=projects/001-ai-race/qa/rendered.proof.json
+          test -s "$PROOF"
+          test -s projects/001-ai-race/build/proof_manifest.json
+          test -s projects/001-ai-race/output/proof-contact-sheet.jpg
+          jq -e '.minimum_yavg >= 18 and (.dark_brightness_samples | length) == 0 and (.transient_brightness_drops | length) == 0' "$QA"
+          jq -e '[.assets[] | select(.role == "music_bed")] | length == 1' projects/001-ai-race/assets/asset_registry.json
+          ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of csv=p=0 "$PROOF"
+          ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 "$PROOF"
+
+      - name: Upload corrected proof review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: orvyq-proof-corrected-${{ github.run_id }}
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            projects/001-ai-race/output/proof.mp4
+            projects/001-ai-race/output/proof-contact-sheet.jpg
+            projects/001-ai-race/build/proof_manifest.json
+            projects/001-ai-race/qa/candidate_preflight.json
+            projects/001-ai-race/qa/rendered.proof.json
+            projects/001-ai-race/qa/music_qa.json
+            projects/001-ai-race/assets/music/approved_bed.provenance.json
+            projects/001-ai-race/direction/production_plan.json
+            projects/001-ai-race/direction/narration_timeline.json
+
   validate:
+    if: hashFiles('proof_repair_request.json') == ''
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
