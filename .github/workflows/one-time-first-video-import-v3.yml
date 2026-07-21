@@ -1,0 +1,133 @@
+name: One-time first video import v3
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-first-video-import-v3.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: one-time-first-video-import-v3
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout ORVYQ-1 import branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          lfs: false
+
+      - name: Checkout immutable legacy production data
+        uses: actions/checkout@v4
+        with:
+          repository: brsctncnbrk-ops/YouTube_pepline
+          ref: 6ae8ccc7142eac61ae270b7a68f11e73c8d08e68
+          path: _legacy_youtube
+          fetch-depth: 1
+          lfs: true
+
+      - name: Checkout immutable canonical planning data
+        uses: actions/checkout@v4
+        with:
+          repository: brsctncnbrk-ops/ORVYQ
+          ref: ee9ee51d4944cc6708ee70e37fbcc657d3468fb6
+          path: _legacy_orvyq
+          fetch-depth: 1
+          lfs: false
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install media and LFS tooling
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg git-lfs
+          git lfs install --local
+          git -C _legacy_youtube lfs install --local
+          for attempt in 1 2 3; do
+            if git -C _legacy_youtube lfs pull --include='projects/001-the-ai-race-no-one-can-afford-to-win/assets/audio/final_voice.mp3,projects/001-the-ai-race-no-one-can-afford-to-win/assets/footage/*.mp4'; then
+              break
+            fi
+            test "$attempt" != 3
+            sleep $((attempt * 10))
+          done
+          git -C _legacy_youtube lfs fsck
+
+      - name: Build strict self-contained candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/one-time-first-video-import.py
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import crypto from 'node:crypto';
+          const file = 'projects/001-ai-race/direction/narration_timeline.json';
+          const value = JSON.parse(fs.readFileSync(file, 'utf8'));
+          delete value.timeline_sha256;
+          const canonical = (input) => Array.isArray(input) ? input.map(canonical) : input && typeof input === 'object'
+            ? Object.fromEntries(Object.keys(input).sort().map((key) => [key, canonical(input[key])])) : input;
+          value.timeline_sha256 = crypto.createHash('sha256').update(JSON.stringify(canonical(value))).digest('hex');
+          fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
+          NODE
+
+      - name: Validate and freeze candidate
+        shell: bash
+        run: |
+          set -o pipefail
+          {
+            node --version
+            npm ci --ignore-scripts --no-audit --no-fund
+            npm run typecheck
+            npm run typecheck:render
+            npm test
+            npm run orvyq -- validate --project-id 001-ai-race
+            npm run orvyq -- validate --project-id 001-ai-race --frozen
+          } 2>&1 | tee import-validation-v3.log
+
+      - name: Upload import diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: first-video-import-v3-debug-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 7
+          path: |
+            import-validation-v3.log
+            projects/001-ai-race/manifest.json
+            projects/001-ai-race/direction/production_plan.json
+            projects/001-ai-race/direction/narration_timeline.json
+            projects/001-ai-race/assets/asset_registry.json
+
+      - name: Commit candidate and remove all migration machinery
+        if: success()
+        shell: bash
+        env:
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: |
+          set -euo pipefail
+          rm -rf _legacy_youtube _legacy_orvyq
+          rm -f .github/workflows/one-time-first-video-import.yml
+          rm -f .github/workflows/one-time-first-video-import-v2.yml
+          rm -f .github/workflows/one-time-first-video-import-v3.yml
+          rm -f scripts/one-time-first-video-import.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git lfs install --local
+          git add .
+          git commit -m 'feat: import first ORVYQ video as a self-contained candidate'
+          git lfs push origin "$BRANCH" --all
+          git push origin "HEAD:$BRANCH"
