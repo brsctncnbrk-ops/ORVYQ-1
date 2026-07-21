@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'agent/**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout canonical branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: false
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install locked runtime
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Verify canonical system baseline
+        run: npm run check
+
+      - name: Run contract and negative tests
+        run: npm test
+
+      - name: Reject patch-era production mechanisms
+        shell: bash
+        run: |
+          set -euo pipefail
+          forbidden=$(find . -type f \( \
+            -name 'proof_repair_request.json' -o \
+            -name 'repair-first-proof.mjs' -o \
+            -name '*debug-trigger*' -o \
+            -name '*one-time-proof*' \
+          \) -not -path './.git/*' -print)
+          if [[ -n "$forbidden" ]]; then
+            printf 'Forbidden patch-era files:\n%s\n' "$forbidden" >&2
+            exit 1
+          fi
+
+      - name: Reject runtime legacy repository links
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE 'YouTube_pepline|youtube_pipeline|raw\.githubusercontent\.com/.*/(YouTube_pepline|ORVYQ)' \
+            --exclude-dir=.git --exclude='migration-policy.md' --exclude='rebuild-plan.md' .; then
+            echo 'Runtime legacy repository dependency detected' >&2
+            exit 1
+          fi
