@@ -133,8 +133,9 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git lfs install --local
           {
+            git restore --worktree --staged tests/fixtures/pixel.png || true
             git status --short
-            git add projects/001-ai-race projects/_index.json
+            git add projects/001-ai-race
             git lfs fsck
             git commit -m 'Bootstrap canonical first film from approved raw assets'
             git fetch origin agent/orvyq-canonical-rebuild
