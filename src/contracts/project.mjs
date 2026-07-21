@@ -12,6 +12,7 @@ import {validateNarrationTimeline} from './narration-timeline.mjs';
 import {validateAudioPlan} from './audio-plan.mjs';
 import {validateProductionPlan} from './production-plan.mjs';
 import {CANDIDATE_DIGEST_KEYS, validateCandidate} from './candidate.mjs';
+import {mobileLegibilityQa, musicCueQa, pacingQa, semanticVisualQa} from '../qa/static.mjs';
 
 async function requiredJson(projectId, relative, code) {
   try { return await readJson(safeProjectPath(projectId, relative)); }
@@ -56,6 +57,15 @@ export async function buildRenderInput(projectId, contracts) {
   return renderInput;
 }
 
+function runCandidateStaticQa(contracts) {
+  return {
+    semantic: semanticVisualQa(contracts),
+    pacing: pacingQa(contracts.productionPlan),
+    mobile: mobileLegibilityQa(contracts.productionPlan),
+    music: musicCueQa(contracts.audioPlan, contracts.narrationTimeline)
+  };
+}
+
 export async function validateProject(projectId, {auditFiles = true, writeReports = true} = {}) {
   const contracts = await loadCanonicalContracts(projectId);
   const evidenceAudit = auditFiles ? await auditEvidenceFiles(projectId, contracts.evidenceRegistry) : {status: 'SKIPPED'};
@@ -66,16 +76,26 @@ export async function validateProject(projectId, {auditFiles = true, writeReport
   const mixAsset = contracts.assetRegistry.assets.find((asset) => asset.role === 'final_audio_mix');
   invariant(mixAsset, 'FINAL_AUDIO_MIX_UNREGISTERED', 'Asset registry requires final_audio_mix before candidate validation');
   invariant(mixAsset.relative_path === contracts.audioPlan.output_asset && mixAsset.sha256 === mixSha, 'FINAL_AUDIO_MIX_DRIFT', 'Final audio mix does not match audio plan and asset registry');
+  const staticQa = runCandidateStaticQa(contracts);
   const renderInput = await buildRenderInput(projectId, contracts);
   const report = {
     schema_version: '1.0', status: 'TAMAMLANDI', project_id: projectId, validated_at: new Date().toISOString(),
     digests: {
       source_catalog_sha256: sha256Json(contracts.sourceCatalog), claim_registry_sha256: sha256Json(contracts.claimRegistry), evidence_registry_sha256: sha256Json(contracts.evidenceRegistry), asset_registry_sha256: sha256Json(contracts.assetRegistry), narration_timeline_sha256: sha256Json(contracts.narrationTimeline), audio_plan_sha256: sha256Json(contracts.audioPlan), audio_mix_sha256: mixSha, production_plan_sha256: sha256Json(contracts.productionPlan), render_input_sha256: sha256Json(renderInput)
     },
-    evidence_audit: evidenceAudit, asset_audit: assetAudit
+    evidence_audit: evidenceAudit, asset_audit: assetAudit,
+    static_qa: {semantic: staticQa.semantic.status, pacing: staticQa.pacing.status, mobile: staticQa.mobile.status, music: staticQa.music.status}
   };
-  if (writeReports) await writeJsonAtomic(safeProjectPath(projectId, 'qa/candidate_preflight.json'), report);
-  return {contracts, renderInput, report};
+  if (writeReports) {
+    await Promise.all([
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/candidate_preflight.json'), report),
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/semantic_visual.json'), staticQa.semantic),
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/pacing.json'), staticQa.pacing),
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/mobile_legibility.json'), staticQa.mobile),
+      writeJsonAtomic(safeProjectPath(projectId, 'qa/music_cues.json'), staticQa.music)
+    ]);
+  }
+  return {contracts, renderInput, report, staticQa};
 }
 
 function proofPrefix(renderInput) {
