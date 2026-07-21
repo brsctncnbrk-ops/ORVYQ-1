@@ -112,6 +112,36 @@ function buildMusicFilters(plan, timeline, inputIndexByPath, audibleWindowsByPat
   return filters;
 }
 
+function buildPauseGuaranteeFilters(plan, timeline, inputIndexByPath, audibleWindowsByPath) {
+  const filters = [];
+  const labels = [];
+  const pauseGainDb = Math.min(-12, plan.music_floor.narration_floor_db + plan.music_floor.pause_boost_db);
+
+  for (const [index, pause] of timeline.editorial_pauses.entries()) {
+    const assetPath = plan.music_assets[index % plan.music_assets.length];
+    const inputIndex = inputIndexByPath.get(assetPath);
+    invariant(inputIndex != null, 'PAUSE_MUSIC_ASSET_UNKNOWN', `${pause.pause_id} references unavailable pause music asset ${assetPath}`);
+
+    const windows = audibleWindowsByPath.get(assetPath) ?? [0];
+    const sourceOffset = windows[(plan.music_cues.length + index) % windows.length];
+    const duration = pause.output_end_seconds - pause.output_start_seconds;
+    const fade = Math.min(0.25, duration / 6);
+    const delay = Math.round(pause.output_start_seconds * 1000);
+    const label = `pausebed${index}`;
+
+    filters.push(`[${inputIndex}:a]atrim=start=${sourceOffset}:duration=${duration},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=${fade},afade=t=out:st=${Math.max(0, duration - fade)}:d=${fade},volume=${dbToLinear(pauseGainDb)},adelay=${delay}|${delay}[${label}]`);
+    labels.push(`[${label}]`);
+  }
+
+  if (labels.length === 0) {
+    filters.push(`anullsrc=r=48000:cl=stereo,atrim=duration=${timeline.transformed_duration_seconds},asetpts=PTS-STARTPTS[pause_floor_guarantee]`);
+  } else {
+    filters.push(`${labels.join('')}amix=inputs=${labels.length}:duration=longest:normalize=0,atrim=duration=${timeline.transformed_duration_seconds},asetpts=PTS-STARTPTS[pause_floor_guarantee]`);
+  }
+
+  return filters;
+}
+
 export async function buildAudioMix({projectId, audioPlan, timeline}) {
   validateNarrationTimeline(timeline);
   validateAudioPlan(audioPlan, {durationSeconds: timeline.transformed_duration_seconds});
@@ -135,9 +165,10 @@ export async function buildAudioMix({projectId, audioPlan, timeline}) {
   const filterParts = [
     ...buildNarrationFilter(timeline),
     ...buildMusicFilters(audioPlan, timeline, inputIndexByPath, audibleWindowsByPath),
+    ...buildPauseGuaranteeFilters(audioPlan, timeline, inputIndexByPath, audibleWindowsByPath),
     '[paused_narration]asplit=2[narration_sidechain][narration_mix]',
     `[music_for_duck][narration_sidechain]sidechaincompress=threshold=${threshold}:ratio=${audioPlan.ducking.ratio}:attack=${audioPlan.ducking.attack_ms}:release=${audioPlan.ducking.release_ms}[music_ducked]`,
-    '[music_ducked][music_floor]amix=inputs=2:duration=longest:normalize=0[music_preserved]',
+    '[music_ducked][music_floor][pause_floor_guarantee]amix=inputs=3:duration=longest:normalize=0[music_preserved]',
     `[narration_mix][music_preserved]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=${audioPlan.loudness.target_lufs}:TP=${audioPlan.loudness.true_peak_dbfs}:LRA=11,atrim=duration=${timeline.transformed_duration_seconds}[final]`
   ];
 
@@ -162,6 +193,10 @@ export async function buildAudioMix({projectId, audioPlan, timeline}) {
     music_cue_count: audioPlan.music_cues.length,
     distinct_music_states: [...new Set(audioPlan.music_cues.map((cue) => cue.state))],
     editorial_pause_count: timeline.editorial_pauses.length,
+    pause_music_guarantee: {
+      enabled: true,
+      gain_db: Math.min(-12, audioPlan.music_floor.narration_floor_db + audioPlan.music_floor.pause_boost_db)
+    },
     ducking: audioPlan.ducking,
     music_floor: audioPlan.music_floor,
     loudness_target: audioPlan.loudness,
