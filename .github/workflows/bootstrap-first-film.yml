@@ -127,14 +127,21 @@ jobs:
       - name: Commit self-contained first film
         shell: bash
         run: |
-          set -euo pipefail
+          set -o pipefail
           rm -rf legacy-orvyq
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git lfs install --local
-          git add projects/001-ai-race projects/_index.json
-          git commit -m 'Bootstrap canonical first film from approved raw assets'
-          git push origin HEAD:agent/orvyq-canonical-rebuild
+          {
+            git status --short
+            git add projects/001-ai-race projects/_index.json
+            git lfs fsck
+            git commit -m 'Bootstrap canonical first film from approved raw assets'
+            git fetch origin agent/orvyq-canonical-rebuild
+            git rebase origin/agent/orvyq-canonical-rebuild
+            git lfs push --all origin HEAD
+            git push origin HEAD:agent/orvyq-canonical-rebuild
+          } 2>&1 | tee bootstrap-push.log
 
       - name: Upload bootstrap audit package
         if: always()
@@ -145,6 +152,7 @@ jobs:
           if-no-files-found: warn
           path: |
             bootstrap-audio.log
+            bootstrap-push.log
             projects/001-ai-race/qa/candidate_preflight.json
             projects/001-ai-race/build/candidate_inputs.json
             projects/001-ai-race/audio/final_mix.metadata.json
