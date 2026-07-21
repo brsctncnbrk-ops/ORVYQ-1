@@ -53,7 +53,11 @@ jobs:
         run: npm test
 
       - name: Render real audio/video smoke fixture
-        run: npm run orvyq -- smoke
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p artifacts
+          npm run orvyq -- smoke 2>&1 | tee artifacts/smoke-command.log
 
       - name: Verify smoke artifact with FFprobe
         run: |
@@ -63,12 +67,14 @@ jobs:
           ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 artifacts/smoke.mp4
           test -s artifacts/smoke-qa.json
 
-      - name: Upload verified smoke artifact
+      - name: Upload CI media evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: orvyq-smoke-${{ github.run_id }}
+          name: orvyq-ci-evidence-${{ github.run_id }}
           if-no-files-found: error
           retention-days: 14
           path: |
+            artifacts/smoke-command.log
             artifacts/smoke.mp4
             artifacts/smoke-qa.json
