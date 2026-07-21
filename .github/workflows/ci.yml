@@ -43,8 +43,17 @@ jobs:
       - name: Ensure Remotion browser
         run: npx remotion browser ensure
 
-      - name: Run contracts, invariant tests, renderer typecheck, and real media smoke render
-        run: npm run ci
+      - name: Validate CLI contracts and repository boundaries
+        run: npm run typecheck
+
+      - name: Type-check generic Remotion renderer
+        run: npm run typecheck:render
+
+      - name: Run invariant and negative tests
+        run: npm test
+
+      - name: Render real audio/video smoke fixture
+        run: npm run orvyq -- smoke
 
       - name: Verify smoke artifact with FFprobe
         run: |
