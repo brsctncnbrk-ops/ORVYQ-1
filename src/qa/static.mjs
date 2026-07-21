@@ -4,11 +4,28 @@ import {summarizeRange} from '../contracts/production-plan.mjs';
 const PRIMARY_TYPES = new Set(['primary_document', 'split_documents', 'official_figure', 'official_screen', 'official_article', 'image_sequence']);
 const CONTEXT_TYPES = new Set(['cinematic_hook', 'contextual_footage']);
 const NONSEMANTIC_PURPOSE_WORDS = /\b(?:generic|filler|ratio|relief)\b/i;
+const STOP_WORDS = new Set(['the','a','an','and','or','to','of','in','on','for','with','as','is','are','be','through','this','that','while','into','from','by','not','never']);
 
-export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistry}) {
+function semanticTokens(value = '') {
+  return new Set(String(value).toLowerCase().replace(/[^a-z0-9\s-]/g, ' ').split(/\s+/).filter((word) => word.length >= 4 && !STOP_WORDS.has(word)));
+}
+
+function overlapScore(left, right) {
+  const a = semanticTokens(left);
+  const b = semanticTokens(right);
+  if (!a.size || !b.size) return 0;
+  let matches = 0;
+  for (const token of a) if (b.has(token)) matches += 1;
+  return matches / Math.min(a.size, b.size);
+}
+
+export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistry, assetRegistry}) {
   const claims = new Map(claimRegistry.claims.map((claim) => [claim.claim_id, claim]));
   const evidence = new Map(evidenceRegistry.evidence.map((item) => [item.evidence_id, item]));
+  const assets = new Map((assetRegistry?.assets ?? []).map((asset) => [asset.asset_id, asset]));
   const reports = [];
+  const recentContextAssets = [];
+
   for (const shot of productionPlan.shots) {
     const shotClaims = (shot.claim_ids ?? []).map((id) => claims.get(id));
     invariant(shotClaims.every(Boolean), 'SEMANTIC_CLAIM_UNKNOWN', `${shot.shot_id} references an unknown claim`);
@@ -20,9 +37,25 @@ export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistr
         invariant(shot.claim_ids.some((claimId) => item.claim_ids.includes(claimId)), 'SEMANTIC_EVIDENCE_CLAIM_MISMATCH', `${shot.shot_id} evidence ${evidenceId} is not linked to any shot claim`);
       }
     }
-    if (CONTEXT_TYPES.has(shot.shot_type)) invariant(shot.evidence_claim !== true, 'CONTEXTUAL_AS_LITERAL_EVIDENCE', `${shot.shot_id} presents contextual footage as literal evidence`);
+
+    let semanticScore = null;
+    if (CONTEXT_TYPES.has(shot.shot_type)) {
+      invariant(shot.evidence_claim !== true, 'CONTEXTUAL_AS_LITERAL_EVIDENCE', `${shot.shot_id} presents contextual footage as literal evidence`);
+      const contextAssets = (shot.asset_ids ?? []).map((id) => assets.get(id)).filter(Boolean);
+      invariant(contextAssets.length > 0, 'CONTEXTUAL_ASSET_MISSING', `${shot.shot_id} requires contextual footage`);
+      const intent = [shot.editorial_purpose, ...(shot.semantic_keywords ?? []), ...shotClaims.map((claim) => claim.summary ?? claim.claim ?? claim.text ?? '')].join(' ');
+      const descriptor = contextAssets.map((asset) => [asset.editorial_purpose, asset.semantic_description, ...(asset.semantic_keywords ?? []), asset.source_url].filter(Boolean).join(' ')).join(' ');
+      semanticScore = overlapScore(intent, descriptor);
+      const explicitKeywords = (shot.semantic_keywords ?? []).length > 0 && contextAssets.every((asset) => (asset.semantic_keywords ?? []).length > 0);
+      invariant(explicitKeywords || semanticScore >= 0.08, 'CONTEXTUAL_SEMANTIC_MISMATCH', `${shot.shot_id} footage has no defensible semantic connection to its editorial intent`);
+      for (const asset of contextAssets) {
+        invariant(!recentContextAssets.slice(-2).includes(asset.asset_id), 'CONTEXTUAL_ASSET_REPEATED_TOO_SOON', `${asset.asset_id} repeats within three contextual shots`);
+        recentContextAssets.push(asset.asset_id);
+      }
+    }
+
     invariant(!NONSEMANTIC_PURPOSE_WORDS.test(shot.editorial_purpose), 'EDITORIAL_PURPOSE_NONSEMANTIC', `${shot.shot_id} editorial purpose describes a metric/filler rather than meaning`);
-    reports.push({shot_id: shot.shot_id, status: 'TAMAMLANDI', claim_count: shotClaims.length, evidence_count: shot.evidence_ids?.length ?? 0});
+    reports.push({shot_id: shot.shot_id, status: 'TAMAMLANDI', claim_count: shotClaims.length, evidence_count: shot.evidence_ids?.length ?? 0, semantic_score: semanticScore});
   }
   return {schema_version: '1.0', status: 'TAMAMLANDI', shots: reports};
 }
@@ -46,6 +79,26 @@ export function pacingQa(productionPlan) {
     windows.push({start_seconds: start / productionPlan.fps, ...summary});
   }
   return {schema_version: '1.0', status: 'TAMAMLANDI', average_shot_seconds: average, shot_count: shotDurations.length, shots: shotDurations, windows};
+}
+
+export function editorialPauseQa(timeline, productionPlan) {
+  const pauses = timeline.editorial_pauses ?? [];
+  invariant(pauses.length >= 2, 'EDITORIAL_PAUSE_COUNT_LOW', 'A long-form film requires at least two deliberate editorial pauses');
+  let previousEnd = 0;
+  const reports = [];
+  for (const pause of pauses) {
+    invariant(pause.duration_seconds >= 3 && pause.duration_seconds <= 6.5, 'EDITORIAL_PAUSE_DURATION_INVALID', `${pause.pause_id} must last 3–6.5 seconds`);
+    invariant(pause.captions_suppressed === true, 'EDITORIAL_PAUSE_CAPTIONS_VISIBLE', `${pause.pause_id} must suppress captions`);
+    invariant(String(pause.editorial_function ?? '').length >= 24, 'EDITORIAL_PAUSE_FUNCTION_WEAK', `${pause.pause_id} needs a specific editorial function`);
+    invariant(String(pause.emphasis ?? '').trim().length >= 4, 'EDITORIAL_PAUSE_EMPHASIS_MISSING', `${pause.pause_id} needs a meaningful emphasis line`);
+    invariant(pause.output_start_seconds - previousEnd >= 20 || previousEnd === 0, 'EDITORIAL_PAUSES_CLUSTERED', `${pause.pause_id} is too close to the previous pause`);
+    const matchingShot = productionPlan.shots.find((shot) => shot.shot_type === 'editorial_pause' && shot.start_frame / productionPlan.fps <= pause.output_start_seconds + 0.15 && shot.end_frame / productionPlan.fps >= pause.output_end_seconds - 0.15);
+    invariant(matchingShot, 'EDITORIAL_PAUSE_SHOT_MISSING', `${pause.pause_id} has no matching editorial_pause shot`);
+    previousEnd = pause.output_end_seconds;
+    reports.push({pause_id: pause.pause_id, duration_seconds: pause.duration_seconds, shot_id: matchingShot.shot_id, status: 'TAMAMLANDI'});
+  }
+  invariant(timeline.transformed_duration_seconds - pauses.at(-1).output_end_seconds <= 90, 'FINAL_EDITORIAL_PAUSE_TOO_EARLY', 'The final act needs a deliberate pause within the last 90 seconds');
+  return {schema_version: '1.0', status: 'TAMAMLANDI', pause_count: pauses.length, pauses: reports};
 }
 
 export function mobileLegibilityQa(productionPlan) {
