@@ -45,7 +45,7 @@ test('audio plan requires four distinct states and continuous coverage', () => {
       {cue_id: 'C', state: 'accelerating_pressure', start_seconds: 50, end_seconds: 75, gain_db: -18, energy_start: .5, energy_end: .7, function: 'Carry strategic pressure through the pivot', transition_out: 'Reduce rhythm before limitation'},
       {cue_id: 'D', state: 'reflective_resolution', start_seconds: 75, end_seconds: 100, gain_db: -22, energy_start: .4, energy_end: .1, function: 'Release tension without triumph or catastrophe', transition_out: 'Decay naturally into the next section'}
     ],
-    ducking: {enabled: true, threshold_db: -24, ratio: 6, attack_ms: 30, release_ms: 450},
+    ducking: {enabled: true, threshold_db: -24, ratio: 3, attack_ms: 30, release_ms: 450, narration_floor_db: -8, pause_floor_db: -22, pause_boost_db: 2},
     loudness: {target_lufs: -16, true_peak_dbfs: -1.5}, output_asset: 'assets/audio/final_mix.mp3'
   };
   assert.equal(validateAudioPlan(base, {durationSeconds: 100}).music_cues.length, 4);
