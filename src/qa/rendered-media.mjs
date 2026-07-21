@@ -28,7 +28,11 @@ function meanVolume(file, start, duration) {
   return Number(match[1]);
 }
 
-export function renderedMediaQa(file, {expectedDuration, editorialPauses = [], finalWordWindow, allowTerminalBlackSeconds = 0.5} = {}) {
+function nearBoundary(second, boundaries, tolerance = 1.1) {
+  return boundaries.some((boundary) => Math.abs(second - boundary) <= tolerance);
+}
+
+export function renderedMediaQa(file, {expectedDuration, editorialPauses = [], finalWordWindow, shotBoundarySeconds = [], allowTerminalBlackSeconds = 0.5} = {}) {
   const probe = JSON.parse(run('ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', file], 'RENDER_PROBE_FAILED').stdout);
   const streams = probe.streams ?? [];
   const duration = Number(probe.format?.duration ?? 0);
@@ -50,10 +54,11 @@ export function renderedMediaQa(file, {expectedDuration, editorialPauses = [], f
   const darkSamples = yavg.map((value, index) => ({second: index, yavg: value})).filter((sample) => sample.yavg < 18);
   const transientDrops = [];
   for (let index = 1; index < yavg.length; index += 1) {
+    if (nearBoundary(index, shotBoundarySeconds)) continue;
     if (yavg[index - 1] >= 24 && yavg[index] < yavg[index - 1] * 0.55) transientDrops.push({second: index, before: yavg[index - 1], after: yavg[index]});
   }
   invariant(minimumYavg >= 18, 'BRIGHTNESS_TOO_DARK', `Minimum YAVG ${minimumYavg} is below 18`);
-  invariant(transientDrops.length === 0, 'TRANSIENT_BRIGHTNESS_DROP', 'Rendered video contains sudden brightness drops');
+  invariant(transientDrops.length === 0, 'TRANSIENT_BRIGHTNESS_DROP', 'Rendered video contains sudden within-shot brightness drops');
 
   const loudRun = run('ffmpeg', ['-hide_banner', '-i', file, '-filter_complex', 'ebur128=peak=true', '-f', 'null', '-'], 'LOUDNESS_QA_FAILED');
   const loudness = parseLoudness(loudRun.stderr || '');
@@ -81,6 +86,7 @@ export function renderedMediaQa(file, {expectedDuration, editorialPauses = [], f
     dark_brightness_samples: darkSamples,
     transient_brightness_drops: transientDrops,
     brightness_sample_count: yavg.length,
+    shot_boundary_seconds: shotBoundarySeconds,
     ...loudness,
     editorial_pause_audio: pauseVolumes
   };
