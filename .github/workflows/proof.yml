@@ -97,7 +97,24 @@ jobs:
         run: npm run orvyq -- project:validate --project-id "$PROJECT_ID"
 
       - name: Render canonical semantic proof prefix
-        run: npm run orvyq -- proof:render --project-id "$PROJECT_ID" --candidate-sha "$CANDIDATE_SHA" --proof-run-id "$GITHUB_RUN_ID"
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run orvyq -- proof:render --project-id "$PROJECT_ID" --candidate-sha "$CANDIDATE_SHA" --proof-run-id "$GITHUB_RUN_ID" 2>&1 | tee proof-render.log
+
+      - name: Upload proof diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orvyq-proof-diagnostics-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            proof-render.log
+            projects/${{ needs.resolve.outputs.project_id }}/output/proof.mp4
+            projects/${{ needs.resolve.outputs.project_id }}/output/proof-contact-sheet.jpg
+            projects/${{ needs.resolve.outputs.project_id }}/build/proof_manifest.json
+            projects/${{ needs.resolve.outputs.project_id }}/qa/rendered.proof.json
 
       - name: Verify proof package
         run: |
