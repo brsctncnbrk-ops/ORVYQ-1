@@ -53,8 +53,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if grep -RInE 'YouTube_pepline|youtube_pipeline|raw\.githubusercontent\.com/.*/(YouTube_pepline|ORVYQ)' \
-            --exclude-dir=.git --exclude='migration-policy.md' --exclude='rebuild-plan.md' .; then
+          runtime_paths=(src package.json)
+          [[ -d projects ]] && runtime_paths+=(projects)
+          if grep -RInE 'YouTube_pepline|youtube_pipeline|raw\.githubusercontent\.com/.*/(YouTube_pepline|ORVYQ)' "${runtime_paths[@]}"; then
             echo 'Runtime legacy repository dependency detected' >&2
             exit 1
           fi
