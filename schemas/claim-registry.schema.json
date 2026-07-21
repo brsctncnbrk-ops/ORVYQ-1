@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orvyq.local/schemas/claim-registry.schema.json",
+  "title": "ORVYQ Claim Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "claims"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string", "minLength": 1},
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["claim_id", "text", "section_id", "status", "source_ids", "visual_evidence_requirement", "confidence"],
+        "properties": {
+          "claim_id": {"type": "string", "pattern": "^[A-Z0-9_\\-]+$"},
+          "text": {"type": "string", "minLength": 10},
+          "section_id": {"type": "string", "minLength": 1},
+          "status": {"enum": ["verified", "qualified", "cut"]},
+          "source_ids": {"type": "array", "items": {"type": "string"}},
+          "visual_evidence_requirement": {"enum": ["required", "preferred", "contextual_only", "narration_only"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "limitation": {"type": "string"}
+        }
+      }
+    }
+  }
+}
