@@ -7,15 +7,8 @@ import {safeProjectPath} from '../core/paths.mjs';
 import {array, boolean, enumValue, indexBy, number, object, repositoryRelativePath, sha256, string, url} from './common.mjs';
 
 export const ASSET_ROLES = Object.freeze([
-  'narration_stem',
-  'music_stem',
-  'sfx_stem',
-  'final_audio_mix',
-  'contextual_footage',
-  'motion_hook_footage',
-  'brand_asset'
+  'narration_stem','music_stem','sfx_stem','final_audio_mix','contextual_footage','motion_hook_footage','brand_asset'
 ]);
-
 export const MEDIA_TYPES = Object.freeze(['audio', 'video', 'image']);
 
 function probe(file) {
@@ -49,6 +42,12 @@ export function validateAssetRegistry(registry) {
       number(asset.width, 'ASSET_WIDTH_INVALID', `${asset.asset_id} width is required`, {min: 1920, integer: true});
       number(asset.height, 'ASSET_HEIGHT_INVALID', `${asset.asset_id} height is required`, {min: 1080, integer: true});
     }
+    if (asset.role === 'contextual_footage') {
+      string(asset.semantic_description, 'ASSET_SEMANTIC_DESCRIPTION_MISSING', `${asset.asset_id} semantic_description is required`, {min: 20});
+      const keywords = array(asset.semantic_keywords, 'ASSET_SEMANTIC_KEYWORDS_MISSING', `${asset.asset_id} semantic_keywords are required`, {min: 3});
+      for (const keyword of keywords) string(keyword, 'ASSET_SEMANTIC_KEYWORD_INVALID', `${asset.asset_id} semantic keyword is invalid`, {min: 3});
+      enumValue(asset.visual_class, ['real_world', 'abstract'], 'ASSET_VISUAL_CLASS_INVALID', `${asset.asset_id} visual_class is invalid`);
+    }
     if (asset.role === 'music_stem') {
       invariant(asset.attribution_file, 'MUSIC_ATTRIBUTION_MISSING', `${asset.asset_id} requires attribution_file`);
       repositoryRelativePath(asset.attribution_file, 'MUSIC_ATTRIBUTION_PATH_INVALID', `${asset.asset_id} attribution_file`);
@@ -56,6 +55,7 @@ export function validateAssetRegistry(registry) {
   }
   invariant(assets.filter((asset) => asset.role === 'narration_stem').length === 1, 'NARRATION_STEM_COUNT', 'Exactly one narration_stem is required');
   invariant(assets.filter((asset) => asset.role === 'music_stem').length >= 1, 'MUSIC_STEM_MISSING', 'At least one music_stem is required');
+  invariant(assets.filter((asset) => asset.role === 'contextual_footage').length >= 4, 'CONTEXTUAL_FOOTAGE_POOL_TOO_SMALL', 'At least four contextual footage assets are required');
   return registry;
 }
 
