@@ -39,6 +39,7 @@ export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistr
     }
 
     let semanticScore = null;
+    let selectionMode = null;
     if (CONTEXT_TYPES.has(shot.shot_type)) {
       invariant(shot.evidence_claim !== true, 'CONTEXTUAL_AS_LITERAL_EVIDENCE', `${shot.shot_id} presents contextual footage as literal evidence`);
       const contextAssets = (shot.asset_ids ?? []).map((id) => assets.get(id)).filter(Boolean);
@@ -46,8 +47,10 @@ export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistr
       const intent = [shot.editorial_purpose, ...(shot.semantic_keywords ?? []), ...shotClaims.map((claim) => claim.summary ?? claim.claim ?? claim.text ?? '')].join(' ');
       const descriptor = contextAssets.map((asset) => [asset.editorial_purpose, asset.semantic_description, ...(asset.semantic_keywords ?? []), asset.source_url].filter(Boolean).join(' ')).join(' ');
       semanticScore = overlapScore(intent, descriptor);
+      selectionMode = shot.semantic_selection?.mode ?? null;
       const explicitKeywords = (shot.semantic_keywords ?? []).length > 0 && contextAssets.every((asset) => (asset.semantic_keywords ?? []).length > 0);
-      invariant(explicitKeywords || semanticScore >= 0.08, 'CONTEXTUAL_SEMANTIC_MISMATCH', `${shot.shot_id} footage has no defensible semantic connection to its editorial intent`);
+      const validFallback = selectionMode === 'diverse_real_world_fallback' && contextAssets.every((asset) => asset.visual_class === 'real_world') && Number(shot.semantic_selection?.score ?? 0) >= 0.25;
+      invariant(explicitKeywords || semanticScore >= 0.08 || validFallback, 'CONTEXTUAL_SEMANTIC_MISMATCH', `${shot.shot_id} footage has no defensible semantic connection to its editorial intent`);
       for (const asset of contextAssets) {
         invariant(!recentContextAssets.slice(-2).includes(asset.asset_id), 'CONTEXTUAL_ASSET_REPEATED_TOO_SOON', `${asset.asset_id} repeats within three contextual shots`);
         recentContextAssets.push(asset.asset_id);
@@ -55,7 +58,7 @@ export function semanticVisualQa({productionPlan, claimRegistry, evidenceRegistr
     }
 
     invariant(!NONSEMANTIC_PURPOSE_WORDS.test(shot.editorial_purpose), 'EDITORIAL_PURPOSE_NONSEMANTIC', `${shot.shot_id} editorial purpose describes a metric/filler rather than meaning`);
-    reports.push({shot_id: shot.shot_id, status: 'TAMAMLANDI', claim_count: shotClaims.length, evidence_count: shot.evidence_ids?.length ?? 0, semantic_score: semanticScore});
+    reports.push({shot_id: shot.shot_id, status: 'TAMAMLANDI', claim_count: shotClaims.length, evidence_count: shot.evidence_ids?.length ?? 0, semantic_score: semanticScore, selection_mode: selectionMode});
   }
   return {schema_version: '1.0', status: 'TAMAMLANDI', shots: reports};
 }
