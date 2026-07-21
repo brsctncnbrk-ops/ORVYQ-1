@@ -1,20 +1,22 @@
 import {writeJsonAtomic} from '../core/json.mjs';
 import {safeProjectPath} from '../core/paths.mjs';
-import {semanticVisualQa, pacingQa, mobileLegibilityQa, musicCueQa} from './static.mjs';
+import {semanticVisualQa, pacingQa, editorialPauseQa, mobileLegibilityQa, musicCueQa} from './static.mjs';
 import {renderedMediaQa} from './rendered-media.mjs';
 
 export async function runStaticQa(projectId, contracts) {
   const semantic = semanticVisualQa(contracts);
   const pacing = pacingQa(contracts.productionPlan);
+  const editorialPauses = editorialPauseQa(contracts.narrationTimeline, contracts.productionPlan);
   const mobile = mobileLegibilityQa(contracts.productionPlan);
   const music = musicCueQa(contracts.audioPlan, contracts.narrationTimeline);
   await Promise.all([
     writeJsonAtomic(safeProjectPath(projectId, 'qa/semantic_visual.json'), semantic),
     writeJsonAtomic(safeProjectPath(projectId, 'qa/pacing.json'), pacing),
+    writeJsonAtomic(safeProjectPath(projectId, 'qa/editorial_pauses.json'), editorialPauses),
     writeJsonAtomic(safeProjectPath(projectId, 'qa/mobile_legibility.json'), mobile),
     writeJsonAtomic(safeProjectPath(projectId, 'qa/music_cues.json'), music)
   ]);
-  return {status: 'TAMAMLANDI', semantic, pacing, mobile, music};
+  return {status: 'TAMAMLANDI', semantic, pacing, editorialPauses, mobile, music};
 }
 
 export async function runRenderedQa(projectId, contracts, file, {mode = 'proof'} = {}) {
