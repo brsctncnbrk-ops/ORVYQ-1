@@ -1,0 +1,1417 @@
+{
+  "editorial_pauses": [
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 4,
+      "editorial_function": "Create a deliberate editorial breath for not someday. right now. while the licensed score carries the transition.",
+      "emphasis": "NOT SOMEDAY. RIGHT NOW.",
+      "eyebrow": "THE TIMELINE",
+      "output_end_seconds": 62.466667,
+      "output_start_seconds": 58.466667,
+      "pause_id": "PAUSE_01",
+      "source_time_seconds": 58.466667
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 4,
+      "editorial_function": "Create a deliberate editorial breath for a test. not an incident. while the licensed score carries the transition.",
+      "emphasis": "A TEST. NOT AN INCIDENT.",
+      "eyebrow": "THE LIMIT",
+      "output_end_seconds": 98.466667,
+      "output_start_seconds": 94.466667,
+      "pause_id": "PAUSE_02",
+      "source_time_seconds": 90.466667
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 5,
+      "editorial_function": "Create a deliberate editorial breath for slow down — and lose? while the licensed score carries the transition.",
+      "emphasis": "SLOW DOWN — AND LOSE?",
+      "eyebrow": "THE INCENTIVE",
+      "output_end_seconds": 223.066667,
+      "output_start_seconds": 218.066667,
+      "pause_id": "PAUSE_03",
+      "source_time_seconds": 210.066667
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 4,
+      "editorial_function": "Create a deliberate editorial breath for the risk leaves the lab while the licensed score carries the transition.",
+      "emphasis": "THE RISK LEAVES THE LAB",
+      "eyebrow": "THE PIVOT",
+      "output_end_seconds": 316.533333,
+      "output_start_seconds": 312.533333,
+      "pause_id": "PAUSE_04",
+      "source_time_seconds": 299.533333
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 5,
+      "editorial_function": "Create a deliberate editorial breath for who gets to decide? while the licensed score carries the transition.",
+      "emphasis": "WHO GETS TO DECIDE?",
+      "eyebrow": "THE POWER",
+      "output_end_seconds": 440.746667,
+      "output_start_seconds": 435.746667,
+      "pause_id": "PAUSE_05",
+      "source_time_seconds": 418.746667
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 5,
+      "editorial_function": "Create a deliberate editorial breath for open or closed? while the licensed score carries the transition.",
+      "emphasis": "OPEN OR CLOSED?",
+      "eyebrow": "THE TRADE-OFF",
+      "output_end_seconds": 568.833333,
+      "output_start_seconds": 563.833333,
+      "pause_id": "PAUSE_06",
+      "source_time_seconds": 541.833333
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 5,
+      "editorial_function": "Create a deliberate editorial breath for safety must be built while the licensed score carries the transition.",
+      "emphasis": "SAFETY MUST BE BUILT",
+      "eyebrow": "THE WORK",
+      "output_end_seconds": 684.566667,
+      "output_start_seconds": 679.566667,
+      "pause_id": "PAUSE_07",
+      "source_time_seconds": 652.566667
+    },
+    {
+      "captions_suppressed": true,
+      "duration_seconds": 6,
+      "editorial_function": "Create a deliberate editorial breath for people, right now. while the licensed score carries the transition.",
+      "emphasis": "PEOPLE, RIGHT NOW.",
+      "eyebrow": "THE CHOICE",
+      "output_end_seconds": 753.933333,
+      "output_start_seconds": 747.933333,
+      "pause_id": "PAUSE_08",
+      "source_time_seconds": 715.933333
+    }
+  ],
+  "project_id": "001-ai-race",
+  "proof_boundary": {
+    "final_word": "Competition",
+    "frame": 5411,
+    "paragraph_end": true,
+    "seconds": 180.36666666666667,
+    "sentence_end": true,
+    "shot_boundary": true
+  },
+  "schema_version": "1.0",
+  "source_audio": "assets/narration/narration_final.mp3",
+  "source_audio_sha256": "414b8c522b6293f84b6c98dd59a3dcd094817fa8a3990a05df38f44c8ad201f1",
+  "source_duration_seconds": 719.928,
+  "transformed_duration_seconds": 757.9333333333333,
+  "words": [
+    {
+      "output_end": 3.308333,
+      "output_start": 0,
+      "source_end": 3.308333,
+      "source_start": 0,
+      "text": "Labs"
+    },
+    {
+      "output_end": 6.616667,
+      "output_start": 3.308333,
+      "source_end": 6.616667,
+      "source_start": 3.308333,
+      "text": "know"
+    },
+    {
+      "output_end": 9.925,
+      "output_start": 6.616667,
+      "source_end": 9.925,
+      "source_start": 6.616667,
+      "text": "the"
+    },
+    {
+      "output_end": 13.233333,
+      "output_start": 9.925,
+      "source_end": 13.233333,
+      "source_start": 9.925,
+      "text": "risk"
+    },
+    {
+      "output_end": 16.433333,
+      "output_start": 13.233333,
+      "source_end": 16.433333,
+      "source_start": 13.233333,
+      "text": "A"
+    },
+    {
+      "output_end": 19.633333,
+      "output_start": 16.433333,
+      "source_end": 19.633333,
+      "source_start": 16.433333,
+      "text": "rival"
+    },
+    {
+      "output_end": 22.833333,
+      "output_start": 19.633333,
+      "source_end": 22.833333,
+      "source_start": 19.633333,
+      "text": "may"
+    },
+    {
+      "output_end": 26.033333,
+      "output_start": 22.833333,
+      "source_end": 26.033333,
+      "source_start": 22.833333,
+      "text": "move"
+    },
+    {
+      "output_end": 29.233333,
+      "output_start": 26.033333,
+      "source_end": 29.233333,
+      "source_start": 26.033333,
+      "text": "first"
+    },
+    {
+      "output_end": 33.233333,
+      "output_start": 29.233333,
+      "source_end": 33.233333,
+      "source_start": 29.233333,
+      "text": "Fear"
+    },
+    {
+      "output_end": 37.233333,
+      "output_start": 33.233333,
+      "source_end": 37.233333,
+      "source_start": 33.233333,
+      "text": "drives"
+    },
+    {
+      "output_end": 41.233333,
+      "output_start": 37.233333,
+      "source_end": 41.233333,
+      "source_start": 37.233333,
+      "text": "the"
+    },
+    {
+      "output_end": 45.233333,
+      "output_start": 41.233333,
+      "source_end": 45.233333,
+      "source_start": 41.233333,
+      "text": "race"
+    },
+    {
+      "output_end": 48.541667,
+      "output_start": 45.233333,
+      "source_end": 48.541667,
+      "source_start": 45.233333,
+      "text": "The"
+    },
+    {
+      "output_end": 51.85,
+      "output_start": 48.541667,
+      "source_end": 51.85,
+      "source_start": 48.541667,
+      "text": "evidence"
+    },
+    {
+      "output_end": 55.158333,
+      "output_start": 51.85,
+      "source_end": 55.158333,
+      "source_start": 51.85,
+      "text": "is"
+    },
+    {
+      "output_end": 62.466667,
+      "output_start": 55.158333,
+      "source_end": 58.466667,
+      "source_start": 55.158333,
+      "text": "visible"
+    },
+    {
+      "output_end": 67.8,
+      "output_start": 62.466667,
+      "source_end": 63.8,
+      "source_start": 58.466667,
+      "text": "Tests"
+    },
+    {
+      "output_end": 73.133333,
+      "output_start": 67.8,
+      "source_end": 69.133333,
+      "source_start": 63.8,
+      "text": "reveal"
+    },
+    {
+      "output_end": 78.466667,
+      "output_start": 73.133333,
+      "source_end": 74.466667,
+      "source_start": 69.133333,
+      "text": "pressure"
+    },
+    {
+      "output_end": 81.133333,
+      "output_start": 78.466667,
+      "source_end": 77.133333,
+      "source_start": 74.466667,
+      "text": "A"
+    },
+    {
+      "output_end": 83.8,
+      "output_start": 81.133333,
+      "source_end": 79.8,
+      "source_start": 77.133333,
+      "text": "drill"
+    },
+    {
+      "output_end": 86.466667,
+      "output_start": 83.8,
+      "source_end": 82.466667,
+      "source_start": 79.8,
+      "text": "is"
+    },
+    {
+      "output_end": 89.133333,
+      "output_start": 86.466667,
+      "source_end": 85.133333,
+      "source_start": 82.466667,
+      "text": "not"
+    },
+    {
+      "output_end": 91.8,
+      "output_start": 89.133333,
+      "source_end": 87.8,
+      "source_start": 85.133333,
+      "text": "an"
+    },
+    {
+      "output_end": 98.466667,
+      "output_start": 91.8,
+      "source_end": 90.466667,
+      "source_start": 87.8,
+      "text": "incident"
+    },
+    {
+      "output_end": 102.866667,
+      "output_start": 98.466667,
+      "source_end": 94.866667,
+      "source_start": 90.466667,
+      "text": "The"
+    },
+    {
+      "output_end": 107.266667,
+      "output_start": 102.866667,
+      "source_end": 99.266667,
+      "source_start": 94.866667,
+      "text": "distinction"
+    },
+    {
+      "output_end": 111.666667,
+      "output_start": 107.266667,
+      "source_end": 103.666667,
+      "source_start": 99.266667,
+      "text": "matters"
+    },
+    {
+      "output_end": 117,
+      "output_start": 111.666667,
+      "source_end": 109,
+      "source_start": 103.666667,
+      "text": "Markets"
+    },
+    {
+      "output_end": 122.333333,
+      "output_start": 117,
+      "source_end": 114.333333,
+      "source_start": 109,
+      "text": "reward"
+    },
+    {
+      "output_end": 127.666667,
+      "output_start": 122.333333,
+      "source_end": 119.666667,
+      "source_start": 114.333333,
+      "text": "capability"
+    },
+    {
+      "output_end": 133,
+      "output_start": 127.666667,
+      "source_end": 125,
+      "source_start": 119.666667,
+      "text": "Governments"
+    },
+    {
+      "output_end": 138.333333,
+      "output_start": 133,
+      "source_end": 130.333333,
+      "source_start": 125,
+      "text": "seek"
+    },
+    {
+      "output_end": 143.666667,
+      "output_start": 138.333333,
+      "source_end": 135.666667,
+      "source_start": 130.333333,
+      "text": "advantage"
+    },
+    {
+      "output_end": 146.966667,
+      "output_start": 143.666667,
+      "source_end": 138.966667,
+      "source_start": 135.666667,
+      "text": "Leadership"
+    },
+    {
+      "output_end": 150.266667,
+      "output_start": 146.966667,
+      "source_end": 142.266667,
+      "source_start": 138.966667,
+      "text": "can"
+    },
+    {
+      "output_end": 153.566667,
+      "output_start": 150.266667,
+      "source_end": 145.566667,
+      "source_start": 142.266667,
+      "text": "shift"
+    },
+    {
+      "output_end": 156.866667,
+      "output_start": 153.566667,
+      "source_end": 148.866667,
+      "source_start": 145.566667,
+      "text": "quickly"
+    },
+    {
+      "output_end": 160.866667,
+      "output_start": 156.866667,
+      "source_end": 152.866667,
+      "source_start": 148.866667,
+      "text": "Caution"
+    },
+    {
+      "output_end": 164.866667,
+      "output_start": 160.866667,
+      "source_end": 156.866667,
+      "source_start": 152.866667,
+      "text": "carries"
+    },
+    {
+      "output_end": 168.866667,
+      "output_start": 164.866667,
+      "source_end": 160.866667,
+      "source_start": 156.866667,
+      "text": "a"
+    },
+    {
+      "output_end": 172.866667,
+      "output_start": 168.866667,
+      "source_end": 164.866667,
+      "source_start": 160.866667,
+      "text": "cost"
+    },
+    {
+      "output_end": 178.2,
+      "output_start": 172.866667,
+      "source_end": 170.2,
+      "source_start": 164.866667,
+      "text": "Competition"
+    },
+    {
+      "output_end": 183.533333,
+      "output_start": 178.2,
+      "source_end": 175.533333,
+      "source_start": 170.2,
+      "text": "resists"
+    },
+    {
+      "output_end": 188.866667,
+      "output_start": 183.533333,
+      "source_end": 180.866667,
+      "source_start": 175.533333,
+      "text": "restraint"
+    },
+    {
+      "output_end": 192.166667,
+      "output_start": 188.866667,
+      "source_end": 184.166667,
+      "source_start": 180.866667,
+      "text": "Slowing"
+    },
+    {
+      "output_end": 195.466667,
+      "output_start": 192.166667,
+      "source_end": 187.466667,
+      "source_start": 184.166667,
+      "text": "alone"
+    },
+    {
+      "output_end": 198.766667,
+      "output_start": 195.466667,
+      "source_end": 190.766667,
+      "source_start": 187.466667,
+      "text": "is"
+    },
+    {
+      "output_end": 202.066667,
+      "output_start": 198.766667,
+      "source_end": 194.066667,
+      "source_start": 190.766667,
+      "text": "unstable"
+    },
+    {
+      "output_end": 203.133333,
+      "output_start": 202.066667,
+      "source_end": 195.133333,
+      "source_start": 194.066667,
+      "text": "Slowing"
+    },
+    {
+      "output_end": 204.2,
+      "output_start": 203.133333,
+      "source_end": 196.2,
+      "source_start": 195.133333,
+      "text": "down"
+    },
+    {
+      "output_end": 205.266667,
+      "output_start": 204.2,
+      "source_end": 197.266667,
+      "source_start": 196.2,
+      "text": "alone"
+    },
+    {
+      "output_end": 206.333333,
+      "output_start": 205.266667,
+      "source_end": 198.333333,
+      "source_start": 197.266667,
+      "text": "doesn't"
+    },
+    {
+      "output_end": 207.4,
+      "output_start": 206.333333,
+      "source_end": 199.4,
+      "source_start": 198.333333,
+      "text": "remove"
+    },
+    {
+      "output_end": 208.466667,
+      "output_start": 207.4,
+      "source_end": 200.466667,
+      "source_start": 199.4,
+      "text": "the"
+    },
+    {
+      "output_end": 209.533333,
+      "output_start": 208.466667,
+      "source_end": 201.533333,
+      "source_start": 200.466667,
+      "text": "risk"
+    },
+    {
+      "output_end": 210.6,
+      "output_start": 209.533333,
+      "source_end": 202.6,
+      "source_start": 201.533333,
+      "text": "It"
+    },
+    {
+      "output_end": 211.666667,
+      "output_start": 210.6,
+      "source_end": 203.666667,
+      "source_start": 202.6,
+      "text": "just"
+    },
+    {
+      "output_end": 212.733333,
+      "output_start": 211.666667,
+      "source_end": 204.733333,
+      "source_start": 203.666667,
+      "text": "hands"
+    },
+    {
+      "output_end": 213.8,
+      "output_start": 212.733333,
+      "source_end": 205.8,
+      "source_start": 204.733333,
+      "text": "the"
+    },
+    {
+      "output_end": 214.866667,
+      "output_start": 213.8,
+      "source_end": 206.866667,
+      "source_start": 205.8,
+      "text": "frontier"
+    },
+    {
+      "output_end": 215.933333,
+      "output_start": 214.866667,
+      "source_end": 207.933333,
+      "source_start": 206.866667,
+      "text": "to"
+    },
+    {
+      "output_end": 217,
+      "output_start": 215.933333,
+      "source_end": 209,
+      "source_start": 207.933333,
+      "text": "whoever"
+    },
+    {
+      "output_end": 223.066667,
+      "output_start": 217,
+      "source_end": 210.066667,
+      "source_start": 209,
+      "text": "doesn't"
+    },
+    {
+      "output_end": 228.4,
+      "output_start": 223.066667,
+      "source_end": 215.4,
+      "source_start": 210.066667,
+      "text": "Institutions"
+    },
+    {
+      "output_end": 233.733333,
+      "output_start": 228.4,
+      "source_end": 220.733333,
+      "source_start": 215.4,
+      "text": "lag"
+    },
+    {
+      "output_end": 239.066667,
+      "output_start": 233.733333,
+      "source_end": 226.066667,
+      "source_start": 220.733333,
+      "text": "behind"
+    },
+    {
+      "output_end": 242.916667,
+      "output_start": 239.066667,
+      "source_end": 229.916667,
+      "source_start": 226.066667,
+      "text": "Cyber"
+    },
+    {
+      "output_end": 246.766667,
+      "output_start": 242.916667,
+      "source_end": 233.766667,
+      "source_start": 229.916667,
+      "text": "misuse"
+    },
+    {
+      "output_end": 250.616667,
+      "output_start": 246.766667,
+      "source_end": 237.616667,
+      "source_start": 233.766667,
+      "text": "lowers"
+    },
+    {
+      "output_end": 254.466667,
+      "output_start": 250.616667,
+      "source_end": 241.466667,
+      "source_start": 237.616667,
+      "text": "barriers"
+    },
+    {
+      "output_end": 259.8,
+      "output_start": 254.466667,
+      "source_end": 246.8,
+      "source_start": 241.466667,
+      "text": "Disclosures"
+    },
+    {
+      "output_end": 265.133333,
+      "output_start": 259.8,
+      "source_end": 252.133333,
+      "source_start": 246.8,
+      "text": "need"
+    },
+    {
+      "output_end": 270.466667,
+      "output_start": 265.133333,
+      "source_end": 257.466667,
+      "source_start": 252.133333,
+      "text": "scrutiny"
+    },
+    {
+      "output_end": 275.8,
+      "output_start": 270.466667,
+      "source_end": 262.8,
+      "source_start": 257.466667,
+      "text": "Automation"
+    },
+    {
+      "output_end": 281.133333,
+      "output_start": 275.8,
+      "source_end": 268.133333,
+      "source_start": 262.8,
+      "text": "aids"
+    },
+    {
+      "output_end": 286.466667,
+      "output_start": 281.133333,
+      "source_end": 273.466667,
+      "source_start": 268.133333,
+      "text": "defenders"
+    },
+    {
+      "output_end": 290.316667,
+      "output_start": 286.466667,
+      "source_end": 277.316667,
+      "source_start": 273.466667,
+      "text": "Bio"
+    },
+    {
+      "output_end": 294.166667,
+      "output_start": 290.316667,
+      "source_end": 281.166667,
+      "source_start": 277.316667,
+      "text": "thresholds"
+    },
+    {
+      "output_end": 298.016667,
+      "output_start": 294.166667,
+      "source_end": 285.016667,
+      "source_start": 281.166667,
+      "text": "trigger"
+    },
+    {
+      "output_end": 301.866667,
+      "output_start": 298.016667,
+      "source_end": 288.866667,
+      "source_start": 285.016667,
+      "text": "safeguards"
+    },
+    {
+      "output_end": 307.2,
+      "output_start": 301.866667,
+      "source_end": 294.2,
+      "source_start": 288.866667,
+      "text": "Standards"
+    },
+    {
+      "output_end": 316.533333,
+      "output_start": 307.2,
+      "source_end": 299.533333,
+      "source_start": 294.2,
+      "text": "remain"
+    },
+    {
+      "output_end": 321.866667,
+      "output_start": 316.533333,
+      "source_end": 304.866667,
+      "source_start": 299.533333,
+      "text": "fragmented"
+    },
+    {
+      "output_end": 325.866667,
+      "output_start": 321.866667,
+      "source_end": 308.866667,
+      "source_start": 304.866667,
+      "text": "Synthetic"
+    },
+    {
+      "output_end": 329.866667,
+      "output_start": 325.866667,
+      "source_end": 312.866667,
+      "source_start": 308.866667,
+      "text": "media"
+    },
+    {
+      "output_end": 333.866667,
+      "output_start": 329.866667,
+      "source_end": 316.866667,
+      "source_start": 312.866667,
+      "text": "strains"
+    },
+    {
+      "output_end": 337.866667,
+      "output_start": 333.866667,
+      "source_end": 320.866667,
+      "source_start": 316.866667,
+      "text": "facts"
+    },
+    {
+      "output_end": 343,
+      "output_start": 337.866667,
+      "source_end": 326,
+      "source_start": 320.866667,
+      "text": "Job"
+    },
+    {
+      "output_end": 348.133333,
+      "output_start": 343,
+      "source_end": 331.133333,
+      "source_start": 326,
+      "text": "forecasts"
+    },
+    {
+      "output_end": 353.266667,
+      "output_start": 348.133333,
+      "source_end": 336.266667,
+      "source_start": 331.133333,
+      "text": "diverge"
+    },
+    {
+      "output_end": 357.266667,
+      "output_start": 353.266667,
+      "source_end": 340.266667,
+      "source_start": 336.266667,
+      "text": "Power"
+    },
+    {
+      "output_end": 361.266667,
+      "output_start": 357.266667,
+      "source_end": 344.266667,
+      "source_start": 340.266667,
+      "text": "concentrates"
+    },
+    {
+      "output_end": 365.266667,
+      "output_start": 361.266667,
+      "source_end": 348.266667,
+      "source_start": 344.266667,
+      "text": "in"
+    },
+    {
+      "output_end": 369.266667,
+      "output_start": 365.266667,
+      "source_end": 352.266667,
+      "source_start": 348.266667,
+      "text": "compute"
+    },
+    {
+      "output_end": 373.266667,
+      "output_start": 369.266667,
+      "source_end": 356.266667,
+      "source_start": 352.266667,
+      "text": "Cloud"
+    },
+    {
+      "output_end": 377.266667,
+      "output_start": 373.266667,
+      "source_end": 360.266667,
+      "source_start": 356.266667,
+      "text": "control"
+    },
+    {
+      "output_end": 381.266667,
+      "output_start": 377.266667,
+      "source_end": 364.266667,
+      "source_start": 360.266667,
+      "text": "creates"
+    },
+    {
+      "output_end": 385.266667,
+      "output_start": 381.266667,
+      "source_end": 368.266667,
+      "source_start": 364.266667,
+      "text": "leverage"
+    },
+    {
+      "output_end": 390.4,
+      "output_start": 385.266667,
+      "source_end": 373.4,
+      "source_start": 368.266667,
+      "text": "Regulation"
+    },
+    {
+      "output_end": 395.533333,
+      "output_start": 390.4,
+      "source_end": 378.533333,
+      "source_start": 373.4,
+      "text": "grants"
+    },
+    {
+      "output_end": 400.666667,
+      "output_start": 395.533333,
+      "source_end": 383.666667,
+      "source_start": 378.533333,
+      "text": "authority"
+    },
+    {
+      "output_end": 404.666667,
+      "output_start": 400.666667,
+      "source_end": 387.666667,
+      "source_start": 383.666667,
+      "text": "Safety"
+    },
+    {
+      "output_end": 408.666667,
+      "output_start": 404.666667,
+      "source_end": 391.666667,
+      "source_start": 387.666667,
+      "text": "thresholds"
+    },
+    {
+      "output_end": 412.666667,
+      "output_start": 408.666667,
+      "source_end": 395.666667,
+      "source_start": 391.666667,
+      "text": "can"
+    },
+    {
+      "output_end": 416.666667,
+      "output_start": 412.666667,
+      "source_end": 399.666667,
+      "source_start": 395.666667,
+      "text": "help"
+    },
+    {
+      "output_end": 420.666667,
+      "output_start": 416.666667,
+      "source_end": 403.666667,
+      "source_start": 399.666667,
+      "text": "Compliance"
+    },
+    {
+      "output_end": 424.666667,
+      "output_start": 420.666667,
+      "source_end": 407.666667,
+      "source_start": 403.666667,
+      "text": "can"
+    },
+    {
+      "output_end": 428.666667,
+      "output_start": 424.666667,
+      "source_end": 411.666667,
+      "source_start": 407.666667,
+      "text": "favor"
+    },
+    {
+      "output_end": 432.666667,
+      "output_start": 428.666667,
+      "source_end": 415.666667,
+      "source_start": 411.666667,
+      "text": "incumbents"
+    },
+    {
+      "output_end": 440.746667,
+      "output_start": 432.666667,
+      "source_end": 418.746667,
+      "source_start": 415.666667,
+      "text": "Rules"
+    },
+    {
+      "output_end": 443.826667,
+      "output_start": 440.746667,
+      "source_end": 421.826667,
+      "source_start": 418.746667,
+      "text": "can"
+    },
+    {
+      "output_end": 446.906667,
+      "output_start": 443.826667,
+      "source_end": 424.906667,
+      "source_start": 421.826667,
+      "text": "lock"
+    },
+    {
+      "output_end": 449.986667,
+      "output_start": 446.906667,
+      "source_end": 427.986667,
+      "source_start": 424.906667,
+      "text": "in"
+    },
+    {
+      "output_end": 453.066667,
+      "output_start": 449.986667,
+      "source_end": 431.066667,
+      "source_start": 427.986667,
+      "text": "leaders"
+    },
+    {
+      "output_end": 457.066667,
+      "output_start": 453.066667,
+      "source_end": 435.066667,
+      "source_start": 431.066667,
+      "text": "Open"
+    },
+    {
+      "output_end": 461.066667,
+      "output_start": 457.066667,
+      "source_end": 439.066667,
+      "source_start": 435.066667,
+      "text": "weights"
+    },
+    {
+      "output_end": 465.066667,
+      "output_start": 461.066667,
+      "source_end": 443.066667,
+      "source_start": 439.066667,
+      "text": "enable"
+    },
+    {
+      "output_end": 469.066667,
+      "output_start": 465.066667,
+      "source_end": 447.066667,
+      "source_start": 443.066667,
+      "text": "scrutiny"
+    },
+    {
+      "output_end": 474.4,
+      "output_start": 469.066667,
+      "source_end": 452.4,
+      "source_start": 447.066667,
+      "text": "Openness"
+    },
+    {
+      "output_end": 479.733333,
+      "output_start": 474.4,
+      "source_end": 457.733333,
+      "source_start": 452.4,
+      "text": "spreads"
+    },
+    {
+      "output_end": 485.066667,
+      "output_start": 479.733333,
+      "source_end": 463.066667,
+      "source_start": 457.733333,
+      "text": "capability"
+    },
+    {
+      "output_end": 488.916667,
+      "output_start": 485.066667,
+      "source_end": 466.916667,
+      "source_start": 463.066667,
+      "text": "Closed"
+    },
+    {
+      "output_end": 492.766667,
+      "output_start": 488.916667,
+      "source_end": 470.766667,
+      "source_start": 466.916667,
+      "text": "systems"
+    },
+    {
+      "output_end": 496.616667,
+      "output_start": 492.766667,
+      "source_end": 474.616667,
+      "source_start": 470.766667,
+      "text": "enable"
+    },
+    {
+      "output_end": 500.466667,
+      "output_start": 496.616667,
+      "source_end": 478.466667,
+      "source_start": 474.616667,
+      "text": "monitoring"
+    },
+    {
+      "output_end": 503.666667,
+      "output_start": 500.466667,
+      "source_end": 481.666667,
+      "source_start": 478.466667,
+      "text": "Centralization"
+    },
+    {
+      "output_end": 506.866667,
+      "output_start": 503.666667,
+      "source_end": 484.866667,
+      "source_start": 481.666667,
+      "text": "does"
+    },
+    {
+      "output_end": 510.066667,
+      "output_start": 506.866667,
+      "source_end": 488.066667,
+      "source_start": 484.866667,
+      "text": "not"
+    },
+    {
+      "output_end": 513.266667,
+      "output_start": 510.066667,
+      "source_end": 491.266667,
+      "source_start": 488.066667,
+      "text": "end"
+    },
+    {
+      "output_end": 516.466667,
+      "output_start": 513.266667,
+      "source_end": 494.466667,
+      "source_start": 491.266667,
+      "text": "abuse"
+    },
+    {
+      "output_end": 520.466667,
+      "output_start": 516.466667,
+      "source_end": 498.466667,
+      "source_start": 494.466667,
+      "text": "Different"
+    },
+    {
+      "output_end": 524.466667,
+      "output_start": 520.466667,
+      "source_end": 502.466667,
+      "source_start": 498.466667,
+      "text": "systems"
+    },
+    {
+      "output_end": 528.466667,
+      "output_start": 524.466667,
+      "source_end": 506.466667,
+      "source_start": 502.466667,
+      "text": "fail"
+    },
+    {
+      "output_end": 532.466667,
+      "output_start": 528.466667,
+      "source_end": 510.466667,
+      "source_start": 506.466667,
+      "text": "differently"
+    },
+    {
+      "output_end": 536.308333,
+      "output_start": 532.466667,
+      "source_end": 514.308333,
+      "source_start": 510.466667,
+      "text": "Technical"
+    },
+    {
+      "output_end": 540.15,
+      "output_start": 536.308333,
+      "source_end": 518.15,
+      "source_start": 514.308333,
+      "text": "safety"
+    },
+    {
+      "output_end": 543.991667,
+      "output_start": 540.15,
+      "source_end": 521.991667,
+      "source_start": 518.15,
+      "text": "comes"
+    },
+    {
+      "output_end": 547.833333,
+      "output_start": 543.991667,
+      "source_end": 525.833333,
+      "source_start": 521.991667,
+      "text": "first"
+    },
+    {
+      "output_end": 551.833333,
+      "output_start": 547.833333,
+      "source_end": 529.833333,
+      "source_start": 525.833333,
+      "text": "Evaluation"
+    },
+    {
+      "output_end": 555.833333,
+      "output_start": 551.833333,
+      "source_end": 533.833333,
+      "source_start": 529.833333,
+      "text": "must"
+    },
+    {
+      "output_end": 559.833333,
+      "output_start": 555.833333,
+      "source_end": 537.833333,
+      "source_start": 533.833333,
+      "text": "precede"
+    },
+    {
+      "output_end": 568.833333,
+      "output_start": 559.833333,
+      "source_end": 541.833333,
+      "source_start": 537.833333,
+      "text": "release"
+    },
+    {
+      "output_end": 572.833333,
+      "output_start": 568.833333,
+      "source_end": 545.833333,
+      "source_start": 541.833333,
+      "text": "Reporting"
+    },
+    {
+      "output_end": 576.833333,
+      "output_start": 572.833333,
+      "source_end": 549.833333,
+      "source_start": 545.833333,
+      "text": "should"
+    },
+    {
+      "output_end": 580.833333,
+      "output_start": 576.833333,
+      "source_end": 553.833333,
+      "source_start": 549.833333,
+      "text": "be"
+    },
+    {
+      "output_end": 584.833333,
+      "output_start": 580.833333,
+      "source_end": 557.833333,
+      "source_start": 553.833333,
+      "text": "mandatory"
+    },
+    {
+      "output_end": 588.675,
+      "output_start": 584.833333,
+      "source_end": 561.675,
+      "source_start": 557.833333,
+      "text": "Liability"
+    },
+    {
+      "output_end": 592.516667,
+      "output_start": 588.675,
+      "source_end": 565.516667,
+      "source_start": 561.675,
+      "text": "must"
+    },
+    {
+      "output_end": 596.358333,
+      "output_start": 592.516667,
+      "source_end": 569.358333,
+      "source_start": 565.516667,
+      "text": "follow"
+    },
+    {
+      "output_end": 600.2,
+      "output_start": 596.358333,
+      "source_end": 573.2,
+      "source_start": 569.358333,
+      "text": "deployment"
+    },
+    {
+      "output_end": 605.533333,
+      "output_start": 600.2,
+      "source_end": 578.533333,
+      "source_start": 573.2,
+      "text": "Whistleblowers"
+    },
+    {
+      "output_end": 610.866667,
+      "output_start": 605.533333,
+      "source_end": 583.866667,
+      "source_start": 578.533333,
+      "text": "need"
+    },
+    {
+      "output_end": 616.2,
+      "output_start": 610.866667,
+      "source_end": 589.2,
+      "source_start": 583.866667,
+      "text": "protection"
+    },
+    {
+      "output_end": 620.2,
+      "output_start": 616.2,
+      "source_end": 593.2,
+      "source_start": 589.2,
+      "text": "Compute"
+    },
+    {
+      "output_end": 624.2,
+      "output_start": 620.2,
+      "source_end": 597.2,
+      "source_start": 593.2,
+      "text": "governance"
+    },
+    {
+      "output_end": 628.2,
+      "output_start": 624.2,
+      "source_end": 601.2,
+      "source_start": 597.2,
+      "text": "acts"
+    },
+    {
+      "output_end": 632.2,
+      "output_start": 628.2,
+      "source_end": 605.2,
+      "source_start": 601.2,
+      "text": "upstream"
+    },
+    {
+      "output_end": 637.322222,
+      "output_start": 632.2,
+      "source_end": 610.322222,
+      "source_start": 605.2,
+      "text": "Researchers"
+    },
+    {
+      "output_end": 642.444444,
+      "output_start": 637.322222,
+      "source_end": 615.444444,
+      "source_start": 610.322222,
+      "text": "need"
+    },
+    {
+      "output_end": 647.566667,
+      "output_start": 642.444444,
+      "source_end": 620.566667,
+      "source_start": 615.444444,
+      "text": "access"
+    },
+    {
+      "output_end": 651.566667,
+      "output_start": 647.566667,
+      "source_end": 624.566667,
+      "source_start": 620.566667,
+      "text": "Verification"
+    },
+    {
+      "output_end": 655.566667,
+      "output_start": 651.566667,
+      "source_end": 628.566667,
+      "source_start": 624.566667,
+      "text": "cannot"
+    },
+    {
+      "output_end": 659.566667,
+      "output_start": 655.566667,
+      "source_end": 632.566667,
+      "source_start": 628.566667,
+      "text": "be"
+    },
+    {
+      "output_end": 663.566667,
+      "output_start": 659.566667,
+      "source_end": 636.566667,
+      "source_start": 632.566667,
+      "text": "voluntary"
+    },
+    {
+      "output_end": 668.9,
+      "output_start": 663.566667,
+      "source_end": 641.9,
+      "source_start": 636.566667,
+      "text": "Competition"
+    },
+    {
+      "output_end": 674.233333,
+      "output_start": 668.9,
+      "source_end": 647.233333,
+      "source_start": 641.9,
+      "text": "limits"
+    },
+    {
+      "output_end": 684.566667,
+      "output_start": 674.233333,
+      "source_end": 652.566667,
+      "source_start": 647.233333,
+      "text": "authority"
+    },
+    {
+      "output_end": 688.408333,
+      "output_start": 684.566667,
+      "source_end": 656.408333,
+      "source_start": 652.566667,
+      "text": "Sunset"
+    },
+    {
+      "output_end": 692.25,
+      "output_start": 688.408333,
+      "source_end": 660.25,
+      "source_start": 656.408333,
+      "text": "clauses"
+    },
+    {
+      "output_end": 696.091667,
+      "output_start": 692.25,
+      "source_end": 664.091667,
+      "source_start": 660.25,
+      "text": "preserve"
+    },
+    {
+      "output_end": 699.933333,
+      "output_start": 696.091667,
+      "source_end": 667.933333,
+      "source_start": 664.091667,
+      "text": "revision"
+    },
+    {
+      "output_end": 703.933333,
+      "output_start": 699.933333,
+      "source_end": 671.933333,
+      "source_start": 667.933333,
+      "text": "Failure"
+    },
+    {
+      "output_end": 707.933333,
+      "output_start": 703.933333,
+      "source_end": 675.933333,
+      "source_start": 671.933333,
+      "text": "can"
+    },
+    {
+      "output_end": 711.933333,
+      "output_start": 707.933333,
+      "source_end": 679.933333,
+      "source_start": 675.933333,
+      "text": "accumulate"
+    },
+    {
+      "output_end": 715.933333,
+      "output_start": 711.933333,
+      "source_end": 683.933333,
+      "source_start": 679.933333,
+      "text": "quietly"
+    },
+    {
+      "output_end": 719.933333,
+      "output_start": 715.933333,
+      "source_end": 687.933333,
+      "source_start": 683.933333,
+      "text": "Concentrated"
+    },
+    {
+      "output_end": 723.933333,
+      "output_start": 719.933333,
+      "source_end": 691.933333,
+      "source_start": 687.933333,
+      "text": "control"
+    },
+    {
+      "output_end": 727.933333,
+      "output_start": 723.933333,
+      "source_end": 695.933333,
+      "source_start": 691.933333,
+      "text": "is"
+    },
+    {
+      "output_end": 731.933333,
+      "output_start": 727.933333,
+      "source_end": 699.933333,
+      "source_start": 695.933333,
+      "text": "dangerous"
+    },
+    {
+      "output_end": 734.6,
+      "output_start": 731.933333,
+      "source_end": 702.6,
+      "source_start": 699.933333,
+      "text": "The"
+    },
+    {
+      "output_end": 737.266667,
+      "output_start": 734.6,
+      "source_end": 705.266667,
+      "source_start": 702.6,
+      "text": "choice"
+    },
+    {
+      "output_end": 739.933333,
+      "output_start": 737.266667,
+      "source_end": 707.933333,
+      "source_start": 705.266667,
+      "text": "is"
+    },
+    {
+      "output_end": 742.6,
+      "output_start": 739.933333,
+      "source_end": 710.6,
+      "source_start": 707.933333,
+      "text": "still"
+    },
+    {
+      "output_end": 745.266667,
+      "output_start": 742.6,
+      "source_end": 713.266667,
+      "source_start": 710.6,
+      "text": "being"
+    },
+    {
+      "output_end": 753.933333,
+      "output_start": 745.266667,
+      "source_end": 715.933333,
+      "source_start": 713.266667,
+      "text": "made"
+    }
+  ]
+}

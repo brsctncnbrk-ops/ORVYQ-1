@@ -1,0 +1,156 @@
+{
+  "claims": [
+    {
+      "claim_id": "CLM_RACE_INCENTIVE",
+      "confidence": 0.91,
+      "limitation": "The sources document risk-management responses; the strategic incentive framing is an analytical synthesis.",
+      "section_id": "SEC_RACE",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP",
+        "SRC_DEEPMIND_FSF"
+      ],
+      "status": "qualified",
+      "text": "Competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "visual_evidence_requirement": "required"
+    },
+    {
+      "claim_id": "CLM_SAFETY_FRAMEWORKS",
+      "confidence": 0.98,
+      "section_id": "SEC_RACE",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP",
+        "SRC_DEEPMIND_FSF"
+      ],
+      "status": "verified",
+      "text": "Leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "visual_evidence_requirement": "required"
+    },
+    {
+      "claim_id": "CLM_SAFETY_THRESHOLDS",
+      "confidence": 0.98,
+      "section_id": "SEC_EVIDENCE",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP",
+        "SRC_DEEPMIND_FSF"
+      ],
+      "status": "verified",
+      "text": "Frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "visual_evidence_requirement": "required"
+    },
+    {
+      "claim_id": "CLM_ALIGNMENT_RISK",
+      "confidence": 0.97,
+      "section_id": "SEC_EVIDENCE",
+      "source_ids": [
+        "SRC_DEEPMIND_FSF"
+      ],
+      "status": "verified",
+      "text": "Published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "visual_evidence_requirement": "required"
+    },
+    {
+      "claim_id": "CLM_CONTROLLED_TEST",
+      "confidence": 0.99,
+      "limitation": "The study describes controlled fictional simulations, not documented real-world incidents.",
+      "section_id": "SEC_EVIDENCE",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "status": "qualified",
+      "text": "Anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "visual_evidence_requirement": "required"
+    },
+    {
+      "claim_id": "CLM_REPLACEMENT_SCENARIO",
+      "confidence": 0.99,
+      "section_id": "SEC_EVIDENCE",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "status": "verified",
+      "text": "The published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "visual_evidence_requirement": "required"
+    },
+    {
+      "claim_id": "CLM_GOVERNANCE_LAG",
+      "confidence": 0.82,
+      "limitation": "This is a comparative policy judgment rather than a single-source measured statistic.",
+      "section_id": "SEC_GOVERNANCE",
+      "source_ids": [
+        "SRC_NIST_RMF",
+        "SRC_EU_AI_ACT"
+      ],
+      "status": "qualified",
+      "text": "Institutional oversight can move more slowly than technical capability and deployment.",
+      "visual_evidence_requirement": "preferred"
+    },
+    {
+      "claim_id": "CLM_MISUSE",
+      "confidence": 0.84,
+      "limitation": "The magnitude and accessibility of misuse vary by model, safeguards and user expertise.",
+      "section_id": "SEC_MISUSE",
+      "source_ids": [
+        "SRC_NIST_RMF",
+        "SRC_ANTHROPIC_RSP"
+      ],
+      "status": "qualified",
+      "text": "More capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "visual_evidence_requirement": "preferred"
+    },
+    {
+      "claim_id": "CLM_POWER",
+      "confidence": 0.86,
+      "limitation": "The degree of concentration differs across jurisdictions, deployment models and access regimes.",
+      "section_id": "SEC_POWER",
+      "source_ids": [
+        "SRC_UNESCO_ETHICS",
+        "SRC_EU_AI_ACT"
+      ],
+      "status": "qualified",
+      "text": "Control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "visual_evidence_requirement": "preferred"
+    },
+    {
+      "claim_id": "CLM_OPEN_CLOSED",
+      "confidence": 0.88,
+      "limitation": "Neither development model removes risk; each changes who can inspect, control or misuse the system.",
+      "section_id": "SEC_TRADEOFF",
+      "source_ids": [
+        "SRC_NIST_RMF",
+        "SRC_EU_AI_ACT"
+      ],
+      "status": "qualified",
+      "text": "Open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "visual_evidence_requirement": "preferred"
+    },
+    {
+      "claim_id": "CLM_SAFETY_ARCHITECTURE",
+      "confidence": 0.93,
+      "limitation": "Safeguards reduce exposure only when implemented, tested and updated against changing capabilities.",
+      "section_id": "SEC_SAFETY",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP",
+        "SRC_DEEPMIND_FSF",
+        "SRC_NIST_RMF"
+      ],
+      "status": "qualified",
+      "text": "Layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "visual_evidence_requirement": "preferred"
+    },
+    {
+      "claim_id": "CLM_HUMAN_AGENCY",
+      "confidence": 0.9,
+      "limitation": "This is the film’s normative conclusion, grounded in the cited governance frameworks.",
+      "section_id": "SEC_FINAL",
+      "source_ids": [
+        "SRC_UNESCO_ETHICS",
+        "SRC_EU_AI_ACT"
+      ],
+      "status": "qualified",
+      "text": "The governance of frontier AI remains a human institutional choice rather than an automatic technical outcome.",
+      "visual_evidence_requirement": "narration_only"
+    }
+  ],
+  "project_id": "001-ai-race",
+  "schema_version": "1.0"
+}
