@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import type {Asset, Evidence, Shot} from './types';
+import type {Asset, Evidence, GraphicItem, Shot} from './types';
 
 const palette = {
   ground: '#05070C',
@@ -118,15 +118,16 @@ export const GraphicScene: React.FC<{shot: Shot}> = ({shot}) => {
   const items = shot.items ?? [];
   const steps = shot.steps ?? [];
   const comparison = ['comparison_graphic', 'limitation_treatment'].includes(shot.shot_type);
+  const cards: GraphicItem[] = items.length ? items : steps.map((step, index) => ({label: String(index + 1).padStart(2, '0'), value: step, detail: ''}));
   return (
     <AbsoluteFill style={{background: 'linear-gradient(135deg,#101A27 0%,#0C1320 48%,#151C23 100%)', color: palette.ink, opacity: fadeFor(shot, frame, duration)}}>
       <Header shot={shot}/>
-      <div style={{position: 'absolute', left: 85, right: 85, top: 235, bottom: 115, display: 'grid', gridTemplateColumns: comparison ? '1fr 1fr' : `repeat(${Math.max(1, Math.min(4, items.length || steps.length || 1))},1fr)`, gap: 18, alignItems: 'stretch', opacity: reveal, transform: `translateY(${(1 - reveal) * 18}px)`}}>
+      <div style={{position: 'absolute', left: 85, right: 85, top: 235, bottom: 115, display: 'grid', gridTemplateColumns: comparison ? '1fr 1fr' : `repeat(${Math.max(1, Math.min(4, cards.length || 1))},1fr)`, gap: 18, alignItems: 'stretch', opacity: reveal, transform: `translateY(${(1 - reveal) * 18}px)`}}>
         {comparison ? [
           {label: 'SUPPORTS', value: shot.left ?? 'What the source supports', detail: shot.left_detail ?? '', accent: palette.blue},
           {label: 'DOES NOT ESTABLISH', value: shot.right ?? 'What the source does not prove', detail: shot.right_detail ?? '', accent: palette.accent}
         ].map((item) => <Panel key={item.label} accent={item.accent}><div style={{color: item.accent, fontFamily: 'Arial', fontSize: 17, letterSpacing: '.13em', fontWeight: 900}}>{item.label}</div><div style={{fontFamily: 'Arial', fontSize: 34, lineHeight: 1.08, fontWeight: 820, marginTop: 18}}>{item.value}</div><div style={{color: palette.muted, fontFamily: 'Arial', fontSize: 24, lineHeight: 1.28, marginTop: 18}}>{item.detail}</div></Panel>) :
-          (items.length ? items : steps.map((step, index) => ({label: String(index + 1).padStart(2, '0'), value: step}))).map((item, index) => <Panel key={`${item.label}-${index}`} accent={index === (items.length || steps.length) - 1 ? palette.accent : palette.blue}><div style={{color: index === (items.length || steps.length) - 1 ? palette.accent : palette.blue, fontFamily: 'Arial', fontSize: 17, letterSpacing: '.13em', fontWeight: 900}}>{item.label}</div><div style={{fontFamily: 'Arial', fontSize: 29, lineHeight: 1.12, fontWeight: 780, marginTop: 17}}>{item.value}</div>{'detail' in item && item.detail ? <div style={{color: palette.muted, fontFamily: 'Arial', fontSize: 21, lineHeight: 1.22, marginTop: 14}}>{item.detail}</div> : null}</Panel>)}
+          cards.map((item, index) => <Panel key={`${item.label}-${index}`} accent={index === cards.length - 1 ? palette.accent : palette.blue}><div style={{color: index === cards.length - 1 ? palette.accent : palette.blue, fontFamily: 'Arial', fontSize: 17, letterSpacing: '.13em', fontWeight: 900}}>{item.label}</div><div style={{fontFamily: 'Arial', fontSize: 29, lineHeight: 1.12, fontWeight: 780, marginTop: 17}}>{item.value}</div>{item.detail ? <div style={{color: palette.muted, fontFamily: 'Arial', fontSize: 21, lineHeight: 1.22, marginTop: 14}}>{item.detail}</div> : null}</Panel>)}
       </div>
       <SourceBar shot={shot}/>
     </AbsoluteFill>
