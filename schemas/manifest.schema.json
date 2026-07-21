@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orvyq.local/schemas/manifest.schema.json",
+  "title": "ORVYQ Project Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project_id",
+    "title",
+    "minimum_duration_seconds",
+    "current_stage",
+    "operation_status",
+    "created_at",
+    "updated_at",
+    "history"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,79}$"},
+    "title": {"type": "string", "minLength": 1, "maxLength": 200},
+    "minimum_duration_seconds": {"type": "number", "minimum": 60},
+    "current_stage": {
+      "enum": [
+        "SOURCE_INTAKE",
+        "RESEARCH",
+        "RESEARCH_QA",
+        "SCRIPT",
+        "FACT_AUDIT",
+        "VOICE",
+        "EVIDENCE_COLLECTION",
+        "EVIDENCE_QA",
+        "VISUAL_PLANNING",
+        "AUDIO_MIX",
+        "READY_FOR_CANDIDATE",
+        "READY_FOR_PROOF",
+        "WAITING_FOR_PROOF_APPROVAL",
+        "READY_FOR_FULL_RENDER",
+        "FINAL_QA",
+        "DONE"
+      ]
+    },
+    "operation_status": {"enum": ["YAPILMADI", "DEVAM_EDIYOR", "TAMAMLANDI", "BLOKE"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "candidate_sha": {"type": ["string", "null"], "pattern": "^[0-9a-f]{40}$"},
+    "approved_proof_run_id": {"type": ["string", "null"]},
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from", "to", "reason", "at"],
+        "properties": {
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "reason": {"type": "string", "minLength": 8},
+          "at": {"type": "string", "format": "date-time"}
+        }
+      }
+    }
+  }
+}
