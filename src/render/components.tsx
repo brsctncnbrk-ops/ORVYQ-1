@@ -69,7 +69,14 @@ export const GraphicScene: React.FC<{shot: Shot}> = ({shot}) => {
   );
 };
 
-export const BrandOpen: React.FC<{shot: Shot}> = ({shot}) => <AbsoluteFill style={{backgroundColor: '#03070b', justifyContent: 'center', alignItems: 'center', color: palette.paper, fontFamily: 'Arial'}}><div style={{fontSize: 92, fontWeight: 800, letterSpacing: 14}}>ORVYQ</div><div style={{fontSize: 22, letterSpacing: 8, color: palette.muted, marginTop: 20}}>BEYOND THE KNOWN</div><SourceFooter shot={shot}/></AbsoluteFill>;
+export const BrandOpen: React.FC<{shot: Shot}> = ({shot}) => (
+  <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, #2a4053 0%, #172633 38%, #0b1118 78%)', justifyContent: 'center', alignItems: 'center', color: palette.paper, fontFamily: 'Arial'}}>
+    <div style={{position: 'absolute', width: 680, height: 2, backgroundColor: palette.accent, top: '36%'}}/>
+    <div style={{fontSize: 92, fontWeight: 800, letterSpacing: 14}}>ORVYQ</div>
+    <div style={{fontSize: 22, letterSpacing: 8, color: palette.muted, marginTop: 20}}>BEYOND THE KNOWN</div>
+    <SourceFooter shot={shot}/>
+  </AbsoluteFill>
+);
 export const EndCard: React.FC = () => <AbsoluteFill style={{backgroundColor: '#03070b', justifyContent: 'center', alignItems: 'center', color: palette.paper, fontFamily: 'Arial'}}><div style={{fontSize: 78, fontWeight: 800, letterSpacing: 13}}>ORVYQ STUDIO</div><div style={{fontSize: 22, letterSpacing: 6, color: palette.muted, marginTop: 22}}>A FILM BEYOND THE KNOWN</div></AbsoluteFill>;
 
 export const ShotScene: React.FC<{shot: Shot; assets: Asset[]}> = ({shot, assets}) => {
