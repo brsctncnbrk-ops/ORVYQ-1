@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orvyq.local/schemas/source-catalog.schema.json",
+  "title": "ORVYQ Source Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "sources"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string", "minLength": 1},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["source_id", "title", "publisher", "url", "kind", "active", "required", "accessed_at", "license_or_basis"],
+        "properties": {
+          "source_id": {"type": "string", "pattern": "^[A-Z0-9_\\-]+$"},
+          "title": {"type": "string", "minLength": 1},
+          "publisher": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "format": "uri"},
+          "kind": {"enum": ["primary", "secondary", "context"]},
+          "active": {"type": "boolean"},
+          "required": {"type": "boolean"},
+          "accessed_at": {"type": "string", "format": "date-time"},
+          "published_at": {"type": "string", "format": "date-time"},
+          "license_or_basis": {"type": "string", "minLength": 8}
+        }
+      }
+    }
+  }
+}
