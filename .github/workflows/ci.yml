@@ -169,12 +169,33 @@ jobs:
         env:
           PROJECT_ID: ${{ steps.resolve.outputs.project_id }}
         run: |
-          set -euo pipefail
-          npm run orvyq -- plan:normalize-evidence --project-id "$PROJECT_ID"
-          npm run orvyq -- candidate:prepare --project-id "$PROJECT_ID"
-          npm run orvyq -- project:validate --project-id "$PROJECT_ID"
-          jq -e '.status == "TAMAMLANDI" and .changed_shot_count >= 0' "projects/$PROJECT_ID/qa/evidence_claim_bindings.json"
-          jq -e '.status == "TAMAMLANDI" and .static_qa.semantic == "TAMAMLANDI" and .static_qa.pacing == "TAMAMLANDI" and .static_qa.mobile == "TAMAMLANDI" and .static_qa.music == "TAMAMLANDI"' "projects/$PROJECT_ID/qa/candidate_preflight.json"
+          set -o pipefail
+          mkdir -p artifacts
+          {
+            set -euo pipefail
+            npm run orvyq -- plan:normalize-evidence --project-id "$PROJECT_ID"
+            npm run orvyq -- candidate:prepare --project-id "$PROJECT_ID"
+            npm run orvyq -- project:validate --project-id "$PROJECT_ID"
+            jq -e '.status == "TAMAMLANDI" and .changed_shot_count >= 0' "projects/$PROJECT_ID/qa/evidence_claim_bindings.json"
+            jq -e '.status == "TAMAMLANDI" and .static_qa.semantic == "TAMAMLANDI" and .static_qa.pacing == "TAMAMLANDI" and .static_qa.mobile == "TAMAMLANDI" and .static_qa.music == "TAMAMLANDI"' "projects/$PROJECT_ID/qa/candidate_preflight.json"
+          } 2>&1 | tee artifacts/prepare-project.log
+
+      - name: Upload project preparation diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orvyq-project-prepare-${{ github.run_id }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            artifacts/prepare-project.log
+            projects/${{ steps.resolve.outputs.project_id }}/qa/evidence_claim_bindings.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/candidate_preflight.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/semantic_visual.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/pacing.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/mobile_legibility.json
+            projects/${{ steps.resolve.outputs.project_id }}/qa/music_cues.json
+            projects/${{ steps.resolve.outputs.project_id }}/direction/production_plan.json
 
       - name: Commit canonical prepared project
         shell: bash
