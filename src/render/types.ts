@@ -24,6 +24,12 @@ export type Caption = {
   text: string;
 };
 
+export type GraphicItem = {
+  label: string;
+  value: string;
+  detail: string;
+};
+
 export type Shot = {
   shot_id: string;
   shot_type: string;
@@ -44,7 +50,7 @@ export type Shot = {
   right?: string;
   left_detail?: string;
   right_detail?: string;
-  items?: Array<{label: string; value: string; detail?: string}>;
+  items?: GraphicItem[];
   steps?: string[];
   transition_in?: 'cut' | 'short_dissolve' | 'motivated_fade' | 'match_motion' | 'audio_led_cut';
   transition_out?: 'cut' | 'short_dissolve' | 'motivated_fade' | 'match_motion' | 'audio_led_cut';
