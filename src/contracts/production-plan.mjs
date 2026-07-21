@@ -1,5 +1,6 @@
 import {invariant} from '../core/errors.mjs';
 import {array, boolean, enumValue, indexBy, number, object, repositoryRelativePath, string} from './common.mjs';
+import {assertEvidenceClaimBindings} from '../direction/evidence-bindings.mjs';
 
 export const SHOT_TYPES = Object.freeze([
   'cinematic_hook',
@@ -121,6 +122,7 @@ export function validateProductionPlan(plan, {claimRegistry, evidenceRegistry, a
   for (const [assetId, uses] of assetUse) invariant(uses <= 3, 'ASSET_REUSE_EXCESSIVE', `${assetId} is used ${uses} times`);
   for (const [motifId, uses] of motifUse) invariant(uses <= 3, 'MOTIF_REUSE_EXCESSIVE', `${motifId} is used ${uses} times`);
   if (audioPlan) invariant(audioPlan.output_asset === plan.audio_mix_asset, 'PLAN_AUDIO_MIX_MISMATCH', 'Production plan must reference the canonical final audio mix');
+  if (evidenceRegistry) assertEvidenceClaimBindings(plan, evidenceRegistry);
   repositoryRelativePath(plan.audio_mix_asset, 'PLAN_AUDIO_MIX_PATH_INVALID', 'Production plan audio_mix_asset');
   return plan;
 }
