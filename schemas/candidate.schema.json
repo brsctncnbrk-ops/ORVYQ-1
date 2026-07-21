@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orvyq.local/schemas/candidate.schema.json",
+  "title": "ORVYQ Frozen Candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "candidate_sha", "frozen_at", "digests"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string"},
+    "candidate_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "frozen_at": {"type": "string", "format": "date-time"},
+    "digests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_catalog_sha256", "claim_registry_sha256", "evidence_registry_sha256", "asset_registry_sha256", "narration_timeline_sha256", "audio_plan_sha256", "audio_mix_sha256", "production_plan_sha256", "render_input_sha256", "proof_prefix_sha256"],
+      "properties": {
+        "source_catalog_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "claim_registry_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "evidence_registry_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "asset_registry_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "narration_timeline_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "audio_plan_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "audio_mix_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "production_plan_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "render_input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "proof_prefix_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}
