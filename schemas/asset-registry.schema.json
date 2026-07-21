@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orvyq.local/schemas/asset-registry.schema.json",
+  "title": "ORVYQ Asset Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "assets"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string", "minLength": 1},
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["asset_id", "role", "media_type", "relative_path", "sha256", "byte_size", "duration_seconds", "source_url", "license", "editorial_purpose", "approved_for_final_edit"],
+        "properties": {
+          "asset_id": {"type": "string", "pattern": "^[A-Z0-9_\\-]+$"},
+          "role": {"enum": ["narration_stem", "music_stem", "sfx_stem", "final_audio_mix", "contextual_footage", "motion_hook_footage", "brand_asset"]},
+          "media_type": {"enum": ["audio", "video", "image"]},
+          "relative_path": {"type": "string", "pattern": "^assets/"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "byte_size": {"type": "integer", "minimum": 1},
+          "duration_seconds": {"type": "number", "exclusiveMinimum": 0},
+          "source_url": {"type": "string", "format": "uri"},
+          "license": {"type": "string", "minLength": 4},
+          "editorial_purpose": {"type": "string", "minLength": 8},
+          "approved_for_final_edit": {"const": true},
+          "width": {"type": "integer", "minimum": 1920},
+          "height": {"type": "integer", "minimum": 1080},
+          "attribution_file": {"type": "string"}
+        }
+      }
+    }
+  }
+}
