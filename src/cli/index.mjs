@@ -9,6 +9,8 @@ import {prepareCandidate, validateProject} from '../contracts/project.mjs';
 import {buildAudioMix} from '../audio/mix.mjs';
 import {renderFull, renderProof} from '../runtime/render.mjs';
 import {normalizeEvidenceClaimBindings} from '../direction/evidence-bindings.mjs';
+import {selectSemanticFootage} from '../direction/semantic-footage.mjs';
+import {normalizeEditorialPauses} from '../direction/editorial-pauses.mjs';
 
 function parseArgs(argv) {
   const [command, ...rest] = argv;
@@ -33,32 +35,10 @@ function requiredOption(options, key) {
 
 async function systemCheck() {
   const required = [
-    'docs/quality-contract.md',
-    'docs/architecture.md',
-    'docs/migration-policy.md',
-    'docs/rebuild-plan.md',
-    'schemas/manifest.schema.json',
-    'schemas/source-catalog.schema.json',
-    'schemas/claim-registry.schema.json',
-    'schemas/evidence-registry.schema.json',
-    'schemas/asset-registry.schema.json',
-    'schemas/narration-timeline.schema.json',
-    'schemas/audio-plan.schema.json',
-    'schemas/production-plan.schema.json',
-    'schemas/candidate.schema.json',
-    'src/contracts/source-catalog.mjs',
-    'src/contracts/claim-registry.mjs',
-    'src/contracts/evidence-registry.mjs',
-    'src/contracts/asset-registry.mjs',
-    'src/contracts/narration-timeline.mjs',
-    'src/contracts/audio-plan.mjs',
-    'src/contracts/production-plan.mjs',
-    'src/contracts/candidate.mjs',
-    'src/direction/evidence-bindings.mjs',
-    'src/render/index.ts',
-    'src/qa/rendered-media.mjs',
-    'package.json',
-    'package-lock.json'
+    'docs/quality-contract.md','docs/architecture.md','docs/migration-policy.md','docs/rebuild-plan.md',
+    'schemas/manifest.schema.json','schemas/source-catalog.schema.json','schemas/claim-registry.schema.json','schemas/evidence-registry.schema.json','schemas/asset-registry.schema.json','schemas/narration-timeline.schema.json','schemas/audio-plan.schema.json','schemas/production-plan.schema.json','schemas/candidate.schema.json',
+    'src/contracts/source-catalog.mjs','src/contracts/claim-registry.mjs','src/contracts/evidence-registry.mjs','src/contracts/asset-registry.mjs','src/contracts/narration-timeline.mjs','src/contracts/audio-plan.mjs','src/contracts/production-plan.mjs','src/contracts/candidate.mjs',
+    'src/direction/evidence-bindings.mjs','src/direction/semantic-footage.mjs','src/direction/editorial-pauses.mjs','src/render/index.ts','src/qa/rendered-media.mjs','package.json','package-lock.json'
   ];
   for (const relative of required) await access(path.join(repoRoot(), relative));
   const packageJson = JSON.parse(await readFile(path.join(repoRoot(), 'package.json'), 'utf8'));
@@ -86,6 +66,25 @@ async function run(command, options) {
       const normalized = normalizeEvidenceClaimBindings(productionPlan, evidenceRegistry);
       await writeJsonAtomic(safeProjectPath(projectId, 'direction/production_plan.json'), normalized.productionPlan);
       await writeJsonAtomic(safeProjectPath(projectId, 'qa/evidence_claim_bindings.json'), normalized.report);
+      return {ok: true, command, report: normalized.report};
+    }
+    case 'plan:select-footage': {
+      const projectId = requiredOption(options, 'project-id');
+      const productionPlan = await readJson(safeProjectPath(projectId, 'direction/production_plan.json'));
+      const claimRegistry = await readJson(safeProjectPath(projectId, 'research/claim_registry.json'));
+      const assetRegistry = await readJson(safeProjectPath(projectId, 'assets/asset_registry.json'));
+      const selected = selectSemanticFootage(productionPlan, {claimRegistry, assetRegistry});
+      await writeJsonAtomic(safeProjectPath(projectId, 'direction/production_plan.json'), selected.productionPlan);
+      await writeJsonAtomic(safeProjectPath(projectId, 'qa/semantic_selection.json'), selected.report);
+      return {ok: true, command, report: selected.report};
+    }
+    case 'timeline:normalize-pauses': {
+      const projectId = requiredOption(options, 'project-id');
+      const timeline = await readJson(safeProjectPath(projectId, 'direction/narration_timeline.json'));
+      const productionPlan = await readJson(safeProjectPath(projectId, 'direction/production_plan.json'));
+      const normalized = normalizeEditorialPauses(timeline, productionPlan);
+      await writeJsonAtomic(safeProjectPath(projectId, 'direction/narration_timeline.json'), normalized.timeline);
+      await writeJsonAtomic(safeProjectPath(projectId, 'qa/editorial_pause_normalization.json'), normalized.report);
       return {ok: true, command, report: normalized.report};
     }
     case 'audio:mix': {
