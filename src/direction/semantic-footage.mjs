@@ -49,8 +49,9 @@ export function selectSemanticFootage(productionPlan, {claimRegistry, assetRegis
     const normalizedScore = Number(Math.max(0.25, selected.score).toFixed(3));
     recentAssetIds.push(selected.asset.asset_id);
     globalUse.set(selected.asset.asset_id, (globalUse.get(selected.asset.asset_id) ?? 0) + 1);
+    const selectedKeywords = [...new Set([...(shot.semantic_keywords ?? []), ...(selected.asset.semantic_keywords ?? [])])].sort();
     report.push({shot_id: shot.shot_id, asset_id: selected.asset.asset_id, score: normalizedScore, mode, matched_terms: selected.matches, use_index: globalUse.get(selected.asset.asset_id), alternatives: ranked.slice(0, 4).filter((item) => item.asset.asset_id !== selected.asset.asset_id).slice(0, 3).map(({asset, score, matches}) => ({asset_id: asset.asset_id, score: Number(score.toFixed(3)), matched_terms: matches}))});
-    return {...shot, asset_ids: [selected.asset.asset_id], semantic_selection: {engine: 'orvyq-semantic-v1', score: normalizedScore, mode, intent_keywords: [...intent].sort()}};
+    return {...shot, asset_ids: [selected.asset.asset_id], semantic_keywords: selectedKeywords, semantic_selection: {engine: 'orvyq-semantic-v1', score: normalizedScore, mode, intent_keywords: [...intent].sort(), selected_keywords: selectedKeywords}};
   });
   const usage = [...globalUse.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([asset_id, uses]) => ({asset_id, uses}));
   invariant(usage.every((item) => item.uses <= MAX_USES_PER_ASSET), 'SEMANTIC_REUSE_CAP_BROKEN', 'Semantic selector exceeded the footage reuse cap');
