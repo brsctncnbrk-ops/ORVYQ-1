@@ -11,38 +11,52 @@ on:
         description: Exact immutable 40-character candidate commit SHA
         required: true
         type: string
+  push:
+    branches: ['agent/orvyq-production-system']
+    paths: ['proof_request.json']
 
 permissions:
   contents: read
 
 env:
-  PROJECT_ID: ${{ inputs.project_id }}
-  CANDIDATE_SHA: ${{ inputs.candidate_sha }}
+  DISPATCH_PROJECT_ID: ${{ inputs.project_id }}
+  DISPATCH_CANDIDATE_SHA: ${{ inputs.candidate_sha }}
 
 jobs:
   proof:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
-      - name: Validate dispatch inputs
-        shell: bash
-        run: |
-          set -euo pipefail
-          [[ "$PROJECT_ID" =~ ^[a-z0-9][a-z0-9-]{2,79}$ ]]
-          [[ "$CANDIDATE_SHA" =~ ^[0-9a-f]{40}$ ]]
-
-      - name: Checkout exact candidate without implicit LFS download
+      - name: Checkout request commit without implicit LFS download
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.candidate_sha }}
-          fetch-depth: 1
+          fetch-depth: 0
           lfs: false
 
-      - name: Verify exact checkout and repository-owned LFS objects
+      - name: Resolve and validate exact candidate
         shell: bash
         run: |
           set -euo pipefail
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            PROJECT_ID="$DISPATCH_PROJECT_ID"
+            CANDIDATE_SHA="$DISPATCH_CANDIDATE_SHA"
+          else
+            test -f proof_request.json
+            PROJECT_ID="$(jq -r '.project_id' proof_request.json)"
+            CANDIDATE_SHA="$(jq -r '.candidate_sha' proof_request.json)"
+          fi
+          [[ "$PROJECT_ID" =~ ^[a-z0-9][a-z0-9-]{2,79}$ ]]
+          [[ "$CANDIDATE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          echo "PROJECT_ID=$PROJECT_ID" >> "$GITHUB_ENV"
+          echo "CANDIDATE_SHA=$CANDIDATE_SHA" >> "$GITHUB_ENV"
+          git fetch origin "$CANDIDATE_SHA"
+          git checkout --detach "$CANDIDATE_SHA"
           test "$(git rev-parse HEAD)" = "$CANDIDATE_SHA"
+
+      - name: Verify repository-owned LFS objects
+        shell: bash
+        run: |
+          set -euo pipefail
           sudo apt-get update
           sudo apt-get install -y ffmpeg espeak git-lfs
           git lfs install --local
@@ -84,15 +98,15 @@ jobs:
       - name: Upload proof review artifact only
         uses: actions/upload-artifact@v4
         with:
-          name: orvyq-proof-${{ inputs.project_id }}-${{ inputs.candidate_sha }}
+          name: orvyq-proof-${{ github.run_id }}
           if-no-files-found: error
           retention-days: 14
           path: |
-            projects/${{ inputs.project_id }}/output/proof.mp4
-            projects/${{ inputs.project_id }}/output/proof-contact-sheet.jpg
-            projects/${{ inputs.project_id }}/build/proof_manifest.json
-            projects/${{ inputs.project_id }}/qa/candidate_preflight.json
-            projects/${{ inputs.project_id }}/qa/rendered.proof.json
-            projects/${{ inputs.project_id }}/direction/production_plan.json
-            projects/${{ inputs.project_id }}/direction/narration_timeline.json
-            projects/${{ inputs.project_id }}/direction/captions.json
+            projects/*/output/proof.mp4
+            projects/*/output/proof-contact-sheet.jpg
+            projects/*/build/proof_manifest.json
+            projects/*/qa/candidate_preflight.json
+            projects/*/qa/rendered.proof.json
+            projects/*/direction/production_plan.json
+            projects/*/direction/narration_timeline.json
+            projects/*/direction/captions.json
