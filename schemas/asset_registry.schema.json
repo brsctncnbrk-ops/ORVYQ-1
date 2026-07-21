@@ -1,1 +1,48 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Project-owned asset registry","type":"object","required":["assets"],"properties":{"assets":{"type":"array","items":{"type":"object","required":["id","relative_path","sha256","byte_size","media_type","source_url","license","editorial_purpose","claim_ids","approved_for_final_edit"]}}},"additionalProperties":true}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project-owned asset registry",
+  "type": "object",
+  "required": ["assets"],
+  "properties": {
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "relative_path",
+          "sha256",
+          "byte_size",
+          "media_type",
+          "duration_seconds",
+          "resolution",
+          "codec",
+          "source_url",
+          "license",
+          "attribution_requirement",
+          "editorial_purpose",
+          "claim_ids",
+          "approved_for_final_edit"
+        ],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "relative_path": {"type": "string", "pattern": "^assets/"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "byte_size": {"type": "integer", "minimum": 1},
+          "media_type": {"enum": ["audio", "video", "image"]},
+          "duration_seconds": {"type": "number", "minimum": 0},
+          "codec": {"type": "string", "minLength": 1},
+          "source_url": {"type": "string", "minLength": 1},
+          "license": {"type": "string", "minLength": 1},
+          "attribution_requirement": {"type": "string", "minLength": 1},
+          "editorial_purpose": {"type": "string", "minLength": 1},
+          "claim_ids": {"type": "array", "items": {"type": "string"}},
+          "approved_for_final_edit": {"const": true}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
