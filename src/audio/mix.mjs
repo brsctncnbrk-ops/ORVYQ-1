@@ -13,9 +13,7 @@ function run(command, args, code) {
   return result;
 }
 
-function dbToLinear(db) {
-  return Math.pow(10, db / 20).toFixed(8);
-}
+function dbToLinear(db) { return Math.pow(10, db / 20).toFixed(8); }
 
 function buildNarrationFilter(timeline) {
   const pauses = [...timeline.editorial_pauses].sort((a, b) => a.source_time_seconds - b.source_time_seconds);
@@ -71,11 +69,10 @@ export async function buildAudioMix({projectId, audioPlan, timeline}) {
   const musicPaths = audioPlan.music_assets.map((relative) => safeProjectPath(projectId, relative));
   const output = safeProjectPath(projectId, audioPlan.output_asset);
   await mkdir(path.dirname(output), {recursive: true});
-
   const inputs = ['-y', '-hide_banner', '-loglevel', 'warning', '-i', narration];
   const inputIndexByPath = new Map();
   for (const [index, relative] of audioPlan.music_assets.entries()) {
-    inputs.push('-i', musicPaths[index]);
+    inputs.push('-stream_loop', '-1', '-i', musicPaths[index]);
     inputIndexByPath.set(relative, index + 1);
   }
   const filterParts = [
@@ -85,26 +82,11 @@ export async function buildAudioMix({projectId, audioPlan, timeline}) {
     `[paused_narration][music_ducked]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=${audioPlan.loudness.target_lufs}:TP=${audioPlan.loudness.true_peak_dbfs}:LRA=11,atrim=duration=${timeline.transformed_duration_seconds}[final]`
   ];
   const codec = path.extname(output).toLowerCase() === '.wav' ? ['-c:a', 'pcm_s24le'] : ['-c:a', 'libmp3lame', '-b:a', '256k'];
-  const args = [...inputs, '-filter_complex', filterParts.join(';'), '-map', '[final]', '-ar', '48000', '-ac', '2', ...codec, output];
-  run('ffmpeg', args, 'AUDIO_MIX_FAILED');
+  run('ffmpeg', [...inputs, '-filter_complex', filterParts.join(';'), '-map', '[final]', '-ar', '48000', '-ac', '2', ...codec, output], 'AUDIO_MIX_FAILED');
   const probe = run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'json', output], 'AUDIO_MIX_PROBE_FAILED');
   const duration = Number(JSON.parse(probe.stdout).format?.duration ?? 0);
   invariant(Math.abs(duration - timeline.transformed_duration_seconds) <= 0.4, 'AUDIO_MIX_DURATION_MISMATCH', `Final mix duration ${duration} does not match timeline ${timeline.transformed_duration_seconds}`);
-  const metadata = {
-    schema_version: '1.0',
-    status: 'TAMAMLANDI',
-    project_id: projectId,
-    output_asset: audioPlan.output_asset,
-    duration_seconds: duration,
-    sample_rate: 48000,
-    channels: 2,
-    music_cue_count: audioPlan.music_cues.length,
-    distinct_music_states: [...new Set(audioPlan.music_cues.map((cue) => cue.state))],
-    editorial_pause_count: timeline.editorial_pauses.length,
-    ducking: audioPlan.ducking,
-    loudness_target: audioPlan.loudness,
-    created_at: new Date().toISOString()
-  };
+  const metadata = {schema_version: '1.0', status: 'TAMAMLANDI', project_id: projectId, output_asset: audioPlan.output_asset, duration_seconds: duration, sample_rate: 48000, channels: 2, music_cue_count: audioPlan.music_cues.length, distinct_music_states: [...new Set(audioPlan.music_cues.map((cue) => cue.state))], editorial_pause_count: timeline.editorial_pauses.length, ducking: audioPlan.ducking, loudness_target: audioPlan.loudness, created_at: new Date().toISOString()};
   await writeJsonAtomic(safeProjectPath(projectId, 'audio/final_mix.metadata.json'), metadata);
   return metadata;
 }
