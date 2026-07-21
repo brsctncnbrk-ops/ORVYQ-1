@@ -1,0 +1,15 @@
+{
+  "name": "orvyq-canonical-production-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic, evidence-led ORVYQ cinematic video production system",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "orvyq": "node src/cli/index.mjs",
+    "check": "node src/cli/index.mjs system:check",
+    "test": "node --test"
+  }
+}
