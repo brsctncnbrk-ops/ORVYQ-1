@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Project-owned asset registry","type":"object","required":["assets"],"properties":{"assets":{"type":"array","items":{"type":"object","required":["id","relative_path","sha256","byte_size","media_type","source_url","license","editorial_purpose","claim_ids","approved_for_final_edit"]}}},"additionalProperties":true}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "reference": "approved 150-second ORVYQ cinematic proof",
+  "visual_defaults": {
+    "contextual_footage_fraction_min": 0.25,
+    "contextual_footage_fraction_max": 0.40,
+    "source_backed_evidence_fraction_min": 0.55,
+    "full_screen_graphic_fraction_max": 0.10,
+    "generic_stock_fraction_max": 0.25,
+    "maximum_uninterrupted_evidence_seconds": 15,
+    "maximum_shot_seconds": 8,
+    "target_average_shot_seconds_min": 4,
+    "target_average_shot_seconds_max": 6,
+    "maximum_asset_reuse": 2,
+    "rhythm_change_interval_seconds_min": 30,
+    "rhythm_change_interval_seconds_max": 45
+  },
+  "approved_proof_measurements": {
+    "duration_seconds": 150.058667,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "contextual_body_footage_fraction": 0.318,
+    "primary_evidence_fraction": 0.579,
+    "total_footage_fraction": 0.391,
+    "generic_stock_fraction": 0.073,
+    "full_screen_graphic_fraction": 0.03,
+    "integrated_lufs": -16.31,
+    "true_peak_dbtp": -1.63,
+    "loudness_range": 3.4
+  }
+}

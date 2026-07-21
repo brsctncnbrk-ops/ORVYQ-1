@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'agent/**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout repository without implicit LFS download
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: false
+
+      - name: Install system media tools and Git LFS
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg espeak git-lfs
+          git lfs install --local
+          git lfs pull
+          git lfs fsck
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install exact dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Install matching Remotion CLI without changing lockfile
+        run: npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund @remotion/cli@4.0.489
+
+      - name: Ensure Remotion browser
+        run: npx remotion browser ensure
+
+      - name: Run contracts, invariant tests, renderer typecheck, and real media smoke render
+        run: npm run ci
+
+      - name: Verify smoke artifact with FFprobe
+        run: |
+          set -euo pipefail
+          test -s artifacts/smoke.mp4
+          ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of csv=p=0 artifacts/smoke.mp4
+          ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 artifacts/smoke.mp4
+          test -s artifacts/smoke-qa.json
+
+      - name: Upload verified smoke artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: orvyq-smoke-${{ github.run_id }}
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            artifacts/smoke.mp4
+            artifacts/smoke-qa.json

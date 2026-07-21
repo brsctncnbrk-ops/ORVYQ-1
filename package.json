@@ -1,0 +1,30 @@
+{
+  "name": "orvyq-production-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "orvyq": "node src/cli.mjs",
+    "typecheck": "node --check src/cli.mjs && node --check src/lib/core.mjs && node scripts/no-legacy-links.mjs",
+    "typecheck:render": "tsc -p tsconfig.render.json --noEmit",
+    "test": "bash scripts/generate-smoke-fixtures.sh && node --test tests/*.test.mjs",
+    "ci": "npm run typecheck && npm run typecheck:render && npm test && npm run orvyq -- smoke"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "playwright": "1.54.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.489"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.15",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.8.3"
+  }
+}

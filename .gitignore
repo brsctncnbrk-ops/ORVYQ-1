@@ -1,0 +1,8 @@
+node_modules/
+dist/
+artifacts/
+projects/*/output/
+projects/*/build/runtime-*.json
+fixtures/smoke/generated/
+.DS_Store
+*.log

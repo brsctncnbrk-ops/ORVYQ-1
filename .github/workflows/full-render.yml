@@ -1,0 +1,119 @@
+name: Full Render
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_id:
+        description: projects/<project_id> candidate to render
+        required: true
+        type: string
+      candidate_sha:
+        description: Exact candidate SHA used by the approved proof
+        required: true
+        type: string
+      approved_proof_run_id:
+        description: GitHub Actions run ID of the explicitly approved proof
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+env:
+  PROJECT_ID: ${{ inputs.project_id }}
+  CANDIDATE_SHA: ${{ inputs.candidate_sha }}
+  APPROVED_PROOF_RUN_ID: ${{ inputs.approved_proof_run_id }}
+
+concurrency:
+  group: full-render-${{ inputs.project_id }}
+  cancel-in-progress: false
+
+jobs:
+  full-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Validate approval inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$PROJECT_ID" =~ ^[a-z0-9][a-z0-9-]{2,79}$ ]]
+          [[ "$CANDIDATE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$APPROVED_PROOF_RUN_ID" =~ ^[0-9]+$ ]]
+
+      - name: Checkout exact approved candidate without implicit LFS download
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.candidate_sha }}
+          fetch-depth: 1
+          lfs: false
+
+      - name: Verify exact checkout and repository-owned LFS objects
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$CANDIDATE_SHA"
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg espeak git-lfs
+          git lfs install --local
+          git lfs pull --include="projects/$PROJECT_ID/assets/**"
+          git lfs fsck
+
+      - name: Download the explicitly approved proof artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: orvyq-proof-${{ inputs.project_id }}-${{ inputs.candidate_sha }}
+          path: approved-proof
+          repository: ${{ github.repository }}
+          run-id: ${{ inputs.approved_proof_run_id }}
+          github-token: ${{ github.token }}
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install exact dependencies and matching Remotion CLI
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund @remotion/cli@4.0.489
+          npx remotion browser ensure
+
+      - name: Re-run full frozen candidate preflight
+        run: npm run orvyq -- validate --project-id "$PROJECT_ID" --frozen
+
+      - name: Verify proof identity, prefix digest, plan, timeline, and assets then render full film
+        shell: bash
+        run: |
+          set -euo pipefail
+          PROOF_MANIFEST="$(find approved-proof -name proof_manifest.json -type f -print -quit)"
+          test -n "$PROOF_MANIFEST"
+          npm run orvyq -- full --project-id "$PROJECT_ID" --candidate-sha "$CANDIDATE_SHA" --approved-proof-run-id "$APPROVED_PROOF_RUN_ID" --proof-manifest "$PROOF_MANIFEST"
+
+      - name: Verify final media and runtime approval record
+        shell: bash
+        run: |
+          set -euo pipefail
+          FINAL="projects/$PROJECT_ID/output/final.mp4"
+          test -s "$FINAL"
+          ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of csv=p=0 "$FINAL"
+          ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 "$FINAL"
+          test -s "projects/$PROJECT_ID/build/runtime-approval.json"
+          test -s "projects/$PROJECT_ID/build/runtime-final-manifest.json"
+          test -s "projects/$PROJECT_ID/qa/rendered.full.json"
+
+      - name: Upload final artifact only after every QA passes
+        uses: actions/upload-artifact@v4
+        with:
+          name: orvyq-final-${{ inputs.project_id }}-${{ inputs.candidate_sha }}
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            projects/${{ inputs.project_id }}/output/final.mp4
+            projects/${{ inputs.project_id }}/build/runtime-approval.json
+            projects/${{ inputs.project_id }}/build/runtime-final-manifest.json
+            projects/${{ inputs.project_id }}/qa/rendered.full.json
+            projects/${{ inputs.project_id }}/direction/production_plan.json
+            projects/${{ inputs.project_id }}/direction/narration_timeline.json

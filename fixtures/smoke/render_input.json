@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "project_id": "smoke-fixture",
+  "plan": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "full_frame_count": 360,
+    "full_duration_seconds": 12,
+    "proof_boundary_frame": 360,
+    "music_cues": [{"start_frame": 0, "end_frame": 360, "volume": 0.09}],
+    "shots": [
+      {"id":"s01","start_frame":0,"end_frame":60,"visual_class":"orvyq_brand_open","title":"ORVYQ","semantic_purpose":"Brand open","source_label":"ORVYQ · SMOKE"},
+      {"id":"s02","start_frame":60,"end_frame":180,"visual_class":"cinematic_footage","physical_asset":"fixtures/smoke/generated/footage.webm","asset_ids":["smoke-footage"],"footage_trim":{"start_seconds":0,"end_seconds":4},"title":"A deterministic beginning","body":"The same root composition renders proof and full film.","semantic_purpose":"Contextual footage","source_label":"CONTEXTUAL FIXTURE"},
+      {"id":"s03","start_frame":180,"end_frame":300,"visual_class":"official_document","physical_asset":"fixtures/smoke/source.svg","asset_ids":["smoke-source"],"title":"Source-backed evidence","body":"Official/source visuals, overlays, captions and provenance share one reusable component family.","semantic_purpose":"Official source visual","source_label":"SOURCE FIXTURE · REPOSITORY OWNED"},
+      {"id":"s04","start_frame":300,"end_frame":360,"visual_class":"orvyq_end_card","semantic_purpose":"Terminal end card"}
+    ]
+  },
+  "timeline": {"source_audio":"fixtures/smoke/generated/narration.ogg"},
+  "assets": [
+    {"id":"smoke-footage","relative_path":"fixtures/smoke/generated/footage.webm","media_type":"video"},
+    {"id":"smoke-source","relative_path":"fixtures/smoke/source.svg","media_type":"image"},
+    {"id":"smoke-narration","relative_path":"fixtures/smoke/generated/narration.ogg","media_type":"audio","role":"full_narration"},
+    {"id":"smoke-music","relative_path":"fixtures/smoke/generated/music.ogg","media_type":"audio","role":"music_bed"}
+  ],
+  "captions": [
+    {"id":"c01","start_frame":60,"end_frame":145,"text":"Every system needs a trustworthy beginning."},
+    {"id":"c02","start_frame":150,"end_frame":260,"text":"This smoke render verifies footage, evidence, captions, narration and music."}
+  ]
+}
