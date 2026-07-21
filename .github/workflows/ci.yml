@@ -80,7 +80,7 @@ jobs:
             artifacts/smoke-qa.json
 
   one-time-proof:
-    if: github.event_name == 'push' && contains(github.event.head_commit.message, '[proof-request]')
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && contains(github.event.head_commit.message, '[proof-request]'))
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
