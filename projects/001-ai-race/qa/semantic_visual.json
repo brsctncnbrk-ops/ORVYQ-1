@@ -220,7 +220,7 @@
     {
       "claim_count": 1,
       "evidence_count": 0,
-      "selection_mode": "diverse_real_world_fallback",
+      "selection_mode": "direct_semantic",
       "semantic_score": 0.3125,
       "shot_id": "SHOT_028",
       "status": "TAMAMLANDI"
@@ -500,7 +500,7 @@
     {
       "claim_count": 1,
       "evidence_count": 0,
-      "selection_mode": "diverse_real_world_fallback",
+      "selection_mode": "direct_semantic",
       "semantic_score": 0.26666666666666666,
       "shot_id": "SHOT_063",
       "status": "TAMAMLANDI"
@@ -604,7 +604,7 @@
     {
       "claim_count": 1,
       "evidence_count": 0,
-      "selection_mode": "diverse_real_world_fallback",
+      "selection_mode": "direct_semantic",
       "semantic_score": 0.29411764705882354,
       "shot_id": "SHOT_076",
       "status": "TAMAMLANDI"
@@ -700,7 +700,7 @@
     {
       "claim_count": 1,
       "evidence_count": 0,
-      "selection_mode": "diverse_real_world_fallback",
+      "selection_mode": "direct_semantic",
       "semantic_score": 0.3333333333333333,
       "shot_id": "SHOT_088",
       "status": "TAMAMLANDI"
@@ -852,7 +852,7 @@
     {
       "claim_count": 1,
       "evidence_count": 0,
-      "selection_mode": "diverse_real_world_fallback",
+      "selection_mode": "direct_semantic",
       "semantic_score": 0.26666666666666666,
       "shot_id": "SHOT_107",
       "status": "TAMAMLANDI"
@@ -908,7 +908,7 @@
     {
       "claim_count": 1,
       "evidence_count": 0,
-      "selection_mode": "diverse_real_world_fallback",
+      "selection_mode": "direct_semantic",
       "semantic_score": 0.29411764705882354,
       "shot_id": "SHOT_114",
       "status": "TAMAMLANDI"

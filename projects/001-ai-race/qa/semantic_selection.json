@@ -61,32 +61,32 @@
       "uses": 3
     }
   ],
-  "direct_selection_count": 35,
-  "fallback_selection_count": 6,
+  "direct_selection_count": 41,
+  "fallback_selection_count": 0,
   "schema_version": "1.0",
   "selections": [
     {
       "alternatives": [
         {
-          "asset_id": "F14",
-          "matched_terms": 2,
-          "score": 6.5
-        },
-        {
-          "asset_id": "F3",
-          "matched_terms": 2,
-          "score": 6.5
-        },
-        {
           "asset_id": "F5",
+          "matched_terms": 3,
+          "score": 8.5
+        },
+        {
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 6.5
+        },
+        {
+          "asset_id": "F14",
           "matched_terms": 2,
           "score": 6.5
         }
       ],
       "asset_id": "F13",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 6.5,
+      "score": 26.5,
       "shot_id": "SHOT_001",
       "use_index": 1
     },
@@ -103,20 +103,25 @@
           "score": 6.5
         },
         {
-          "asset_id": "F9",
-          "matched_terms": 1,
-          "score": 3.5
+          "asset_id": "F6",
+          "matched_terms": 2,
+          "score": 6.5
         }
       ],
       "asset_id": "F14",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 6.5,
+      "score": 26.5,
       "shot_id": "SHOT_002",
       "use_index": 1
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 6.5
+        },
         {
           "asset_id": "F5",
           "matched_terms": 2,
@@ -126,22 +131,22 @@
           "asset_id": "F4",
           "matched_terms": 1,
           "score": 2.5
-        },
-        {
-          "asset_id": "F13",
-          "matched_terms": 2,
-          "score": 1.75
         }
       ],
       "asset_id": "F3",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 6.5,
+      "score": 26.5,
       "shot_id": "SHOT_003",
       "use_index": 1
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F4",
+          "matched_terms": 2,
+          "score": 5.5
+        },
         {
           "asset_id": "F3",
           "matched_terms": 2,
@@ -151,17 +156,12 @@
           "asset_id": "F1",
           "matched_terms": 0,
           "score": 1.5
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 1.5
         }
       ],
       "asset_id": "F5",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 6.5,
+      "score": 26.5,
       "shot_id": "SHOT_004",
       "use_index": 1
     },
@@ -169,49 +169,49 @@
       "alternatives": [
         {
           "asset_id": "F5",
-          "matched_terms": 4,
-          "score": 5.75
+          "matched_terms": 5,
+          "score": 7.75
         },
         {
-          "asset_id": "F3",
-          "matched_terms": 3,
-          "score": 3.75
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 6.5
         },
         {
-          "asset_id": "F6",
-          "matched_terms": 1,
-          "score": 3.5
+          "asset_id": "F10",
+          "matched_terms": 2,
+          "score": 6.5
         }
       ],
       "asset_id": "F8",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5.5,
+      "score": 25.5,
       "shot_id": "SHOT_005",
       "use_index": 1
     },
     {
       "alternatives": [
         {
+          "asset_id": "F10",
+          "matched_terms": 2,
+          "score": 6.5
+        },
+        {
+          "asset_id": "F6",
+          "matched_terms": 2,
+          "score": 6.5
+        },
+        {
           "asset_id": "F13",
           "matched_terms": 2,
           "score": 5.75
-        },
-        {
-          "asset_id": "F11",
-          "matched_terms": 1,
-          "score": 3.5
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 1.5
         }
       ],
       "asset_id": "F1",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 6.5,
+      "score": 26.5,
       "shot_id": "SHOT_008",
       "use_index": 1
     },
@@ -234,9 +234,9 @@
         }
       ],
       "asset_id": "F6",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 8.5,
+      "score": 28.5,
       "shot_id": "SHOT_011",
       "use_index": 1
     },
@@ -248,45 +248,45 @@
           "score": 5.75
         },
         {
-          "asset_id": "F4",
-          "matched_terms": 1,
-          "score": 2.5
+          "asset_id": "F8",
+          "matched_terms": 2,
+          "score": 4.75
         },
         {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 1.5
+          "asset_id": "F11",
+          "matched_terms": 1,
+          "score": 3.5
         }
       ],
       "asset_id": "F13",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5.75,
+      "score": 25.75,
       "shot_id": "SHOT_015",
       "use_index": 2
     },
     {
       "alternatives": [
         {
-          "asset_id": "F15",
-          "matched_terms": 1,
-          "score": 3.5
-        },
-        {
-          "asset_id": "F2",
-          "matched_terms": 1,
-          "score": 3.5
-        },
-        {
           "asset_id": "F9",
-          "matched_terms": 1,
-          "score": 3.5
+          "matched_terms": 3,
+          "score": 8.5
+        },
+        {
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
+          "asset_id": "F8",
+          "matched_terms": 2,
+          "score": 4.75
         }
       ],
       "asset_id": "F10",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 3.5,
+      "score": 28.5,
       "shot_id": "SHOT_019",
       "use_index": 1
     },
@@ -309,9 +309,9 @@
         }
       ],
       "asset_id": "F15",
-      "matched_terms": 4,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 11.5,
+      "score": 26.5,
       "shot_id": "SHOT_022",
       "use_index": 1
     },
@@ -334,59 +334,59 @@
         }
       ],
       "asset_id": "F14",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5.75,
+      "score": 25.75,
       "shot_id": "SHOT_025",
       "use_index": 2
     },
     {
       "alternatives": [
         {
-          "asset_id": "F12",
-          "matched_terms": 0,
-          "score": 1.5
-        },
-        {
           "asset_id": "F2",
-          "matched_terms": 0,
-          "score": 1.5
+          "matched_terms": 2,
+          "score": 6.5
         },
         {
           "asset_id": "F7",
-          "matched_terms": 0,
-          "score": 1.5
+          "matched_terms": 2,
+          "score": 6.5
+        },
+        {
+          "asset_id": "F4",
+          "matched_terms": 2,
+          "score": 5.5
         }
       ],
       "asset_id": "F11",
-      "matched_terms": 0,
-      "mode": "diverse_real_world_fallback",
-      "score": 1.5,
+      "matched_terms": 10,
+      "mode": "direct_semantic",
+      "score": 26.5,
       "shot_id": "SHOT_028",
       "use_index": 1
     },
     {
       "alternatives": [
         {
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
+          "asset_id": "F8",
+          "matched_terms": 2,
+          "score": 4.75
+        },
+        {
           "asset_id": "F2",
           "matched_terms": 1,
           "score": 3.5
-        },
-        {
-          "asset_id": "F9",
-          "matched_terms": 1,
-          "score": 3.5
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 1,
-          "score": 2.75
         }
       ],
       "asset_id": "F13",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 7,
+      "score": 27,
       "shot_id": "SHOT_031",
       "use_index": 3
     },
@@ -409,14 +409,19 @@
         }
       ],
       "asset_id": "F15",
-      "matched_terms": 4,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 10.75,
+      "score": 25.75,
       "shot_id": "SHOT_034",
       "use_index": 2
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 5.75
+        },
         {
           "asset_id": "F5",
           "matched_terms": 2,
@@ -426,22 +431,22 @@
           "asset_id": "F6",
           "matched_terms": 2,
           "score": 5.75
-        },
-        {
-          "asset_id": "F14",
-          "matched_terms": 2,
-          "score": 5
         }
       ],
       "asset_id": "F3",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5.75,
+      "score": 25.75,
       "shot_id": "SHOT_037",
       "use_index": 2
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F4",
+          "matched_terms": 2,
+          "score": 5.5
+        },
         {
           "asset_id": "F8",
           "matched_terms": 2,
@@ -451,42 +456,37 @@
           "asset_id": "F3",
           "matched_terms": 3,
           "score": 3
-        },
-        {
-          "asset_id": "F6",
-          "matched_terms": 1,
-          "score": 2.75
         }
       ],
       "asset_id": "F5",
-      "matched_terms": 4,
+      "matched_terms": 12,
       "mode": "direct_semantic",
-      "score": 9.75,
+      "score": 29.75,
       "shot_id": "SHOT_041",
       "use_index": 2
     },
     {
       "alternatives": [
         {
+          "asset_id": "F10",
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
+          "asset_id": "F6",
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
           "asset_id": "F8",
           "matched_terms": 2,
           "score": 4.75
-        },
-        {
-          "asset_id": "F11",
-          "matched_terms": 1,
-          "score": 2.75
-        },
-        {
-          "asset_id": "F12",
-          "matched_terms": 0,
-          "score": 1.5
         }
       ],
       "asset_id": "F1",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5.75,
+      "score": 25.75,
       "shot_id": "SHOT_044",
       "use_index": 2
     },
@@ -509,9 +509,9 @@
         }
       ],
       "asset_id": "F6",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 7.75,
+      "score": 27.75,
       "shot_id": "SHOT_047",
       "use_index": 2
     },
@@ -534,64 +534,69 @@
         }
       ],
       "asset_id": "F14",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5,
+      "score": 25,
       "shot_id": "SHOT_050",
       "use_index": 3
     },
     {
       "alternatives": [
         {
+          "asset_id": "F4",
+          "matched_terms": 2,
+          "score": 5.5
+        },
+        {
+          "asset_id": "F3",
+          "matched_terms": 2,
+          "score": 5
+        },
+        {
           "asset_id": "F8",
           "matched_terms": 1,
           "score": 1.75
-        },
-        {
-          "asset_id": "F12",
-          "matched_terms": 0,
-          "score": 1.5
-        },
-        {
-          "asset_id": "F2",
-          "matched_terms": 0,
-          "score": 1.5
         }
       ],
       "asset_id": "F5",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 2,
+      "score": 27,
       "shot_id": "SHOT_054",
       "use_index": 3
     },
     {
       "alternatives": [
         {
-          "asset_id": "F1",
-          "matched_terms": 2,
-          "score": 5
+          "asset_id": "F11",
+          "matched_terms": 4,
+          "score": 9.75
         },
         {
           "asset_id": "F8",
-          "matched_terms": 2,
-          "score": 4.75
+          "matched_terms": 4,
+          "score": 9.75
         },
         {
-          "asset_id": "F11",
-          "matched_terms": 1,
-          "score": 2.75
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 5
         }
       ],
       "asset_id": "F4",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5.5,
+      "score": 25.5,
       "shot_id": "SHOT_057",
       "use_index": 1
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F11",
+          "matched_terms": 3,
+          "score": 7.75
+        },
         {
           "asset_id": "F15",
           "matched_terms": 3,
@@ -601,23 +606,23 @@
           "asset_id": "F12",
           "matched_terms": 2,
           "score": 6.5
-        },
-        {
-          "asset_id": "F9",
-          "matched_terms": 1,
-          "score": 3.5
         }
       ],
       "asset_id": "F2",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 8.5,
+      "score": 28.5,
       "shot_id": "SHOT_060",
       "use_index": 1
     },
     {
       "alternatives": [
         {
+          "asset_id": "F2",
+          "matched_terms": 2,
+          "score": 1.75
+        },
+        {
           "asset_id": "F7",
           "matched_terms": 0,
           "score": 1.5
@@ -626,72 +631,72 @@
           "asset_id": "F9",
           "matched_terms": 0,
           "score": 1.5
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 0.75
         }
       ],
       "asset_id": "F12",
-      "matched_terms": 0,
-      "mode": "diverse_real_world_fallback",
-      "score": 1.5,
+      "matched_terms": 8,
+      "mode": "direct_semantic",
+      "score": 21.5,
       "shot_id": "SHOT_063",
       "use_index": 1
     },
     {
       "alternatives": [
         {
-          "asset_id": "F7",
-          "matched_terms": 0,
-          "score": 1.5
-        },
-        {
-          "asset_id": "F9",
-          "matched_terms": 0,
-          "score": 1.5
-        },
-        {
           "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 0.75
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
+          "asset_id": "F1",
+          "matched_terms": 2,
+          "score": 5
+        },
+        {
+          "asset_id": "F4",
+          "matched_terms": 2,
+          "score": 4.75
         }
       ],
       "asset_id": "F8",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 1.75,
+      "score": 26.75,
       "shot_id": "SHOT_066",
       "use_index": 2
     },
     {
       "alternatives": [
         {
-          "asset_id": "F4",
+          "asset_id": "F10",
           "matched_terms": 2,
-          "score": 4.75
+          "score": 5.75
         },
         {
-          "asset_id": "F11",
-          "matched_terms": 1,
-          "score": 2.75
+          "asset_id": "F3",
+          "matched_terms": 2,
+          "score": 5
         },
         {
-          "asset_id": "F7",
-          "matched_terms": 0,
-          "score": 1.5
+          "asset_id": "F6",
+          "matched_terms": 2,
+          "score": 5
         }
       ],
       "asset_id": "F1",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5,
+      "score": 25,
       "shot_id": "SHOT_069",
       "use_index": 3
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F11",
+          "matched_terms": 3,
+          "score": 7.75
+        },
         {
           "asset_id": "F15",
           "matched_terms": 3,
@@ -701,22 +706,22 @@
           "asset_id": "F12",
           "matched_terms": 2,
           "score": 5.75
-        },
-        {
-          "asset_id": "F9",
-          "matched_terms": 1,
-          "score": 3.5
         }
       ],
       "asset_id": "F2",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 7.75,
+      "score": 27.75,
       "shot_id": "SHOT_072",
       "use_index": 2
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F11",
+          "matched_terms": 2,
+          "score": 5.75
+        },
         {
           "asset_id": "F9",
           "matched_terms": 0,
@@ -726,17 +731,12 @@
           "asset_id": "F10",
           "matched_terms": 0,
           "score": 0.75
-        },
-        {
-          "asset_id": "F11",
-          "matched_terms": 0,
-          "score": 0.75
         }
       ],
       "asset_id": "F7",
-      "matched_terms": 0,
-      "mode": "diverse_real_world_fallback",
-      "score": 1.5,
+      "matched_terms": 10,
+      "mode": "direct_semantic",
+      "score": 26.5,
       "shot_id": "SHOT_076",
       "use_index": 1
     },
@@ -744,8 +744,8 @@
       "alternatives": [
         {
           "asset_id": "F10",
-          "matched_terms": 1,
-          "score": 2.75
+          "matched_terms": 3,
+          "score": 7.75
         },
         {
           "asset_id": "F15",
@@ -759,9 +759,9 @@
         }
       ],
       "asset_id": "F9",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 3.5,
+      "score": 28.5,
       "shot_id": "SHOT_079",
       "use_index": 1
     },
@@ -784,9 +784,9 @@
         }
       ],
       "asset_id": "F15",
-      "matched_terms": 4,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 10,
+      "score": 25,
       "shot_id": "SHOT_082",
       "use_index": 3
     },
@@ -809,39 +809,44 @@
         }
       ],
       "asset_id": "F3",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 5,
+      "score": 25,
       "shot_id": "SHOT_085",
       "use_index": 3
     },
     {
       "alternatives": [
         {
+          "asset_id": "F9",
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
+          "asset_id": "F8",
+          "matched_terms": 2,
+          "score": 4
+        },
+        {
           "asset_id": "F11",
-          "matched_terms": 0,
-          "score": 0.75
-        },
-        {
-          "asset_id": "F12",
-          "matched_terms": 0,
-          "score": 0.75
-        },
-        {
-          "asset_id": "F7",
           "matched_terms": 0,
           "score": 0.75
         }
       ],
       "asset_id": "F10",
-      "matched_terms": 0,
-      "mode": "diverse_real_world_fallback",
-      "score": 0.75,
+      "matched_terms": 10,
+      "mode": "direct_semantic",
+      "score": 25.75,
       "shot_id": "SHOT_088",
       "use_index": 2
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F10",
+          "matched_terms": 3,
+          "score": 3
+        },
         {
           "asset_id": "F2",
           "matched_terms": 1,
@@ -851,17 +856,12 @@
           "asset_id": "F4",
           "matched_terms": 1,
           "score": 1.75
-        },
-        {
-          "asset_id": "F11",
-          "matched_terms": 0,
-          "score": 0.75
         }
       ],
       "asset_id": "F9",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 2.75,
+      "score": 27.75,
       "shot_id": "SHOT_091",
       "use_index": 2
     },
@@ -884,9 +884,9 @@
         }
       ],
       "asset_id": "F6",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 7,
+      "score": 27,
       "shot_id": "SHOT_095",
       "use_index": 3
     },
@@ -894,79 +894,84 @@
       "alternatives": [
         {
           "asset_id": "F11",
-          "matched_terms": 0,
-          "score": 0.75
+          "matched_terms": 3,
+          "score": 7.75
+        },
+        {
+          "asset_id": "F8",
+          "matched_terms": 2,
+          "score": 4
         },
         {
           "asset_id": "F12",
           "matched_terms": 0,
           "score": 0.75
-        },
-        {
-          "asset_id": "F7",
-          "matched_terms": 0,
-          "score": 0.75
         }
       ],
       "asset_id": "F4",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 1.75,
+      "score": 26.75,
       "shot_id": "SHOT_098",
       "use_index": 2
     },
     {
       "alternatives": [
         {
+          "asset_id": "F10",
+          "matched_terms": 2,
+          "score": 5
+        },
+        {
           "asset_id": "F11",
-          "matched_terms": 0,
-          "score": 0.75
+          "matched_terms": 1,
+          "score": 2.75
         },
         {
           "asset_id": "F12",
           "matched_terms": 0,
           "score": 0.75
-        },
-        {
-          "asset_id": "F7",
-          "matched_terms": 0,
-          "score": 0.75
         }
       ],
       "asset_id": "F8",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 4,
+      "score": 24,
       "shot_id": "SHOT_101",
       "use_index": 3
     },
     {
       "alternatives": [
         {
+          "asset_id": "F7",
+          "matched_terms": 2,
+          "score": 5.75
+        },
+        {
+          "asset_id": "F2",
+          "matched_terms": 2,
+          "score": 5
+        },
+        {
           "asset_id": "F12",
           "matched_terms": 0,
           "score": 0.75
-        },
-        {
-          "asset_id": "F7",
-          "matched_terms": 0,
-          "score": 0.75
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 0
         }
       ],
       "asset_id": "F11",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 2.75,
+      "score": 27.75,
       "shot_id": "SHOT_104",
       "use_index": 2
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F2",
+          "matched_terms": 2,
+          "score": 5
+        },
         {
           "asset_id": "F11",
           "matched_terms": 2,
@@ -976,22 +981,22 @@
           "asset_id": "F7",
           "matched_terms": 0,
           "score": 0.75
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 0
         }
       ],
       "asset_id": "F12",
-      "matched_terms": 0,
-      "mode": "diverse_real_world_fallback",
-      "score": 0.75,
+      "matched_terms": 8,
+      "mode": "direct_semantic",
+      "score": 20.75,
       "shot_id": "SHOT_107",
       "use_index": 2
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F10",
+          "matched_terms": 2,
+          "score": 5
+        },
         {
           "asset_id": "F4",
           "matched_terms": 1,
@@ -1001,29 +1006,24 @@
           "asset_id": "F7",
           "matched_terms": 0,
           "score": 0.75
-        },
-        {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 0
         }
       ],
       "asset_id": "F9",
-      "matched_terms": 1,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 2,
+      "score": 27,
       "shot_id": "SHOT_110",
       "use_index": 3
     },
     {
       "alternatives": [
         {
-          "asset_id": "F10",
-          "matched_terms": 0,
-          "score": 0
+          "asset_id": "F11",
+          "matched_terms": 2,
+          "score": 5
         },
         {
-          "asset_id": "F11",
+          "asset_id": "F10",
           "matched_terms": 0,
           "score": 0
         },
@@ -1034,9 +1034,9 @@
         }
       ],
       "asset_id": "F7",
-      "matched_terms": 0,
-      "mode": "diverse_real_world_fallback",
-      "score": 0.75,
+      "matched_terms": 10,
+      "mode": "direct_semantic",
+      "score": 25.75,
       "shot_id": "SHOT_114",
       "use_index": 2
     },
@@ -1044,8 +1044,8 @@
       "alternatives": [
         {
           "asset_id": "F11",
-          "matched_terms": 1,
-          "score": 2
+          "matched_terms": 4,
+          "score": 9
         },
         {
           "asset_id": "F10",
@@ -1059,14 +1059,19 @@
         }
       ],
       "asset_id": "F4",
-      "matched_terms": 2,
+      "matched_terms": 10,
       "mode": "direct_semantic",
-      "score": 4,
+      "score": 24,
       "shot_id": "SHOT_117",
       "use_index": 3
     },
     {
       "alternatives": [
+        {
+          "asset_id": "F11",
+          "matched_terms": 3,
+          "score": 7
+        },
         {
           "asset_id": "F12",
           "matched_terms": 2,
@@ -1076,17 +1081,12 @@
           "asset_id": "F10",
           "matched_terms": 1,
           "score": 2
-        },
-        {
-          "asset_id": "F11",
-          "matched_terms": 1,
-          "score": 2
         }
       ],
       "asset_id": "F2",
-      "matched_terms": 3,
+      "matched_terms": 11,
       "mode": "direct_semantic",
-      "score": 7,
+      "score": 27,
       "shot_id": "SHOT_120",
       "use_index": 3
     }
