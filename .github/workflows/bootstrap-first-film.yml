@@ -1,10 +1,11 @@
 name: Bootstrap First Film
 
 on:
-  push:
-    branches: ['agent/orvyq-canonical-rebuild']
+  pull_request:
+    branches: [main]
     paths:
       - 'bootstrap/first-film.json'
+      - '.github/workflows/bootstrap-first-film.yml'
 
 permissions:
   contents: write
