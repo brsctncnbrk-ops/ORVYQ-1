@@ -23,9 +23,13 @@ export async function runRenderedQa(projectId, contracts, file, {mode = 'proof'}
   const pauses = contracts.narrationTimeline.editorial_pauses.filter((pause) => pause.output_start_seconds < expectedDuration);
   const words = contracts.narrationTimeline.words.filter((word) => word.output_end <= expectedDuration + 0.05);
   const finalWord = words.at(-1);
+  const shotBoundarySeconds = contracts.productionPlan.shots
+    .map((shot) => shot.end_frame / contracts.productionPlan.fps)
+    .filter((second) => second > 0 && second < expectedDuration - 0.05);
   const qa = renderedMediaQa(file, {
     expectedDuration,
     editorialPauses: pauses,
+    shotBoundarySeconds,
     finalWordWindow: finalWord ? {start: finalWord.output_start, end: finalWord.output_end} : undefined
   });
   await writeJsonAtomic(safeProjectPath(projectId, `qa/rendered.${mode}.json`), qa);
