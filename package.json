@@ -11,7 +11,8 @@
     "orvyq": "node src/cli/index.mjs",
     "check": "node src/cli/index.mjs system:check",
     "test": "node --test",
-    "typecheck:render": "tsc -p tsconfig.render.json --noEmit"
+    "typecheck:render": "tsc -p tsconfig.render.json --noEmit",
+    "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "ajv": "8.17.1",
