@@ -9,7 +9,17 @@ import {
   parseNotebookAnswers, validateProject, validateProofForFull, writeJsonAtomic
 } from '../src/lib/core.mjs';
 
-const NOTEBOOK = `## A — KONU VE ANA TEZ\nA complete central topic and thesis for independent research.\n## B — ANA İDDİALAR VE DOĞRULANACAK FACTLER\nTen claims, names, dates and statistics that require independent verification.\n## C — KAYNAĞIN ANLATI İSKELETİ\nA unique source-only hook, sequence and closing structure that must never guide the script.\n## D — EKSİK SORULAR VE ÖZGÜN AÇILAR\nFive original angles, counterarguments and unanswered questions for new reporting.\n## E — ÖĞRENİMLER VE ÇIKARILABİLECEK MATERYAL\nDocuments, charts, timelines, visual evidence and source-specific elements to avoid.\n`;
+const NOTEBOOK = `## A — KONU VE ANA TEZ
+A complete central topic and thesis for independent research.
+## B — ANA İDDİALAR VE DOĞRULANACAK FACTLER
+Ten claims, names, dates and statistics that require independent verification.
+## C — KAYNAĞIN ANLATI İSKELETİ
+A unique source-only hook, sequence and closing structure that must never guide the script.
+## D — EKSİK SORULAR VE ÖZGÜN AÇILAR
+Five original angles, counterarguments and unanswered questions for new reporting.
+## E — ÖĞRENİMLER VE ÇIKARILABİLECEK MATERYAL
+Documents, charts, timelines, visual evidence and source-specific elements to avoid.
+`;
 
 function expectCode(fn, code) {
   assert.throws(fn, (error) => error instanceof OrvyqError && error.code === code, `Expected ${code}`);
@@ -158,7 +168,12 @@ test('A separate proof plan is forbidden', () => {
 
 test('End card can only be the final shot', () => {
   const {project, projectId} = makeValidRepo();
-  const file = path.join(project, 'direction', 'production_plan.json'); const plan = read(file); plan.shots[0].visual_class = 'orvyq_end_card'; plan.shots.at(-1).visual_class = 'official_document'; write(file, plan);
+  const file = path.join(project, 'direction', 'production_plan.json');
+  const plan = read(file);
+  plan.shots[0].visual_class = 'orvyq_end_card';
+  plan.shots.at(-1).visual_class = 'cinematic_footage';
+  plan.shots.at(-1).asset_class = 'contextual';
+  write(file, plan);
   expectCode(() => validateProject(projectId), 'END_CARD_POSITION');
 });
 
