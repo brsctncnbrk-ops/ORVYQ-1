@@ -29,8 +29,17 @@
           "approved_for_final_edit": {"const": true},
           "width": {"type": "integer", "minimum": 1920},
           "height": {"type": "integer", "minimum": 1080},
-          "attribution_file": {"type": "string"}
-        }
+          "attribution_file": {"type": "string"},
+          "semantic_description": {"type": "string", "minLength": 20},
+          "semantic_keywords": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+          "visual_class": {"enum": ["real_world", "abstract"]}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"role": {"const": "contextual_footage"}}, "required": ["role"]},
+            "then": {"required": ["semantic_description", "semantic_keywords", "visual_class"]}
+          }
+        ]
       }
     }
   }
