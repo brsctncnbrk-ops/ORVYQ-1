@@ -137,9 +137,6 @@ jobs:
             git add projects/001-ai-race
             git lfs fsck
             git commit -m 'Bootstrap canonical first film from approved raw assets'
-            git reset --hard HEAD
-            git fetch origin agent/orvyq-canonical-rebuild
-            git rebase origin/agent/orvyq-canonical-rebuild
             git lfs push --all origin HEAD
             git push origin HEAD:agent/orvyq-canonical-rebuild
           } 2>&1 | tee bootstrap-push.log
