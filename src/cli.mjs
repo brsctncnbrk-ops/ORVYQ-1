@@ -5,6 +5,7 @@ import {
   NOTEBOOK_QUESTIONS, OrvyqError, advanceProject, createProject, ingestNotebook, loadManifest,
   retryProject, runFull, runProof, runSmoke, safeProjectPath, validateProject
 } from "./lib/core.mjs";
+import {validateAssetMetadataContract} from "./lib/asset-metadata-contract.mjs";
 
 function parseArgs(argv) {
   const [command, ...rest] = argv;
@@ -27,6 +28,11 @@ function required(values, key) {
 
 function print(value) {
   process.stdout.write(`${JSON.stringify(value, null, 2)}\n`);
+}
+
+function validateCandidate(projectId, options = {}) {
+  validateAssetMetadataContract(projectId);
+  return validateProject(projectId, options);
 }
 
 async function main() {
@@ -54,18 +60,26 @@ async function main() {
     case "retry":
       print(retryProject(required(values, "project-id")));
       break;
-    case "validate":
-      print(validateProject(required(values, "project-id"), {frozen: values.frozen === true}));
+    case "validate": {
+      const projectId = required(values, "project-id");
+      print(validateCandidate(projectId, {frozen: values.frozen === true}));
       break;
+    }
     case "smoke":
       print(runSmoke());
       break;
-    case "proof":
-      print(runProof({projectId: required(values, "project-id"), candidateSha: required(values, "candidate-sha"), proofRunId: required(values, "proof-run-id")}));
+    case "proof": {
+      const projectId = required(values, "project-id");
+      validateAssetMetadataContract(projectId);
+      print(runProof({projectId, candidateSha: required(values, "candidate-sha"), proofRunId: required(values, "proof-run-id")}));
       break;
-    case "full":
-      print(runFull({projectId: required(values, "project-id"), candidateSha: required(values, "candidate-sha"), approvedProofRunId: required(values, "approved-proof-run-id"), proofManifestFile: required(values, "proof-manifest")}));
+    }
+    case "full": {
+      const projectId = required(values, "project-id");
+      validateAssetMetadataContract(projectId);
+      print(runFull({projectId, candidateSha: required(values, "candidate-sha"), approvedProofRunId: required(values, "approved-proof-run-id"), proofManifestFile: required(values, "proof-manifest")}));
       break;
+    }
     default:
       throw new OrvyqError("UNKNOWN_COMMAND", "Use one of: new, status, questions, ingest-notebooklm, next, retry, validate, smoke, proof, full");
   }
