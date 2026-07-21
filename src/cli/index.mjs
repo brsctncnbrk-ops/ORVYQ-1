@@ -5,7 +5,7 @@ import {asOrvyqError, OrvyqError} from '../core/errors.mjs';
 import {readJson} from '../core/json.mjs';
 import {repoRoot, safeProjectPath} from '../core/paths.mjs';
 import {initializeProject} from '../contracts/manifest.mjs';
-import {freezeCandidate, validateProject} from '../contracts/project.mjs';
+import {prepareCandidate, validateProject} from '../contracts/project.mjs';
 import {buildAudioMix} from '../audio/mix.mjs';
 import {renderFull, renderProof} from '../runtime/render.mjs';
 
@@ -37,6 +37,14 @@ async function systemCheck() {
     'docs/migration-policy.md',
     'docs/rebuild-plan.md',
     'schemas/manifest.schema.json',
+    'schemas/source-catalog.schema.json',
+    'schemas/claim-registry.schema.json',
+    'schemas/evidence-registry.schema.json',
+    'schemas/asset-registry.schema.json',
+    'schemas/narration-timeline.schema.json',
+    'schemas/audio-plan.schema.json',
+    'schemas/production-plan.schema.json',
+    'schemas/candidate.schema.json',
     'src/contracts/source-catalog.mjs',
     'src/contracts/claim-registry.mjs',
     'src/contracts/evidence-registry.mjs',
@@ -75,10 +83,9 @@ async function run(command, options) {
       const timeline = await readJson(safeProjectPath(projectId, 'direction/narration_timeline.json'));
       return {ok: true, command, metadata: await buildAudioMix({projectId, audioPlan, timeline})};
     }
-    case 'candidate:freeze': {
+    case 'candidate:prepare': {
       const projectId = requiredOption(options, 'project-id');
-      const candidateSha = requiredOption(options, 'candidate-sha');
-      return {ok: true, command, candidate: await freezeCandidate(projectId, candidateSha)};
+      return {ok: true, command, candidate_inputs: await prepareCandidate(projectId)};
     }
     case 'proof:render': {
       const projectId = requiredOption(options, 'project-id');
