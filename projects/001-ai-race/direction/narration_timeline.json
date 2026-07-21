@@ -6,10 +6,14 @@
       "editorial_function": "Create a deliberate editorial breath for not someday. right now. while the licensed score carries the transition.",
       "emphasis": "NOT SOMEDAY. RIGHT NOW.",
       "eyebrow": "THE TIMELINE",
+      "music_behavior": "rise_then_hold",
+      "narrative_trigger": "After narration lands on: NOT SOMEDAY. RIGHT NOW.",
       "output_end_seconds": 62.466667,
       "output_start_seconds": 58.466667,
       "pause_id": "PAUSE_01",
-      "source_time_seconds": 58.466667
+      "pause_type": "warning_pivot",
+      "source_time_seconds": 58.466667,
+      "visual_behavior": "single_meaningful_hold"
     },
     {
       "captions_suppressed": true,
@@ -17,10 +21,14 @@
       "editorial_function": "Create a deliberate editorial breath for a test. not an incident. while the licensed score carries the transition.",
       "emphasis": "A TEST. NOT AN INCIDENT.",
       "eyebrow": "THE LIMIT",
+      "music_behavior": "rise_then_hold",
+      "narrative_trigger": "After narration lands on: A TEST. NOT AN INCIDENT.",
       "output_end_seconds": 98.466667,
       "output_start_seconds": 94.466667,
       "pause_id": "PAUSE_02",
-      "source_time_seconds": 90.466667
+      "pause_type": "warning_pivot",
+      "source_time_seconds": 90.466667,
+      "visual_behavior": "single_meaningful_hold"
     },
     {
       "captions_suppressed": true,
@@ -28,10 +36,14 @@
       "editorial_function": "Create a deliberate editorial breath for slow down — and lose? while the licensed score carries the transition.",
       "emphasis": "SLOW DOWN — AND LOSE?",
       "eyebrow": "THE INCENTIVE",
+      "music_behavior": "sustain_under_silence",
+      "narrative_trigger": "After narration lands on: SLOW DOWN — AND LOSE?",
       "output_end_seconds": 223.066667,
       "output_start_seconds": 218.066667,
       "pause_id": "PAUSE_03",
-      "source_time_seconds": 210.066667
+      "pause_type": "open_question",
+      "source_time_seconds": 210.066667,
+      "visual_behavior": "single_symbolic_hold"
     },
     {
       "captions_suppressed": true,
@@ -39,10 +51,14 @@
       "editorial_function": "Create a deliberate editorial breath for the risk leaves the lab while the licensed score carries the transition.",
       "emphasis": "THE RISK LEAVES THE LAB",
       "eyebrow": "THE PIVOT",
+      "music_behavior": "rise_then_hold",
+      "narrative_trigger": "After narration lands on: THE RISK LEAVES THE LAB",
       "output_end_seconds": 316.533333,
       "output_start_seconds": 312.533333,
       "pause_id": "PAUSE_04",
-      "source_time_seconds": 299.533333
+      "pause_type": "warning_pivot",
+      "source_time_seconds": 299.533333,
+      "visual_behavior": "single_meaningful_hold"
     },
     {
       "captions_suppressed": true,
@@ -50,10 +66,14 @@
       "editorial_function": "Create a deliberate editorial breath for who gets to decide? while the licensed score carries the transition.",
       "emphasis": "WHO GETS TO DECIDE?",
       "eyebrow": "THE POWER",
+      "music_behavior": "sustain_under_silence",
+      "narrative_trigger": "After narration lands on: WHO GETS TO DECIDE?",
       "output_end_seconds": 440.746667,
       "output_start_seconds": 435.746667,
       "pause_id": "PAUSE_05",
-      "source_time_seconds": 418.746667
+      "pause_type": "open_question",
+      "source_time_seconds": 418.746667,
+      "visual_behavior": "single_symbolic_hold"
     },
     {
       "captions_suppressed": true,
@@ -61,10 +81,14 @@
       "editorial_function": "Create a deliberate editorial breath for open or closed? while the licensed score carries the transition.",
       "emphasis": "OPEN OR CLOSED?",
       "eyebrow": "THE TRADE-OFF",
+      "music_behavior": "sustain_under_silence",
+      "narrative_trigger": "After narration lands on: OPEN OR CLOSED?",
       "output_end_seconds": 568.833333,
       "output_start_seconds": 563.833333,
       "pause_id": "PAUSE_06",
-      "source_time_seconds": 541.833333
+      "pause_type": "open_question",
+      "source_time_seconds": 541.833333,
+      "visual_behavior": "single_symbolic_hold"
     },
     {
       "captions_suppressed": true,
@@ -72,10 +96,14 @@
       "editorial_function": "Create a deliberate editorial breath for safety must be built while the licensed score carries the transition.",
       "emphasis": "SAFETY MUST BE BUILT",
       "eyebrow": "THE WORK",
+      "music_behavior": "open_then_decay",
+      "narrative_trigger": "After narration lands on: SAFETY MUST BE BUILT",
       "output_end_seconds": 684.566667,
       "output_start_seconds": 679.566667,
       "pause_id": "PAUSE_07",
-      "source_time_seconds": 652.566667
+      "pause_type": "resolution_pivot",
+      "source_time_seconds": 652.566667,
+      "visual_behavior": "single_meaningful_hold"
     },
     {
       "captions_suppressed": true,
@@ -83,10 +111,14 @@
       "editorial_function": "Create a deliberate editorial breath for people, right now. while the licensed score carries the transition.",
       "emphasis": "PEOPLE, RIGHT NOW.",
       "eyebrow": "THE CHOICE",
+      "music_behavior": "open_then_decay",
+      "narrative_trigger": "After narration lands on: PEOPLE, RIGHT NOW.",
       "output_end_seconds": 753.933333,
       "output_start_seconds": 747.933333,
       "pause_id": "PAUSE_08",
-      "source_time_seconds": 715.933333
+      "pause_type": "resolution_pivot",
+      "source_time_seconds": 715.933333,
+      "visual_behavior": "single_meaningful_hold"
     }
   ],
   "project_id": "001-ai-race",

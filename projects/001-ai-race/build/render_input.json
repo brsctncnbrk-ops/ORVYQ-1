@@ -32,14 +32,23 @@
       "asset_id": "F1",
       "byte_size": 58938136,
       "duration_seconds": 23.786667,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Aerial city movement expressing scale, infrastructure, competition and systems already in motion.",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f1.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Aerial city movement expressing scale, infrastructure, competition and systems already in motion.",
+      "semantic_keywords": [
+        "city",
+        "infrastructure",
+        "scale",
+        "competition",
+        "systems"
+      ],
       "sha256": "77824af4c15884ef98f11a1ee72abffa28de9d5fb37192d9dcbab87111f94252",
       "source_url": "https://www.pexels.com/video/aerial-view-footage-of-city-12719806/",
+      "visual_class": "real_world",
       "width": 3840
     },
     {
@@ -47,14 +56,23 @@
       "asset_id": "F2",
       "byte_size": 11205215,
       "duration_seconds": 17.84,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A person studies technical plans on a laptop, suggesting design, engineering, governance and deliberate construction.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f2.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A person studies technical plans on a laptop, suggesting design, engineering, governance and deliberate construction.",
+      "semantic_keywords": [
+        "planning",
+        "engineering",
+        "design",
+        "governance",
+        "computer"
+      ],
       "sha256": "681c6852775372f279ec0ce4c822f3bf0c2716d4c97bca897de0a17bc01cab10",
       "source_url": "https://www.pexels.com/video/a-man-looking-at-a-blueprint-on-his-laptop-6224298/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -62,14 +80,23 @@
       "asset_id": "F3",
       "byte_size": 42431058,
       "duration_seconds": 37.96,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Multiple market-data screens suggest incentives, competition, strategic pressure and rapid decision-making.",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f3.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Multiple market-data screens suggest incentives, competition, strategic pressure and rapid decision-making.",
+      "semantic_keywords": [
+        "markets",
+        "data",
+        "competition",
+        "incentives",
+        "pressure"
+      ],
       "sha256": "f4d8ab5a8b4acb2f7ecfed268d1481495de8c377db8f0f3493d8f1364f78c164",
       "source_url": "https://www.pexels.com/video/stock-market-data-analysis-with-multiple-monitors-38412247/",
+      "visual_class": "real_world",
       "width": 3840
     },
     {
@@ -77,14 +104,23 @@
       "asset_id": "F4",
       "byte_size": 25647417,
       "duration_seconds": 45.64,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Abstract digital technology imagery expressing machine intelligence, networked capability and uncertain control.",
       "height": 1080,
       "license": "https://pixabay.com/service/license-summary/",
       "media_type": "video",
       "relative_path": "assets/footage/f4.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Abstract digital technology imagery expressing machine intelligence, networked capability and uncertain control.",
+      "semantic_keywords": [
+        "technology",
+        "digital",
+        "intelligence",
+        "network",
+        "control"
+      ],
       "sha256": "6623d25b666454c67770239d30da7478d7138193a736f4c1813c1bc779ce4d2e",
       "source_url": "https://pixabay.com/videos/id-3735/",
+      "visual_class": "abstract",
       "width": 1920
     },
     {
@@ -92,14 +128,23 @@
       "asset_id": "F5",
       "byte_size": 16881751,
       "duration_seconds": 30.03,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Industrial or laboratory-like machinery conveys controlled testing, engineered pressure and systems operating under constraints.",
       "height": 1080,
       "license": "https://pixabay.com/service/license-summary/",
       "media_type": "video",
       "relative_path": "assets/footage/f5.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Industrial or laboratory-like machinery conveys controlled testing, engineered pressure and systems operating under constraints.",
+      "semantic_keywords": [
+        "laboratory",
+        "testing",
+        "machinery",
+        "pressure",
+        "control"
+      ],
       "sha256": "dc7b024655a412d155acee3a70047008d48a073fec8af408df970d2b2bf7792c",
       "source_url": "https://pixabay.com/videos/id-2176/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -107,14 +152,23 @@
       "asset_id": "F6",
       "byte_size": 14482288,
       "duration_seconds": 21.353333,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Warehouses behind fencing convey containment, physical infrastructure, restricted access and risks leaving controlled spaces.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f6.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Warehouses behind fencing convey containment, physical infrastructure, restricted access and risks leaving controlled spaces.",
+      "semantic_keywords": [
+        "containment",
+        "infrastructure",
+        "security",
+        "restriction",
+        "risk"
+      ],
       "sha256": "d8f7282af47935c275ab0719f476a79b25bacd632b895dd65c97d057bfcf0ce2",
       "source_url": "https://www.pexels.com/video/warehouses-and-mesh-fence-by-road-13307522/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -122,14 +176,23 @@
       "asset_id": "F7",
       "byte_size": 12784574,
       "duration_seconds": 19.68,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A smartphone news feed represents public information, media attention, social spread and rapidly moving narratives.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f7.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A smartphone news feed represents public information, media attention, social spread and rapidly moving narratives.",
+      "semantic_keywords": [
+        "media",
+        "news",
+        "public",
+        "information",
+        "spread"
+      ],
       "sha256": "8d318f7859e024c98401d15fc3dbbeffc044f52d66a3863b9c1b381493d075a2",
       "source_url": "https://www.pexels.com/video/scrolling-smartphone-news-feed-in-close-up-35888104/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -137,14 +200,23 @@
       "asset_id": "F8",
       "byte_size": 13208492,
       "duration_seconds": 19.8,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A moving node network visualizes connected systems, model ecosystems, diffusion and distributed technological power.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f8.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A moving node network visualizes connected systems, model ecosystems, diffusion and distributed technological power.",
+      "semantic_keywords": [
+        "network",
+        "systems",
+        "models",
+        "diffusion",
+        "power"
+      ],
       "sha256": "97711222d42b4f95522f1fcbf8469077e29319e6470e9a3e1cd92c3de65074d0",
       "source_url": "https://www.pexels.com/video/digital-node-network-animation-in-motion-30607101/",
+      "visual_class": "abstract",
       "width": 1920
     },
     {
@@ -152,14 +224,23 @@
       "asset_id": "F9",
       "byte_size": 12054776,
       "duration_seconds": 17,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Employees stamp and process documents, representing bureaucracy, compliance, institutional procedure and formal approval.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f9.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Employees stamp and process documents, representing bureaucracy, compliance, institutional procedure and formal approval.",
+      "semantic_keywords": [
+        "bureaucracy",
+        "documents",
+        "compliance",
+        "institution",
+        "approval"
+      ],
       "sha256": "64e315ac43c0a48fab5ae137064029537719fdad1cf0aecbb84e53cbfcd31445",
       "source_url": "https://www.pexels.com/video/employees-stamping-and-writing-on-the-papers-7593780/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -167,14 +248,23 @@
       "asset_id": "F10",
       "byte_size": 43971189,
       "duration_seconds": 32.465767,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A monumental glass-and-metal building suggests corporate power, concentrated resources and institutional scale.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f10.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A monumental glass-and-metal building suggests corporate power, concentrated resources and institutional scale.",
+      "semantic_keywords": [
+        "corporate",
+        "power",
+        "institution",
+        "resources",
+        "scale"
+      ],
       "sha256": "31bf99ee9d0b75dd2eaea9ac7f2a76d8934e7588bf98633a2a399fce14b7cfda",
       "source_url": "https://www.pexels.com/video/the-building-is-made-of-glass-and-metal-18872181/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -182,14 +272,23 @@
       "asset_id": "F11",
       "byte_size": 9250418,
       "duration_seconds": 15.6,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A person browsing on a computer represents access, open information, digital systems and human interaction with technology.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f11.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A person browsing on a computer represents access, open information, digital systems and human interaction with technology.",
+      "semantic_keywords": [
+        "computer",
+        "access",
+        "information",
+        "open",
+        "technology"
+      ],
       "sha256": "d5242ed6dcf26729e07a38f0ea13c5cdb4c546b541ea0a4cbac54e43f3814771",
       "source_url": "https://www.pexels.com/video/close-up-shot-of-a-person-browsing-in-the-computer-7735823/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -197,14 +296,23 @@
       "asset_id": "F12",
       "byte_size": 10938814,
       "duration_seconds": 15.448767,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A state senate chamber conveys regulation, lawmaking, democratic authority and governance choices.",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f12.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A state senate chamber conveys regulation, lawmaking, democratic authority and governance choices.",
+      "semantic_keywords": [
+        "regulation",
+        "government",
+        "law",
+        "governance",
+        "authority"
+      ],
       "sha256": "83ca63055ed53bd9b3c1e1d80c3c0ded44fb276f6c8858234509702cc9f1673f",
       "source_url": "https://www.pexels.com/video/panning-shot-of-the-texas-state-senate-chamber-4474271/",
+      "visual_class": "real_world",
       "width": 1920
     },
     {
@@ -212,14 +320,23 @@
       "asset_id": "F13",
       "byte_size": 68402438,
       "duration_seconds": 25.88,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "Computer code running on screen represents software capability, technical architecture, implementation and hidden system behavior.",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f13.mp4",
       "role": "contextual_footage",
+      "semantic_description": "Computer code running on screen represents software capability, technical architecture, implementation and hidden system behavior.",
+      "semantic_keywords": [
+        "code",
+        "software",
+        "capability",
+        "architecture",
+        "systems"
+      ],
       "sha256": "a4c0e364b66752924dc0d13168ca4b3f3b467bf1b39269acb1efa867ef8a733c",
       "source_url": "https://www.pexels.com/video/a-computer-code-running-on-screen-6804117/",
+      "visual_class": "real_world",
       "width": 4096
     },
     {
@@ -227,14 +344,23 @@
       "asset_id": "F14",
       "byte_size": 41328259,
       "duration_seconds": 29.16,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "A person explains a medical chart, conveying risk assessment, expert interpretation, thresholds and safety review.",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f14.mp4",
       "role": "contextual_footage",
+      "semantic_description": "A person explains a medical chart, conveying risk assessment, expert interpretation, thresholds and safety review.",
+      "semantic_keywords": [
+        "risk",
+        "assessment",
+        "thresholds",
+        "safety",
+        "expert"
+      ],
       "sha256": "308ff89e0442cfde1b7ff1f7e3709f239095834c56c3abda00af9d2d8461343d",
       "source_url": "https://www.pexels.com/video/person-showing-a-medical-chart-7579340/",
+      "visual_class": "real_world",
       "width": 4096
     },
     {
@@ -242,14 +368,23 @@
       "asset_id": "F15",
       "byte_size": 55614350,
       "duration_seconds": 33.28,
-      "editorial_purpose": "Licensed contextual atmosphere; never presented as literal evidence.",
+      "editorial_purpose": "People review a contract, representing trade-offs, accountability, negotiated rules and binding institutional choices.",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
       "media_type": "video",
       "relative_path": "assets/footage/f15.mp4",
       "role": "contextual_footage",
+      "semantic_description": "People review a contract, representing trade-offs, accountability, negotiated rules and binding institutional choices.",
+      "semantic_keywords": [
+        "contract",
+        "trade-offs",
+        "accountability",
+        "rules",
+        "choice"
+      ],
       "sha256": "73f0729e4b9d9cd7499dbdcfc1fc2866e34f5efecff8e270f83ad4592e60d620",
       "source_url": "https://www.pexels.com/video/reviewing-a-employment-contract-agreement-8134446/",
+      "visual_class": "real_world",
       "width": 4096
     },
     {
@@ -825,7 +960,7 @@
     "shots": [
       {
         "asset_ids": [
-          "F1"
+          "F13"
         ],
         "claim_ids": [
           "CLM_RACE_INCENTIVE"
@@ -841,6 +976,40 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "software",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "acknowledge",
+            "capability",
+            "competitive",
+            "development",
+            "even",
+            "frontier",
+            "individual",
+            "laboratories",
+            "pressure",
+            "reward",
+            "risk",
+            "serious",
+            "when"
+          ],
+          "mode": "direct_semantic",
+          "score": 6.5,
+          "selected_keywords": [
+            "architecture",
+            "capability",
+            "code",
+            "software",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_001",
         "shot_type": "cinematic_hook",
@@ -859,7 +1028,7 @@
       },
       {
         "asset_ids": [
-          "F2"
+          "F14"
         ],
         "claim_ids": [
           "CLM_SAFETY_FRAMEWORKS"
@@ -874,6 +1043,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "assessment",
+          "expert",
+          "risk",
+          "safety",
+          "thresholds"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "competitive",
+            "connect",
+            "formal",
+            "frameworks",
+            "laboratories",
+            "leading",
+            "pressure",
+            "publish",
+            "safeguards",
+            "stronger",
+            "thresholds"
+          ],
+          "mode": "direct_semantic",
+          "score": 6.5,
+          "selected_keywords": [
+            "assessment",
+            "expert",
+            "risk",
+            "safety",
+            "thresholds"
+          ]
         },
         "shot_id": "SHOT_002",
         "shot_type": "cinematic_hook",
@@ -907,6 +1109,40 @@
           "right": 70,
           "top": 52
         },
+        "semantic_keywords": [
+          "competition",
+          "data",
+          "incentives",
+          "markets",
+          "pressure"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "competitive",
+            "corresponding",
+            "define",
+            "escalating",
+            "evaluation",
+            "frameworks",
+            "frontier",
+            "levels",
+            "mitigation",
+            "pressure",
+            "requirements",
+            "safety"
+          ],
+          "mode": "direct_semantic",
+          "score": 6.5,
+          "selected_keywords": [
+            "competition",
+            "data",
+            "incentives",
+            "markets",
+            "pressure"
+          ]
+        },
         "shot_id": "SHOT_003",
         "shot_type": "cinematic_hook",
         "source_label": "ORVYQ · CONTEXTUAL",
@@ -923,7 +1159,7 @@
       },
       {
         "asset_ids": [
-          "F4"
+          "F5"
         ],
         "claim_ids": [
           "CLM_ALIGNMENT_RISK"
@@ -938,6 +1174,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "control",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "testing"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "alignment",
+            "autonomous-risk",
+            "competitive",
+            "deceptive",
+            "evaluations",
+            "explicitly",
+            "frameworks",
+            "frontier",
+            "include",
+            "pressure",
+            "published",
+            "related"
+          ],
+          "mode": "direct_semantic",
+          "score": 6.5,
+          "selected_keywords": [
+            "control",
+            "laboratory",
+            "machinery",
+            "pressure",
+            "testing"
+          ]
         },
         "shot_id": "SHOT_004",
         "shot_type": "cinematic_hook",
@@ -955,7 +1224,7 @@
       },
       {
         "asset_ids": [
-          "F5"
+          "F8"
         ],
         "claim_ids": [
           "CLM_CONTROLLED_TEST"
@@ -970,6 +1239,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "diffusion",
+          "models",
+          "network",
+          "power",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "actions",
+            "anthropic",
+            "controlled",
+            "engineered",
+            "harmful",
+            "models",
+            "multiple",
+            "pressure",
+            "selected",
+            "simulations",
+            "sometimes",
+            "which"
+          ],
+          "mode": "direct_semantic",
+          "score": 5.5,
+          "selected_keywords": [
+            "diffusion",
+            "models",
+            "network",
+            "power",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_005",
         "shot_type": "contextual_footage",
@@ -1049,7 +1351,7 @@
       },
       {
         "asset_ids": [
-          "F6"
+          "F1"
         ],
         "claim_ids": [
           "CLM_MISUSE"
@@ -1064,6 +1366,41 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "city",
+          "competition",
+          "infrastructure",
+          "scale",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "accessible",
+            "aiding",
+            "also",
+            "barriers",
+            "biological",
+            "capable",
+            "cyber",
+            "defenders",
+            "forms",
+            "lower",
+            "misuse",
+            "more",
+            "some",
+            "systems"
+          ],
+          "mode": "direct_semantic",
+          "score": 6.5,
+          "selected_keywords": [
+            "city",
+            "competition",
+            "infrastructure",
+            "scale",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_008",
         "shot_type": "contextual_footage",
@@ -1151,7 +1488,7 @@
       },
       {
         "asset_ids": [
-          "F7"
+          "F6"
         ],
         "claim_ids": [
           "CLM_SAFETY_ARCHITECTURE"
@@ -1166,6 +1503,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "containment",
+          "infrastructure",
+          "restriction",
+          "risk",
+          "security"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "access",
+            "accountability",
+            "controls",
+            "eliminate",
+            "evaluation",
+            "external",
+            "frontier",
+            "incident",
+            "layered",
+            "reduce",
+            "reporting",
+            "risk"
+          ],
+          "mode": "direct_semantic",
+          "score": 8.5,
+          "selected_keywords": [
+            "containment",
+            "infrastructure",
+            "restriction",
+            "risk",
+            "security"
+          ]
         },
         "shot_id": "SHOT_011",
         "shot_type": "contextual_footage",
@@ -1274,7 +1644,7 @@
       },
       {
         "asset_ids": [
-          "F8"
+          "F13"
         ],
         "claim_ids": [
           "CLM_SAFETY_THRESHOLDS"
@@ -1289,6 +1659,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "software",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "corresponding",
+            "define",
+            "escalating",
+            "evaluation",
+            "frameworks",
+            "frontier",
+            "levels",
+            "mitigation",
+            "requirements",
+            "safety"
+          ],
+          "mode": "direct_semantic",
+          "score": 5.75,
+          "selected_keywords": [
+            "architecture",
+            "capability",
+            "code",
+            "software",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_015",
         "shot_type": "contextual_footage",
@@ -1396,7 +1798,7 @@
       },
       {
         "asset_ids": [
-          "F9"
+          "F10"
         ],
         "claim_ids": [
           "CLM_GOVERNANCE_LAG"
@@ -1411,6 +1813,36 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "corporate",
+          "institution",
+          "power",
+          "resources",
+          "scale"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "deployment",
+            "institutional",
+            "more",
+            "move",
+            "oversight",
+            "slowly",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 3.5,
+          "selected_keywords": [
+            "corporate",
+            "institution",
+            "power",
+            "resources",
+            "scale"
+          ]
         },
         "shot_id": "SHOT_019",
         "shot_type": "contextual_footage",
@@ -1498,7 +1930,7 @@
       },
       {
         "asset_ids": [
-          "F10"
+          "F15"
         ],
         "claim_ids": [
           "CLM_OPEN_CLOSED"
@@ -1513,6 +1945,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "accountability",
+          "choice",
+          "contract",
+          "rules",
+          "trade-offs"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "accountability",
+            "closed",
+            "concentration",
+            "create",
+            "development",
+            "different",
+            "open",
+            "security",
+            "strategies",
+            "trade-offs"
+          ],
+          "mode": "direct_semantic",
+          "score": 11.5,
+          "selected_keywords": [
+            "accountability",
+            "choice",
+            "contract",
+            "rules",
+            "trade-offs"
+          ]
         },
         "shot_id": "SHOT_022",
         "shot_type": "contextual_footage",
@@ -1593,7 +2056,7 @@
       },
       {
         "asset_ids": [
-          "F11"
+          "F14"
         ],
         "claim_ids": [
           "CLM_RACE_INCENTIVE"
@@ -1608,6 +2071,40 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "assessment",
+          "expert",
+          "risk",
+          "safety",
+          "thresholds"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "acknowledge",
+            "capability",
+            "competitive",
+            "development",
+            "even",
+            "frontier",
+            "individual",
+            "laboratories",
+            "pressure",
+            "reward",
+            "risk",
+            "serious",
+            "when"
+          ],
+          "mode": "direct_semantic",
+          "score": 5.75,
+          "selected_keywords": [
+            "assessment",
+            "expert",
+            "risk",
+            "safety",
+            "thresholds"
+          ]
         },
         "shot_id": "SHOT_025",
         "shot_type": "contextual_footage",
@@ -1687,7 +2184,7 @@
       },
       {
         "asset_ids": [
-          "F12"
+          "F11"
         ],
         "claim_ids": [
           "CLM_ALIGNMENT_RISK"
@@ -1702,6 +2199,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "access",
+          "computer",
+          "information",
+          "open",
+          "technology"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "alignment",
+            "autonomous-risk",
+            "deceptive",
+            "evaluations",
+            "explicitly",
+            "frameworks",
+            "frontier",
+            "include",
+            "published",
+            "related"
+          ],
+          "mode": "diverse_real_world_fallback",
+          "score": 1.5,
+          "selected_keywords": [
+            "access",
+            "computer",
+            "information",
+            "open",
+            "technology"
+          ]
         },
         "shot_id": "SHOT_028",
         "shot_type": "contextual_footage",
@@ -1805,6 +2333,36 @@
           "right": 70,
           "top": 52
         },
+        "semantic_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "software",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "deployment",
+            "institutional",
+            "more",
+            "move",
+            "oversight",
+            "slowly",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 7,
+          "selected_keywords": [
+            "architecture",
+            "capability",
+            "code",
+            "software",
+            "systems"
+          ]
+        },
         "shot_id": "SHOT_031",
         "shot_type": "contextual_footage",
         "source_label": "ORVYQ · CONTEXTUAL",
@@ -1884,7 +2442,7 @@
       },
       {
         "asset_ids": [
-          "F14"
+          "F15"
         ],
         "claim_ids": [
           "CLM_OPEN_CLOSED"
@@ -1899,6 +2457,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "accountability",
+          "choice",
+          "contract",
+          "rules",
+          "trade-offs"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "accountability",
+            "closed",
+            "concentration",
+            "create",
+            "development",
+            "different",
+            "open",
+            "security",
+            "strategies",
+            "trade-offs"
+          ],
+          "mode": "direct_semantic",
+          "score": 10.75,
+          "selected_keywords": [
+            "accountability",
+            "choice",
+            "contract",
+            "rules",
+            "trade-offs"
+          ]
         },
         "shot_id": "SHOT_034",
         "shot_type": "contextual_footage",
@@ -1978,7 +2567,7 @@
       },
       {
         "asset_ids": [
-          "F15"
+          "F3"
         ],
         "claim_ids": [
           "CLM_RACE_INCENTIVE"
@@ -1993,6 +2582,40 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "competition",
+          "data",
+          "incentives",
+          "markets",
+          "pressure"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "acknowledge",
+            "capability",
+            "competitive",
+            "development",
+            "even",
+            "frontier",
+            "individual",
+            "laboratories",
+            "pressure",
+            "reward",
+            "risk",
+            "serious",
+            "when"
+          ],
+          "mode": "direct_semantic",
+          "score": 5.75,
+          "selected_keywords": [
+            "competition",
+            "data",
+            "incentives",
+            "markets",
+            "pressure"
+          ]
         },
         "shot_id": "SHOT_037",
         "shot_type": "contextual_footage",
@@ -2108,7 +2731,7 @@
       },
       {
         "asset_ids": [
-          "F1"
+          "F5"
         ],
         "claim_ids": [
           "CLM_CONTROLLED_TEST"
@@ -2123,6 +2746,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "control",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "testing"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "actions",
+            "anthropic",
+            "controlled",
+            "engineered",
+            "harmful",
+            "models",
+            "multiple",
+            "pressure",
+            "selected",
+            "simulations",
+            "sometimes",
+            "which"
+          ],
+          "mode": "direct_semantic",
+          "score": 9.75,
+          "selected_keywords": [
+            "control",
+            "laboratory",
+            "machinery",
+            "pressure",
+            "testing"
+          ]
         },
         "shot_id": "SHOT_041",
         "shot_type": "contextual_footage",
@@ -2203,7 +2859,7 @@
       },
       {
         "asset_ids": [
-          "F2"
+          "F1"
         ],
         "claim_ids": [
           "CLM_MISUSE"
@@ -2218,6 +2874,41 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "city",
+          "competition",
+          "infrastructure",
+          "scale",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "accessible",
+            "aiding",
+            "also",
+            "barriers",
+            "biological",
+            "capable",
+            "cyber",
+            "defenders",
+            "forms",
+            "lower",
+            "misuse",
+            "more",
+            "some",
+            "systems"
+          ],
+          "mode": "direct_semantic",
+          "score": 5.75,
+          "selected_keywords": [
+            "city",
+            "competition",
+            "infrastructure",
+            "scale",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_044",
         "shot_type": "contextual_footage",
@@ -2297,7 +2988,7 @@
       },
       {
         "asset_ids": [
-          "F3"
+          "F6"
         ],
         "claim_ids": [
           "CLM_SAFETY_ARCHITECTURE"
@@ -2312,6 +3003,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "containment",
+          "infrastructure",
+          "restriction",
+          "risk",
+          "security"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "access",
+            "accountability",
+            "controls",
+            "eliminate",
+            "evaluation",
+            "external",
+            "frontier",
+            "incident",
+            "layered",
+            "reduce",
+            "reporting",
+            "risk"
+          ],
+          "mode": "direct_semantic",
+          "score": 7.75,
+          "selected_keywords": [
+            "containment",
+            "infrastructure",
+            "restriction",
+            "risk",
+            "security"
+          ]
         },
         "shot_id": "SHOT_047",
         "shot_type": "contextual_footage",
@@ -2399,7 +3123,7 @@
       },
       {
         "asset_ids": [
-          "F4"
+          "F14"
         ],
         "claim_ids": [
           "CLM_SAFETY_FRAMEWORKS"
@@ -2414,6 +3138,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "assessment",
+          "expert",
+          "risk",
+          "safety",
+          "thresholds"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "connect",
+            "formal",
+            "frameworks",
+            "laboratories",
+            "leading",
+            "publish",
+            "safeguards",
+            "stronger",
+            "thresholds"
+          ],
+          "mode": "direct_semantic",
+          "score": 5,
+          "selected_keywords": [
+            "assessment",
+            "expert",
+            "risk",
+            "safety",
+            "thresholds"
+          ]
         },
         "shot_id": "SHOT_050",
         "shot_type": "contextual_footage",
@@ -2538,6 +3293,38 @@
           "right": 70,
           "top": 52
         },
+        "semantic_keywords": [
+          "control",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "testing"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "behaviour",
+            "emails",
+            "engineered",
+            "fictional",
+            "model",
+            "published",
+            "replacement",
+            "simulation",
+            "supplied",
+            "test",
+            "threat"
+          ],
+          "mode": "direct_semantic",
+          "score": 2,
+          "selected_keywords": [
+            "control",
+            "laboratory",
+            "machinery",
+            "pressure",
+            "testing"
+          ]
+        },
         "shot_id": "SHOT_054",
         "shot_type": "contextual_footage",
         "source_label": "ORVYQ · CONTEXTUAL",
@@ -2616,7 +3403,7 @@
       },
       {
         "asset_ids": [
-          "F6"
+          "F4"
         ],
         "claim_ids": [
           "CLM_POWER"
@@ -2631,6 +3418,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "control",
+          "digital",
+          "intelligence",
+          "network",
+          "technology"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "concentrate",
+            "consequential",
+            "control",
+            "decisions",
+            "frontier",
+            "institutions",
+            "number",
+            "over",
+            "small",
+            "systems"
+          ],
+          "mode": "direct_semantic",
+          "score": 5.5,
+          "selected_keywords": [
+            "control",
+            "digital",
+            "intelligence",
+            "network",
+            "technology"
+          ]
         },
         "shot_id": "SHOT_057",
         "shot_type": "contextual_footage",
@@ -2718,7 +3536,7 @@
       },
       {
         "asset_ids": [
-          "F7"
+          "F2"
         ],
         "claim_ids": [
           "CLM_HUMAN_AGENCY"
@@ -2733,6 +3551,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "computer",
+          "design",
+          "engineering",
+          "governance",
+          "planning"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "automatic",
+            "choice",
+            "frontier",
+            "governance",
+            "human",
+            "institutional",
+            "outcome",
+            "rather",
+            "remains",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 8.5,
+          "selected_keywords": [
+            "computer",
+            "design",
+            "engineering",
+            "governance",
+            "planning"
+          ]
         },
         "shot_id": "SHOT_060",
         "shot_type": "contextual_footage",
@@ -2813,7 +3663,7 @@
       },
       {
         "asset_ids": [
-          "F8"
+          "F12"
         ],
         "claim_ids": [
           "CLM_SAFETY_THRESHOLDS"
@@ -2828,6 +3678,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "authority",
+          "governance",
+          "government",
+          "law",
+          "regulation"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "corresponding",
+            "define",
+            "escalating",
+            "evaluation",
+            "frameworks",
+            "frontier",
+            "levels",
+            "mitigation",
+            "requirements",
+            "safety"
+          ],
+          "mode": "diverse_real_world_fallback",
+          "score": 1.5,
+          "selected_keywords": [
+            "authority",
+            "governance",
+            "government",
+            "law",
+            "regulation"
+          ]
         },
         "shot_id": "SHOT_063",
         "shot_type": "contextual_footage",
@@ -2907,7 +3789,7 @@
       },
       {
         "asset_ids": [
-          "F9"
+          "F8"
         ],
         "claim_ids": [
           "CLM_REPLACEMENT_SCENARIO"
@@ -2922,6 +3804,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "diffusion",
+          "models",
+          "network",
+          "power",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "behaviour",
+            "emails",
+            "engineered",
+            "fictional",
+            "model",
+            "published",
+            "replacement",
+            "simulation",
+            "supplied",
+            "test",
+            "threat"
+          ],
+          "mode": "direct_semantic",
+          "score": 1.75,
+          "selected_keywords": [
+            "diffusion",
+            "models",
+            "network",
+            "power",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_066",
         "shot_type": "contextual_footage",
@@ -3009,7 +3923,7 @@
       },
       {
         "asset_ids": [
-          "F10"
+          "F1"
         ],
         "claim_ids": [
           "CLM_POWER"
@@ -3024,6 +3938,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "city",
+          "competition",
+          "infrastructure",
+          "scale",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "concentrate",
+            "consequential",
+            "control",
+            "decisions",
+            "frontier",
+            "institutions",
+            "number",
+            "over",
+            "small",
+            "systems"
+          ],
+          "mode": "direct_semantic",
+          "score": 5,
+          "selected_keywords": [
+            "city",
+            "competition",
+            "infrastructure",
+            "scale",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_069",
         "shot_type": "contextual_footage",
@@ -3104,7 +4049,7 @@
       },
       {
         "asset_ids": [
-          "F11"
+          "F2"
         ],
         "claim_ids": [
           "CLM_HUMAN_AGENCY"
@@ -3119,6 +4064,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "computer",
+          "design",
+          "engineering",
+          "governance",
+          "planning"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "automatic",
+            "choice",
+            "frontier",
+            "governance",
+            "human",
+            "institutional",
+            "outcome",
+            "rather",
+            "remains",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 7.75,
+          "selected_keywords": [
+            "computer",
+            "design",
+            "engineering",
+            "governance",
+            "planning"
+          ]
         },
         "shot_id": "SHOT_072",
         "shot_type": "contextual_footage",
@@ -3226,7 +4203,7 @@
       },
       {
         "asset_ids": [
-          "F12"
+          "F7"
         ],
         "claim_ids": [
           "CLM_ALIGNMENT_RISK"
@@ -3241,6 +4218,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "information",
+          "media",
+          "news",
+          "public",
+          "spread"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "alignment",
+            "autonomous-risk",
+            "deceptive",
+            "evaluations",
+            "explicitly",
+            "frameworks",
+            "frontier",
+            "include",
+            "published",
+            "related"
+          ],
+          "mode": "diverse_real_world_fallback",
+          "score": 1.5,
+          "selected_keywords": [
+            "information",
+            "media",
+            "news",
+            "public",
+            "spread"
+          ]
         },
         "shot_id": "SHOT_076",
         "shot_type": "contextual_footage",
@@ -3328,7 +4336,7 @@
       },
       {
         "asset_ids": [
-          "F13"
+          "F9"
         ],
         "claim_ids": [
           "CLM_GOVERNANCE_LAG"
@@ -3343,6 +4351,36 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "approval",
+          "bureaucracy",
+          "compliance",
+          "documents",
+          "institution"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "deployment",
+            "institutional",
+            "more",
+            "move",
+            "oversight",
+            "slowly",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 3.5,
+          "selected_keywords": [
+            "approval",
+            "bureaucracy",
+            "compliance",
+            "documents",
+            "institution"
+          ]
         },
         "shot_id": "SHOT_079",
         "shot_type": "contextual_footage",
@@ -3423,7 +4461,7 @@
       },
       {
         "asset_ids": [
-          "F14"
+          "F15"
         ],
         "claim_ids": [
           "CLM_OPEN_CLOSED"
@@ -3438,6 +4476,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "accountability",
+          "choice",
+          "contract",
+          "rules",
+          "trade-offs"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "accountability",
+            "closed",
+            "concentration",
+            "create",
+            "development",
+            "different",
+            "open",
+            "security",
+            "strategies",
+            "trade-offs"
+          ],
+          "mode": "direct_semantic",
+          "score": 10,
+          "selected_keywords": [
+            "accountability",
+            "choice",
+            "contract",
+            "rules",
+            "trade-offs"
+          ]
         },
         "shot_id": "SHOT_082",
         "shot_type": "contextual_footage",
@@ -3517,7 +4586,7 @@
       },
       {
         "asset_ids": [
-          "F15"
+          "F3"
         ],
         "claim_ids": [
           "CLM_RACE_INCENTIVE"
@@ -3532,6 +4601,40 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "competition",
+          "data",
+          "incentives",
+          "markets",
+          "pressure"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "acknowledge",
+            "capability",
+            "competitive",
+            "development",
+            "even",
+            "frontier",
+            "individual",
+            "laboratories",
+            "pressure",
+            "reward",
+            "risk",
+            "serious",
+            "when"
+          ],
+          "mode": "direct_semantic",
+          "score": 5,
+          "selected_keywords": [
+            "competition",
+            "data",
+            "incentives",
+            "markets",
+            "pressure"
+          ]
         },
         "shot_id": "SHOT_085",
         "shot_type": "contextual_footage",
@@ -3619,7 +4722,7 @@
       },
       {
         "asset_ids": [
-          "F1"
+          "F10"
         ],
         "claim_ids": [
           "CLM_ALIGNMENT_RISK"
@@ -3634,6 +4737,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "corporate",
+          "institution",
+          "power",
+          "resources",
+          "scale"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "alignment",
+            "autonomous-risk",
+            "deceptive",
+            "evaluations",
+            "explicitly",
+            "frameworks",
+            "frontier",
+            "include",
+            "published",
+            "related"
+          ],
+          "mode": "diverse_real_world_fallback",
+          "score": 0.75,
+          "selected_keywords": [
+            "corporate",
+            "institution",
+            "power",
+            "resources",
+            "scale"
+          ]
         },
         "shot_id": "SHOT_088",
         "shot_type": "contextual_footage",
@@ -3714,7 +4848,7 @@
       },
       {
         "asset_ids": [
-          "F2"
+          "F9"
         ],
         "claim_ids": [
           "CLM_GOVERNANCE_LAG"
@@ -3729,6 +4863,36 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "approval",
+          "bureaucracy",
+          "compliance",
+          "documents",
+          "institution"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "deployment",
+            "institutional",
+            "more",
+            "move",
+            "oversight",
+            "slowly",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 2.75,
+          "selected_keywords": [
+            "approval",
+            "bureaucracy",
+            "compliance",
+            "documents",
+            "institution"
+          ]
         },
         "shot_id": "SHOT_091",
         "shot_type": "contextual_footage",
@@ -3836,7 +5000,7 @@
       },
       {
         "asset_ids": [
-          "F3"
+          "F6"
         ],
         "claim_ids": [
           "CLM_SAFETY_ARCHITECTURE"
@@ -3851,6 +5015,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "containment",
+          "infrastructure",
+          "restriction",
+          "risk",
+          "security"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "access",
+            "accountability",
+            "controls",
+            "eliminate",
+            "evaluation",
+            "external",
+            "frontier",
+            "incident",
+            "layered",
+            "reduce",
+            "reporting",
+            "risk"
+          ],
+          "mode": "direct_semantic",
+          "score": 7,
+          "selected_keywords": [
+            "containment",
+            "infrastructure",
+            "restriction",
+            "risk",
+            "security"
+          ]
         },
         "shot_id": "SHOT_095",
         "shot_type": "contextual_footage",
@@ -3954,6 +5151,37 @@
           "right": 70,
           "top": 52
         },
+        "semantic_keywords": [
+          "control",
+          "digital",
+          "intelligence",
+          "network",
+          "technology"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "connect",
+            "formal",
+            "frameworks",
+            "laboratories",
+            "leading",
+            "publish",
+            "safeguards",
+            "stronger",
+            "thresholds"
+          ],
+          "mode": "direct_semantic",
+          "score": 1.75,
+          "selected_keywords": [
+            "control",
+            "digital",
+            "intelligence",
+            "network",
+            "technology"
+          ]
+        },
         "shot_id": "SHOT_098",
         "shot_type": "contextual_footage",
         "source_label": "ORVYQ · CONTEXTUAL",
@@ -4033,7 +5261,7 @@
       },
       {
         "asset_ids": [
-          "F5"
+          "F8"
         ],
         "claim_ids": [
           "CLM_CONTROLLED_TEST"
@@ -4048,6 +5276,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "diffusion",
+          "models",
+          "network",
+          "power",
+          "systems"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "actions",
+            "anthropic",
+            "controlled",
+            "engineered",
+            "harmful",
+            "models",
+            "multiple",
+            "pressure",
+            "selected",
+            "simulations",
+            "sometimes",
+            "which"
+          ],
+          "mode": "direct_semantic",
+          "score": 4,
+          "selected_keywords": [
+            "diffusion",
+            "models",
+            "network",
+            "power",
+            "systems"
+          ]
         },
         "shot_id": "SHOT_101",
         "shot_type": "contextual_footage",
@@ -4127,7 +5388,7 @@
       },
       {
         "asset_ids": [
-          "F6"
+          "F11"
         ],
         "claim_ids": [
           "CLM_MISUSE"
@@ -4142,6 +5403,41 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "access",
+          "computer",
+          "information",
+          "open",
+          "technology"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "accessible",
+            "aiding",
+            "also",
+            "barriers",
+            "biological",
+            "capable",
+            "cyber",
+            "defenders",
+            "forms",
+            "lower",
+            "misuse",
+            "more",
+            "some",
+            "systems"
+          ],
+          "mode": "direct_semantic",
+          "score": 2.75,
+          "selected_keywords": [
+            "access",
+            "computer",
+            "information",
+            "open",
+            "technology"
+          ]
         },
         "shot_id": "SHOT_104",
         "shot_type": "contextual_footage",
@@ -4229,7 +5525,7 @@
       },
       {
         "asset_ids": [
-          "F7"
+          "F12"
         ],
         "claim_ids": [
           "CLM_SAFETY_ARCHITECTURE"
@@ -4244,6 +5540,39 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "authority",
+          "governance",
+          "government",
+          "law",
+          "regulation"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "access",
+            "accountability",
+            "controls",
+            "eliminate",
+            "evaluation",
+            "external",
+            "frontier",
+            "incident",
+            "layered",
+            "reduce",
+            "reporting",
+            "risk"
+          ],
+          "mode": "diverse_real_world_fallback",
+          "score": 0.75,
+          "selected_keywords": [
+            "authority",
+            "governance",
+            "government",
+            "law",
+            "regulation"
+          ]
         },
         "shot_id": "SHOT_107",
         "shot_type": "contextual_footage",
@@ -4324,7 +5653,7 @@
       },
       {
         "asset_ids": [
-          "F8"
+          "F9"
         ],
         "claim_ids": [
           "CLM_SAFETY_FRAMEWORKS"
@@ -4339,6 +5668,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "approval",
+          "bureaucracy",
+          "compliance",
+          "documents",
+          "institution"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "capability",
+            "connect",
+            "formal",
+            "frameworks",
+            "laboratories",
+            "leading",
+            "publish",
+            "safeguards",
+            "stronger",
+            "thresholds"
+          ],
+          "mode": "direct_semantic",
+          "score": 2,
+          "selected_keywords": [
+            "approval",
+            "bureaucracy",
+            "compliance",
+            "documents",
+            "institution"
+          ]
         },
         "shot_id": "SHOT_110",
         "shot_type": "contextual_footage",
@@ -4446,7 +5806,7 @@
       },
       {
         "asset_ids": [
-          "F9"
+          "F7"
         ],
         "claim_ids": [
           "CLM_REPLACEMENT_SCENARIO"
@@ -4461,6 +5821,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "information",
+          "media",
+          "news",
+          "public",
+          "spread"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "behaviour",
+            "emails",
+            "engineered",
+            "fictional",
+            "model",
+            "published",
+            "replacement",
+            "simulation",
+            "supplied",
+            "test",
+            "threat"
+          ],
+          "mode": "diverse_real_world_fallback",
+          "score": 0.75,
+          "selected_keywords": [
+            "information",
+            "media",
+            "news",
+            "public",
+            "spread"
+          ]
         },
         "shot_id": "SHOT_114",
         "shot_type": "contextual_footage",
@@ -4548,7 +5940,7 @@
       },
       {
         "asset_ids": [
-          "F10"
+          "F4"
         ],
         "claim_ids": [
           "CLM_POWER"
@@ -4563,6 +5955,37 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "control",
+          "digital",
+          "intelligence",
+          "network",
+          "technology"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "concentrate",
+            "consequential",
+            "control",
+            "decisions",
+            "frontier",
+            "institutions",
+            "number",
+            "over",
+            "small",
+            "systems"
+          ],
+          "mode": "direct_semantic",
+          "score": 4,
+          "selected_keywords": [
+            "control",
+            "digital",
+            "intelligence",
+            "network",
+            "technology"
+          ]
         },
         "shot_id": "SHOT_117",
         "shot_type": "contextual_footage",
@@ -4643,7 +6066,7 @@
       },
       {
         "asset_ids": [
-          "F11"
+          "F2"
         ],
         "claim_ids": [
           "CLM_HUMAN_AGENCY"
@@ -4658,6 +6081,38 @@
           "left": 70,
           "right": 70,
           "top": 52
+        },
+        "semantic_keywords": [
+          "computer",
+          "design",
+          "engineering",
+          "governance",
+          "planning"
+        ],
+        "semantic_selection": {
+          "engine": "orvyq-semantic-v1",
+          "intent_keywords": [
+            "automatic",
+            "choice",
+            "frontier",
+            "governance",
+            "human",
+            "institutional",
+            "outcome",
+            "rather",
+            "remains",
+            "technical",
+            "than"
+          ],
+          "mode": "direct_semantic",
+          "score": 7,
+          "selected_keywords": [
+            "computer",
+            "design",
+            "engineering",
+            "governance",
+            "planning"
+          ]
         },
         "shot_id": "SHOT_120",
         "shot_type": "contextual_footage",
@@ -4802,10 +6257,14 @@
         "editorial_function": "Create a deliberate editorial breath for not someday. right now. while the licensed score carries the transition.",
         "emphasis": "NOT SOMEDAY. RIGHT NOW.",
         "eyebrow": "THE TIMELINE",
+        "music_behavior": "rise_then_hold",
+        "narrative_trigger": "After narration lands on: NOT SOMEDAY. RIGHT NOW.",
         "output_end_seconds": 62.466667,
         "output_start_seconds": 58.466667,
         "pause_id": "PAUSE_01",
-        "source_time_seconds": 58.466667
+        "pause_type": "warning_pivot",
+        "source_time_seconds": 58.466667,
+        "visual_behavior": "single_meaningful_hold"
       },
       {
         "captions_suppressed": true,
@@ -4813,10 +6272,14 @@
         "editorial_function": "Create a deliberate editorial breath for a test. not an incident. while the licensed score carries the transition.",
         "emphasis": "A TEST. NOT AN INCIDENT.",
         "eyebrow": "THE LIMIT",
+        "music_behavior": "rise_then_hold",
+        "narrative_trigger": "After narration lands on: A TEST. NOT AN INCIDENT.",
         "output_end_seconds": 98.466667,
         "output_start_seconds": 94.466667,
         "pause_id": "PAUSE_02",
-        "source_time_seconds": 90.466667
+        "pause_type": "warning_pivot",
+        "source_time_seconds": 90.466667,
+        "visual_behavior": "single_meaningful_hold"
       },
       {
         "captions_suppressed": true,
@@ -4824,10 +6287,14 @@
         "editorial_function": "Create a deliberate editorial breath for slow down — and lose? while the licensed score carries the transition.",
         "emphasis": "SLOW DOWN — AND LOSE?",
         "eyebrow": "THE INCENTIVE",
+        "music_behavior": "sustain_under_silence",
+        "narrative_trigger": "After narration lands on: SLOW DOWN — AND LOSE?",
         "output_end_seconds": 223.066667,
         "output_start_seconds": 218.066667,
         "pause_id": "PAUSE_03",
-        "source_time_seconds": 210.066667
+        "pause_type": "open_question",
+        "source_time_seconds": 210.066667,
+        "visual_behavior": "single_symbolic_hold"
       },
       {
         "captions_suppressed": true,
@@ -4835,10 +6302,14 @@
         "editorial_function": "Create a deliberate editorial breath for the risk leaves the lab while the licensed score carries the transition.",
         "emphasis": "THE RISK LEAVES THE LAB",
         "eyebrow": "THE PIVOT",
+        "music_behavior": "rise_then_hold",
+        "narrative_trigger": "After narration lands on: THE RISK LEAVES THE LAB",
         "output_end_seconds": 316.533333,
         "output_start_seconds": 312.533333,
         "pause_id": "PAUSE_04",
-        "source_time_seconds": 299.533333
+        "pause_type": "warning_pivot",
+        "source_time_seconds": 299.533333,
+        "visual_behavior": "single_meaningful_hold"
       },
       {
         "captions_suppressed": true,
@@ -4846,10 +6317,14 @@
         "editorial_function": "Create a deliberate editorial breath for who gets to decide? while the licensed score carries the transition.",
         "emphasis": "WHO GETS TO DECIDE?",
         "eyebrow": "THE POWER",
+        "music_behavior": "sustain_under_silence",
+        "narrative_trigger": "After narration lands on: WHO GETS TO DECIDE?",
         "output_end_seconds": 440.746667,
         "output_start_seconds": 435.746667,
         "pause_id": "PAUSE_05",
-        "source_time_seconds": 418.746667
+        "pause_type": "open_question",
+        "source_time_seconds": 418.746667,
+        "visual_behavior": "single_symbolic_hold"
       },
       {
         "captions_suppressed": true,
@@ -4857,10 +6332,14 @@
         "editorial_function": "Create a deliberate editorial breath for open or closed? while the licensed score carries the transition.",
         "emphasis": "OPEN OR CLOSED?",
         "eyebrow": "THE TRADE-OFF",
+        "music_behavior": "sustain_under_silence",
+        "narrative_trigger": "After narration lands on: OPEN OR CLOSED?",
         "output_end_seconds": 568.833333,
         "output_start_seconds": 563.833333,
         "pause_id": "PAUSE_06",
-        "source_time_seconds": 541.833333
+        "pause_type": "open_question",
+        "source_time_seconds": 541.833333,
+        "visual_behavior": "single_symbolic_hold"
       },
       {
         "captions_suppressed": true,
@@ -4868,10 +6347,14 @@
         "editorial_function": "Create a deliberate editorial breath for safety must be built while the licensed score carries the transition.",
         "emphasis": "SAFETY MUST BE BUILT",
         "eyebrow": "THE WORK",
+        "music_behavior": "open_then_decay",
+        "narrative_trigger": "After narration lands on: SAFETY MUST BE BUILT",
         "output_end_seconds": 684.566667,
         "output_start_seconds": 679.566667,
         "pause_id": "PAUSE_07",
-        "source_time_seconds": 652.566667
+        "pause_type": "resolution_pivot",
+        "source_time_seconds": 652.566667,
+        "visual_behavior": "single_meaningful_hold"
       },
       {
         "captions_suppressed": true,
@@ -4879,10 +6362,14 @@
         "editorial_function": "Create a deliberate editorial breath for people, right now. while the licensed score carries the transition.",
         "emphasis": "PEOPLE, RIGHT NOW.",
         "eyebrow": "THE CHOICE",
+        "music_behavior": "open_then_decay",
+        "narrative_trigger": "After narration lands on: PEOPLE, RIGHT NOW.",
         "output_end_seconds": 753.933333,
         "output_start_seconds": 747.933333,
         "pause_id": "PAUSE_08",
-        "source_time_seconds": 715.933333
+        "pause_type": "resolution_pivot",
+        "source_time_seconds": 715.933333,
+        "visual_behavior": "single_meaningful_hold"
       }
     ],
     "project_id": "001-ai-race",
