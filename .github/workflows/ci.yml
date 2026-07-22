@@ -150,6 +150,15 @@ jobs:
             npm run orvyq -- plan:select-footage --project-id "$PROJECT_ID"
             npm run orvyq -- timeline:normalize-pauses --project-id "$PROJECT_ID"
             npm run orvyq -- audio:mix --project-id "$PROJECT_ID"
+            AUDIO_FILE="projects/$PROJECT_ID/assets/audio/final_mix.mp3"
+            REGISTRY="projects/$PROJECT_ID/assets/asset_registry.json"
+            AUDIO_SIZE="$(stat -c %s "$AUDIO_FILE")"
+            AUDIO_SHA="$(sha256sum "$AUDIO_FILE" | awk '{print $1}')"
+            AUDIO_DURATION="$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$AUDIO_FILE")"
+            jq --argjson size "$AUDIO_SIZE" --arg sha "$AUDIO_SHA" --argjson duration "$AUDIO_DURATION" \
+              '(.assets[] | select(.asset_id == "FINAL_AUDIO_MIX")) |= (.byte_size = $size | .sha256 = $sha | .duration_seconds = $duration)' \
+              "$REGISTRY" > "$REGISTRY.tmp"
+            mv "$REGISTRY.tmp" "$REGISTRY"
             npm run orvyq -- candidate:prepare --project-id "$PROJECT_ID"
             npm run orvyq -- project:validate --project-id "$PROJECT_ID"
             jq -e '.status == "TAMAMLANDI" and .changed_shot_count >= 0' "projects/$PROJECT_ID/qa/evidence_claim_bindings.json"
@@ -166,7 +175,6 @@ jobs:
           retention-days: 14
           path: |
             artifacts/prepare-project.log
-            projects/${{ steps.resolve.outputs.project_id }}/audio/final_mix.metadata.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/evidence_claim_bindings.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/semantic_selection.json
             projects/${{ steps.resolve.outputs.project_id }}/qa/editorial_pause_normalization.json
@@ -188,10 +196,11 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git restore --worktree --staged tests/fixtures/pixel.png || true
           git add \
+            "projects/$PROJECT_ID/assets/audio/final_mix.mp3" \
+            "projects/$PROJECT_ID/assets/asset_registry.json" \
+            "projects/$PROJECT_ID/audio/final_mix.metadata.json" \
             "projects/$PROJECT_ID/direction/production_plan.json" \
             "projects/$PROJECT_ID/direction/narration_timeline.json" \
-            "projects/$PROJECT_ID/assets/audio/final_mix.mp3" \
-            "projects/$PROJECT_ID/audio/final_mix.metadata.json" \
             "projects/$PROJECT_ID/build/render_input.json" \
             "projects/$PROJECT_ID/build/candidate_inputs.json" \
             "projects/$PROJECT_ID/qa/candidate_preflight.json" \
