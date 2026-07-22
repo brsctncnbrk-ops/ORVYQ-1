@@ -1,0 +1,72 @@
+{
+  "project_id": "001-ai-race",
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "accessed_at": "2026-07-21T00:00:00.000Z",
+      "active": true,
+      "kind": "primary",
+      "license_or_basis": "Official company policy document captured for criticism, commentary and evidence.",
+      "publisher": "Anthropic",
+      "required": true,
+      "source_id": "SRC_ANTHROPIC_RSP",
+      "title": "Responsible Scaling Policy, version 2.0",
+      "url": "https://www-cdn.anthropic.com/616dee633636e5bd309cb73aed8622e80fe47839.pdf"
+    },
+    {
+      "accessed_at": "2026-07-21T00:00:00.000Z",
+      "active": true,
+      "kind": "primary",
+      "license_or_basis": "Official company safety framework captured for criticism, commentary and evidence.",
+      "publisher": "Google DeepMind",
+      "required": true,
+      "source_id": "SRC_DEEPMIND_FSF",
+      "title": "Frontier Safety Framework 2.0",
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/updating-the-frontier-safety-framework/Frontier%20Safety%20Framework%202.0.pdf"
+    },
+    {
+      "accessed_at": "2026-07-21T00:00:00.000Z",
+      "active": true,
+      "kind": "primary",
+      "license_or_basis": "Official research publication and figures used for criticism, commentary and evidence.",
+      "publisher": "Anthropic",
+      "required": true,
+      "source_id": "SRC_ANTHROPIC_AGENTIC",
+      "title": "Agentic Misalignment: How LLMs Could Be Insider Threats",
+      "url": "https://www.anthropic.com/research/agentic-misalignment"
+    },
+    {
+      "accessed_at": "2026-07-21T00:00:00.000Z",
+      "active": true,
+      "kind": "primary",
+      "license_or_basis": "Official United States government risk-management publication.",
+      "publisher": "NIST",
+      "required": false,
+      "source_id": "SRC_NIST_RMF",
+      "title": "AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "accessed_at": "2026-07-21T00:00:00.000Z",
+      "active": true,
+      "kind": "primary",
+      "license_or_basis": "Official European Union legal text used for analysis and commentary.",
+      "publisher": "European Union",
+      "required": false,
+      "source_id": "SRC_EU_AI_ACT",
+      "title": "Regulation (EU) 2024/1689",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+    },
+    {
+      "accessed_at": "2026-07-21T00:00:00.000Z",
+      "active": true,
+      "kind": "primary",
+      "license_or_basis": "Official intergovernmental policy recommendation used for analysis and commentary.",
+      "publisher": "UNESCO",
+      "required": false,
+      "source_id": "SRC_UNESCO_ETHICS",
+      "title": "Recommendation on the Ethics of Artificial Intelligence",
+      "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+    }
+  ]
+}

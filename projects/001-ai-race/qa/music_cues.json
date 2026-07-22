@@ -1,0 +1,17 @@
+{
+  "cue_count": 9,
+  "distinct_states": [
+    "controlled_tension",
+    "analytical_unease",
+    "accelerating_pressure",
+    "procedural_threat",
+    "uncertain_transition",
+    "institutional_gravity",
+    "balanced_tension",
+    "constructive_momentum",
+    "reflective_resolution"
+  ],
+  "pause_count": 8,
+  "schema_version": "1.0",
+  "status": "TAMAMLANDI"
+}

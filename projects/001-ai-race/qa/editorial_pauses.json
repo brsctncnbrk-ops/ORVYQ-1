@@ -1,0 +1,55 @@
+{
+  "pause_count": 8,
+  "pauses": [
+    {
+      "duration_seconds": 4,
+      "pause_id": "PAUSE_01",
+      "shot_id": "SHOT_012",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 4,
+      "pause_id": "PAUSE_02",
+      "shot_id": "SHOT_018",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 5,
+      "pause_id": "PAUSE_03",
+      "shot_id": "SHOT_038",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 4,
+      "pause_id": "PAUSE_04",
+      "shot_id": "SHOT_053",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 5,
+      "pause_id": "PAUSE_05",
+      "shot_id": "SHOT_073",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 5,
+      "pause_id": "PAUSE_06",
+      "shot_id": "SHOT_093",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 5,
+      "pause_id": "PAUSE_07",
+      "shot_id": "SHOT_112",
+      "status": "TAMAMLANDI"
+    },
+    {
+      "duration_seconds": 6,
+      "pause_id": "PAUSE_08",
+      "shot_id": "SHOT_123",
+      "status": "TAMAMLANDI"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "TAMAMLANDI"
+}

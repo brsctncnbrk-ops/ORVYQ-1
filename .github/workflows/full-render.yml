@@ -1,0 +1,175 @@
+name: Full Render
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_id:
+        description: Canonical project ID
+        required: true
+        type: string
+      candidate_sha:
+        description: Exact approved candidate commit SHA
+        required: true
+        type: string
+      approved_proof_run_id:
+        description: Human-approved proof workflow run ID
+        required: true
+        type: string
+  pull_request:
+    types: [edited]
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  resolve:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.head.repo.full_name == github.repository &&
+       github.event.pull_request.author_association == 'OWNER' &&
+       contains(github.event.pull_request.body || '', '<!-- orvyq-full project='))
+    runs-on: ubuntu-latest
+    outputs:
+      project_id: ${{ steps.resolve.outputs.project_id }}
+      candidate_sha: ${{ steps.resolve.outputs.candidate_sha }}
+      approved_proof_run_id: ${{ steps.resolve.outputs.approved_proof_run_id }}
+    steps:
+      - name: Resolve immutable full-render identity
+        id: resolve
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_PROJECT_ID: ${{ inputs.project_id }}
+          DISPATCH_CANDIDATE_SHA: ${{ inputs.candidate_sha }}
+          DISPATCH_PROOF_RUN_ID: ${{ inputs.approved_proof_run_id }}
+          PR_BODY: ${{ github.event.pull_request.body || '' }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha || '' }}
+        run: |
+          set -euo pipefail
+          if [[ "$EVENT_NAME" == 'workflow_dispatch' ]]; then
+            PROJECT_ID="$DISPATCH_PROJECT_ID"
+            CANDIDATE_SHA="$DISPATCH_CANDIDATE_SHA"
+            APPROVED_PROOF_RUN_ID="$DISPATCH_PROOF_RUN_ID"
+          else
+            COMMAND="$(printf '%s\n' "$PR_BODY" | grep -Eo '<!-- orvyq-full project=[a-z0-9][a-z0-9-]{2,63} candidate=[0-9a-f]{40} proof-run=[0-9]+ -->' | tail -n 1)"
+            test -n "$COMMAND"
+            PROJECT_ID="$(printf '%s' "$COMMAND" | sed -E 's/^<!-- orvyq-full project=([^ ]+) candidate=.*$/\1/')"
+            CANDIDATE_SHA="$(printf '%s' "$COMMAND" | sed -E 's/^<!-- orvyq-full project=[^ ]+ candidate=([0-9a-f]{40}) proof-run=.*$/\1/')"
+            APPROVED_PROOF_RUN_ID="$(printf '%s' "$COMMAND" | sed -E 's/^<!-- orvyq-full project=[^ ]+ candidate=[0-9a-f]{40} proof-run=([0-9]+) -->$/\1/')"
+            test "$CANDIDATE_SHA" = "$PR_HEAD_SHA"
+          fi
+          [[ "$PROJECT_ID" =~ ^[a-z0-9][a-z0-9-]{2,63}$ ]]
+          [[ "$CANDIDATE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$APPROVED_PROOF_RUN_ID" =~ ^[0-9]+$ ]]
+          echo "project_id=$PROJECT_ID" >> "$GITHUB_OUTPUT"
+          echo "candidate_sha=$CANDIDATE_SHA" >> "$GITHUB_OUTPUT"
+          echo "approved_proof_run_id=$APPROVED_PROOF_RUN_ID" >> "$GITHUB_OUTPUT"
+
+  full-render:
+    needs: resolve
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PROJECT_ID: ${{ needs.resolve.outputs.project_id }}
+      CANDIDATE_SHA: ${{ needs.resolve.outputs.candidate_sha }}
+      APPROVED_PROOF_RUN_ID: ${{ needs.resolve.outputs.approved_proof_run_id }}
+    steps:
+      - name: Checkout exact approved candidate
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.resolve.outputs.candidate_sha }}
+          fetch-depth: 0
+          lfs: false
+
+      - name: Download approved proof identity package
+        uses: actions/download-artifact@v4
+        with:
+          name: orvyq-proof-${{ needs.resolve.outputs.approved_proof_run_id }}
+          path: approved-proof
+          github-token: ${{ github.token }}
+          run-id: ${{ needs.resolve.outputs.approved_proof_run_id }}
+
+      - name: Install media and repository asset tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg git-lfs
+          git lfs install --local
+          git lfs pull
+          git lfs fsck
+          test "$(git rev-parse HEAD)" = "$CANDIDATE_SHA"
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install locked runtime and browser
+        run: |
+          set -euo pipefail
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm install --no-save --package-lock=false --ignore-scripts --no-audit --no-fund @remotion/cli@4.0.489
+          npx remotion browser ensure
+
+      - name: Locate approved proof manifest
+        id: proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          MANIFEST="$(find approved-proof -type f -name proof_manifest.json -print -quit)"
+          test -n "$MANIFEST"
+          jq -e --arg project "$PROJECT_ID" --arg sha "$CANDIDATE_SHA" --arg run "$APPROVED_PROOF_RUN_ID" '.status == "TAMAMLANDI" and .project_id == $project and .candidate_sha == $sha and .proof_run_id == $run' "$MANIFEST"
+          echo "manifest=$MANIFEST" >> "$GITHUB_OUTPUT"
+
+      - name: Validate unchanged candidate
+        run: npm run orvyq -- project:validate --project-id "$PROJECT_ID"
+
+      - name: Render full film from approved candidate
+        run: npm run orvyq -- full:render --project-id "$PROJECT_ID" --candidate-sha "$CANDIDATE_SHA" --approved-proof-run-id "$APPROVED_PROOF_RUN_ID" --proof-manifest-file "${{ steps.proof.outputs.manifest }}"
+
+      - name: Verify final package
+        run: |
+          set -euo pipefail
+          BASE="projects/$PROJECT_ID"
+          test -s "$BASE/output/final.mp4"
+          test -s "$BASE/output/final-contact-sheet.jpg"
+          test -s "$BASE/build/final_manifest.json"
+          test -s "$BASE/qa/rendered.full.json"
+          jq -e --arg sha "$CANDIDATE_SHA" --arg run "$APPROVED_PROOF_RUN_ID" '.status == "TAMAMLANDI" and .candidate_sha == $sha and .approved_proof_run_id == $run' "$BASE/build/final_manifest.json"
+          jq -e '.status == "TAMAMLANDI" and .minimum_yavg >= 18 and (.dark_brightness_samples | length) == 0 and (.transient_brightness_drops | length) == 0' "$BASE/qa/rendered.full.json"
+          ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height -of csv=p=0 "$BASE/output/final.mp4"
+          ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 "$BASE/output/final.mp4"
+
+      - name: Package final film artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="projects/$PROJECT_ID"
+          rm -rf final-artifact
+          mkdir -p final-artifact
+          cp --parents \
+            "$BASE/output/final.mp4" \
+            "$BASE/output/final-contact-sheet.jpg" \
+            "$BASE/build/final_manifest.json" \
+            "$BASE/qa/rendered.full.json" \
+            "$BASE/qa/semantic_visual.json" \
+            "$BASE/qa/pacing.json" \
+            "$BASE/qa/mobile_legibility.json" \
+            "$BASE/qa/music_cues.json" \
+            "$BASE/audio/final_mix.metadata.json" \
+            "$BASE/audio/audio_plan.json" \
+            "$BASE/direction/production_plan.json" \
+            "$BASE/direction/narration_timeline.json" \
+            "$BASE/evidence/evidence_registry.json" \
+            final-artifact/
+
+      - name: Upload final film artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: orvyq-final-${{ github.run_id }}
+          if-no-files-found: error
+          retention-days: 14
+          path: final-artifact

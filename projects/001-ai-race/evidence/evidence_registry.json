@@ -1,0 +1,216 @@
+{
+  "evidence": [
+    {
+      "byte_size": 76870,
+      "caption": "Anthropic Responsible Scaling Policy cover",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "evidence_id": "EVID_RSP_COVER",
+      "evidence_type": "primary_document",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "page_number": 1,
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_rsp_cover.png",
+      "sha256": "25155f5b4fec9913f35532d508b9107d12ef91c655e5fe26ba14a7bd03030a87",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/616dee633636e5bd309cb73aed8622e80fe47839.pdf"
+    },
+    {
+      "byte_size": 515093,
+      "caption": "Anthropic RSP commitments and governance summary",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "evidence_id": "EVID_RSP_SUMMARY",
+      "evidence_type": "primary_document",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "page_number": 2,
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_rsp_summary.png",
+      "sha256": "08b08ec44704d181438d7ea4bc35a1e3a98c09a37997cfe0e8dffca5317ebccc",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/616dee633636e5bd309cb73aed8622e80fe47839.pdf"
+    },
+    {
+      "byte_size": 476144,
+      "caption": "Anthropic capability thresholds and safeguards",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "evidence_id": "EVID_RSP_THRESHOLDS",
+      "evidence_type": "official_table",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "page_number": 7,
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_rsp_thresholds.png",
+      "sha256": "d01dd2e593f5c1d34b1a77a36f9f49dea506e561b1d1e39719c4d562d4ed734f",
+      "source_ids": [
+        "SRC_ANTHROPIC_RSP"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/616dee633636e5bd309cb73aed8622e80fe47839.pdf"
+    },
+    {
+      "byte_size": 303094,
+      "caption": "Google DeepMind Frontier Safety Framework cover",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "evidence_id": "EVID_FSF_COVER",
+      "evidence_type": "primary_document",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "page_number": 1,
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/deepmind_fsf_cover.png",
+      "sha256": "607fe4603e429e3b901e146d4abf55fbae9dab13e1a50d752ebef6d00160a658",
+      "source_ids": [
+        "SRC_DEEPMIND_FSF"
+      ],
+      "source_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/updating-the-frontier-safety-framework/Frontier%20Safety%20Framework%202.0.pdf"
+    },
+    {
+      "byte_size": 308198,
+      "caption": "DeepMind critical capability levels and mitigations",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "evidence_id": "EVID_FSF_FRAMEWORK",
+      "evidence_type": "official_table",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "page_number": 2,
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/deepmind_fsf_framework.png",
+      "sha256": "1496daa007eff0a1ff8fb73ab8f6db796b21fdedb37ec27e80931f0a480ced54",
+      "source_ids": [
+        "SRC_DEEPMIND_FSF"
+      ],
+      "source_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/updating-the-frontier-safety-framework/Frontier%20Safety%20Framework%202.0.pdf"
+    },
+    {
+      "byte_size": 297016,
+      "caption": "DeepMind deceptive alignment evaluation and mitigations",
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "evidence_id": "EVID_FSF_ALIGNMENT",
+      "evidence_type": "official_table",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "page_number": 7,
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/deepmind_fsf_alignment.png",
+      "sha256": "0c29f2a85c936337c82ad229570bbb59a133599e077aef127e354d953783db05",
+      "source_ids": [
+        "SRC_DEEPMIND_FSF"
+      ],
+      "source_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/updating-the-frontier-safety-framework/Frontier%20Safety%20Framework%202.0.pdf"
+    },
+    {
+      "byte_size": 239260,
+      "caption": "Published cross-model simulated blackmail rates",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "evidence_id": "EVID_AGENTIC_FIG1",
+      "evidence_type": "official_figure",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_agentic_figure1.png",
+      "sha256": "cfaecf0b38c18aa8192f0b57b50c93b6208125cd46be0458118831545b5ce98b",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/246a928da96d21474848647bc4b0938d182aeb8b-4096x1746.png"
+    },
+    {
+      "byte_size": 3004290,
+      "caption": "Fictional replacement email used in the controlled scenario",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "evidence_id": "EVID_AGENTIC_FIG2",
+      "evidence_type": "official_screen",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_agentic_figure2.png",
+      "sha256": "ee1906e24034c96d208955c27c4725d83fab598db28c694270ddad232236cc8c",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f8ade2db0fefac490af1e2a991b0d4ce3f0b238c-3840x2160.png"
+    },
+    {
+      "byte_size": 914620,
+      "caption": "Fictional personal email used in the controlled scenario",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "evidence_id": "EVID_AGENTIC_FIG3",
+      "evidence_type": "official_screen",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_agentic_figure3.png",
+      "sha256": "872eb01708bf45e01d3dcd00e4b0f39046c1f4234d6f2d7cf00f90fec9345f3b",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f16473f9893693a59cb4794883ed0dce965ce93e-2514x1414.png"
+    },
+    {
+      "byte_size": 1959015,
+      "caption": "Published model deliberation trace from the simulation",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "evidence_id": "EVID_AGENTIC_FIG4",
+      "evidence_type": "official_screen",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_agentic_figure4.png",
+      "sha256": "ff0440f72c5e43ecef6bae1d069ec190fc23e2a6dddd811aa44b16977c7fb5a9",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d8889f94ef801509c36d02fabe7e61bd468ca6f6-3840x2160.png"
+    },
+    {
+      "byte_size": 2321741,
+      "caption": "Published model action trace from the simulation",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "evidence_id": "EVID_AGENTIC_FIG5",
+      "evidence_type": "official_screen",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_agentic_figure5.png",
+      "sha256": "96049e4f8be2fada996fc9bec734ec5ba446456474733c15b1ee9b1fb5c146d8",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d4ecf930303d3c5b9bdb6d953fd845eac92ffb48-3840x2160.png"
+    },
+    {
+      "byte_size": 372992,
+      "caption": "Published results across sixteen leading models",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "evidence_id": "EVID_AGENTIC_FIG7",
+      "evidence_type": "official_figure",
+      "license_or_basis": "Official primary-source pixels retained for criticism, commentary and evidence.",
+      "provenance_mode": "official_primary_capture",
+      "relative_path": "evidence/primary/anthropic_agentic_figure7.png",
+      "sha256": "a4c05c2fd1dff329a4930221e959ee8b4960288e6ffeb113cb8a4df360d93cbe",
+      "source_ids": [
+        "SRC_ANTHROPIC_AGENTIC"
+      ],
+      "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a7c09ecd57c986788a20b71daaa533bc691830b3-4096x2304.png"
+    }
+  ],
+  "project_id": "001-ai-race",
+  "schema_version": "1.0"
+}

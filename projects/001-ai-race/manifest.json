@@ -1,0 +1,13 @@
+{
+  "approved_proof_run_id": null,
+  "candidate_sha": null,
+  "created_at": "2026-07-21T15:13:01.020Z",
+  "current_stage": "READY_FOR_PROOF",
+  "history": [],
+  "minimum_duration_seconds": 600,
+  "operation_status": "TAMAMLANDI",
+  "project_id": "001-ai-race",
+  "schema_version": "1.0",
+  "title": "The AI Race No One Can Afford to Win",
+  "updated_at": "2026-07-21T15:13:49.462Z"
+}

@@ -1,0 +1,5528 @@
+{
+  "audio_mix_asset": "assets/audio/final_mix.mp3",
+  "fps": 30,
+  "full_duration_seconds": 757.9333333333333,
+  "full_frame_count": 22738,
+  "height": 1080,
+  "project_id": "001-ai-race",
+  "proof_boundary_frame": 5411,
+  "schema_version": "1.0",
+  "sections": [
+    {
+      "end_frame": 2526,
+      "section_id": "SEC_RACE",
+      "start_frame": 0,
+      "title": "The Race"
+    },
+    {
+      "end_frame": 5053,
+      "section_id": "SEC_EVIDENCE",
+      "start_frame": 2526,
+      "title": "Controlled Evidence"
+    },
+    {
+      "end_frame": 7579,
+      "section_id": "SEC_INCENTIVE",
+      "start_frame": 5053,
+      "title": "Incentives"
+    },
+    {
+      "end_frame": 10106,
+      "section_id": "SEC_MISUSE",
+      "start_frame": 7579,
+      "title": "Misuse"
+    },
+    {
+      "end_frame": 12632,
+      "section_id": "SEC_POWER",
+      "start_frame": 10106,
+      "title": "Power"
+    },
+    {
+      "end_frame": 15159,
+      "section_id": "SEC_GOVERNANCE",
+      "start_frame": 12632,
+      "title": "Regulation"
+    },
+    {
+      "end_frame": 17685,
+      "section_id": "SEC_TRADEOFF",
+      "start_frame": 15159,
+      "title": "Open and Closed"
+    },
+    {
+      "end_frame": 20212,
+      "section_id": "SEC_SAFETY",
+      "start_frame": 17685,
+      "title": "Safety Architecture"
+    },
+    {
+      "end_frame": 22738,
+      "section_id": "SEC_FINAL",
+      "start_frame": 20212,
+      "title": "Human Choice"
+    }
+  ],
+  "shots": [
+    {
+      "asset_ids": [
+        "F13"
+      ],
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Establish the film’s central competitive pressure through nonliteral cinematic context.",
+      "end_frame": 105,
+      "evidence_claim": false,
+      "eyebrow": "ORVYQ",
+      "motif_id": "MOTIF_001",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "architecture",
+        "capability",
+        "code",
+        "software",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "acknowledge",
+          "architecture",
+          "capability",
+          "code",
+          "competitive",
+          "development",
+          "even",
+          "frontier",
+          "individual",
+          "laboratories",
+          "pressure",
+          "reward",
+          "risk",
+          "serious",
+          "software",
+          "systems",
+          "when"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "software",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_001",
+      "shot_type": "cinematic_hook",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 0,
+      "title": "THE RACE IS ALREADY MOVING",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 3.5,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F14"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Establish the film’s central competitive pressure through nonliteral cinematic context.",
+      "end_frame": 210,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_002",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "assessment",
+        "expert",
+        "risk",
+        "safety",
+        "thresholds"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "assessment",
+          "capability",
+          "competitive",
+          "connect",
+          "expert",
+          "formal",
+          "frameworks",
+          "laboratories",
+          "leading",
+          "pressure",
+          "publish",
+          "risk",
+          "safeguards",
+          "safety",
+          "stronger",
+          "thresholds"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "assessment",
+          "expert",
+          "risk",
+          "safety",
+          "thresholds"
+        ]
+      },
+      "shot_id": "SHOT_002",
+      "shot_type": "cinematic_hook",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 105,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 3.5,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F3"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Establish the film’s central competitive pressure through nonliteral cinematic context.",
+      "end_frame": 330,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_003",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "competition",
+        "data",
+        "incentives",
+        "markets",
+        "pressure"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "capability",
+          "competition",
+          "competitive",
+          "corresponding",
+          "data",
+          "define",
+          "escalating",
+          "evaluation",
+          "frameworks",
+          "frontier",
+          "incentives",
+          "levels",
+          "markets",
+          "mitigation",
+          "pressure",
+          "requirements",
+          "safety"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "competition",
+          "data",
+          "incentives",
+          "markets",
+          "pressure"
+        ]
+      },
+      "shot_id": "SHOT_003",
+      "shot_type": "cinematic_hook",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 210,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 4,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F5"
+      ],
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Establish the film’s central competitive pressure through nonliteral cinematic context.",
+      "end_frame": 450,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_004",
+      "motion": "drift_right",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "control",
+        "laboratory",
+        "machinery",
+        "pressure",
+        "testing"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "alignment",
+          "autonomous-risk",
+          "competitive",
+          "control",
+          "deceptive",
+          "evaluations",
+          "explicitly",
+          "frameworks",
+          "frontier",
+          "include",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "published",
+          "related",
+          "testing"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "control",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "testing"
+        ]
+      },
+      "shot_id": "SHOT_004",
+      "shot_type": "cinematic_hook",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 330,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 4,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F8"
+      ],
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "end_frame": 637,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_005",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "diffusion",
+        "models",
+        "network",
+        "power",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "actions",
+          "anthropic",
+          "controlled",
+          "diffusion",
+          "engineered",
+          "harmful",
+          "models",
+          "multiple",
+          "network",
+          "power",
+          "pressure",
+          "selected",
+          "simulations",
+          "sometimes",
+          "systems",
+          "which"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.5,
+        "selected_keywords": [
+          "diffusion",
+          "models",
+          "network",
+          "power",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_005",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 450,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.233333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "end_frame": 824,
+      "evidence_ids": [
+        "EVID_RSP_COVER"
+      ],
+      "motif_id": "MOTIF_006",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_006",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 637,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic Responsible Scaling Policy cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 1010,
+      "evidence_ids": [
+        "EVID_RSP_SUMMARY"
+      ],
+      "motif_id": "MOTIF_007",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_007",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 824,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic RSP commitments and governance summary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F1"
+      ],
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "end_frame": 1196,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_008",
+      "motion": "drift_right",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "city",
+        "competition",
+        "infrastructure",
+        "scale",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "accessible",
+          "aiding",
+          "also",
+          "barriers",
+          "biological",
+          "capable",
+          "city",
+          "competition",
+          "cyber",
+          "defenders",
+          "forms",
+          "infrastructure",
+          "lower",
+          "misuse",
+          "more",
+          "scale",
+          "some",
+          "systems"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "city",
+          "competition",
+          "infrastructure",
+          "scale",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_008",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 1010,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.2,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 1382,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_009",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_009",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_UNESCO_ETHICS · SRC_EU_AI_ACT",
+      "start_frame": 1196,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 1568,
+      "left": "Open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_010",
+      "right": "Neither development model removes risk; each changes who can inspect, control or misuse the system.",
+      "right_detail": "Neither development model removes risk; each changes who can inspect, control or misuse the system.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_010",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 1382,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F6"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_ARCHITECTURE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 1754,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_011",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "containment",
+        "infrastructure",
+        "restriction",
+        "risk",
+        "security"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "access",
+          "accountability",
+          "containment",
+          "controls",
+          "eliminate",
+          "evaluation",
+          "external",
+          "frontier",
+          "incident",
+          "infrastructure",
+          "layered",
+          "reduce",
+          "reporting",
+          "restriction",
+          "risk",
+          "security"
+        ],
+        "mode": "direct_semantic",
+        "score": 28.5,
+        "selected_keywords": [
+          "containment",
+          "infrastructure",
+          "restriction",
+          "risk",
+          "security"
+        ]
+      },
+      "shot_id": "SHOT_011",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 1568,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.2,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for not someday. right now. while the licensed score carries the transition.",
+      "end_frame": 1874,
+      "eyebrow": "THE TIMELINE",
+      "motif_id": "MOTIF_012",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_012",
+      "shot_type": "editorial_pause",
+      "start_frame": 1754,
+      "subtitle": "Create a deliberate editorial breath for not someday. right now. while the licensed score carries the transition.",
+      "title": "NOT SOMEDAY. RIGHT NOW.",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 2066,
+      "motif_id": "MOTIF_013",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_013",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 1874,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 2258,
+      "evidence_ids": [
+        "EVID_RSP_THRESHOLDS"
+      ],
+      "motif_id": "MOTIF_014",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_014",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 2066,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic capability thresholds and safeguards",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F13"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "end_frame": 2450,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_015",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "architecture",
+        "capability",
+        "code",
+        "software",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "corresponding",
+          "define",
+          "escalating",
+          "evaluation",
+          "frameworks",
+          "frontier",
+          "levels",
+          "mitigation",
+          "requirements",
+          "safety",
+          "software",
+          "systems"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "software",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_015",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 2258,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.4,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 2642,
+      "evidence_ids": [
+        "EVID_FSF_COVER"
+      ],
+      "motif_id": "MOTIF_016",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_016",
+      "shot_type": "primary_document",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 2450,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Google DeepMind Frontier Safety Framework cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "end_frame": 2834,
+      "evidence_ids": [
+        "EVID_FSF_FRAMEWORK"
+      ],
+      "motif_id": "MOTIF_017",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_017",
+      "shot_type": "official_figure",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 2642,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "DeepMind critical capability levels and mitigations",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for a test. not an incident. while the licensed score carries the transition.",
+      "end_frame": 2954,
+      "eyebrow": "THE LIMIT",
+      "motif_id": "MOTIF_018",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_018",
+      "shot_type": "editorial_pause",
+      "start_frame": 2834,
+      "subtitle": "Create a deliberate editorial breath for a test. not an incident. while the licensed score carries the transition.",
+      "title": "A TEST. NOT AN INCIDENT.",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F10"
+      ],
+      "claim_ids": [
+        "CLM_GOVERNANCE_LAG"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 3143,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_019",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "corporate",
+        "institution",
+        "power",
+        "resources",
+        "scale"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "capability",
+          "corporate",
+          "deployment",
+          "institution",
+          "institutional",
+          "more",
+          "move",
+          "oversight",
+          "power",
+          "resources",
+          "scale",
+          "slowly",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 28.5,
+        "selected_keywords": [
+          "corporate",
+          "institution",
+          "power",
+          "resources",
+          "scale"
+        ]
+      },
+      "shot_id": "SHOT_019",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 2954,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 3332,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_020",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_020",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_ANTHROPIC_RSP",
+      "start_frame": 3143,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 3521,
+      "left": "Control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_021",
+      "right": "The degree of concentration differs across jurisdictions, deployment models and access regimes.",
+      "right_detail": "The degree of concentration differs across jurisdictions, deployment models and access regimes.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_021",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_UNESCO_ETHICS · SRC_EU_AI_ACT",
+      "start_frame": 3332,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F15"
+      ],
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "end_frame": 3710,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_022",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "accountability",
+        "choice",
+        "contract",
+        "rules",
+        "trade-offs"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "accountability",
+          "choice",
+          "closed",
+          "concentration",
+          "contract",
+          "create",
+          "development",
+          "different",
+          "open",
+          "rules",
+          "security",
+          "strategies",
+          "trade-offs"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "accountability",
+          "choice",
+          "contract",
+          "rules",
+          "trade-offs"
+        ]
+      },
+      "shot_id": "SHOT_022",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 3521,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_ARCHITECTURE"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 3899,
+      "motif_id": "MOTIF_023",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_023",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF · SRC_NIST_RMF",
+      "start_frame": 3710,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
+      "end_frame": 4088,
+      "evidence_ids": [
+        "EVID_FSF_ALIGNMENT"
+      ],
+      "motif_id": "MOTIF_024",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_024",
+      "shot_type": "primary_document",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 3899,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "DeepMind deceptive alignment evaluation and mitigations",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F14"
+      ],
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "end_frame": 4277,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_025",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "assessment",
+        "expert",
+        "risk",
+        "safety",
+        "thresholds"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "acknowledge",
+          "assessment",
+          "capability",
+          "competitive",
+          "development",
+          "even",
+          "expert",
+          "frontier",
+          "individual",
+          "laboratories",
+          "pressure",
+          "reward",
+          "risk",
+          "safety",
+          "serious",
+          "thresholds",
+          "when"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "assessment",
+          "expert",
+          "risk",
+          "safety",
+          "thresholds"
+        ]
+      },
+      "shot_id": "SHOT_025",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 4088,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 4466,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG1"
+      ],
+      "motif_id": "MOTIF_026",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_026",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 4277,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published cross-model simulated blackmail rates",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "end_frame": 4655,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG2"
+      ],
+      "motif_id": "MOTIF_027",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_027",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 4466,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Fictional replacement email used in the controlled scenario",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F11"
+      ],
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 4844,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_028",
+      "motion": "drift_right",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "access",
+        "computer",
+        "information",
+        "open",
+        "technology"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "access",
+          "alignment",
+          "autonomous-risk",
+          "computer",
+          "deceptive",
+          "evaluations",
+          "explicitly",
+          "frameworks",
+          "frontier",
+          "include",
+          "information",
+          "open",
+          "published",
+          "related",
+          "technology"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "access",
+          "computer",
+          "information",
+          "open",
+          "technology"
+        ]
+      },
+      "shot_id": "SHOT_028",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 4655,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 5033,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_029",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_029",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 4844,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 5222,
+      "left": "The published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_030",
+      "right": "The source does not establish every broader interpretation.",
+      "right_detail": "Context and uncertainty remain material.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_030",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 5033,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F13"
+      ],
+      "claim_ids": [
+        "CLM_GOVERNANCE_LAG"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 5411,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_031",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "architecture",
+        "capability",
+        "code",
+        "software",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "deployment",
+          "institutional",
+          "more",
+          "move",
+          "oversight",
+          "slowly",
+          "software",
+          "systems",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 27,
+        "selected_keywords": [
+          "architecture",
+          "capability",
+          "code",
+          "software",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_031",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 5222,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 5600,
+      "motif_id": "MOTIF_032",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_032",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_ANTHROPIC_RSP",
+      "start_frame": 5411,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "end_frame": 5789,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG3"
+      ],
+      "motif_id": "MOTIF_033",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_033",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 5600,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Fictional personal email used in the controlled scenario",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F15"
+      ],
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "end_frame": 5978,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_034",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "accountability",
+        "choice",
+        "contract",
+        "rules",
+        "trade-offs"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "accountability",
+          "choice",
+          "closed",
+          "concentration",
+          "contract",
+          "create",
+          "development",
+          "different",
+          "open",
+          "rules",
+          "security",
+          "strategies",
+          "trade-offs"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "accountability",
+          "choice",
+          "contract",
+          "rules",
+          "trade-offs"
+        ]
+      },
+      "shot_id": "SHOT_034",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 5789,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 6166,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG4"
+      ],
+      "motif_id": "MOTIF_035",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_035",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 5978,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published model deliberation trace from the simulation",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
+      "end_frame": 6354,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG5"
+      ],
+      "motif_id": "MOTIF_036",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_036",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 6166,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published model action trace from the simulation",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F3"
+      ],
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "end_frame": 6542,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_037",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "competition",
+        "data",
+        "incentives",
+        "markets",
+        "pressure"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "acknowledge",
+          "capability",
+          "competition",
+          "competitive",
+          "data",
+          "development",
+          "even",
+          "frontier",
+          "incentives",
+          "individual",
+          "laboratories",
+          "markets",
+          "pressure",
+          "reward",
+          "risk",
+          "serious",
+          "when"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "competition",
+          "data",
+          "incentives",
+          "markets",
+          "pressure"
+        ]
+      },
+      "shot_id": "SHOT_037",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 6354,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 0,
+      "trim_out_seconds": 6.266667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for slow down — and lose? while the licensed score carries the transition.",
+      "end_frame": 6692,
+      "eyebrow": "THE INCENTIVE",
+      "motif_id": "MOTIF_038",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_038",
+      "shot_type": "editorial_pause",
+      "start_frame": 6542,
+      "subtitle": "Create a deliberate editorial breath for slow down — and lose? while the licensed score carries the transition.",
+      "title": "SLOW DOWN — AND LOSE?",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 6884,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_039",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_039",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 6692,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 7076,
+      "left": "Published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_040",
+      "right": "The source does not establish every broader interpretation.",
+      "right_detail": "Context and uncertainty remain material.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_040",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 6884,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F5"
+      ],
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "end_frame": 7268,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_041",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "control",
+        "laboratory",
+        "machinery",
+        "pressure",
+        "testing"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "actions",
+          "anthropic",
+          "control",
+          "controlled",
+          "engineered",
+          "harmful",
+          "laboratory",
+          "machinery",
+          "models",
+          "multiple",
+          "pressure",
+          "selected",
+          "simulations",
+          "sometimes",
+          "testing",
+          "which"
+        ],
+        "mode": "direct_semantic",
+        "score": 29.75,
+        "selected_keywords": [
+          "control",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "testing"
+        ]
+      },
+      "shot_id": "SHOT_041",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 7076,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.4,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 7460,
+      "motif_id": "MOTIF_042",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_042",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 7268,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 7652,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG7"
+      ],
+      "motif_id": "MOTIF_043",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_043",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 7460,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published results across sixteen leading models",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F1"
+      ],
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "end_frame": 7844,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_044",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "city",
+        "competition",
+        "infrastructure",
+        "scale",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "accessible",
+          "aiding",
+          "also",
+          "barriers",
+          "biological",
+          "capable",
+          "city",
+          "competition",
+          "cyber",
+          "defenders",
+          "forms",
+          "infrastructure",
+          "lower",
+          "misuse",
+          "more",
+          "scale",
+          "some",
+          "systems"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "city",
+          "competition",
+          "infrastructure",
+          "scale",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_044",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 7652,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.4,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "end_frame": 8036,
+      "evidence_ids": [
+        "EVID_RSP_COVER"
+      ],
+      "motif_id": "MOTIF_045",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_045",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 7844,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic Responsible Scaling Policy cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "end_frame": 8228,
+      "evidence_ids": [
+        "EVID_RSP_SUMMARY"
+      ],
+      "motif_id": "MOTIF_046",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_046",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 8036,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic RSP commitments and governance summary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F6"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_ARCHITECTURE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 8420,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_047",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "containment",
+        "infrastructure",
+        "restriction",
+        "risk",
+        "security"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "access",
+          "accountability",
+          "containment",
+          "controls",
+          "eliminate",
+          "evaluation",
+          "external",
+          "frontier",
+          "incident",
+          "infrastructure",
+          "layered",
+          "reduce",
+          "reporting",
+          "restriction",
+          "risk",
+          "security"
+        ],
+        "mode": "direct_semantic",
+        "score": 27.75,
+        "selected_keywords": [
+          "containment",
+          "infrastructure",
+          "restriction",
+          "risk",
+          "security"
+        ]
+      },
+      "shot_id": "SHOT_047",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 8228,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.4,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 8612,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_048",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_048",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_UNESCO_ETHICS · SRC_EU_AI_ACT",
+      "start_frame": 8420,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 8803,
+      "left": "Competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_049",
+      "right": "The sources document risk-management responses; the strategic incentive framing is an analytical synthesis.",
+      "right_detail": "The sources document risk-management responses; the strategic incentive framing is an analytical synthesis.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_049",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 8612,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F14"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 8994,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_050",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "assessment",
+        "expert",
+        "risk",
+        "safety",
+        "thresholds"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "assessment",
+          "capability",
+          "connect",
+          "expert",
+          "formal",
+          "frameworks",
+          "laboratories",
+          "leading",
+          "publish",
+          "risk",
+          "safeguards",
+          "safety",
+          "stronger",
+          "thresholds"
+        ],
+        "mode": "direct_semantic",
+        "score": 25,
+        "selected_keywords": [
+          "assessment",
+          "expert",
+          "risk",
+          "safety",
+          "thresholds"
+        ]
+      },
+      "shot_id": "SHOT_050",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 8803,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.366667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 9185,
+      "motif_id": "MOTIF_051",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_051",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 8994,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 9376,
+      "evidence_ids": [
+        "EVID_RSP_THRESHOLDS"
+      ],
+      "motif_id": "MOTIF_052",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_052",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 9185,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic capability thresholds and safeguards",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for the risk leaves the lab while the licensed score carries the transition.",
+      "end_frame": 9496,
+      "eyebrow": "THE PIVOT",
+      "motif_id": "MOTIF_053",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_053",
+      "shot_type": "editorial_pause",
+      "start_frame": 9376,
+      "subtitle": "Create a deliberate editorial breath for the risk leaves the lab while the licensed score carries the transition.",
+      "title": "THE RISK LEAVES THE LAB",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F5"
+      ],
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "end_frame": 9685,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_054",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "control",
+        "laboratory",
+        "machinery",
+        "pressure",
+        "testing"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "behaviour",
+          "control",
+          "emails",
+          "engineered",
+          "fictional",
+          "laboratory",
+          "machinery",
+          "model",
+          "pressure",
+          "published",
+          "replacement",
+          "simulation",
+          "supplied",
+          "test",
+          "testing",
+          "threat"
+        ],
+        "mode": "direct_semantic",
+        "score": 27,
+        "selected_keywords": [
+          "control",
+          "laboratory",
+          "machinery",
+          "pressure",
+          "testing"
+        ]
+      },
+      "shot_id": "SHOT_054",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 9496,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 9874,
+      "evidence_ids": [
+        "EVID_FSF_COVER"
+      ],
+      "motif_id": "MOTIF_055",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_055",
+      "shot_type": "primary_document",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 9685,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Google DeepMind Frontier Safety Framework cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "end_frame": 10063,
+      "evidence_ids": [
+        "EVID_FSF_FRAMEWORK"
+      ],
+      "motif_id": "MOTIF_056",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_056",
+      "shot_type": "official_figure",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 9874,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "DeepMind critical capability levels and mitigations",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F4"
+      ],
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "end_frame": 10252,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_057",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "control",
+        "digital",
+        "intelligence",
+        "network",
+        "technology"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "concentrate",
+          "consequential",
+          "control",
+          "decisions",
+          "digital",
+          "frontier",
+          "institutions",
+          "intelligence",
+          "network",
+          "number",
+          "over",
+          "small",
+          "systems",
+          "technology"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.5,
+        "selected_keywords": [
+          "control",
+          "digital",
+          "intelligence",
+          "network",
+          "technology"
+        ]
+      },
+      "shot_id": "SHOT_057",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 10063,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.3,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 10440,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_058",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_058",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 10252,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_ARCHITECTURE"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 10628,
+      "left": "Layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_059",
+      "right": "Safeguards reduce exposure only when implemented, tested and updated against changing capabilities.",
+      "right_detail": "Safeguards reduce exposure only when implemented, tested and updated against changing capabilities.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_059",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF · SRC_NIST_RMF",
+      "start_frame": 10440,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F2"
+      ],
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
+      "end_frame": 10816,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_060",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "computer",
+        "design",
+        "engineering",
+        "governance",
+        "planning"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "automatic",
+          "choice",
+          "computer",
+          "design",
+          "engineering",
+          "frontier",
+          "governance",
+          "human",
+          "institutional",
+          "outcome",
+          "planning",
+          "rather",
+          "remains",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 28.5,
+        "selected_keywords": [
+          "computer",
+          "design",
+          "engineering",
+          "governance",
+          "planning"
+        ]
+      },
+      "shot_id": "SHOT_060",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 10628,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.266667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 11004,
+      "motif_id": "MOTIF_061",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_061",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 10816,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 11192,
+      "evidence_ids": [
+        "EVID_FSF_ALIGNMENT"
+      ],
+      "motif_id": "MOTIF_062",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_062",
+      "shot_type": "primary_document",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 11004,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "DeepMind deceptive alignment evaluation and mitigations",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F12"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "end_frame": 11380,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_063",
+      "motion": "drift_right",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "authority",
+        "governance",
+        "government",
+        "law",
+        "regulation"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "authority",
+          "capability",
+          "corresponding",
+          "define",
+          "escalating",
+          "evaluation",
+          "frameworks",
+          "frontier",
+          "governance",
+          "government",
+          "levels",
+          "mitigation",
+          "regulation",
+          "requirements",
+          "safety"
+        ],
+        "mode": "direct_semantic",
+        "score": 21.5,
+        "selected_keywords": [
+          "authority",
+          "governance",
+          "government",
+          "law",
+          "regulation"
+        ]
+      },
+      "shot_id": "SHOT_063",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 11192,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.266667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 11568,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG1"
+      ],
+      "motif_id": "MOTIF_064",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_064",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 11380,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published cross-model simulated blackmail rates",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "end_frame": 11756,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG2"
+      ],
+      "motif_id": "MOTIF_065",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_065",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 11568,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Fictional replacement email used in the controlled scenario",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F8"
+      ],
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "end_frame": 11944,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_066",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "diffusion",
+        "models",
+        "network",
+        "power",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "behaviour",
+          "diffusion",
+          "emails",
+          "engineered",
+          "fictional",
+          "model",
+          "models",
+          "network",
+          "power",
+          "published",
+          "replacement",
+          "simulation",
+          "supplied",
+          "systems",
+          "test",
+          "threat"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.75,
+        "selected_keywords": [
+          "diffusion",
+          "models",
+          "network",
+          "power",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_066",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 11756,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.266667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_GOVERNANCE_LAG"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 12132,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_067",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_067",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 11944,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 12320,
+      "left": "More capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_068",
+      "right": "The magnitude and accessibility of misuse vary by model, safeguards and user expertise.",
+      "right_detail": "The magnitude and accessibility of misuse vary by model, safeguards and user expertise.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_068",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_NIST_RMF · SRC_ANTHROPIC_RSP",
+      "start_frame": 12132,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F1"
+      ],
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "end_frame": 12508,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_069",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "city",
+        "competition",
+        "infrastructure",
+        "scale",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "city",
+          "competition",
+          "concentrate",
+          "consequential",
+          "control",
+          "decisions",
+          "frontier",
+          "infrastructure",
+          "institutions",
+          "number",
+          "over",
+          "scale",
+          "small",
+          "systems"
+        ],
+        "mode": "direct_semantic",
+        "score": 25,
+        "selected_keywords": [
+          "city",
+          "competition",
+          "infrastructure",
+          "scale",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_069",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 12320,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.266667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 12696,
+      "motif_id": "MOTIF_070",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_070",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 12508,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 12884,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG3"
+      ],
+      "motif_id": "MOTIF_071",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_071",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 12696,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Fictional personal email used in the controlled scenario",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F2"
+      ],
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
+      "end_frame": 13072,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_072",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "computer",
+        "design",
+        "engineering",
+        "governance",
+        "planning"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "automatic",
+          "choice",
+          "computer",
+          "design",
+          "engineering",
+          "frontier",
+          "governance",
+          "human",
+          "institutional",
+          "outcome",
+          "planning",
+          "rather",
+          "remains",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 27.75,
+        "selected_keywords": [
+          "computer",
+          "design",
+          "engineering",
+          "governance",
+          "planning"
+        ]
+      },
+      "shot_id": "SHOT_072",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 12884,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.266667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for who gets to decide? while the licensed score carries the transition.",
+      "end_frame": 13222,
+      "eyebrow": "THE POWER",
+      "motif_id": "MOTIF_073",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_073",
+      "shot_type": "editorial_pause",
+      "start_frame": 13072,
+      "subtitle": "Create a deliberate editorial breath for who gets to decide? while the licensed score carries the transition.",
+      "title": "WHO GETS TO DECIDE?",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 13417,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG4"
+      ],
+      "motif_id": "MOTIF_074",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_074",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 13222,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published model deliberation trace from the simulation",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "end_frame": 13612,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG5"
+      ],
+      "motif_id": "MOTIF_075",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_075",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 13417,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published model action trace from the simulation",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F7"
+      ],
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 13807,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_076",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "information",
+        "media",
+        "news",
+        "public",
+        "spread"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "alignment",
+          "autonomous-risk",
+          "deceptive",
+          "evaluations",
+          "explicitly",
+          "frameworks",
+          "frontier",
+          "include",
+          "information",
+          "media",
+          "news",
+          "public",
+          "published",
+          "related",
+          "spread"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.5,
+        "selected_keywords": [
+          "information",
+          "media",
+          "news",
+          "public",
+          "spread"
+        ]
+      },
+      "shot_id": "SHOT_076",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 13612,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.5,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 14002,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_077",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_077",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 13807,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 14197,
+      "left": "The published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_078",
+      "right": "The source does not establish every broader interpretation.",
+      "right_detail": "Context and uncertainty remain material.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_078",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 14002,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F9"
+      ],
+      "claim_ids": [
+        "CLM_GOVERNANCE_LAG"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 14392,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_079",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "approval",
+        "bureaucracy",
+        "compliance",
+        "documents",
+        "institution"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "approval",
+          "bureaucracy",
+          "capability",
+          "compliance",
+          "deployment",
+          "documents",
+          "institution",
+          "institutional",
+          "more",
+          "move",
+          "oversight",
+          "slowly",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 28.5,
+        "selected_keywords": [
+          "approval",
+          "bureaucracy",
+          "compliance",
+          "documents",
+          "institution"
+        ]
+      },
+      "shot_id": "SHOT_079",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 14197,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.5,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 14587,
+      "motif_id": "MOTIF_080",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_080",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_ANTHROPIC_RSP",
+      "start_frame": 14392,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "end_frame": 14781,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG7"
+      ],
+      "motif_id": "MOTIF_081",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_081",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 14587,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published results across sixteen leading models",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F15"
+      ],
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "end_frame": 14975,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_082",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "accountability",
+        "choice",
+        "contract",
+        "rules",
+        "trade-offs"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "accountability",
+          "choice",
+          "closed",
+          "concentration",
+          "contract",
+          "create",
+          "development",
+          "different",
+          "open",
+          "rules",
+          "security",
+          "strategies",
+          "trade-offs"
+        ],
+        "mode": "direct_semantic",
+        "score": 25,
+        "selected_keywords": [
+          "accountability",
+          "choice",
+          "contract",
+          "rules",
+          "trade-offs"
+        ]
+      },
+      "shot_id": "SHOT_082",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 14781,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.466667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 15169,
+      "evidence_ids": [
+        "EVID_RSP_COVER"
+      ],
+      "motif_id": "MOTIF_083",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_083",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 14975,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic Responsible Scaling Policy cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
+      "end_frame": 15363,
+      "evidence_ids": [
+        "EVID_RSP_SUMMARY"
+      ],
+      "motif_id": "MOTIF_084",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_084",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 15169,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic RSP commitments and governance summary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F3"
+      ],
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "end_frame": 15557,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_085",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "competition",
+        "data",
+        "incentives",
+        "markets",
+        "pressure"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "acknowledge",
+          "capability",
+          "competition",
+          "competitive",
+          "data",
+          "development",
+          "even",
+          "frontier",
+          "incentives",
+          "individual",
+          "laboratories",
+          "markets",
+          "pressure",
+          "reward",
+          "risk",
+          "serious",
+          "when"
+        ],
+        "mode": "direct_semantic",
+        "score": 25,
+        "selected_keywords": [
+          "competition",
+          "data",
+          "incentives",
+          "markets",
+          "pressure"
+        ]
+      },
+      "shot_id": "SHOT_085",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 15363,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 3,
+      "trim_out_seconds": 9.466667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 15751,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_086",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_086",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 15557,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 15945,
+      "left": "Frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_087",
+      "right": "The source does not establish every broader interpretation.",
+      "right_detail": "Context and uncertainty remain material.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_087",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 15751,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F10"
+      ],
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 16139,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_088",
+      "motion": "drift_right",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "corporate",
+        "institution",
+        "power",
+        "resources",
+        "scale"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "alignment",
+          "autonomous-risk",
+          "corporate",
+          "deceptive",
+          "evaluations",
+          "explicitly",
+          "frameworks",
+          "frontier",
+          "include",
+          "institution",
+          "power",
+          "published",
+          "related",
+          "resources",
+          "scale"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "corporate",
+          "institution",
+          "power",
+          "resources",
+          "scale"
+        ]
+      },
+      "shot_id": "SHOT_088",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 15945,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.466667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 16333,
+      "motif_id": "MOTIF_089",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_089",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 16139,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "end_frame": 16527,
+      "evidence_ids": [
+        "EVID_RSP_THRESHOLDS"
+      ],
+      "motif_id": "MOTIF_090",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_090",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 16333,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic capability thresholds and safeguards",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F9"
+      ],
+      "claim_ids": [
+        "CLM_GOVERNANCE_LAG"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 16721,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_091",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "approval",
+        "bureaucracy",
+        "compliance",
+        "documents",
+        "institution"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "approval",
+          "bureaucracy",
+          "capability",
+          "compliance",
+          "deployment",
+          "documents",
+          "institution",
+          "institutional",
+          "more",
+          "move",
+          "oversight",
+          "slowly",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 27.75,
+        "selected_keywords": [
+          "approval",
+          "bureaucracy",
+          "compliance",
+          "documents",
+          "institution"
+        ]
+      },
+      "shot_id": "SHOT_091",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 16527,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.466667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "end_frame": 16915,
+      "evidence_ids": [
+        "EVID_FSF_COVER"
+      ],
+      "motif_id": "MOTIF_092",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_092",
+      "shot_type": "primary_document",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 16721,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Google DeepMind Frontier Safety Framework cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for open or closed? while the licensed score carries the transition.",
+      "end_frame": 17065,
+      "eyebrow": "THE TRADE-OFF",
+      "motif_id": "MOTIF_093",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_093",
+      "shot_type": "editorial_pause",
+      "start_frame": 16915,
+      "subtitle": "Create a deliberate editorial breath for open or closed? while the licensed score carries the transition.",
+      "title": "OPEN OR CLOSED?",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "end_frame": 17250,
+      "evidence_ids": [
+        "EVID_FSF_FRAMEWORK"
+      ],
+      "motif_id": "MOTIF_094",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_094",
+      "shot_type": "official_figure",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 17065,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "DeepMind critical capability levels and mitigations",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F6"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_ARCHITECTURE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 17435,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_095",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "containment",
+        "infrastructure",
+        "restriction",
+        "risk",
+        "security"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "access",
+          "accountability",
+          "containment",
+          "controls",
+          "eliminate",
+          "evaluation",
+          "external",
+          "frontier",
+          "incident",
+          "infrastructure",
+          "layered",
+          "reduce",
+          "reporting",
+          "restriction",
+          "risk",
+          "security"
+        ],
+        "mode": "direct_semantic",
+        "score": 27,
+        "selected_keywords": [
+          "containment",
+          "infrastructure",
+          "restriction",
+          "risk",
+          "security"
+        ]
+      },
+      "shot_id": "SHOT_095",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 17250,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.166667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 17620,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_096",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_096",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_UNESCO_ETHICS · SRC_EU_AI_ACT",
+      "start_frame": 17435,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_RACE_INCENTIVE"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 17805,
+      "left": "Competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_097",
+      "right": "The sources document risk-management responses; the strategic incentive framing is an analytical synthesis.",
+      "right_detail": "The sources document risk-management responses; the strategic incentive framing is an analytical synthesis.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_097",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 17620,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F4"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 17990,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_098",
+      "motion": "drift_right",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "control",
+        "digital",
+        "intelligence",
+        "network",
+        "technology"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "capability",
+          "connect",
+          "control",
+          "digital",
+          "formal",
+          "frameworks",
+          "intelligence",
+          "laboratories",
+          "leading",
+          "network",
+          "publish",
+          "safeguards",
+          "stronger",
+          "technology",
+          "thresholds"
+        ],
+        "mode": "direct_semantic",
+        "score": 26.75,
+        "selected_keywords": [
+          "control",
+          "digital",
+          "intelligence",
+          "network",
+          "technology"
+        ]
+      },
+      "shot_id": "SHOT_098",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 17805,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.166667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 18175,
+      "motif_id": "MOTIF_099",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_099",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_ANTHROPIC_RSP · SRC_DEEPMIND_FSF",
+      "start_frame": 17990,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting published frontier frameworks explicitly include deceptive alignment or related autonomous-risk evaluations.",
+      "end_frame": 18360,
+      "evidence_ids": [
+        "EVID_FSF_ALIGNMENT"
+      ],
+      "motif_id": "MOTIF_100",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_100",
+      "shot_type": "primary_document",
+      "source_label": "SRC_DEEPMIND_FSF",
+      "start_frame": 18175,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "DeepMind deceptive alignment evaluation and mitigations",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F8"
+      ],
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "end_frame": 18545,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_101",
+      "motion": "pull",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "diffusion",
+        "models",
+        "network",
+        "power",
+        "systems"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "actions",
+          "anthropic",
+          "controlled",
+          "diffusion",
+          "engineered",
+          "harmful",
+          "models",
+          "multiple",
+          "network",
+          "power",
+          "pressure",
+          "selected",
+          "simulations",
+          "sometimes",
+          "systems",
+          "which"
+        ],
+        "mode": "direct_semantic",
+        "score": 24,
+        "selected_keywords": [
+          "diffusion",
+          "models",
+          "network",
+          "power",
+          "systems"
+        ]
+      },
+      "shot_id": "SHOT_101",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 18360,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.166667,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "end_frame": 18730,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG1"
+      ],
+      "motif_id": "MOTIF_102",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_102",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 18545,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published cross-model simulated blackmail rates",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting institutional oversight can move more slowly than technical capability and deployment.",
+      "end_frame": 18915,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG2"
+      ],
+      "motif_id": "MOTIF_103",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_103",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 18730,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Fictional replacement email used in the controlled scenario",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F11"
+      ],
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for more capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "end_frame": 19099,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_104",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "access",
+        "computer",
+        "information",
+        "open",
+        "technology"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "access",
+          "accessible",
+          "aiding",
+          "also",
+          "barriers",
+          "biological",
+          "capable",
+          "computer",
+          "cyber",
+          "defenders",
+          "forms",
+          "information",
+          "lower",
+          "misuse",
+          "more",
+          "open",
+          "some",
+          "systems",
+          "technology"
+        ],
+        "mode": "direct_semantic",
+        "score": 27.75,
+        "selected_keywords": [
+          "access",
+          "computer",
+          "information",
+          "open",
+          "technology"
+        ]
+      },
+      "shot_id": "SHOT_104",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 18915,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.133333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 19283,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_105",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_105",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_UNESCO_ETHICS · SRC_EU_AI_ACT",
+      "start_frame": 19099,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 19467,
+      "left": "Open and closed development strategies create different security, accountability and concentration trade-offs.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_106",
+      "right": "Neither development model removes risk; each changes who can inspect, control or misuse the system.",
+      "right_detail": "Neither development model removes risk; each changes who can inspect, control or misuse the system.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_106",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 19283,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F12"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_ARCHITECTURE"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 19651,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_107",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "authority",
+        "governance",
+        "government",
+        "law",
+        "regulation"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "access",
+          "accountability",
+          "authority",
+          "controls",
+          "eliminate",
+          "evaluation",
+          "external",
+          "frontier",
+          "governance",
+          "government",
+          "incident",
+          "layered",
+          "reduce",
+          "regulation",
+          "reporting",
+          "risk"
+        ],
+        "mode": "direct_semantic",
+        "score": 20.75,
+        "selected_keywords": [
+          "authority",
+          "governance",
+          "government",
+          "law",
+          "regulation"
+        ]
+      },
+      "shot_id": "SHOT_107",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 19467,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.133333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 19835,
+      "motif_id": "MOTIF_108",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_108",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_UNESCO_ETHICS · SRC_EU_AI_ACT",
+      "start_frame": 19651,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "end_frame": 20019,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG3"
+      ],
+      "motif_id": "MOTIF_109",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_109",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 19835,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Fictional personal email used in the controlled scenario",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F9"
+      ],
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 20203,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_110",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "approval",
+        "bureaucracy",
+        "compliance",
+        "documents",
+        "institution"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "approval",
+          "bureaucracy",
+          "capability",
+          "compliance",
+          "connect",
+          "documents",
+          "formal",
+          "frameworks",
+          "institution",
+          "laboratories",
+          "leading",
+          "publish",
+          "safeguards",
+          "stronger",
+          "thresholds"
+        ],
+        "mode": "direct_semantic",
+        "score": 27,
+        "selected_keywords": [
+          "approval",
+          "bureaucracy",
+          "compliance",
+          "documents",
+          "institution"
+        ]
+      },
+      "shot_id": "SHOT_110",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 20019,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.133333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting frontier safety frameworks define escalating capability levels and corresponding evaluation or mitigation requirements.",
+      "end_frame": 20387,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG4"
+      ],
+      "motif_id": "MOTIF_111",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_111",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 20203,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published model deliberation trace from the simulation",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for safety must be built while the licensed score carries the transition.",
+      "end_frame": 20537,
+      "eyebrow": "THE WORK",
+      "motif_id": "MOTIF_112",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_112",
+      "shot_type": "editorial_pause",
+      "start_frame": 20387,
+      "subtitle": "Create a deliberate editorial breath for safety must be built while the licensed score carries the transition.",
+      "title": "SAFETY MUST BE BUILT",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting anthropic reported controlled simulations in which multiple models sometimes selected harmful actions under engineered pressure.",
+      "end_frame": 20728,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG5"
+      ],
+      "motif_id": "MOTIF_113",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_113",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 20537,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published model action trace from the simulation",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F7"
+      ],
+      "claim_ids": [
+        "CLM_REPLACEMENT_SCENARIO"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for the published simulation supplied fictional emails and an engineered replacement threat to test model behaviour.",
+      "end_frame": 20918,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_114",
+      "motion": "slow_pan",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "information",
+        "media",
+        "news",
+        "public",
+        "spread"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "behaviour",
+          "emails",
+          "engineered",
+          "fictional",
+          "information",
+          "media",
+          "model",
+          "news",
+          "public",
+          "published",
+          "replacement",
+          "simulation",
+          "spread",
+          "supplied",
+          "test",
+          "threat"
+        ],
+        "mode": "direct_semantic",
+        "score": 25.75,
+        "selected_keywords": [
+          "information",
+          "media",
+          "news",
+          "public",
+          "spread"
+        ]
+      },
+      "shot_id": "SHOT_114",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 20728,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.333333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_GOVERNANCE_LAG"
+      ],
+      "editorial_purpose": "Translate the sourced argument into an explicit source-derived visual model.",
+      "end_frame": 21108,
+      "items": [
+        {
+          "label": "CAPABILITY",
+          "value": "More powerful systems"
+        },
+        {
+          "label": "INCENTIVE",
+          "value": "Faster competitive movement"
+        },
+        {
+          "label": "CONTROL",
+          "value": "Governance must catch up"
+        }
+      ],
+      "motif_id": "MOTIF_115",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_115",
+      "shot_type": "source_derived_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 20918,
+      "title": "THE PRESSURE COMPOUNDS",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_MISUSE"
+      ],
+      "editorial_purpose": "State the source boundary before advancing the argument.",
+      "end_frame": 21298,
+      "left": "More capable and accessible systems can lower barriers for some forms of cyber or biological misuse while also aiding defenders.",
+      "left_detail": "Supported by the cited source package.",
+      "motif_id": "MOTIF_116",
+      "right": "The magnitude and accessibility of misuse vary by model, safeguards and user expertise.",
+      "right_detail": "The magnitude and accessibility of misuse vary by model, safeguards and user expertise.",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_116",
+      "shot_type": "limitation_treatment",
+      "source_label": "SRC_NIST_RMF · SRC_ANTHROPIC_RSP",
+      "start_frame": 21108,
+      "title": "WHAT THE EVIDENCE DOES — AND DOES NOT — SHOW",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F4"
+      ],
+      "claim_ids": [
+        "CLM_POWER"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for control over frontier systems can concentrate consequential decisions in a small number of institutions.",
+      "end_frame": 21488,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_117",
+      "motion": "drift_left",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "control",
+        "digital",
+        "intelligence",
+        "network",
+        "technology"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "concentrate",
+          "consequential",
+          "control",
+          "decisions",
+          "digital",
+          "frontier",
+          "institutions",
+          "intelligence",
+          "network",
+          "number",
+          "over",
+          "small",
+          "systems",
+          "technology"
+        ],
+        "mode": "direct_semantic",
+        "score": 24,
+        "selected_keywords": [
+          "control",
+          "digital",
+          "intelligence",
+          "network",
+          "technology"
+        ]
+      },
+      "shot_id": "SHOT_117",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 21298,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.333333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_OPEN_CLOSED"
+      ],
+      "editorial_purpose": "Explain the causal sequence without fabricating documentary evidence.",
+      "end_frame": 21678,
+      "motif_id": "MOTIF_118",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_118",
+      "shot_type": "process_graphic",
+      "source_label": "SRC_NIST_RMF · SRC_EU_AI_ACT",
+      "start_frame": 21488,
+      "steps": [
+        "CAPABILITY",
+        "INCENTIVE",
+        "DEPLOYMENT",
+        "GOVERNANCE"
+      ],
+      "title": "FROM CAPABILITY TO CONSEQUENCE",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_CONTROLLED_TEST"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting layered evaluation, access controls, incident reporting and external accountability can reduce—but not eliminate—frontier risk.",
+      "end_frame": 21868,
+      "evidence_ids": [
+        "EVID_AGENTIC_FIG7"
+      ],
+      "motif_id": "MOTIF_119",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_119",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_AGENTIC",
+      "start_frame": 21678,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Published results across sixteen leading models",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "asset_ids": [
+        "F2"
+      ],
+      "claim_ids": [
+        "CLM_HUMAN_AGENCY"
+      ],
+      "editorial_purpose": "Provide nonliteral cinematic context for the governance of frontier ai remains a human institutional choice rather than an automatic technical outcome.",
+      "end_frame": 22058,
+      "evidence_claim": false,
+      "motif_id": "MOTIF_120",
+      "motion": "push",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "semantic_keywords": [
+        "computer",
+        "design",
+        "engineering",
+        "governance",
+        "planning"
+      ],
+      "semantic_selection": {
+        "engine": "orvyq-semantic-v1",
+        "intent_keywords": [
+          "automatic",
+          "choice",
+          "computer",
+          "design",
+          "engineering",
+          "frontier",
+          "governance",
+          "human",
+          "institutional",
+          "outcome",
+          "planning",
+          "rather",
+          "remains",
+          "technical",
+          "than"
+        ],
+        "mode": "direct_semantic",
+        "score": 27,
+        "selected_keywords": [
+          "computer",
+          "design",
+          "engineering",
+          "governance",
+          "planning"
+        ]
+      },
+      "shot_id": "SHOT_120",
+      "shot_type": "contextual_footage",
+      "source_label": "ORVYQ · CONTEXTUAL",
+      "start_frame": 21868,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "trim_in_seconds": 6,
+      "trim_out_seconds": 12.333333,
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting competitive pressure can reward frontier capability development even when individual laboratories acknowledge serious risk.",
+      "end_frame": 22248,
+      "evidence_ids": [
+        "EVID_RSP_COVER"
+      ],
+      "motif_id": "MOTIF_121",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_121",
+      "shot_type": "primary_document",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 22058,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic Responsible Scaling Policy cover",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "callout": "This is a genuine primary-source capture linked to the current claim.",
+      "claim_ids": [
+        "CLM_SAFETY_FRAMEWORKS"
+      ],
+      "editorial_purpose": "Show genuine source pixels supporting leading laboratories publish formal frameworks that connect capability thresholds to stronger safeguards.",
+      "end_frame": 22438,
+      "evidence_ids": [
+        "EVID_RSP_SUMMARY"
+      ],
+      "motif_id": "MOTIF_122",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_122",
+      "shot_type": "official_figure",
+      "source_label": "SRC_ANTHROPIC_RSP",
+      "start_frame": 22248,
+      "subtitle": "The source is shown directly; the footer preserves provenance and limits.",
+      "title": "Anthropic RSP commitments and governance summary",
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "captions_suppressed": true,
+      "claim_ids": [
+        "CLM_SAFETY_THRESHOLDS"
+      ],
+      "editorial_purpose": "Create a deliberate editorial breath for people, right now. while the licensed score carries the transition.",
+      "end_frame": 22618,
+      "eyebrow": "THE CHOICE",
+      "motif_id": "MOTIF_123",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_123",
+      "shot_type": "editorial_pause",
+      "start_frame": 22438,
+      "subtitle": "Create a deliberate editorial breath for people, right now. while the licensed score carries the transition.",
+      "title": "PEOPLE, RIGHT NOW.",
+      "transition_in": "short_dissolve",
+      "transition_out": "short_dissolve",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    },
+    {
+      "claim_ids": [
+        "CLM_ALIGNMENT_RISK"
+      ],
+      "editorial_purpose": "Close the documentary with a restrained branded release.",
+      "end_frame": 22738,
+      "motif_id": "MOTIF_124",
+      "safe_area": {
+        "bottom": 48,
+        "left": 70,
+        "right": 70,
+        "top": 52
+      },
+      "shot_id": "SHOT_124",
+      "shot_type": "brand_close",
+      "start_frame": 22618,
+      "subtitle": "An ORVYQ Studio production",
+      "title": "BEYOND THE KNOWN",
+      "transition_in": "motivated_fade",
+      "transition_out": "cut",
+      "typography": {
+        "source_px": 17,
+        "subtitle_px": 25,
+        "title_px": 50
+      }
+    }
+  ],
+  "width": 1920
+}

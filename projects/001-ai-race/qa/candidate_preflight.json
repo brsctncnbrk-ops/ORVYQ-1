@@ -1,0 +1,216 @@
+{
+  "asset_audit": {
+    "asset_count": 18,
+    "assets": [
+      {
+        "asset_id": "NARRATION",
+        "duration_seconds": 719.928,
+        "role": "narration_stem",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "MUSIC_SIGNAL_TO_NOISE",
+        "duration_seconds": 353.541224,
+        "role": "music_stem",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F1",
+        "duration_seconds": 23.786667,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F2",
+        "duration_seconds": 17.84,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F3",
+        "duration_seconds": 37.96,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F4",
+        "duration_seconds": 45.64,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F5",
+        "duration_seconds": 30.03,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F6",
+        "duration_seconds": 21.353333,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F7",
+        "duration_seconds": 19.68,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F8",
+        "duration_seconds": 19.8,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F9",
+        "duration_seconds": 17,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F10",
+        "duration_seconds": 32.465767,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F11",
+        "duration_seconds": 15.6,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F12",
+        "duration_seconds": 15.448767,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F13",
+        "duration_seconds": 25.88,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F14",
+        "duration_seconds": 29.16,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "F15",
+        "duration_seconds": 33.28,
+        "role": "contextual_footage",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "asset_id": "FINAL_AUDIO_MIX",
+        "duration_seconds": 757.872,
+        "role": "final_audio_mix",
+        "status": "TAMAMLANDI"
+      }
+    ],
+    "status": "TAMAMLANDI"
+  },
+  "digests": {
+    "asset_registry_sha256": "e503425e07e1e0efa7ec9cb41847392bd88a61d16c5aca936b3650405bafd855",
+    "audio_mix_sha256": "1abbbcf075a8c99eb79f6a785830641c2a823e51220e7fc6bd140dc143b95cb4",
+    "audio_plan_sha256": "21fb74c3d29b2c481cd3ad2e9656e8de05c67ad9bd614989fe71a8759df4f142",
+    "claim_registry_sha256": "3bee77bf2b86fd0a406ea233f5c65193c41a9523d2c6684fa258d9cfc0ca663e",
+    "evidence_registry_sha256": "9ae048e4a912612941a00578b6947e61dab88913ff0c9718bb58a3f962eac986",
+    "narration_timeline_sha256": "58ae35554e90f1e811f8047716c053e77bdb002a20294c04174abdff7481401c",
+    "production_plan_sha256": "f44f3cd3c3a79c43084bad5502db3dee5f3d068fb851ef2e768bc0d04d3d03e2",
+    "render_input_sha256": "32868fb7fae6f03c89f807280a9d674c53616a4db28c598dd7798df415dd22c9",
+    "source_catalog_sha256": "bb68091dc49c610981215b78fd6befb7ad52b4e91e0151f82032df70b7611b40"
+  },
+  "evidence_audit": {
+    "evidence_count": 12,
+    "files": [
+      {
+        "byte_size": 76870,
+        "evidence_id": "EVID_RSP_COVER",
+        "sha256": "25155f5b4fec9913f35532d508b9107d12ef91c655e5fe26ba14a7bd03030a87",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 515093,
+        "evidence_id": "EVID_RSP_SUMMARY",
+        "sha256": "08b08ec44704d181438d7ea4bc35a1e3a98c09a37997cfe0e8dffca5317ebccc",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 476144,
+        "evidence_id": "EVID_RSP_THRESHOLDS",
+        "sha256": "d01dd2e593f5c1d34b1a77a36f9f49dea506e561b1d1e39719c4d562d4ed734f",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 303094,
+        "evidence_id": "EVID_FSF_COVER",
+        "sha256": "607fe4603e429e3b901e146d4abf55fbae9dab13e1a50d752ebef6d00160a658",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 308198,
+        "evidence_id": "EVID_FSF_FRAMEWORK",
+        "sha256": "1496daa007eff0a1ff8fb73ab8f6db796b21fdedb37ec27e80931f0a480ced54",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 297016,
+        "evidence_id": "EVID_FSF_ALIGNMENT",
+        "sha256": "0c29f2a85c936337c82ad229570bbb59a133599e077aef127e354d953783db05",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 239260,
+        "evidence_id": "EVID_AGENTIC_FIG1",
+        "sha256": "cfaecf0b38c18aa8192f0b57b50c93b6208125cd46be0458118831545b5ce98b",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 3004290,
+        "evidence_id": "EVID_AGENTIC_FIG2",
+        "sha256": "ee1906e24034c96d208955c27c4725d83fab598db28c694270ddad232236cc8c",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 914620,
+        "evidence_id": "EVID_AGENTIC_FIG3",
+        "sha256": "872eb01708bf45e01d3dcd00e4b0f39046c1f4234d6f2d7cf00f90fec9345f3b",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 1959015,
+        "evidence_id": "EVID_AGENTIC_FIG4",
+        "sha256": "ff0440f72c5e43ecef6bae1d069ec190fc23e2a6dddd811aa44b16977c7fb5a9",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 2321741,
+        "evidence_id": "EVID_AGENTIC_FIG5",
+        "sha256": "96049e4f8be2fada996fc9bec734ec5ba446456474733c15b1ee9b1fb5c146d8",
+        "status": "TAMAMLANDI"
+      },
+      {
+        "byte_size": 372992,
+        "evidence_id": "EVID_AGENTIC_FIG7",
+        "sha256": "a4c05c2fd1dff329a4930221e959ee8b4960288e6ffeb113cb8a4df360d93cbe",
+        "status": "TAMAMLANDI"
+      }
+    ],
+    "status": "TAMAMLANDI"
+  },
+  "project_id": "001-ai-race",
+  "schema_version": "1.0",
+  "static_qa": {
+    "mobile": "TAMAMLANDI",
+    "music": "TAMAMLANDI",
+    "pacing": "TAMAMLANDI",
+    "pauses": "TAMAMLANDI",
+    "semantic": "TAMAMLANDI"
+  },
+  "status": "TAMAMLANDI",
+  "validated_at": "2026-07-22T00:10:04.546Z"
+}

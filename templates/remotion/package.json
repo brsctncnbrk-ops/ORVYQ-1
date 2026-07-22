@@ -1,0 +1,21 @@
+{
+  "name": "orvyq-render",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Canonical ORVYQ Remotion renderer. Per-project render data is copied into src/data by scripts/remotion_build.mjs; assets are resolved from the project public root.",
+  "scripts": {
+    "preview": "remotion studio",
+    "compositions": "remotion compositions src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.332",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.332"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.24",
+    "typescript": "5.4.5"
+  }
+}

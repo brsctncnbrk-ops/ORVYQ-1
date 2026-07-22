@@ -1,0 +1,54 @@
+{
+  "pauses": [
+    {
+      "music_behavior": "rise_then_hold",
+      "pause_id": "PAUSE_01",
+      "pause_type": "warning_pivot",
+      "visual_behavior": "single_meaningful_hold"
+    },
+    {
+      "music_behavior": "rise_then_hold",
+      "pause_id": "PAUSE_02",
+      "pause_type": "warning_pivot",
+      "visual_behavior": "single_meaningful_hold"
+    },
+    {
+      "music_behavior": "sustain_under_silence",
+      "pause_id": "PAUSE_03",
+      "pause_type": "open_question",
+      "visual_behavior": "single_symbolic_hold"
+    },
+    {
+      "music_behavior": "rise_then_hold",
+      "pause_id": "PAUSE_04",
+      "pause_type": "warning_pivot",
+      "visual_behavior": "single_meaningful_hold"
+    },
+    {
+      "music_behavior": "sustain_under_silence",
+      "pause_id": "PAUSE_05",
+      "pause_type": "open_question",
+      "visual_behavior": "single_symbolic_hold"
+    },
+    {
+      "music_behavior": "sustain_under_silence",
+      "pause_id": "PAUSE_06",
+      "pause_type": "open_question",
+      "visual_behavior": "single_symbolic_hold"
+    },
+    {
+      "music_behavior": "open_then_decay",
+      "pause_id": "PAUSE_07",
+      "pause_type": "resolution_pivot",
+      "visual_behavior": "single_meaningful_hold"
+    },
+    {
+      "music_behavior": "open_then_decay",
+      "pause_id": "PAUSE_08",
+      "pause_type": "resolution_pivot",
+      "visual_behavior": "single_meaningful_hold"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "TAMAMLANDI"
+}
