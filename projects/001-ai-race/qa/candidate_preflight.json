@@ -106,7 +106,7 @@
       },
       {
         "asset_id": "FINAL_AUDIO_MIX",
-        "duration_seconds": 757.92,
+        "duration_seconds": 757.872,
         "role": "final_audio_mix",
         "status": "TAMAMLANDI"
       }
@@ -114,14 +114,14 @@
     "status": "TAMAMLANDI"
   },
   "digests": {
-    "asset_registry_sha256": "179ee783c6f4c28676d306007a3a8446939a7752b03d7da92d0b11a6dad3c722",
-    "audio_mix_sha256": "16db65a3f38eab1cb2420df315cb924aa06b18f5626b5320ab18e32bab3dede4",
+    "asset_registry_sha256": "e503425e07e1e0efa7ec9cb41847392bd88a61d16c5aca936b3650405bafd855",
+    "audio_mix_sha256": "1abbbcf075a8c99eb79f6a785830641c2a823e51220e7fc6bd140dc143b95cb4",
     "audio_plan_sha256": "21fb74c3d29b2c481cd3ad2e9656e8de05c67ad9bd614989fe71a8759df4f142",
     "claim_registry_sha256": "3bee77bf2b86fd0a406ea233f5c65193c41a9523d2c6684fa258d9cfc0ca663e",
     "evidence_registry_sha256": "9ae048e4a912612941a00578b6947e61dab88913ff0c9718bb58a3f962eac986",
     "narration_timeline_sha256": "58ae35554e90f1e811f8047716c053e77bdb002a20294c04174abdff7481401c",
     "production_plan_sha256": "f44f3cd3c3a79c43084bad5502db3dee5f3d068fb851ef2e768bc0d04d3d03e2",
-    "render_input_sha256": "749d1f5478b619c891f28df478cdd490bb04ec2317d54f07959b27ea1382afe5",
+    "render_input_sha256": "32868fb7fae6f03c89f807280a9d674c53616a4db28c598dd7798df415dd22c9",
     "source_catalog_sha256": "bb68091dc49c610981215b78fd6befb7ad52b4e91e0151f82032df70b7611b40"
   },
   "evidence_audit": {
@@ -212,5 +212,5 @@
     "semantic": "TAMAMLANDI"
   },
   "status": "TAMAMLANDI",
-  "validated_at": "2026-07-21T23:20:50.408Z"
+  "validated_at": "2026-07-22T00:10:04.546Z"
 }

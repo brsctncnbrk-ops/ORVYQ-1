@@ -1,6 +1,18 @@
 {
+  "audible_windows": {
+    "assets/music/signal-to-noise.mp3": [
+      276,
+      258,
+      288,
+      270,
+      240,
+      264,
+      234,
+      252
+    ]
+  },
   "channels": 2,
-  "created_at": "2026-07-21T15:13:49.360Z",
+  "created_at": "2026-07-22T00:10:00.941Z",
   "distinct_music_states": [
     "controlled_tension",
     "analytical_unease",
@@ -13,20 +25,29 @@
     "reflective_resolution"
   ],
   "ducking": {
-    "attack_ms": 30,
+    "attack_ms": 45,
     "enabled": true,
-    "ratio": 6,
-    "release_ms": 480,
-    "threshold_db": -24
+    "ratio": 2.5,
+    "release_ms": 620,
+    "threshold_db": -18
   },
-  "duration_seconds": 757.92,
+  "duration_seconds": 757.872,
   "editorial_pause_count": 8,
   "loudness_target": {
     "target_lufs": -16,
     "true_peak_dbfs": -1.5
   },
   "music_cue_count": 9,
+  "music_floor": {
+    "narration_floor_db": -24,
+    "pause_boost_db": 6,
+    "pause_floor_db": -16
+  },
   "output_asset": "assets/audio/final_mix.mp3",
+  "pause_music_guarantee": {
+    "enabled": true,
+    "gain_db": -18
+  },
   "project_id": "001-ai-race",
   "sample_rate": 48000,
   "schema_version": "1.0",

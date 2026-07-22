@@ -34,7 +34,13 @@
       "duration_seconds": 23.786667,
       "editorial_purpose": "Aerial city movement expressing scale, infrastructure, competition and systems already in motion.",
       "semantic_description": "Aerial city movement expressing scale, infrastructure, competition and systems already in motion.",
-      "semantic_keywords": ["city", "infrastructure", "scale", "competition", "systems"],
+      "semantic_keywords": [
+        "city",
+        "infrastructure",
+        "scale",
+        "competition",
+        "systems"
+      ],
       "visual_class": "real_world",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
@@ -52,7 +58,13 @@
       "duration_seconds": 17.84,
       "editorial_purpose": "A person studies technical plans on a laptop, suggesting design, engineering, governance and deliberate construction.",
       "semantic_description": "A person studies technical plans on a laptop, suggesting design, engineering, governance and deliberate construction.",
-      "semantic_keywords": ["planning", "engineering", "design", "governance", "computer"],
+      "semantic_keywords": [
+        "planning",
+        "engineering",
+        "design",
+        "governance",
+        "computer"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -70,7 +82,13 @@
       "duration_seconds": 37.96,
       "editorial_purpose": "Multiple market-data screens suggest incentives, competition, strategic pressure and rapid decision-making.",
       "semantic_description": "Multiple market-data screens suggest incentives, competition, strategic pressure and rapid decision-making.",
-      "semantic_keywords": ["markets", "data", "competition", "incentives", "pressure"],
+      "semantic_keywords": [
+        "markets",
+        "data",
+        "competition",
+        "incentives",
+        "pressure"
+      ],
       "visual_class": "real_world",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
@@ -88,7 +106,13 @@
       "duration_seconds": 45.64,
       "editorial_purpose": "Abstract digital technology imagery expressing machine intelligence, networked capability and uncertain control.",
       "semantic_description": "Abstract digital technology imagery expressing machine intelligence, networked capability and uncertain control.",
-      "semantic_keywords": ["technology", "digital", "intelligence", "network", "control"],
+      "semantic_keywords": [
+        "technology",
+        "digital",
+        "intelligence",
+        "network",
+        "control"
+      ],
       "visual_class": "abstract",
       "height": 1080,
       "license": "https://pixabay.com/service/license-summary/",
@@ -106,7 +130,13 @@
       "duration_seconds": 30.03,
       "editorial_purpose": "Industrial or laboratory-like machinery conveys controlled testing, engineered pressure and systems operating under constraints.",
       "semantic_description": "Industrial or laboratory-like machinery conveys controlled testing, engineered pressure and systems operating under constraints.",
-      "semantic_keywords": ["laboratory", "testing", "machinery", "pressure", "control"],
+      "semantic_keywords": [
+        "laboratory",
+        "testing",
+        "machinery",
+        "pressure",
+        "control"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://pixabay.com/service/license-summary/",
@@ -124,7 +154,13 @@
       "duration_seconds": 21.353333,
       "editorial_purpose": "Warehouses behind fencing convey containment, physical infrastructure, restricted access and risks leaving controlled spaces.",
       "semantic_description": "Warehouses behind fencing convey containment, physical infrastructure, restricted access and risks leaving controlled spaces.",
-      "semantic_keywords": ["containment", "infrastructure", "security", "restriction", "risk"],
+      "semantic_keywords": [
+        "containment",
+        "infrastructure",
+        "security",
+        "restriction",
+        "risk"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -142,7 +178,13 @@
       "duration_seconds": 19.68,
       "editorial_purpose": "A smartphone news feed represents public information, media attention, social spread and rapidly moving narratives.",
       "semantic_description": "A smartphone news feed represents public information, media attention, social spread and rapidly moving narratives.",
-      "semantic_keywords": ["media", "news", "public", "information", "spread"],
+      "semantic_keywords": [
+        "media",
+        "news",
+        "public",
+        "information",
+        "spread"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -160,7 +202,13 @@
       "duration_seconds": 19.8,
       "editorial_purpose": "A moving node network visualizes connected systems, model ecosystems, diffusion and distributed technological power.",
       "semantic_description": "A moving node network visualizes connected systems, model ecosystems, diffusion and distributed technological power.",
-      "semantic_keywords": ["network", "systems", "models", "diffusion", "power"],
+      "semantic_keywords": [
+        "network",
+        "systems",
+        "models",
+        "diffusion",
+        "power"
+      ],
       "visual_class": "abstract",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -178,7 +226,13 @@
       "duration_seconds": 17,
       "editorial_purpose": "Employees stamp and process documents, representing bureaucracy, compliance, institutional procedure and formal approval.",
       "semantic_description": "Employees stamp and process documents, representing bureaucracy, compliance, institutional procedure and formal approval.",
-      "semantic_keywords": ["bureaucracy", "documents", "compliance", "institution", "approval"],
+      "semantic_keywords": [
+        "bureaucracy",
+        "documents",
+        "compliance",
+        "institution",
+        "approval"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -196,7 +250,13 @@
       "duration_seconds": 32.465767,
       "editorial_purpose": "A monumental glass-and-metal building suggests corporate power, concentrated resources and institutional scale.",
       "semantic_description": "A monumental glass-and-metal building suggests corporate power, concentrated resources and institutional scale.",
-      "semantic_keywords": ["corporate", "power", "institution", "resources", "scale"],
+      "semantic_keywords": [
+        "corporate",
+        "power",
+        "institution",
+        "resources",
+        "scale"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -214,7 +274,13 @@
       "duration_seconds": 15.6,
       "editorial_purpose": "A person browsing on a computer represents access, open information, digital systems and human interaction with technology.",
       "semantic_description": "A person browsing on a computer represents access, open information, digital systems and human interaction with technology.",
-      "semantic_keywords": ["computer", "access", "information", "open", "technology"],
+      "semantic_keywords": [
+        "computer",
+        "access",
+        "information",
+        "open",
+        "technology"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -232,7 +298,13 @@
       "duration_seconds": 15.448767,
       "editorial_purpose": "A state senate chamber conveys regulation, lawmaking, democratic authority and governance choices.",
       "semantic_description": "A state senate chamber conveys regulation, lawmaking, democratic authority and governance choices.",
-      "semantic_keywords": ["regulation", "government", "law", "governance", "authority"],
+      "semantic_keywords": [
+        "regulation",
+        "government",
+        "law",
+        "governance",
+        "authority"
+      ],
       "visual_class": "real_world",
       "height": 1080,
       "license": "https://www.pexels.com/license/",
@@ -250,7 +322,13 @@
       "duration_seconds": 25.88,
       "editorial_purpose": "Computer code running on screen represents software capability, technical architecture, implementation and hidden system behavior.",
       "semantic_description": "Computer code running on screen represents software capability, technical architecture, implementation and hidden system behavior.",
-      "semantic_keywords": ["code", "software", "capability", "architecture", "systems"],
+      "semantic_keywords": [
+        "code",
+        "software",
+        "capability",
+        "architecture",
+        "systems"
+      ],
       "visual_class": "real_world",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
@@ -268,7 +346,13 @@
       "duration_seconds": 29.16,
       "editorial_purpose": "A person explains a medical chart, conveying risk assessment, expert interpretation, thresholds and safety review.",
       "semantic_description": "A person explains a medical chart, conveying risk assessment, expert interpretation, thresholds and safety review.",
-      "semantic_keywords": ["risk", "assessment", "thresholds", "safety", "expert"],
+      "semantic_keywords": [
+        "risk",
+        "assessment",
+        "thresholds",
+        "safety",
+        "expert"
+      ],
       "visual_class": "real_world",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
@@ -286,7 +370,13 @@
       "duration_seconds": 33.28,
       "editorial_purpose": "People review a contract, representing trade-offs, accountability, negotiated rules and binding institutional choices.",
       "semantic_description": "People review a contract, representing trade-offs, accountability, negotiated rules and binding institutional choices.",
-      "semantic_keywords": ["contract", "trade-offs", "accountability", "rules", "choice"],
+      "semantic_keywords": [
+        "contract",
+        "trade-offs",
+        "accountability",
+        "rules",
+        "choice"
+      ],
       "visual_class": "real_world",
       "height": 2160,
       "license": "https://www.pexels.com/license/",
@@ -300,14 +390,14 @@
     {
       "approved_for_final_edit": true,
       "asset_id": "FINAL_AUDIO_MIX",
-      "byte_size": 24254253,
-      "duration_seconds": 757.92,
+      "byte_size": 24252717,
+      "duration_seconds": 757.872000,
       "editorial_purpose": "Deterministic pre-render final audio mix with editorial pauses and narration ducking.",
       "license": "Narration plus licensed CC BY 4.0 music mix",
       "media_type": "audio",
       "relative_path": "assets/audio/final_mix.mp3",
       "role": "final_audio_mix",
-      "sha256": "16db65a3f38eab1cb2420df315cb924aa06b18f5626b5320ab18e32bab3dede4",
+      "sha256": "1abbbcf075a8c99eb79f6a785830641c2a823e51220e7fc6bd140dc143b95cb4",
       "source_url": "repo://ORVYQ-1/projects/001-ai-race/assets/audio/final_mix.mp3"
     }
   ],

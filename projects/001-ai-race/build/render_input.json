@@ -390,14 +390,14 @@
     {
       "approved_for_final_edit": true,
       "asset_id": "FINAL_AUDIO_MIX",
-      "byte_size": 24254253,
-      "duration_seconds": 757.92,
+      "byte_size": 24252717,
+      "duration_seconds": 757.872,
       "editorial_purpose": "Deterministic pre-render final audio mix with editorial pauses and narration ducking.",
       "license": "Narration plus licensed CC BY 4.0 music mix",
       "media_type": "audio",
       "relative_path": "assets/audio/final_mix.mp3",
       "role": "final_audio_mix",
-      "sha256": "16db65a3f38eab1cb2420df315cb924aa06b18f5626b5320ab18e32bab3dede4",
+      "sha256": "1abbbcf075a8c99eb79f6a785830641c2a823e51220e7fc6bd140dc143b95cb4",
       "source_url": "repo://ORVYQ-1/projects/001-ai-race/assets/audio/final_mix.mp3"
     }
   ],
